@@ -1,3 +1,53 @@
 /* =============
     Footer
 ============= */
+footer{
+    background-image: url('../img/footer/Rectangle.svg');
+    background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+
+        >div{
+            text-align: center;
+        }
+
+        h1{
+            color: white;
+            padding: 70px 0 0 0 ;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+        }
+
+        form{
+            input{
+                // border-radius: 0;
+                border: none;
+            }
+
+            button{
+                background-color: $lightgrey;
+                color: white;
+                border: none;
+            }
+            
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            // grid-template-areas: 
+            // "1,4"
+            // "2,4"
+            // "3,4";
+        }
+
+            section:nth-child(n)
+
+        
+        
+         ul{
+            li{
+                a{
+
+                }
+            }
+        }
+}

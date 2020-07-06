@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="207px" viewBox="0 0 1024 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <defs>
+        <filter x="-3.6%" y="-19.1%" width="107.1%" height="138.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Fine-Art" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" fill="#FFFFFF">
+            <g id="Header" filter="url(#filter-1)">
+                <polygon id="Rectangle" transform="translate(512.500000, 95.500000) scale(-1, 1) translate(-512.500000, -95.500000) " points="0 0 1025 0 1025 191 0 92.044917"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
