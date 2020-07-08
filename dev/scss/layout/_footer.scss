@@ -8,46 +8,140 @@ footer{
         background-size: cover;
         height: 30vh;
 
+        @include md {
+            height: 40vh;
+        }
+
+        @include xl {
+            height: 85vh;
+        }
+
         >div{
             text-align: center;
         }
 
         h1{
             color: white;
-            padding: 70px 0 0 0 ;
+            padding: 0px 0 0px 0 ;
             font-family: 'Open Sans', sans-serif;
             font-weight: 300;
+            font-size: rem-calc(35);
+            transform: rotate(-90deg);
+            text-align: top;
+
+            @include md {
+                padding-top: 90px;
+            }
+
+            @include lg {
+                padding-top: 30px;
+            }
+
+            @include xl {
+                padding-top: 40vh;
+            }
         }
 
         form{
-            input{
-                // border-radius: 0;
-                border: none;
+            section{
+                display: grid;
+                // justify-content: center;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-areas: 
+                        "c, 1, 4, s"
+                        "c, 2, 4, s"
+                        "c, 3, 4, s";
+
+                    div{
+                        input{
+                            // border-radius: 0;
+                            border: none;
+                            color: $darkgrey;
+                            padding: 10px 0 7px 10px;
+
+                            @include md {
+                                padding: 15px 0 10px 10px;
+                                width: 400px;
+                            }
+    
+                            @include lg {
+                                padding: 20px 0 15px 10px;
+                                width: 500px;
+                            }
+                        }
+
+                        ::placeholder {
+                            /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: $darkgrey;
+                            opacity: 1;
+                        }
+    
+                        :-ms-input-placeholder {
+                            /* Internet Explorer 10-11 */
+                            color: $darkgrey;
+                        }
+    
+                        ::-ms-input-placeholder {
+                            /* Microsoft Edge */
+                            color: $darkgrey;
+                        }
+
+                        button{
+                            background-color: $darkgrey;
+                            color: white;
+                            border: none;
+                            transform: rotate(-90deg);
+                            cursor: pointer;
+                            height: 100%;
+
+                            @include lg {
+                                padding: 0 15px;
+                            }
+
+                            @include xl {
+                                padding: 0 25px;
+                            }
+
+                            &:hover {
+                                background-color: $darkgrey;
+                            }
+                        }
+                }
             }
 
-            button{
-                background-color: $lightgrey;
-                color: white;
-                border: none;
-            }
-            
-            // display: grid;
-            // grid-template-columns: repeat(2, 1fr);
-            // grid-template-areas: 
-            // "1,4"
-            // "2,4"
-            // "3,4";
-        }
 
-            section:nth-child(n)
+            // section:nth-child(n)
 
         
         
-         ul{
-            li{
-                a{
-
+            ul {
+                display: flex;
+                justify-content: center;
+                padding: 20px 0 50px;
+    
+                li {
+                    margin: 0 20px;
+    
+                    a:link,
+                    a:visited {
+                        color: $white;
+                        font-size: rem-calc(20);
+    
+                    &:hover,
+                    &:active {
+                        color: $darkgrey;
+                    }
+    
+                    @include md {
+                        font-size: rem-calc(25);
+                    }
+    
+                    @include lg {
+                        font-size: rem-calc(30);
+                    }
                 }
             }
         }
+        
+    }
 }
