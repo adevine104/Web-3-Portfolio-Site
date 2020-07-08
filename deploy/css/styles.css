@@ -399,7 +399,7 @@ header div {
   @media (min-width: 768px) {
     header div {
       height: 15vh; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1440px) {
     header div {
       height: 35vh; } }
   header div #logo-container {
@@ -471,7 +471,7 @@ footer {
     footer > div form section {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "c, 1, 4, s" "c, 2, 4, s" "c, 3, 4, s"; }
+      grid-template-areas: "c, one, four, s" "c, two, four, s" "c, three, four, s"; }
       footer > div form section div input {
         border: none;
         color: #454545;
@@ -531,3 +531,30 @@ footer {
             footer > div ul li a:link,
             footer > div ul li a:visited {
               font-size: 1.875rem; } }
+/* =============
+    Index Content
+============= */
+/* --------------------------
+    Index Home
+ --------------------------*/
+#index-home {
+  text-align: center; }
+  #index-home section > div a:link,
+  #index-home section > div a:visited {
+    color: #000;
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 300; }
+    #index-home section > div a:link:hover, #index-home section > div a:link:active,
+    #index-home section > div a:visited:hover,
+    #index-home section > div a:visited:active {
+      color: #454545; }
+    @media (min-width: 768px) {
+      #index-home section > div a:link,
+      #index-home section > div a:visited {
+        font-size: 1.5625rem; } }
+    @media (min-width: 1025px) {
+      #index-home section > div a:link,
+      #index-home section > div a:visited {
+        font-size: 1.875rem; } }

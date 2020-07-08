@@ -1,0 +1,58 @@
+/* =============
+    Index Content
+============= */
+
+/* --------------------------
+    Index Home
+ --------------------------*/
+
+ #index-home {
+    text-align: center;
+    section{
+
+    // h1 {
+    //     color: $black;
+    //     font-family: 'Open Sans', sans-serif;
+    //     font-size: rem-calc(45);
+    //     font-weight: 300;
+    //     margin-bottom: 20px;
+
+    //     @include md {
+    //         font-size: rem-calc(55);
+    //     }
+
+    //     @include lg {
+    //         font-size: rem-calc(65);
+    //     }
+
+    //     @include xl {
+    //         font-size: rem-calc(75);
+    //     }
+    // }
+    >div{
+
+        a:link,
+        a:visited {
+            color: $black;
+            font-size: rem-calc(20);
+            font-family: 'Open Sans', sans-serif;
+            font-size: rem-calc(15);
+            font-weight: 300;
+        
+        &:hover,
+        &:active {
+            color: $darkgrey;
+        }
+        
+        @include md {
+            font-size: rem-calc(25);
+        }
+        
+        @include lg {
+            font-size: rem-calc(30);
+        }
+
+}
+    }
+}
+ }

@@ -15,9 +15,9 @@ header{
             height: 15vh;
             }
 
-        @include lg{
-        height: 35vh;
-        }
+        @include xl{
+            height: 35vh;
+            }
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
