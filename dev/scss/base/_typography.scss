@@ -2,10 +2,8 @@
     Typography
 ============= */
 
-// font-family: 'Open Sans', sans-serif;
-
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1,h2,h3,h4{
@@ -20,4 +18,18 @@ p{
 
 .section-title{
     font-weight: 300;
+}
+
+.white-section-headers{
+    font-weight: 300;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    transform: rotate(-90deg);
+}
+
+.grey-section-headers{
+    font-weight: 300;
+    color: $lightgrey;
+    font-family: 'Open Sans', sans-serif;
+    transform: rotate(-30deg);
 }

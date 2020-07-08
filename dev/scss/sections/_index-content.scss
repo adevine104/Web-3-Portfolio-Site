@@ -9,27 +9,45 @@
  #index-home {
     text-align: center;
     section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
 
-    // h1 {
-    //     color: $black;
-    //     font-family: 'Open Sans', sans-serif;
-    //     font-size: rem-calc(45);
-    //     font-weight: 300;
-    //     margin-bottom: 20px;
+        // justify-content: center;
+        // align-items: center;
+        // flex-wrap: wrap;
 
-    //     @include md {
-    //         font-size: rem-calc(55);
-    //     }
+        #branding{
+            background-color: $earthpink;
+            background-image: url("../img/home-page/salt.png");
+        }
 
-    //     @include lg {
-    //         font-size: rem-calc(65);
-    //     }
+        #publication{
+            background-color: $brightblue;
+            background-image: url("../img/home-page/mulaney.png");
+        }
 
-    //     @include xl {
-    //         font-size: rem-calc(75);
-    //     }
-    // }
+        #imagemaking{
+            background-color: $earthgreen;
+            background-image: url("../img/home-page/zombie.png");
+        }
+
+        #fineart{
+            background-image: url("../img/home-page/rainbow.png");
+        }
+
+        #typography{
+            background-color: $gold;
+            background-image: url("../img/home-page/stag.png");
+        }
+
+        #webdesign{
+            background-color: $earthblue;
+            background-image: url("../img/home-page/iphonemummers.png");
+        }
+
+        
     >div{
+        // transform: rotate(-90deg);
 
         a:link,
         a:visited {

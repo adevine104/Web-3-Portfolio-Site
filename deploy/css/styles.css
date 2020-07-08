@@ -348,7 +348,7 @@ a:link, a:visited {
     Typography
 ============= */
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 h1, h2, h3, h4 {
   margin: 0;
@@ -360,6 +360,18 @@ p {
 
 .section-title {
   font-weight: 300; }
+
+.white-section-headers {
+  font-weight: 300;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  transform: rotate(-90deg); }
+
+.grey-section-headers {
+  font-weight: 300;
+  color: #6D7278;
+  font-family: 'Open Sans', sans-serif;
+  transform: rotate(-30deg); }
 
 /* =============
     Buttons
@@ -457,8 +469,7 @@ footer {
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 2.1875rem;
-      transform: rotate(-90deg);
-      text-align: top; }
+      transform: rotate(-90deg); }
       @media (min-width: 768px) {
         footer > div h1 {
           padding-top: 90px; } }
@@ -539,22 +550,42 @@ footer {
  --------------------------*/
 #index-home {
   text-align: center; }
-  #index-home section > div a:link,
-  #index-home section > div a:visited {
-    color: #000;
-    font-size: 1.25rem;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9375rem;
-    font-weight: 300; }
-    #index-home section > div a:link:hover, #index-home section > div a:link:active,
-    #index-home section > div a:visited:hover,
-    #index-home section > div a:visited:active {
-      color: #454545; }
-    @media (min-width: 768px) {
-      #index-home section > div a:link,
-      #index-home section > div a:visited {
-        font-size: 1.5625rem; } }
-    @media (min-width: 1025px) {
-      #index-home section > div a:link,
-      #index-home section > div a:visited {
-        font-size: 1.875rem; } }
+  #index-home section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #index-home section #branding {
+      background-color: #56383A;
+      background-image: url("../img/home-page/salt.png"); }
+    #index-home section #publication {
+      background-color: #294393;
+      background-image: url("../img/home-page/mulaney.png"); }
+    #index-home section #imagemaking {
+      background-color: #586361;
+      background-image: url("../img/home-page/zombie.png"); }
+    #index-home section #fineart {
+      background-image: url("../img/home-page/rainbow.png"); }
+    #index-home section #typography {
+      background-color: #95670D;
+      background-image: url("../img/home-page/stag.png"); }
+    #index-home section #webdesign {
+      background-color: #323B56;
+      background-image: url("../img/home-page/iphonemummers.png"); }
+    #index-home section > div a:link,
+    #index-home section > div a:visited {
+      color: #000;
+      font-size: 1.25rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 300; }
+      #index-home section > div a:link:hover, #index-home section > div a:link:active,
+      #index-home section > div a:visited:hover,
+      #index-home section > div a:visited:active {
+        color: #454545; }
+      @media (min-width: 768px) {
+        #index-home section > div a:link,
+        #index-home section > div a:visited {
+          font-size: 1.5625rem; } }
+      @media (min-width: 1025px) {
+        #index-home section > div a:link,
+        #index-home section > div a:visited {
+          font-size: 1.875rem; } }

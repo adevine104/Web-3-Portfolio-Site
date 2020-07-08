@@ -59,6 +59,72 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/home-page/iphonemummers.png": {
+		"ft": 32768,
+		"iS": 218018,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/iphonemummers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home-page/mulaney.png": {
+		"ft": 32768,
+		"iS": 244986,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/mulaney.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home-page/rainbow.png": {
+		"ft": 32768,
+		"iS": 481814,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/rainbow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home-page/salt.png": {
+		"ft": 32768,
+		"iS": 46012,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/salt.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home-page/stag.png": {
+		"ft": 32768,
+		"iS": 57005,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/stag.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home-page/zombie.png": {
+		"ft": 32768,
+		"iS": 260411,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/zombie.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -77,6 +143,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/deploy/template.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/template.html",
+		"oF": 0
 		},
 	"/dev/content/index-content.kit": {
 		"cB": 0,
