@@ -78,6 +78,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/content/index-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/index-content.html",
+		"oF": 0
+		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -271,6 +279,14 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"/dev/template.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/template.html",
+		"oF": 0
 		}
 	},
 "hooks": [
