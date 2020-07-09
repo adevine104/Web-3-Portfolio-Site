@@ -16,58 +16,99 @@
         flex-wrap: wrap;
         background-position: center;            
         background-repeat: no-repeat;
-        padding: 100px 150px;
 
         @include md{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        padding: 300px 100px
+        grid-template-rows: repeat(2,1fr);
+        }
+
+        h1{
+            color: white;
+            transform: rotate(-90deg);
+            text-align: right;
+            font-family: Open Sans, sans-serif;
+            font-weight: 300;
         }
 
         #branding{
             background-image: url("../img/home-page/saltopiaheadermob.png");
-            background-position: -200px -50px;
+            background-position: center;
             background-repeat: no-repeat;
-            padding: 100px 150px 100px 150px;
-            // width: 200%;
-
-            // img{
-            //     object-fit: cover;
-            //     width: 100vw;
-            // }
+            padding: 20vh 30vw;
 
             @include md{
             background-color: $earthpink;
             background-image: url("../img/home-page/salt.png");
+            height: 50vh;
+            padding: 20vh 4vw;
+            background-position: 0px 370px;
             }
         }
 
         #publication{
             background-image: url("../img/home-page/Backtalkheadermob.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20vh 30vw;
 
             @include md{
             background-color: $brightblue;
             background-image: url("../img/home-page/mulaney.png");
+            padding: 20vh 4vw;
             }
         }
 
         #imagemaking{
+            background-image: url("../img/home-page/imagemakingheadermob.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20vh 30vw;
+
+            @include md{
             background-color: $earthgreen;
             background-image: url("../img/home-page/zombie.png");
+            padding: 20vh 4vw;
+            }
         }
 
         #fineart{
+            background-image: url("../img/home-page/fineartheadermob.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20vh 30vw;
+
+            @include md{
+            background-color: transparent;
             background-image: url("../img/home-page/rainbow.png");
+            padding: 20vh 4vw;
+            }
         }
 
         #typography{
+            background-image: url("../img/home-page/typeheadermob.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20vh 30vw;
+
+            @include md{
             background-color: $gold;
             background-image: url("../img/home-page/stag.png");
+            padding: 20vh 4vw;
+            }
         }
 
         #webdesign{
+            background-image: url("../img/home-page/webheadermob.png");
+            background-position: center;
+            background-repeat: no-repeat;
+             padding: 20vh 30vw;
+
+            @include md{
             background-color: $earthblue;
             background-image: url("../img/home-page/iphonemummers.png");
+            padding: 20vh 4vw;
+            }
         }
 
         

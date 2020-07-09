@@ -644,39 +644,80 @@ footer {
     width: 100%;
     flex-wrap: wrap;
     background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 150px; }
+    background-repeat: no-repeat; }
     @media (min-width: 768px) {
       #index-home section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 300px 100px; } }
+        grid-template-rows: repeat(2, 1fr); } }
+    #index-home section h1 {
+      color: white;
+      transform: rotate(-90deg);
+      text-align: right;
+      font-family: Open Sans, sans-serif;
+      font-weight: 300; }
     #index-home section #branding {
       background-image: url("../img/home-page/saltopiaheadermob.png");
-      background-position: -200px -50px;
+      background-position: center;
       background-repeat: no-repeat;
-      padding: 100px 150px 100px 150px; }
+      padding: 20vh 30vw; }
       @media (min-width: 768px) {
         #index-home section #branding {
           background-color: #56383A;
-          background-image: url("../img/home-page/salt.png"); } }
+          background-image: url("../img/home-page/salt.png");
+          height: 50vh;
+          padding: 20vh 4vw;
+          background-position: 0px 370px; } }
     #index-home section #publication {
-      background-image: url("../img/home-page/Backtalkheadermob.png"); }
+      background-image: url("../img/home-page/Backtalkheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20vh 30vw; }
       @media (min-width: 768px) {
         #index-home section #publication {
           background-color: #294393;
-          background-image: url("../img/home-page/mulaney.png"); } }
+          background-image: url("../img/home-page/mulaney.png");
+          padding: 20vh 4vw; } }
     #index-home section #imagemaking {
-      background-color: #586361;
-      background-image: url("../img/home-page/zombie.png"); }
+      background-image: url("../img/home-page/imagemakingheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20vh 30vw; }
+      @media (min-width: 768px) {
+        #index-home section #imagemaking {
+          background-color: #586361;
+          background-image: url("../img/home-page/zombie.png");
+          padding: 20vh 4vw; } }
     #index-home section #fineart {
-      background-image: url("../img/home-page/rainbow.png"); }
+      background-image: url("../img/home-page/fineartheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20vh 30vw; }
+      @media (min-width: 768px) {
+        #index-home section #fineart {
+          background-color: transparent;
+          background-image: url("../img/home-page/rainbow.png");
+          padding: 20vh 4vw; } }
     #index-home section #typography {
-      background-color: #95670D;
-      background-image: url("../img/home-page/stag.png"); }
+      background-image: url("../img/home-page/typeheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20vh 30vw; }
+      @media (min-width: 768px) {
+        #index-home section #typography {
+          background-color: #95670D;
+          background-image: url("../img/home-page/stag.png");
+          padding: 20vh 4vw; } }
     #index-home section #webdesign {
-      background-color: #323B56;
-      background-image: url("../img/home-page/iphonemummers.png"); }
+      background-image: url("../img/home-page/webheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20vh 30vw; }
+      @media (min-width: 768px) {
+        #index-home section #webdesign {
+          background-color: #323B56;
+          background-image: url("../img/home-page/iphonemummers.png");
+          padding: 20vh 4vw; } }
     #index-home section > div a:link,
     #index-home section > div a:visited {
       color: #000;
