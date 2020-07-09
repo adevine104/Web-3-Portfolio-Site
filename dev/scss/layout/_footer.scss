@@ -44,9 +44,11 @@ footer{
 
         form{
             section{
+                margin-top: 55px;
                 display: grid;
-                // justify-content: center;
+                justify-content: center;
                 grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(2,1fr);
                 grid-template-areas: 
                     "c, one, four, s"
                     "c, two, four, s"
@@ -107,6 +109,26 @@ footer{
                             }
                         }
                 }
+
+                #contact{
+                    grid-area: c;
+                }
+                #name{
+                    grid-area: one;
+                }
+                #email{
+                    grid-area: two;
+                }
+                #subject{
+                    grid-area: three;
+                }
+                #message{
+                    grid-area: four;
+                }
+                #send{
+                    grid-area: s;
+                }
+
             }
         }
                 

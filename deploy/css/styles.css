@@ -397,6 +397,25 @@ textarea {
 /* =============
     Navigation
 ============= */
+.white-button {
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 13px 20px;
+  display: inline-block; }
+  @media (min-width: 768px) {
+    .white-button {
+      font-size: 1.25rem;
+      padding: 14px 35px; } }
+  @media (min-width: 768px) {
+    .white-button {
+      font-size: 1.5rem;
+      padding: 16px 40px; } }
+  .white-button:hover {
+    background-color: #6D7278; }
+
 @media (min-width: 1025px) {
   #nav-container ul {
     display: flex; } }
@@ -535,8 +554,11 @@ footer {
         footer > div h1 {
           padding-top: 40vh; } }
     footer > div form section {
+      margin-top: 55px;
       display: grid;
+      justify-content: center;
       grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "c, one, four, s" "c, two, four, s" "c, three, four, s"; }
       footer > div form section div input {
         border: none;
@@ -575,6 +597,18 @@ footer {
             padding: 0 25px; } }
         footer > div form section div button:hover {
           background-color: #454545; }
+      footer > div form section #contact {
+        grid-area: c; }
+      footer > div form section #name {
+        grid-area: one; }
+      footer > div form section #email {
+        grid-area: two; }
+      footer > div form section #subject {
+        grid-area: three; }
+      footer > div form section #message {
+        grid-area: four; }
+      footer > div form section #send {
+        grid-area: s; }
     footer > div ul {
       display: flex;
       justify-content: center;
@@ -619,7 +653,7 @@ footer {
         padding: 300px 100px; } }
     #index-home section #branding {
       background-image: url("../img/home-page/saltopiaheadermob.png");
-      background-position: center;
+      background-position: -200px -50px;
       background-repeat: no-repeat;
       padding: 100px 150px 100px 150px; }
       @media (min-width: 768px) {

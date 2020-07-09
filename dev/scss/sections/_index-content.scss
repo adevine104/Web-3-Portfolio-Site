@@ -26,15 +26,20 @@
 
         #branding{
             background-image: url("../img/home-page/saltopiaheadermob.png");
+            background-position: -200px -50px;
+            background-repeat: no-repeat;
+            padding: 100px 150px 100px 150px;
+            // width: 200%;
+
+            // img{
+            //     object-fit: cover;
+            //     width: 100vw;
+            // }
 
             @include md{
             background-color: $earthpink;
             background-image: url("../img/home-page/salt.png");
             }
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 100px 150px 100px 150px;
-            // width: 200%;
         }
 
         #publication{
