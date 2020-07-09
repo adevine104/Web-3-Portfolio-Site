@@ -59,6 +59,39 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/home-page/Backtalkheadermob.png": {
+		"ft": 32768,
+		"iS": 49004,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/Backtalkheadermob.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home-page/fineartheadermob.png": {
+		"ft": 32768,
+		"iS": 84417,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/fineartheadermob.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home-page/imagemakingheadermob.png": {
+		"ft": 32768,
+		"iS": 62170,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/imagemakingheadermob.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/home-page/iphonemummers.png": {
 		"ft": 32768,
 		"iS": 218018,
@@ -103,11 +136,44 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/home-page/saltopiaheadermob.png": {
+		"ft": 32768,
+		"iS": 36278,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/saltopiaheadermob.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/home-page/stag.png": {
 		"ft": 32768,
 		"iS": 57005,
 		"oA": 0,
 		"oAP": "/deploy/img/home-page/stag.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home-page/typeheadermob.png": {
+		"ft": 32768,
+		"iS": 24708,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/typeheadermob.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home-page/webheadermob.png": {
+		"ft": 32768,
+		"iS": 45861,
+		"oA": 0,
+		"oAP": "/deploy/img/home-page/webheadermob.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

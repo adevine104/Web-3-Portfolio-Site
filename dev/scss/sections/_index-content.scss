@@ -8,22 +8,42 @@
 
  #index-home {
     text-align: center;
+    
     section{
+        display: flex;
+        // align-content: stretch;
+        width: 100%;
+        flex-wrap: wrap;
+        background-position: center;            
+        background-repeat: no-repeat;
+        padding: 100px 150px;
+
+        @include md{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-
-        // justify-content: center;
-        // align-items: center;
-        // flex-wrap: wrap;
+        padding: 300px 100px
+        }
 
         #branding{
+            background-image: url("../img/home-page/saltopiaheadermob.png");
+
+            @include md{
             background-color: $earthpink;
             background-image: url("../img/home-page/salt.png");
+            }
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 150px 100px 150px;
+            // width: 200%;
         }
 
         #publication{
+            background-image: url("../img/home-page/Backtalkheadermob.png");
+
+            @include md{
             background-color: $brightblue;
             background-image: url("../img/home-page/mulaney.png");
+            }
         }
 
         #imagemaking{
@@ -70,7 +90,7 @@
             font-size: rem-calc(30);
         }
 
-}
+        }
     }
 }
  }

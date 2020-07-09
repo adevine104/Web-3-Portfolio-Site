@@ -397,6 +397,43 @@ textarea {
 /* =============
     Navigation
 ============= */
+@media (min-width: 1025px) {
+  #nav-container ul {
+    display: flex; } }
+
+@media (min-width: 1025px) {
+  #nav-container ul li {
+    display: flex; } }
+
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  text-decoration: none;
+  transition: 0.25s;
+  padding: 0px 0;
+  display: inline-block;
+  width: 100%;
+  font-weight: 700; }
+  @media (min-width: 1025px) {
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      font-size: 1.25rem;
+      padding: 0px 0px; } }
+#nav-container ul li a:hover,
+#nav-container ul li a:active {
+  color: #6D7278;
+  background-color: transparent; }
+
+@media (min-width: 1025px) {
+  #nav-container ul li:first-child a {
+    border: none; } }
+
+#nav-container ul li:last-child {
+  border: none; }
+  @media (min-width: 1025px) {
+    #nav-container ul li:last-child a {
+      border: none; } }
 /* =============
     Header
 ============= */
@@ -445,6 +482,24 @@ header div {
       header div #burger-container {
         font-size: 2.5rem;
         padding-top: 45px 40px 0 0; } }
+  header div #nav-container {
+    display: none;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    grid-area: nav;
+    padding: 10px 20px; }
+    header div #nav-container a:link,
+    header div #nav-container a:visited {
+      color: black;
+      padding: 10px 0px;
+      text-decoration: none;
+      transition: 0.25s;
+      width: 100%; }
+    header div #nav-container a:hover,
+    header div #nav-container a:active {
+      background-color: transparent;
+      color: #6D7278; }
+
 /* =============
     Footer
 ============= */
@@ -551,14 +606,32 @@ footer {
 #index-home {
   text-align: center; }
   #index-home section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 150px; }
+    @media (min-width: 768px) {
+      #index-home section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 300px 100px; } }
     #index-home section #branding {
-      background-color: #56383A;
-      background-image: url("../img/home-page/salt.png"); }
+      background-image: url("../img/home-page/saltopiaheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 100px 150px 100px 150px; }
+      @media (min-width: 768px) {
+        #index-home section #branding {
+          background-color: #56383A;
+          background-image: url("../img/home-page/salt.png"); } }
     #index-home section #publication {
-      background-color: #294393;
-      background-image: url("../img/home-page/mulaney.png"); }
+      background-image: url("../img/home-page/Backtalkheadermob.png"); }
+      @media (min-width: 768px) {
+        #index-home section #publication {
+          background-color: #294393;
+          background-image: url("../img/home-page/mulaney.png"); } }
     #index-home section #imagemaking {
       background-color: #586361;
       background-image: url("../img/home-page/zombie.png"); }
