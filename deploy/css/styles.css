@@ -341,6 +341,17 @@ a:link, a:visited {
   .grid-container > div {
     grid-area: container; }
 
+<<<<<<< Updated upstream
+=======
+.content-spacing {
+  padding: 70px 0 50px; }
+
+.content-padding {
+  padding: 20vh 30vw; }
+  @media (min-width: 768px) {
+    .content-padding {
+      padding: 20vh 4vw; } }
+>>>>>>> Stashed changes
 /* =============
     Typography
 ============= */
@@ -446,6 +457,7 @@ footer {
     footer {
       height: 85vh; } }
   footer > div {
+<<<<<<< Updated upstream
     text-align: center; }
   footer h1 {
     color: white;
@@ -492,11 +504,160 @@ footer {
       color: #454545; }
     footer form section div button {
       background-color: #454545;
+=======
+    text-align: center;
+    border: solid red 1px;
+    display: grid; }
+    @media (min-width: 768px) {
+      footer > div {
+        grid-template-columns: 25% auto;
+        grid-template-areas: "footer-title footer-form" "footer-social footer-social"; } }
+    footer > div #footer-title {
+      padding-top: 30px; }
+      @media (min-width: 768px) {
+        footer > div #footer-title {
+          grid-area: footer-title; } }
+      footer > div #footer-title h1 {
+        color: white;
+        padding: 0px 0 0px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300; }
+        @media (min-width: 768px) {
+          footer > div #footer-title h1 {
+            font-size: 2.1875rem;
+            transform: rotate(-90deg); } }
+    @media (min-width: 768px) {
+      footer > div #footer-form {
+        grid-area: footer-form; } }
+    footer > div #footer-form form {
+      display: grid;
+      gap: 20px;
+      background-color: #000; }
+      @media (min-width: 768px) {
+        footer > div #footer-form form {
+          display: grid;
+          gap: 20px;
+          grid-template-columns: 45% 40% auto; } }
+      footer > div #footer-form form #contact input {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 0;
+        border: none; }
+      footer > div #footer-form form #message textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 0;
+        border: none;
+        height: 200px; }
+    footer > div #footer-social {
+      padding: 20px 0; }
+      @media (min-width: 768px) {
+        footer > div #footer-social {
+          grid-area: footer-social; } }
+      footer > div #footer-social ul {
+        display: flex;
+        justify-content: center; }
+        footer > div #footer-social ul li {
+          margin: 0 10px; }
+
+/* =============
+    Index Content
+============= */
+/* --------------------------
+    Index Home
+ --------------------------*/
+#index-home {
+  text-align: center; }
+  #index-home section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      #index-home section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr); } }
+    #index-home section h1 {
+>>>>>>> Stashed changes
       color: white;
       border: none;
       transform: rotate(-90deg);
+<<<<<<< Updated upstream
       cursor: pointer;
       height: 100%; }
+=======
+      font-family: Open Sans, sans-serif;
+      font-weight: 300;
+      margin: 0;
+      padding: 40px 0 0 0; }
+    #index-home section #branding {
+      background-image: url("../img/home-page/saltopiaheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        #index-home section #branding {
+          background-color: #56383A;
+          background-image: url("../img/home-page/salt.png");
+          height: 50vh;
+          background-position: 0px 370px; } }
+    #index-home section #publication {
+      background-image: url("../img/home-page/Backtalkheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        #index-home section #publication {
+          background-color: #294393;
+          background-image: url("../img/home-page/mulaney.png"); } }
+    #index-home section #imagemaking {
+      background-image: url("../img/home-page/imagemakingheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        #index-home section #imagemaking {
+          background-color: #586361;
+          background-image: url("../img/home-page/zombie.png"); } }
+    #index-home section #fineart {
+      background-image: url("../img/home-page/fineartheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        #index-home section #fineart {
+          background-color: transparent;
+          background-image: url("../img/home-page/rainbow.png"); } }
+    #index-home section #typography {
+      background-image: url("../img/home-page/typeheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        #index-home section #typography {
+          background-color: #95670D;
+          background-image: url("../img/home-page/stag.png"); } }
+    #index-home section #webdesign {
+      background-image: url("../img/home-page/webheadermob.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+      @media (min-width: 768px) {
+        #index-home section #webdesign {
+          background-color: #323B56;
+          background-image: url("../img/home-page/iphonemummers.png"); } }
+    #index-home section > div a:link,
+    #index-home section > div a:visited {
+      color: #000;
+      font-size: 1.25rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 300; }
+      #index-home section > div a:link:hover, #index-home section > div a:link:active,
+      #index-home section > div a:visited:hover,
+      #index-home section > div a:visited:active {
+        color: #454545; }
+      @media (min-width: 768px) {
+        #index-home section > div a:link,
+        #index-home section > div a:visited {
+          font-size: 1.5625rem; } }
+>>>>>>> Stashed changes
       @media (min-width: 1025px) {
         footer form section div button {
           padding: 0 15px; } }

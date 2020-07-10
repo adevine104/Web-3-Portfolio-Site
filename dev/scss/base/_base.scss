@@ -31,4 +31,19 @@ a:link, a:visited{
     >div{
         grid-area: container;
     }
+<<<<<<< Updated upstream
+=======
+}
+
+.content-spacing{
+    padding: 70px 0 50px;
+}
+
+.content-padding{
+    padding: 20vh 30vw;
+
+    @include md{
+        padding: 20vh 4vw;
+    }
+>>>>>>> Stashed changes
 }
