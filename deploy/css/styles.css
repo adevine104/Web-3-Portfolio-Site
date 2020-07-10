@@ -344,6 +344,21 @@ a:link, a:visited {
 .content-spacing {
   padding: 70px 0 50px; }
 
+<<<<<<< Updated upstream
+=======
+.content-padding {
+  padding: 20vh 30vw; }
+  @media (min-width: 768px) {
+    .content-padding {
+      padding: 20vh 4vw; } }
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 /* =============
     Typography
 ============= */
@@ -535,6 +550,59 @@ footer {
     footer {
       height: 85vh; } }
   footer > div {
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    text-align: center; }
+  footer h1 {
+    color: white;
+    padding: 0px 0 0px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.1875rem;
+    transform: rotate(-90deg);
+    text-align: top; }
+    @media (min-width: 768px) {
+      footer h1 {
+        padding-top: 90px; } }
+    @media (min-width: 1025px) {
+      footer h1 {
+        padding-top: 30px; } }
+    @media (min-width: 1440px) {
+      footer h1 {
+        padding-top: 40vh; } }
+  footer form section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "c, 1, 4, s" "c, 2, 4, s" "c, 3, 4, s"; }
+    footer form section div input {
+      border: none;
+      color: #454545;
+      padding: 10px 0 7px 10px; }
+      @media (min-width: 768px) {
+        footer form section div input {
+          padding: 15px 0 10px 10px;
+          width: 400px; } }
+      @media (min-width: 1025px) {
+        footer form section div input {
+          padding: 20px 0 15px 10px;
+          width: 500px; } }
+    footer form section div ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #454545;
+      opacity: 1; }
+    footer form section div :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #454545; }
+    footer form section div ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #454545; }
+    footer form section div button {
+      background-color: #454545;
+=======
+>>>>>>> Stashed changes
     text-align: center;
     border: solid red 1px; }
     footer > div h1 {
@@ -545,6 +613,7 @@ footer {
       font-size: 2.1875rem;
       transform: rotate(-90deg); }
       @media (min-width: 768px) {
+<<<<<<< Updated upstream
         footer > div h1 {
           padding-top: 90px; } }
       @media (min-width: 1025px) {
@@ -555,6 +624,47 @@ footer {
           padding-top: 40vh; } }
     footer > div form section {
       margin-top: 55px;
+=======
+=======
+    text-align: center;
+    border: solid red 1px;
+    display: grid; }
+    @media (min-width: 768px) {
+      footer > div {
+        grid-template-columns: 25% auto;
+        grid-template-areas: "footer-title footer-form" "footer-social footer-social"; } }
+    footer > div #footer-title {
+      padding-top: 30px; }
+      @media (min-width: 768px) {
+>>>>>>> Stashed changes
+=======
+    text-align: center;
+    border: solid red 1px;
+    display: grid; }
+    @media (min-width: 768px) {
+      footer > div {
+        grid-template-columns: 25% auto;
+        grid-template-areas: "footer-title footer-form" "footer-social footer-social"; } }
+    footer > div #footer-title {
+      padding-top: 30px; }
+      @media (min-width: 768px) {
+>>>>>>> Stashed changes
+        footer > div #footer-title {
+          grid-area: footer-title; } }
+      footer > div #footer-title h1 {
+        color: white;
+        padding: 0px 0 0px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300; }
+        @media (min-width: 768px) {
+          footer > div #footer-title h1 {
+            font-size: 2.1875rem;
+            transform: rotate(-90deg); } }
+    @media (min-width: 768px) {
+      footer > div #footer-form {
+        grid-area: footer-form; } }
+    footer > div #footer-form form {
+>>>>>>> Stashed changes
       display: grid;
       justify-content: center;
       grid-template-columns: repeat(4, 1fr);
@@ -653,7 +763,20 @@ footer {
     #index-home section h1 {
       color: white;
       transform: rotate(-90deg);
+<<<<<<< Updated upstream
       text-align: right;
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      cursor: pointer;
+      height: 100%; }
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       font-family: Open Sans, sans-serif;
       font-weight: 300; }
     #index-home section #branding {

@@ -18,8 +18,15 @@ footer{
 
         >div{
             text-align: center;
+<<<<<<< Updated upstream
             border: solid red 1px;
         
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+        }
+>>>>>>> Stashed changes
 
         h1{
             color: white;
@@ -28,6 +35,37 @@ footer{
             font-weight: 300;
             font-size: rem-calc(35);
             transform: rotate(-90deg);
+<<<<<<< Updated upstream
+=======
+            text-align: top;
+=======
+            border: solid red 1px;
+            display: grid;
+            
+
+            //grid-template-areas: 
+            //"footer-title footer-form"
+            //"footer-social footer-social";
+>>>>>>> Stashed changes
+=======
+            border: solid red 1px;
+            display: grid;
+            
+
+            //grid-template-areas: 
+            //"footer-title footer-form"
+            //"footer-social footer-social";
+>>>>>>> Stashed changes
+=======
+            border: solid red 1px;
+            display: grid;
+            
+
+            //grid-template-areas: 
+            //"footer-title footer-form"
+            //"footer-social footer-social";
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
             @include md {
                 padding-top: 90px;
@@ -42,6 +80,12 @@ footer{
             }
         }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
         form{
             section{
                 margin-top: 55px;
@@ -50,11 +94,43 @@ footer{
                 grid-template-columns: repeat(4,1fr);
                 grid-template-rows: repeat(2,1fr);
                 grid-template-areas: 
+<<<<<<< Updated upstream
                     "c, one, four, s"
                     "c, two, four, s"
                     "c, three, four, s";
 
                     div{
+=======
+                        "c, 1, 4, s"
+                        "c, 2, 4, s"
+                        "c, 3, 4, s";
+=======
+            #footer-form{
+>>>>>>> Stashed changes
+=======
+            #footer-form{
+>>>>>>> Stashed changes
+
+                @include md{
+                    grid-area: footer-form;
+                }
+                
+
+                form{
+                    display: grid;
+                    gap:20px;
+                    background-color: #000;
+<<<<<<< Updated upstream
+
+                    @include md{
+                        display: grid;
+                        gap: 20px;
+                        //grid-template-columns: repeat(3, 1fr);
+                        grid-template-columns: 45% 40% auto;
+                    }
+
+                    #contact{
+>>>>>>> Stashed changes
                         input{
                             // border-radius: 0;
                             border: none;
@@ -110,6 +186,7 @@ footer{
                         }
                 }
 
+<<<<<<< Updated upstream
                 #contact{
                     grid-area: c;
                 }
@@ -128,14 +205,216 @@ footer{
                 #send{
                     grid-area: s;
                 }
+=======
+=======
+
+                    @include md{
+                        display: grid;
+                        gap: 20px;
+                        //grid-template-columns: repeat(3, 1fr);
+                        grid-template-columns: 45% 40% auto;
+                    }
+
+                    #contact{
+                        input{
+                            width: 100%;
+                            //border: 1px solid red
+                            margin-bottom: 10px;
+                            border-radius: 0;
+                            border: none;
+                        }
+                    }
+
+                    #message{
+                        textarea{
+                            width: 100%;
+                            margin-bottom: 10px;
+                            border-radius: 0;
+                            border: none;
+                            height: 200px;
+                        }
+                    }
+                    
+                }
+            }
+
+=======
+            #footer-form{
+
+                @include md{
+                    grid-area: footer-form;
+                }
+                
+
+                form{
+                    display: grid;
+                    gap:20px;
+                    background-color: #000;
+
+                    @include md{
+                        display: grid;
+                        gap: 20px;
+                        //grid-template-columns: repeat(3, 1fr);
+                        grid-template-columns: 45% 40% auto;
+                    }
+
+                    #contact{
+                        input{
+                            width: 100%;
+                            //border: 1px solid red
+                            margin-bottom: 10px;
+                            border-radius: 0;
+                            border: none;
+                        }
+                    }
+
+                    #message{
+                        textarea{
+                            width: 100%;
+                            margin-bottom: 10px;
+                            border-radius: 0;
+                            border: none;
+                            height: 200px;
+                        }
+                    }
+                    
+                }
+            }
+
+>>>>>>> Stashed changes
+            #footer-social{
+                padding: 20px 0;
+                @include md{
+                    grid-area: footer-social;
+                }
+
+                ul{
+                    display: flex;
+                    justify-content: center;
+
+                    li{
+                        margin: 0 10px;
+                    }
+                }
+                
+            }
+        
+
+    
+
+    //     form{
+    //         section{
+    //             margin-top: 55px;
+    //             display: grid;
+    //             justify-content: center;
+    //             grid-template-columns: repeat(4,1fr);
+    //             grid-template-rows: repeat(2,1fr);
+    //             grid-template-areas: 
+    //                 "c, one, four, s"
+    //                 "c, two, four, s"
+    //                 "c, three, four, s";
+
+    //                 div{
+    //                     input{
+    //                         // border-radius: 0;
+    //                         border: none;
+    //                         color: $darkgrey;
+    //                         padding: 10px 0 7px 10px;
+
+    //                         @include md {
+    //                             padding: 15px 0 10px 10px;
+    //                             width: 400px;
+    //                         }
+    
+    //                         @include lg {
+    //                             padding: 20px 0 15px 10px;
+    //                             width: 500px;
+    //                         }
+    //                     }
+
+    //                     ::placeholder {
+    //                         /* Chrome, Firefox, Opera, Safari 10.1+ */
+    //                         color: $darkgrey;
+    //                         opacity: 1;
+    //                     }
+    
+    //                     :-ms-input-placeholder {
+    //                         /* Internet Explorer 10-11 */
+    //                         color: $darkgrey;
+    //                     }
+    
+    //                     ::-ms-input-placeholder {
+    //                         /* Microsoft Edge */
+    //                         color: $darkgrey;
+    //                     }
+
+    //                     button{
+    //                         background-color: $darkgrey;
+    //                         color: white;
+    //                         border: none;
+    //                         transform: rotate(-90deg);
+    //                         cursor: pointer;
+    //                         height: 100%;
+
+    //                         @include lg {
+    //                             padding: 0 15px;
+    //                         }
+
+    //                         @include xl {
+    //                             padding: 0 25px;
+    //                         }
+
+    //                         &:hover {
+    //                             background-color: $darkgrey;
+    //                         }
+    //                     }
+    //             }
+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+    //             #contact{
+    //                 grid-area: c;
+    //             }
+    //             #name{
+    //                 grid-area: one;
+    //             }
+    //             #email{
+    //                 grid-area: two;
+    //             }
+    //             #subject{
+    //                 grid-area: three;
+    //             }
+    //             #message{
+    //                 grid-area: four;
+    //             }
+    //             #send{
+    //                 grid-area: s;
+    //             }
+>>>>>>> Stashed changes
 
             }
         }
                 
+<<<<<<< Updated upstream
             ul {
                 display: flex;
                 justify-content: center;
                 padding: 20px 0 50px;
+=======
+    //         ul {
+    //             display: flex;
+    //             justify-content: center;
+    //             padding: 20px 0 50px;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     
                 li {
                     margin: 0 20px;
@@ -154,11 +433,39 @@ footer{
                         font-size: rem-calc(25);
                     }
     
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
                     @include lg {
                         font-size: rem-calc(30);
                     }
                 }
             }
         }
+<<<<<<< Updated upstream
+=======
+        
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+    //                 @include lg {
+    //                     font-size: rem-calc(30);
+    //                 }
+    //             }
+    //         }
+    //     }
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     }
 }
