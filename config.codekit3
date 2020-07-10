@@ -19,154 +19,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-<<<<<<< Updated upstream
-=======
-	"/deploy/fine-art.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/fine-art.html",
-		"oF": 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-		},
-	"/deploy/img/fine-art/exhaustion header.png": {
-		"ft": 32768,
-		"iS": 770462,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/exhaustion header.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/bed.jpg": {
-		"ft": 16384,
-		"iS": 539702,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/bed.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/blueguys.jpg": {
-		"ft": 16384,
-		"iS": 163098,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/blueguys.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/coffee.jpg": {
-		"ft": 16384,
-		"iS": 514084,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/coffee.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/eyes.jpg": {
-		"ft": 16384,
-		"iS": 624674,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/eyes.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/hallway.jpg": {
-		"ft": 16384,
-		"iS": 952359,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/hallway.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/headswirl.jpg": {
-		"ft": 16384,
-		"iS": 215503,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/headswirl.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/lion.jpg": {
-		"ft": 16384,
-		"iS": 642743,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/lion.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/puppet.jpg": {
-		"ft": 16384,
-		"iS": 151047,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/puppet.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/sleep.jpg": {
-		"ft": 16384,
-		"iS": 547298,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/sleep.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/sleepwalking.jpg": {
-		"ft": 16384,
-		"iS": 717890,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/sleepwalking.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/fine-art/gallery-1/wheelbarrow.jpg": {
-		"ft": 16384,
-		"iS": 544076,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/fine-art/gallery-1/wheelbarrow.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
->>>>>>> Stashed changes
 	"/deploy/img/footer/Rectangle.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -176,40 +28,6 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
-<<<<<<< Updated upstream
-=======
-		},
-	"/deploy/img/Header/ADlogo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/header/ADlogo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/deploy/img/header/Rectangle.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/header/Rectangle.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/deploy/img/header/Rectangle1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/header/Rectangle1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 		},
 	"/deploy/img/Header/ADlogo.svg": {
 		"ft": 2097152,
@@ -408,24 +226,6 @@
 		"oAP": "/dev/content/index-content.html",
 		"oF": 0
 		},
-<<<<<<< Updated upstream
-=======
-	"/dev/fine-art.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/fine-art.html",
-		"oF": 2
-		},
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 	"/dev/global/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -607,30 +407,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-	"/dev/scss/sections/_fine-art-content.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_fine-art-content.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
->>>>>>> Stashed changes
 	"/dev/scss/sections/_index-content.scss": {
 		"aP": 0,
 		"bl": 0,
