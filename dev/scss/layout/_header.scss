@@ -3,13 +3,16 @@
 ============= */
 
 header{
+    position: sticky;
+    background-color: white;
+        height: 15vh;
 
     div{
         background-image: url('../img/header/Rectangle1.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 10vh;
+
 
         @include md{
             height: 15vh;

@@ -3,45 +3,94 @@
 ============= */
 
 footer {
-    background-image: url("../img/footer/Rectangle.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 30vh; 
+    height: 40vh; 
+    position: sticky;
 
-    @media md {
-        height: 40vh; } 
+    @include md {
+        height: 50vh; } 
 
-    @media lg {
-        height: 85vh; } 
+    @include lg {
+        height: 60vh; } 
 
-    >div {
+            
+            #corner {
+                    height: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    top: 0px;
+                    object-fit: cover;
+                    width: 100vw;
+
+                    @include md{
+                        width: 150vw;
+                        margin-top: -200px;
+                        margin-left: -650px;
+                    }
+
+                        #black-bottom {
+                            background-color: $black;
+                            height: 120px;
+                            margin-left: 0px;
+                            margin-top: -100px;
+                            width: 200%;
+                        }
+                
+
+                        #black-top {
+                            background-color: $black;
+                            height: 420px;
+                            margin-left: -120px;
+                            margin-top: 80px;
+                            width: 200%;
+                            transform: rotate(5deg);
+                        }
+                    }
+
+    #footer-content {
+        width: 100%;
+        position: absolute;
       text-align: center;
-      border: solid red 1px;
+      align-items: center;
       display: grid; 
+      border: solid red 1px;
 
       @include md {
           grid-template-columns: 25% auto;
           grid-template-areas: "footer-title footer-form" "footer-social footer-social"; } 
 
+          @include lg{
+            margin-top: 150px;
+          }
+
+          button{
+            background-color: $lightgrey;
+            color: white;
+    
+            @include md{
+            transform: rotate(-90deg);}
+        }
+    
+
       #footer-title {
         padding-top: 30px; 
 
         @include md {
-            grid-area: footer-title; } 
+            grid-area: footer-title; 
+            position: relative;
+        } 
 
         h1 {
           color: white;
           padding: 0px 0 0px 0;
           font-family: 'Open Sans', sans-serif;
-          font-weight: 300; 
-            font-weight: 300;
-          font-weight: 300; 
+          font-weight: 300;  
 
           @include md {
               font-size: 2.1875rem;
-              transform: rotate(-90deg); }
-            } }
+              transform: rotate(-90deg); 
+            }
+            }
+         }
 
         @include md {
 
@@ -51,12 +100,12 @@ footer {
             form {
                 display: grid;
                 gap: 20px;
-                background-color: #000; 
+                // background-color: #000; 
 
                 @include md {
                     display: grid;
                     gap: 20px;
-                    grid-template-columns: 45% 40% auto; } 
+                    grid-template-columns: 40% 40% auto; } 
 
             #contact{
             width: 100%;
@@ -70,9 +119,14 @@ footer {
             border-radius: 0;
             border: none;
             height: 200px; }
+                
+            // #send{
+            //     background-color: $lightgrey;
+            //     color: white;
+            // }
+        }
             }
         }
-    }
             
         #footer-social {
             padding: 20px 0; 
@@ -99,9 +153,8 @@ footer {
                         color: $lightgrey;
                     }
                 
-                }
-
-            }
-                
         }
-    
+
+    }
+                
+}

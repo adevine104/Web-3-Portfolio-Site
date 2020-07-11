@@ -461,149 +461,184 @@ textarea {
 /* =============
     Header
 ============= */
-header div {
-  background-image: url("../img/header/Rectangle1.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 10vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
-  @media (min-width: 768px) {
-    header div {
-      height: 15vh; } }
-  @media (min-width: 1440px) {
-    header div {
-      height: 35vh; } }
-  header div #logo-container {
-    padding: 0 0 10px 15px;
-    display: flex;
-    align-items: center; }
+header {
+  position: sticky;
+  background-color: white;
+  height: 15vh; }
+  header div {
+    background-image: url("../img/header/Rectangle1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
     @media (min-width: 768px) {
-      header div #logo-container {
-        padding: 0 0 10px 25px; } }
-    @media (min-width: 1025px) {
-      header div #logo-container {
-        padding: 0 0 10px 40px; } }
-    header div #logo-container img {
-      width: 60px; }
+      header div {
+        height: 15vh; } }
+    @media (min-width: 1440px) {
+      header div {
+        height: 35vh; } }
+    header div #logo-container {
+      padding: 0 0 10px 15px;
+      display: flex;
+      align-items: center; }
       @media (min-width: 768px) {
-        header div #logo-container img {
-          width: 100px; } }
+        header div #logo-container {
+          padding: 0 0 10px 25px; } }
       @media (min-width: 1025px) {
-        header div #logo-container img {
-          width: 180px; } }
-  header div #burger-container {
-    font-size: 1.25rem;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 15px 0 0; }
-    @media (min-width: 768px) {
-      header div #burger-container {
-        font-size: 1.875rem;
-        padding: 25px 30px 0 0; } }
-    @media (min-width: 1025px) {
-      header div #burger-container {
-        font-size: 2.5rem;
-        padding-top: 45px 40px 0 0; } }
-  header div #nav-container {
-    display: none;
-    font-family: 'Open Sans';
-    font-weight: 500;
-    grid-area: nav;
-    padding: 10px 20px; }
-    header div #nav-container a:link,
-    header div #nav-container a:visited {
-      color: black;
-      padding: 10px 0px;
-      text-decoration: none;
-      transition: 0.25s;
-      width: 100%; }
-    header div #nav-container a:hover,
-    header div #nav-container a:active {
-      background-color: transparent;
-      color: #6D7278; }
+        header div #logo-container {
+          padding: 0 0 10px 40px; } }
+      header div #logo-container img {
+        width: 60px; }
+        @media (min-width: 768px) {
+          header div #logo-container img {
+            width: 100px; } }
+        @media (min-width: 1025px) {
+          header div #logo-container img {
+            width: 180px; } }
+    header div #burger-container {
+      font-size: 1.25rem;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 15px 0 0; }
+      @media (min-width: 768px) {
+        header div #burger-container {
+          font-size: 1.875rem;
+          padding: 25px 30px 0 0; } }
+      @media (min-width: 1025px) {
+        header div #burger-container {
+          font-size: 2.5rem;
+          padding-top: 45px 40px 0 0; } }
+    header div #nav-container {
+      display: none;
+      font-family: 'Open Sans';
+      font-weight: 500;
+      grid-area: nav;
+      padding: 10px 20px; }
+      header div #nav-container a:link,
+      header div #nav-container a:visited {
+        color: black;
+        padding: 10px 0px;
+        text-decoration: none;
+        transition: 0.25s;
+        width: 100%; }
+      header div #nav-container a:hover,
+      header div #nav-container a:active {
+        background-color: transparent;
+        color: #6D7278; }
 
 /* =============
     Footer
 ============= */
 footer {
-  background-image: url("../img/footer/Rectangle.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 30vh; }
-  @media md {
+  height: 40vh;
+  position: sticky; }
+  @media (min-width: 768px) {
     footer {
-      height: 40vh; } }
-  @media lg {
+      height: 50vh; } }
+  @media (min-width: 1025px) {
     footer {
-      height: 85vh; } }
-  footer > div {
-    text-align: center;
-    border: solid red 1px;
-    display: grid; }
+      height: 60vh; } }
+  footer #corner {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    object-fit: cover;
+    width: 100vw; }
     @media (min-width: 768px) {
-      footer > div {
+      footer #corner {
+        width: 150vw;
+        margin-top: -200px;
+        margin-left: -650px; } }
+    footer #corner #black-bottom {
+      background-color: #000;
+      height: 120px;
+      margin-left: 0px;
+      margin-top: -100px;
+      width: 200%; }
+    footer #corner #black-top {
+      background-color: #000;
+      height: 420px;
+      margin-left: -120px;
+      margin-top: 80px;
+      width: 200%;
+      transform: rotate(5deg); }
+  footer #footer-content {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    border: solid red 1px; }
+    @media (min-width: 768px) {
+      footer #footer-content {
         grid-template-columns: 25% auto;
         grid-template-areas: "footer-title footer-form" "footer-social footer-social"; } }
-    footer > div #footer-title {
+    @media (min-width: 1025px) {
+      footer #footer-content {
+        margin-top: 150px; } }
+    footer #footer-content button {
+      background-color: #6D7278;
+      color: white; }
+      @media (min-width: 768px) {
+        footer #footer-content button {
+          transform: rotate(-90deg); } }
+    footer #footer-content #footer-title {
       padding-top: 30px; }
       @media (min-width: 768px) {
-        footer > div #footer-title {
-          grid-area: footer-title; } }
-      footer > div #footer-title h1 {
+        footer #footer-content #footer-title {
+          grid-area: footer-title;
+          position: relative; } }
+      footer #footer-content #footer-title h1 {
         color: white;
         padding: 0px 0 0px 0;
         font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-        font-weight: 300;
         font-weight: 300; }
         @media (min-width: 768px) {
-          footer > div #footer-title h1 {
+          footer #footer-content #footer-title h1 {
             font-size: 2.1875rem;
             transform: rotate(-90deg); } }
     @media (min-width: 768px) {
-      footer > div #footer-form {
+      footer #footer-content #footer-form {
         grid-area: footer-form; }
-        footer > div #footer-form form {
+        footer #footer-content #footer-form form {
           display: grid;
-          gap: 20px;
-          background-color: #000; } }
+          gap: 20px; } }
     @media (min-width: 768px) and (min-width: 768px) {
-      footer > div #footer-form form {
+      footer #footer-content #footer-form form {
         display: grid;
         gap: 20px;
-        grid-template-columns: 45% 40% auto; } }
+        grid-template-columns: 40% 40% auto; } }
     @media (min-width: 768px) {
-          footer > div #footer-form form #contact {
+          footer #footer-content #footer-form form #contact {
             width: 100%;
             margin-bottom: 10px;
             border-radius: 0;
             border: none; }
-          footer > div #footer-form form #message {
+          footer #footer-content #footer-form form #message {
             width: 100%;
             margin-bottom: 10px;
             border-radius: 0;
             border: none;
             height: 200px; } }
-    footer > div #footer-social {
+    footer #footer-content #footer-social {
       padding: 20px 0; }
       @media (min-width: 768px) {
-        footer > div #footer-social {
+        footer #footer-content #footer-social {
           grid-area: footer-social; } }
-      footer > div #footer-social ul {
+      footer #footer-content #footer-social ul {
         display: flex;
         justify-content: center; }
-      footer > div #footer-social li {
+      footer #footer-content #footer-social li {
         margin: 0 10px; }
-      footer > div #footer-social a:link,
-      footer > div #footer-social a:visited {
+      footer #footer-content #footer-social a:link,
+      footer #footer-content #footer-social a:visited {
         color: #fff;
         font-size: 1.875rem;
         transition: 0.25s; }
-      footer > div #footer-social a:hover,
-      footer > div #footer-social a:active {
+      footer #footer-content #footer-social a:hover,
+      footer #footer-content #footer-social a:active {
         color: #6D7278; }
 
 /* =============
@@ -613,102 +648,120 @@ footer {
     Index Home
  --------------------------*/
 #index-home {
-  text-align: center; }
-  #index-home section {
+  text-align: center;
+  margin: -150px 0; }
+  #index-home ul {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     background-position: center;
     background-repeat: no-repeat; }
     @media (min-width: 768px) {
-      #index-home section {
+      #index-home ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr); } }
-    #index-home section h1 {
-      color: white;
-      transform: rotate(-90deg);
-      text-align: right;
-      font-family: Open Sans, sans-serif;
-      font-weight: 300; }
-    #index-home section #branding {
-      background-image: url("../img/home-page/saltopiaheadermob.png");
+    #index-home ul #branding {
       background-position: center;
       background-repeat: no-repeat;
       padding: 20vh 30vw; }
+      #index-home ul #branding #pink {
+        background-color: #56383A;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        top: 0px;
+        object-fit: cover;
+        width: 100vw; }
       @media (min-width: 768px) {
-        #index-home section #branding {
+        #index-home ul #branding {
           background-color: #56383A;
           background-image: url("../img/home-page/salt.png");
-          height: 50vh;
+          height: 30vh;
           padding: 20vh 4vw;
           background-position: 0px 370px; } }
-    #index-home section #publication {
-      background-image: url("../img/home-page/Backtalkheadermob.png");
+      @media (min-width: 1025px) {
+        #index-home ul #branding {
+          height: 80vh; } }
+    #index-home ul #publication {
       background-position: center;
       background-repeat: no-repeat;
       padding: 20vh 30vw; }
+      #index-home ul #publication #brightblue {
+        background-color: #56383A;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        top: 0px;
+        object-fit: cover;
+        width: 100vw; }
       @media (min-width: 768px) {
-        #index-home section #publication {
+        #index-home ul #publication {
           background-color: #294393;
           background-image: url("../img/home-page/mulaney.png");
           padding: 20vh 4vw; } }
-    #index-home section #imagemaking {
+    #index-home ul #imagemaking {
       background-image: url("../img/home-page/imagemakingheadermob.png");
       background-position: center;
       background-repeat: no-repeat;
       padding: 20vh 30vw; }
       @media (min-width: 768px) {
-        #index-home section #imagemaking {
+        #index-home ul #imagemaking {
           background-color: #586361;
           background-image: url("../img/home-page/zombie.png");
           padding: 20vh 4vw; } }
-    #index-home section #fineart {
+    #index-home ul #fineart {
       background-image: url("../img/home-page/fineartheadermob.png");
       background-position: center;
       background-repeat: no-repeat;
       padding: 20vh 30vw; }
       @media (min-width: 768px) {
-        #index-home section #fineart {
+        #index-home ul #fineart {
           background-color: transparent;
           background-image: url("../img/home-page/rainbow.png");
           padding: 20vh 4vw; } }
-    #index-home section #typography {
+    #index-home ul #typography {
       background-image: url("../img/home-page/typeheadermob.png");
       background-position: center;
       background-repeat: no-repeat;
       padding: 20vh 30vw; }
       @media (min-width: 768px) {
-        #index-home section #typography {
+        #index-home ul #typography {
           background-color: #95670D;
           background-image: url("../img/home-page/stag.png");
           padding: 20vh 4vw; } }
-    #index-home section #webdesign {
+    #index-home ul #webdesign {
       background-image: url("../img/home-page/webheadermob.png");
       background-position: center;
       background-repeat: no-repeat;
       padding: 20vh 30vw; }
       @media (min-width: 768px) {
-        #index-home section #webdesign {
+        #index-home ul #webdesign {
           background-color: #323B56;
           background-image: url("../img/home-page/iphonemummers.png");
           padding: 20vh 4vw; } }
-    #index-home section > div a:link,
-    #index-home section > div a:visited {
+    #index-home ul h1 {
+      color: white;
+      transform: rotate(-90deg);
+      text-align: right;
+      font-family: Open Sans, sans-serif;
+      font-weight: 300; }
+    #index-home ul li a:link,
+    #index-home ul li a:visited {
       color: #000;
       font-size: 1.25rem;
       font-family: 'Open Sans', sans-serif;
       font-size: 0.9375rem;
       font-weight: 300; }
-      #index-home section > div a:link:hover, #index-home section > div a:link:active,
-      #index-home section > div a:visited:hover,
-      #index-home section > div a:visited:active {
+      #index-home ul li a:link:hover, #index-home ul li a:link:active,
+      #index-home ul li a:visited:hover,
+      #index-home ul li a:visited:active {
         color: #454545; }
       @media (min-width: 768px) {
-        #index-home section > div a:link,
-        #index-home section > div a:visited {
+        #index-home ul li a:link,
+        #index-home ul li a:visited {
           font-size: 1.5625rem; } }
       @media (min-width: 1025px) {
-        #index-home section > div a:link,
-        #index-home section > div a:visited {
+        #index-home ul li a:link,
+        #index-home ul li a:visited {
           font-size: 1.875rem; } }

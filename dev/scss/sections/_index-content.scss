@@ -8,8 +8,9 @@
 
  #index-home {
     text-align: center;
+    margin: -150px 0;
     
-    section{
+    ul{
         display: flex;
         // align-content: stretch;
         width: 100%;
@@ -23,16 +24,19 @@
         grid-template-rows: repeat(2,1fr);
         }
 
-        h1{
-            color: white;
-            transform: rotate(-90deg);
-            text-align: right;
-            font-family: Open Sans, sans-serif;
-            font-weight: 300;
-        }
-
         #branding{
-            background-image: url("../img/home-page/saltopiaheadermob.png");
+
+            #pink{
+                background-color: $earthpink;
+                height: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    top: 0px;
+                    object-fit: cover;
+                    width: 100vw;
+            }
+
+            // background-image: url("../img/home-page/saltopiaheadermob.png");
             background-position: center;
             background-repeat: no-repeat;
             padding: 20vh 30vw;
@@ -40,14 +44,28 @@
             @include md{
             background-color: $earthpink;
             background-image: url("../img/home-page/salt.png");
-            height: 50vh;
+            height: 30vh;
             padding: 20vh 4vw;
             background-position: 0px 370px;
+            }
+
+            @include lg{
+                height: 80vh;
             }
         }
 
         #publication{
-            background-image: url("../img/home-page/Backtalkheadermob.png");
+
+            #brightblue{
+                background-color: $earthpink;
+                height: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    top: 0px;
+                    object-fit: cover;
+                    width: 100vw;
+            }
+            // background-image: url("../img/home-page/Backtalkheadermob.png");
             background-position: center;
             background-repeat: no-repeat;
             padding: 20vh 30vw;
@@ -112,9 +130,15 @@
         }
 
         
-    >div{
-        // transform: rotate(-90deg);
+    h1{
+        color: white;
+        transform: rotate(-90deg);
+        text-align: right;
+        font-family: Open Sans, sans-serif;
+        font-weight: 300;
+    }
 
+    li{ 
         a:link,
         a:visited {
             color: $black;
