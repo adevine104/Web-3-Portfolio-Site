@@ -1,0 +1,180 @@
+/* =============
+    Fine Art Content
+============= */
+
+/* --------------------------
+    Fine Art Section 1
+ --------------------------*/
+
+#section-main-header{
+
+}
+
+#section-1-header{
+    margin-top: 50px;
+
+    @include md{
+        margin-top: 0px;
+    }
+
+    >div{
+
+        #background-shapes{
+            margin-top: -450px;
+            // position: absolute;
+
+            #background-shape-top{
+                background-color: $midblue;
+                height: 40vh;
+                width: 100vw;
+                clip-path: polygon(0 23%, 100% 5%, 100% 95%, 0 77%);
+
+                @include md{
+                    height: 50vh;
+                }
+            }
+            }
+
+        #header-content{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1);
+
+            #section-1-header{
+
+                h1{
+                    z-index:100;
+                }
+            }
+
+            img{
+                grid-area: image;
+                height: 35vh;
+                // position: relative;
+                z-index:100;
+                margin: 0 45px 15px 0px;
+                // float: right;
+            }
+        }
+    }
+}
+
+
+#description-1{
+
+    p{
+        margin: 150px 20px 50px 20px;
+        text-align: justify;
+        color: $lightgrey;
+    }
+}
+
+
+#tired-gallery{
+        ul{
+            display: grid;
+            gap: 20px;
+            grid-template-rows: repeat(11,290px);
+
+            @include md{
+                grid-template-rows: repeat(7,350px);
+                grid-template-columns: repeat(2,1fr);
+                grid-template-areas: 
+                "one two"
+                "three four"
+                "five four"
+                "six six"
+                "seven eight"
+                "nine ten"
+                "nine eleven";
+            }
+
+            @include lg{
+                grid-template-rows: repeat(7,280px);
+                grid-template-columns: repeat(3,1fr);
+                grid-template-areas: 
+                "one two three"
+                "four four three"
+                "five six seven"
+                "eight six nine"
+                "ten eleven eleven";
+            }
+
+            li{
+                img{
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+
+            }
+
+            li:nth-child(1) {
+                @include md {
+                    grid-area: one;
+                }
+    
+            }
+    
+            li:nth-child(2) {
+                @include md {
+                    grid-area: two;
+                }
+            }
+    
+            li:nth-child(3) {
+                @include md {
+                    grid-area: three;
+                }
+            }
+    
+            li:nth-child(4) {
+                @include md {
+                    grid-area: four;
+                }
+            }
+    
+            li:nth-child(5) {
+                @include md {
+                    grid-area: five;
+                }
+            }
+    
+            li:nth-child(6) {
+                @include md {
+                    grid-area: six;
+                }
+            }
+    
+            li:nth-child(7) {
+                @include md {
+                    grid-area: seven;
+                }
+            }
+
+            li:nth-child(8) {
+                @include md {
+                    grid-area: eight;
+                }
+    
+            }
+    
+            li:nth-child(9) {
+                @include md {
+                    grid-area: nine;
+                }
+            }
+    
+            li:nth-child(10) {
+                @include md {
+                    grid-area: ten;
+                }
+            }
+    
+            li:nth-child(11) {
+                @include md {
+                    grid-area: eleven;
+                }
+            }
+        }
+    }
