@@ -803,6 +803,7 @@ footer {
       grid-template-areas: "one two three" "four four three" "five six seven" "eight six nine" "ten eleven eleven"; } }
   #tired-gallery ul li img {
     object-fit: cover;
+    object-position: center;
     height: 100%;
     width: 100%; }
   @media (min-width: 768px) {
