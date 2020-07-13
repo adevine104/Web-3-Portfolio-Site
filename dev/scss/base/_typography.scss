@@ -45,7 +45,6 @@ p{
     }
 }
 
-
 .grey-section-subheader{
     font-weight: 300;
     color: $lightgrey;
@@ -60,5 +59,18 @@ p{
 
     @include xl{
         font-size: rem-calc(25);
+    }
+}
+
+.grey-description{
+
+    p{
+        margin: 150px 20px 50px 20px;
+        text-align: justify;
+        color: $lightgrey;
+
+        @include md{
+            margin: 80px 120px 80px 120px;
+        }
     }
 }

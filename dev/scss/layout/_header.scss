@@ -9,23 +9,23 @@ header{
     z-index: 100;
 
     div{
-        background-image: url('../img/header/Rectangle1.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 10vh;
+        // background-image: url('../img/header/Rectangle1.svg');
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // height: 10vh;
 
-        @include md{
-            height: 20vh;
-            }
+        // @include md{
+        //     height: 20vh;
+        //     }
 
-        @include lg{
-            height: 25vh;
-            }
+        // @include lg{
+        //     height: 25vh;
+        //     }
 
-        @include xl{
-            height: 35vh;
-            }
+        // @include xl{
+        //     height: 35vh;
+        //     }
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);

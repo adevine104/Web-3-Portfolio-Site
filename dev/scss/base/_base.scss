@@ -60,6 +60,61 @@ a:link, a:visited{
     }
 }
 
-.clip-svg {
-    clip-path: url(#myClip);
+.Header  {
+    position: relative;
+    z-index: 1;
+    
+    &:before,
+    &:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 160%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      margin-top: -70px;
+    }
+  
+    &:before {
+      top: 0;
+      transform: skewY(0deg);
+      transform-origin: 0% 0;
+    }
+    
+    &:after {
+      bottom: 0;
+      transform: skewY(-5deg);
+      transform-origin: 100%;
+    }
+  }
+
+  .Footer  {
+    position: relative;
+    z-index: 1;
+    
+    &:before,
+    &:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 75%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+  
+    &:before {
+      top: 0;
+      transform: skewY(-4deg);
+      transform-origin: 0% 0;
+    }
+    
+    &:after {
+      bottom: 0;
+      transform: skewY(0deg);
+      transform-origin: 100%;
+    }
   }

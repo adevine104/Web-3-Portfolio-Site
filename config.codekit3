@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/deploy/about.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/about.html",
+		"oF": 0
+		},
 	"/deploy/branding.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -564,6 +572,14 @@
 		"oAP": "/deploy/template.html",
 		"oF": 0
 		},
+	"/dev/about.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/about.html",
+		"oF": 2
+		},
 	"/dev/branding.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -571,6 +587,14 @@
 		"oA": 0,
 		"oAP": "/deploy/branding.html",
 		"oF": 2
+		},
+	"/dev/content/about-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/about-content.html",
+		"oF": 0
 		},
 	"/dev/content/branding-content.kit": {
 		"cB": 0,
@@ -755,6 +779,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/components/_juicer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_juicer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/components/_navigation.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -829,6 +866,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_about-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_about-content.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

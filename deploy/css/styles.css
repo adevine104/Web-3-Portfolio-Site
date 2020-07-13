@@ -358,8 +358,48 @@ a:link, a:visited {
     @media (min-width: 768px) {
       .background-shapes .background-shape-top {
         height: 50vh; } }
-.clip-svg {
-  clip-path: url(#myClip); }
+.Header {
+  position: relative;
+  z-index: 1; }
+  .Header:before, .Header:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 160%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    margin-top: -70px; }
+  .Header:before {
+    top: 0;
+    transform: skewY(0deg);
+    transform-origin: 0% 0; }
+  .Header:after {
+    bottom: 0;
+    transform: skewY(-5deg);
+    transform-origin: 100%; }
+
+.Footer {
+  position: relative;
+  z-index: 1; }
+  .Footer:before, .Footer:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1; }
+  .Footer:before {
+    top: 0;
+    transform: skewY(-4deg);
+    transform-origin: 0% 0; }
+  .Footer:after {
+    bottom: 0;
+    transform: skewY(0deg);
+    transform-origin: 100%; }
 
 /* =============
     Typography
@@ -411,6 +451,13 @@ p {
   @media (min-width: 1440px) {
     .grey-section-subheader {
       font-size: 1.5625rem; } }
+.grey-description p {
+  margin: 150px 20px 50px 20px;
+  text-align: justify;
+  color: #6D7278; }
+  @media (min-width: 768px) {
+    .grey-description p {
+      margin: 80px 120px 80px 120px; } }
 /* =============
     Buttons
 ============= */
@@ -768,6 +815,12 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help; }
 
+.referral {
+  display: none !important; }
+
+.juicer-ad {
+  display: none !important; }
+
 /* =============
     Header
 ============= */
@@ -776,22 +829,8 @@ header {
   background-color: white;
   z-index: 100; }
   header div {
-    background-image: url("../img/header/Rectangle1.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 10vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
-    @media (min-width: 768px) {
-      header div {
-        height: 20vh; } }
-    @media (min-width: 1025px) {
-      header div {
-        height: 25vh; } }
-    @media (min-width: 1440px) {
-      header div {
-        height: 35vh; } }
     header div #logo-container {
       padding: 0 0 10px 15px;
       display: flex;
@@ -853,13 +892,6 @@ footer {
   @media (min-width: 1025px) {
     footer {
       height: 60vh; } }
-  footer #corner #black-top {
-    background-color: black;
-    clip-path: polygon(0 30%, 100% 40%, 100% 100%, 0 100%);
-    height: 60vh; }
-    @media (min-width: 1025px) {
-      footer #corner #black-top {
-        height: 70vh; } }
   footer #footer-content {
     width: 100%;
     position: absolute;
@@ -1258,3 +1290,35 @@ footer {
 #process-slides-1 > div .tns-controls [aria-controls] {
   color: #fff;
   background: #6D7278; }
+
+/* =============
+    About Content
+============= */
+/* --------------------------
+    About Section 1
+ --------------------------*/
+#section-container {
+  background-color: #3E4649; }
+  #section-container #section-main-header-A {
+    color: white;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    transform: rotate(-90deg);
+    margin-top: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end; }
+  #section-container #section-text-A > div #text-content p {
+    color: white;
+    text-align: justify; }
+    @media (min-width: 768px) {
+      #section-container #section-text-A > div #text-content p {
+        margin: 50px 500px 50px 100px;
+        text-align: left; } }
+/* =============
+    Google Map
+============= */
+#contact-map #map {
+  width: 100%;
+  height: 400px;
+  background-color: #6D7278; }
