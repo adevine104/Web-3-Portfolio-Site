@@ -63,6 +63,7 @@ a:link, a:visited{
 .Header  {
     position: relative;
     z-index: 1;
+    filter: drop-shadow(-5px 10px 5px rgba(0,0,0,0.3));
     
     &:before,
     &:after {
@@ -93,13 +94,14 @@ a:link, a:visited{
   .Footer  {
     position: relative;
     z-index: 1;
+    background-color: black;
     
     &:before,
     &:after {
       background: inherit;
       content: '';
       display: block;
-      height: 75%;
+      height: 100%;
       left: 0;
       position: absolute;
       right: 0;
@@ -107,14 +109,14 @@ a:link, a:visited{
     }
   
     &:before {
-      top: 0;
-      transform: skewY(-4deg);
-      transform-origin: 0% 0;
+        bottom: 0;
+      transform: skewY(8deg);
+      transform-origin: 100%;
     }
     
     &:after {
-      bottom: 0;
+      top: 0;
       transform: skewY(0deg);
-      transform-origin: 100%;
+      transform-origin: 0% 0;
     }
   }

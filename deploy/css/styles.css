@@ -360,7 +360,8 @@ a:link, a:visited {
         height: 50vh; } }
 .Header {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  filter: drop-shadow(-5px 10px 5px rgba(0, 0, 0, 0.3)); }
   .Header:before, .Header:after {
     background: inherit;
     content: '';
@@ -382,24 +383,25 @@ a:link, a:visited {
 
 .Footer {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  background-color: black; }
   .Footer:before, .Footer:after {
     background: inherit;
     content: '';
     display: block;
-    height: 75%;
+    height: 100%;
     left: 0;
     position: absolute;
     right: 0;
     z-index: -1; }
   .Footer:before {
-    top: 0;
-    transform: skewY(-4deg);
-    transform-origin: 0% 0; }
-  .Footer:after {
     bottom: 0;
-    transform: skewY(0deg);
+    transform: skewY(8deg);
     transform-origin: 100%; }
+  .Footer:after {
+    top: 0;
+    transform: skewY(0deg);
+    transform-origin: 0% 0; }
 
 /* =============
     Typography
@@ -897,8 +899,7 @@ footer {
     position: absolute;
     text-align: center;
     align-items: center;
-    display: grid;
-    margin-top: 180px; }
+    display: grid; }
     @media (min-width: 768px) {
       footer #footer-content {
         align-items: center;
