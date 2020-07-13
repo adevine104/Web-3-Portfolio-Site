@@ -45,32 +45,21 @@ a:link, a:visited{
     }
 }
 
-// .section-background{
-//     #corner {
-//         height: 100%;
-//         overflow: hidden;
-//         position: relative;
-//         top: 0px;
-//         width: 100%;
-//         margin-left: -20px;
+.background-shapes{
+    margin-top: -450px;
+    // position: absolute;
 
-//             #black-bottom {
-//                 // border: solid red 1px;
-//                 background-color: $black;
-//                 height: 120px;
-//                 margin-left: 0px;
-//                 margin-top: -60px;
-//                 width: 200%;
-//             }
-//     }
+    .background-shape-top{
+        height: 40vh;
+        width: 100vw;
+        clip-path: polygon(0 23%, 100% 5%, 100% 95%, 0 77%);
 
-//             #black-top {
-//                 // border: solid red 1px;
-//                 background-color: $black;
-//                 height: 420px;
-//                 margin-left: -120px;
-//                 margin-top: 60px;
-//                 width: 200%;
-//                 transform: rotate(5deg);
-//             }
-// }
+        @include md{
+            height: 50vh;
+        }
+    }
+}
+
+.clip-svg {
+    clip-path: url(#myClip);
+  }

@@ -1,0 +1,171 @@
+/* =============
+    Branding Content
+============= */
+
+/* --------------------------
+    Branding Section 1
+ --------------------------*/
+
+ #section-main-header-B{
+
+}
+
+#section-1-header-B{
+    margin-top: 50px;
+
+    @include md{
+        margin-top: 0px;
+    }
+
+    >div{
+
+        #background-shapes-B{
+            margin-top: -450px;
+            // position: absolute;
+
+            #background-shape-top-B{
+                background-color: $earthpink;
+                height: 40vh;
+                width: 100vw;
+                clip-path: polygon(0 23%, 100% 5%, 100% 95%, 0 77%);
+
+                @include md{
+                    height: 50vh;
+                }
+            }
+            }
+
+        #header-content-B{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1);
+
+            #section-1-header-B{
+
+                h1{
+                    z-index:100;
+                }
+            }
+
+            img{
+                grid-area: image;
+                height: 35vh;
+                // position: relative;
+                z-index:100;
+                margin: 0 45px 15px 0px;
+                // float: right;
+                    // object-fit: cover;
+                    // width: 100vw;
+                
+            }
+        }
+    }
+}
+
+#salt-logos{
+    >div{
+        ul{ 
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 250px 200px 200px;
+            grid-template-areas: "l1" "l2" "l3";
+
+            @include md{
+            grid-template-areas: "l1 l2 l3";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1,1fr);
+            }
+
+            li {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            
+                img{
+                    object-fit: cover;
+                    width: 80vw;
+
+                    @include md{
+                    width: 30vw;
+                    }
+                }
+            }
+
+            li:nth-child(1) {
+                grid-area: l1;
+            }
+
+            li:nth-child(2) {
+                grid-area: l2;
+            }
+
+            li:nth-child(3) {
+                grid-area: l3;
+            }
+        }
+    }
+}
+
+#part-2-container{
+
+    display: grid;
+    grid-template-areas: "image" "p" ;
+
+    @include md{
+        display: grid;
+        grid-template-areas: "p image";
+        grid-template-columns: 50% auto;
+    }
+    
+    #part-2-text{
+        text-align: justify;
+        margin: 40px 20px 50px 20px;
+        color: $lightgrey;
+
+        @include md{
+        grid-area: p;
+        text-align: right;
+        margin: 70px 20px 50px 60px;
+        font-size: rem-calc(18);
+        line-height: 1.5;
+        }
+        
+    }
+
+    #part-2-image{
+        // img{
+        // object-fit: cover;
+        // width: 100vw;
+        // }
+        grid-area: image;
+        justify-content: center;
+        align-items: center;
+        margin-left: 22px;
+        // height: 20vh;
+    }
+}
+
+#process-slides-1{
+    // border: 1px solid red;
+    >div{
+        
+        .my-slider{
+            
+            div{
+                height: 300px;
+                
+                img{
+                    // height: 100%;
+                    width: 90%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $white;
+            background: $lightgrey;
+        }
+    }
+}

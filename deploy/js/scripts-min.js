@@ -1,1 +1,1 @@
-console.log("Hello from FancyBox file"),$(document).ready((function(){console.log("change")}));
+$('[data-fancybox="gallery"]').fancybox({}),tns({container:".my-slider",items:1,gutter:10,edgePadding:50,controls:!1,controlsPosition:"bottom",navPosition:"bottom",arrowKeys:!0,autoplay:!0,autoplayPosition:"bottom"}),$(document).ready((function(){console.log("change")}));

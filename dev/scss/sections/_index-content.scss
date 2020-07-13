@@ -45,17 +45,23 @@
             //         width: 33.3vw;
             //     }
 
-            // #pink{
-            //     background-color: $earthpink;
-            //     height: 120px;
-            //     margin-left: 0px;
-            //     margin-top: -100px;
-            //     width: 200%;
-            // }
-        // }
+            img{
+                width: 30%;
+                object-fit: cover;
+                object-position: left;
+                margin-right: 250px;
+            }
 
-        background-color: $earthpink;
-            background-image: url("../img/home-page/salt.png");
+            #pink{
+                background-color: $earthpink;
+                height: 400px;
+                margin-left: 0px;
+                margin-top: -100px;
+                width: 33vw;
+            }
+
+        // background-color: $earthpink;
+            // background-image: url("../img/home-page/salt.png");
             height: 20vh;
             padding: 20vh 4vw;
             background-position: 0px 370px;
@@ -65,7 +71,6 @@
             // transform: rotate(-10deg);
 
             @include md{
-            background-color: $earthpink;
             background-image: url("../img/home-page/salt.png");
             height: 30vh;
             padding: 20vh 4vw;

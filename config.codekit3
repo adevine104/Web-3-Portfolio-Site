@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/deploy/branding.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/branding.html",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -26,6 +34,94 @@
 		"oA": 0,
 		"oAP": "/deploy/fine-art.html",
 		"oF": 0
+		},
+	"/deploy/img/branding/salt-logo-1.png": {
+		"ft": 32768,
+		"iS": 73856,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/salt-logo-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/salt-logo-2.png": {
+		"ft": 32768,
+		"iS": 61405,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/salt-logo-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/salt-logo-3.png": {
+		"ft": 32768,
+		"iS": 49220,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/salt-logo-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/salt-slide-1.png": {
+		"ft": 32768,
+		"iS": 10378,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/salt-slide-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/salt-slide-2.png": {
+		"ft": 32768,
+		"iS": 14178,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/salt-slide-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/salt-slide-3.png": {
+		"ft": 32768,
+		"iS": 5256,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/salt-slide-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/salt.png": {
+		"ft": 32768,
+		"iS": 56549,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/salt.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/Screen Shot 2020-03-09 at 12.13.48 AM 2.png": {
+		"ft": 32768,
+		"iS": 172695,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/Screen Shot 2020-03-09 at 12.13.48 AM 2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/deploy/img/fine-art-gallery-1/bed.jpg": {
 		"ft": 16384,
@@ -358,6 +454,22 @@
 		"oAP": "/deploy/template.html",
 		"oF": 0
 		},
+	"/dev/branding.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/branding.html",
+		"oF": 2
+		},
+	"/dev/content/branding-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/branding-content.html",
+		"oF": 0
+		},
 	"/dev/content/fine-art-content.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -441,6 +553,17 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/tinySlider.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/tinySlider-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -535,6 +658,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/components/_tiny-slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_tiny-slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/helpers/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -587,6 +723,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sections/_branding-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_branding-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/sections/_fine-art-content.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -633,6 +782,28 @@
 		"oA": 0,
 		"oAP": "/deploy/template.html",
 		"oF": 2
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		}
 	},
 "hooks": [
@@ -2145,7 +2316,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "tns",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
