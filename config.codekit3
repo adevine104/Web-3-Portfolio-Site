@@ -123,6 +123,116 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/branding/slide-1.png": {
+		"ft": 32768,
+		"iS": 8104,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/slide-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/slide-2.png": {
+		"ft": 32768,
+		"iS": 8308,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/slide-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/slide-3.png": {
+		"ft": 32768,
+		"iS": 5811,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/slide-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/slide-4.png": {
+		"ft": 32768,
+		"iS": 8123,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/slide-4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/slide-5.png": {
+		"ft": 32768,
+		"iS": 6811,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/slide-5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/slide-6.png": {
+		"ft": 32768,
+		"iS": 6592,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/slide-6.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/slide-7.png": {
+		"ft": 32768,
+		"iS": 4562,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/slide-7.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/slide-8.png": {
+		"ft": 32768,
+		"iS": 3557,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/slide-8.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/slide-9.png": {
+		"ft": 32768,
+		"iS": 5273,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/slide-9.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/slide-?.png": {
+		"ft": 32768,
+		"iS": 6525,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/slide-?.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/fine-art-gallery-1/bed.jpg": {
 		"ft": 16384,
 		"iS": 539702,

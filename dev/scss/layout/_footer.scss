@@ -25,6 +25,10 @@ footer {
                             clip-path: polygon(0 30%, 100% 40%, 100% 100%, 0 100%);
                             height: 60vh;
 
+                            @include lg{
+                                height: 70vh;
+                            }
+
                             // @include md{
                             //     height: 80vh;
                             // }
@@ -37,13 +41,13 @@ footer {
       text-align: center;
       align-items: center;
       display: grid; 
-      border: solid red 1px;
+    //   border: solid red 1px;
       margin-top: 180px;
 
         @include md {
             align-items: center;
             justify-content: center;
-          margin-top: 250px;
+          margin-top: 330px;
           grid-template-columns: 25% auto;
           grid-template-areas: 
           "footer-title footer-form" 
@@ -51,7 +55,7 @@ footer {
         } 
 
         @include lg{
-            margin-top: 550px;
+            margin-top: 400px;
           }
 
           button{
@@ -94,13 +98,11 @@ footer {
 
             #footer-form {
             grid-area: footer-form; 
-            
-            @include md{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            }
-
+                // padding-top: 140px; 
+            
             form {
                 display: grid;
                 gap: 20px;
@@ -125,13 +127,11 @@ footer {
                 margin-bottom: 10px;
                 border-radius: 0;
                 border: none;
-                height: 200px; 
                 }
                 
-            // #send{
-            //     background-color: $lightgrey;
-            //     color: white;
-            // }
+            #send{
+                margin-top: 20px;
+            }
         }
             }
         }
@@ -141,6 +141,7 @@ footer {
 
             @include md {
                 grid-area: footer-social; }
+                padding-top: 100px;
 
                 ul {
                 display: flex;
