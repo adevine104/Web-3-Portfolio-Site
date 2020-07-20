@@ -886,7 +886,7 @@ header {
     Footer
 ============= */
 footer {
-  height: 40vh;
+  height: 60vh;
   position: sticky; }
   @media (min-width: 768px) {
     footer {
@@ -904,12 +904,15 @@ footer {
       footer #footer-content {
         align-items: center;
         justify-content: center;
-        margin-top: 330px;
-        grid-template-columns: 25% auto;
-        grid-template-areas: "footer-title footer-form"  "footer-social footer-social"; } }
+        margin-top: 100px;
+        grid-template-columns: 10% auto;
+        grid-template-areas: "footer-title footer-form" "footer-social footer-social"; } }
     @media (min-width: 1025px) {
       footer #footer-content {
         margin-top: 400px; } }
+    @media (min-width: 1440px) {
+      footer #footer-content {
+        margin-top: 150px; } }
     footer #footer-content button {
       background-color: #6D7278;
       color: white;
@@ -920,22 +923,19 @@ footer {
         footer #footer-content button {
           transform: rotate(-90deg);
           width: 10vw; } }
-    footer #footer-content #footer-title {
-      padding-top: 30px;
-      padding-bottom: 10px; }
+    @media (min-width: 768px) {
+      footer #footer-content #footer-title {
+        grid-area: footer-title;
+        position: relative; } }
+    footer #footer-content #footer-title h1 {
+      color: white;
+      padding: 0px 0 0px 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300; }
       @media (min-width: 768px) {
-        footer #footer-content #footer-title {
-          grid-area: footer-title;
-          position: relative; } }
-      footer #footer-content #footer-title h1 {
-        color: white;
-        padding: 0px 0 0px 0;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300; }
-        @media (min-width: 768px) {
-          footer #footer-content #footer-title h1 {
-            font-size: 2.1875rem;
-            transform: rotate(-90deg); } }
+        footer #footer-content #footer-title h1 {
+          font-size: 2.1875rem;
+          transform: rotate(-90deg); } }
     @media (min-width: 768px) {
       footer #footer-content #footer-form {
         grid-area: footer-form;
@@ -943,8 +943,7 @@ footer {
         justify-content: center;
         align-items: center; }
         footer #footer-content #footer-form form {
-          display: grid;
-          gap: 20px; } }
+          display: grid; } }
     @media (min-width: 768px) and (min-width: 768px) {
       footer #footer-content #footer-form form {
         display: grid;
@@ -952,6 +951,8 @@ footer {
         grid-template-columns: 40% 40% auto; } }
     @media (min-width: 768px) {
           footer #footer-content #footer-form form #contact {
+            gap: 20px;
+            display: grid;
             width: 100%;
             margin-bottom: 10px;
             border-radius: 0;
@@ -961,12 +962,26 @@ footer {
             width: 100%;
             margin-bottom: 10px;
             border-radius: 0;
-            border: none; }
-          footer #footer-content #footer-form form #send {
-            margin-top: 20px; } }
+            border: none; } }
+    footer #footer-content input {
+      border: none;
+      border-radius: 3px;
+      width: 70%;
+      padding: 4% 0; }
+      @media (min-width: 768px) {
+        footer #footer-content input {
+          width: 100%; } }
+    footer #footer-content textarea {
+      border: none;
+      border-radius: 3px;
+      height: 150px;
+      width: 70%;
+      padding: 0; }
+      @media (min-width: 768px) {
+        footer #footer-content textarea {
+          width: 100%; } }
     footer #footer-content #footer-social {
-      padding: 20px 0;
-      padding-top: 100px; }
+      padding: 20px 0; }
       @media (min-width: 768px) {
         footer #footer-content #footer-social {
           grid-area: footer-social; } }
@@ -1299,7 +1314,8 @@ footer {
     About Section 1
  --------------------------*/
 #section-container {
-  background-color: #3E4649; }
+  background-color: #3E4649;
+  padding-top: 250px; }
   #section-container #section-main-header-A {
     color: white;
     font-weight: 300;
@@ -1323,3 +1339,12 @@ footer {
   width: 100%;
   height: 400px;
   background-color: #6D7278; }
+  @media (min-width: 768px) {
+    #contact-map #map {
+      height: 500px; } }
+  @media (min-width: 1025px) {
+    #contact-map #map {
+      height: 600px; } }
+  @media (min-width: 1440px) {
+    #contact-map #map {
+      height: 700px; } }

@@ -3,167 +3,214 @@
 ============= */
 
 footer {
-    height: 40vh; 
+    height: 60vh;
     position: sticky;
 
     @include md {
-        height: 50vh; } 
+        height: 50vh;
+    }
 
     @include lg {
-        height: 60vh; } 
+        height: 60vh;
+    }
 
-            
-            // #corner {
-            //     // margin-top: -180px;
 
-            //     // @include md{
-            //     //     margin-top: -350px;
-            //     // }
+    // #corner {
+    //     // margin-top: -180px;
 
-            //             #black-top {
-            //                 background-color: black;
-            //                 clip-path: polygon(0 30%, 100% 40%, 100% 100%, 0 100%);
-            //                 height: 60vh;
+    //     // @include md{
+    //     //     margin-top: -350px;
+    //     // }
 
-            //                 @include lg{
-            //                     height: 70vh;
-            //                 }
+    //             #black-top {
+    //                 background-color: black;
+    //                 clip-path: polygon(0 30%, 100% 40%, 100% 100%, 0 100%);
+    //                 height: 60vh;
 
-            //                 // @include md{
-            //                 //     height: 80vh;
-            //                 // }
-            //             }
-            //         }
+    //                 @include lg{
+    //                     height: 70vh;
+    //                 }
+
+    //                 // @include md{
+    //                 //     height: 80vh;
+    //                 // }
+    //             }
+    //         }
 
     #footer-content {
         width: 100%;
         position: absolute;
-      text-align: center;
-      align-items: center;
-      display: grid; 
-    //   border: solid red 1px;
-    //   margin-top: 180px;
+        text-align: center;
+        align-items: center;
+        display: grid;
+        //   border: solid red 1px;
+        //   margin-top: 180px;
 
         @include md {
             align-items: center;
             justify-content: center;
-          margin-top: 330px;
-          grid-template-columns: 25% auto;
-          grid-template-areas: 
-          "footer-title footer-form" 
-          "footer-social footer-social"; 
-        } 
+            margin-top: 100px;
+            grid-template-columns: 10% auto;
+            grid-template-areas:
+                "footer-title footer-form"
+                "footer-social footer-social";
+        }
 
-        @include lg{
+        @include lg {
             margin-top: 400px;
-          }
+        }
 
-          button{
+        @include xl {
+            margin-top: 150px;
+        }
+
+        button {
             background-color: $lightgrey;
             color: white;
             width: 48vw;
             height: 4vh;
             border-radius: 5%;
-    
-            @include md{
+
+            @include md {
                 transform: rotate(-90deg);
                 width: 10vw;
             }
         }
-    
 
-      #footer-title {
-        padding-top: 30px; 
-        padding-bottom: 10px;
 
-        @include md {
-            grid-area: footer-title; 
-            position: relative;
-        } 
+        #footer-title {
+            // padding-top: 30px;
+            // padding-bottom: 10px; 
+            // display: grid;
+            // grid-template-columns: repeat(1,20%);
+            // position: absolute;
 
-        h1 {
-          color: white;
-          padding: 0px 0 0px 0;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: 300;  
-
-          @include md {
-              font-size: 2.1875rem;
-              transform: rotate(-90deg); 
+            @include md {
+                grid-area: footer-title;
+                position: relative;
             }
+
+            h1 {
+                color: white;
+                padding: 0px 0 0px 0;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+
+                @include md {
+                    font-size: 2.1875rem;
+                    transform: rotate(-90deg);
+                }
             }
-         }
+        }
 
         @include md {
 
             #footer-form {
-            grid-area: footer-form; 
+                grid-area: footer-form;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                // gap: 20px;
                 // padding-top: 140px; 
-            
-            form {
-                display: grid;
-                gap: 20px;
-                // background-color: #000; 
 
-                @include md {
+                form {
                     display: grid;
-                    gap: 20px;
-                    grid-template-columns: 40% 40% auto; } 
+                    
+                    // background-color: #000; 
 
-                #contact{
-                width: 100%;
-                margin-bottom: 10px;
-                border-radius: 0;
-                border: none; 
-                padding-bottom: 10px;
+                    @include md {
+                        display: grid;
+                        gap: 20px;
+                        grid-template-columns: 40% 40% auto;
+                    }
+
+                    #contact {
+                        gap: 20px;
+                        display: grid;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        border-radius: 0;
+                        border: none;
+                        padding-bottom: 10px;
+                    }
+
+
+                    #message {
+                        width: 100%;
+                        margin-bottom: 10px;
+                        border-radius: 0;
+                        border: none;
+                    }
+
+                    #send {
+                        // margin-top: 60px;
+
+                        // @include md{
+                        //     margin-top: 25px;
+                        // }
+                    }
                 }
-                
+            }
+        }
 
-                #message{ 
-                width: 100%;
-                margin-bottom: 10px;
-                border-radius: 0;
+     
+            input{
                 border: none;
+                border-radius: 3px;
+                width: 70%;
+                padding: 4% 0;
+
+                @include md{
+                    width: 100%;
                 }
-                
-            #send{
-                margin-top: 20px;
             }
-        }
+
+            textarea{
+                border: none;
+                border-radius: 3px;
+                height: 150px;
+                width: 70%;
+                padding: 0;
+
+                @include md{
+                    width: 100%;
+                }
             }
-        }
-            
+
+        
+
         #footer-social {
-            padding: 20px 0; 
+            padding: 20px 0;
 
             @include md {
-                grid-area: footer-social; }
-                padding-top: 100px;
+                grid-area: footer-social;
+            }
 
-                ul {
+            // padding-top: 100px;
+
+            ul {
                 display: flex;
-                justify-content: center; }
+                justify-content: center;
+            }
 
-                li {
-                    margin: 0 10px; }
+            li {
+                margin: 0 10px;
+            }
 
-                    a:link,
-                    a:visited {
-                        color: $white;
-                        font-size: rem-calc(30);
-                        transition: 0.25s;
-                    }
+            a:link,
+            a:visited {
+                color: $white;
+                font-size: rem-calc(30);
+                transition: 0.25s;
+            }
 
-                    a:hover,
-                    a:active {
-                        color: $lightgrey;
-                    }
-                
+            a:hover,
+            a:active {
+                color: $lightgrey;
+            }
+
         }
 
     }
-                
+
 }

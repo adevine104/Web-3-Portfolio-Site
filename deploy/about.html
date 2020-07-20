@@ -106,28 +106,28 @@
                     </section>
             
                     <section id="footer-form">
-                        <form action="#">
+                        <form action="https://formspree.io/mayplrdo" method="POST">
                             <section id="contact">
                                 <div id= "name">
-                                    <input type="text" placeholder="Name/Company">
+                                    <input type="text" placeholder="Name/Company" Name="Name/Company">
                                 </div>
                                 <div id= "email">
-                                    <input type="text" placeholder="Email">
+                                    <input type="email" placeholder="Email" Name="Email">
                                 </div>
                                 <div id= "subject">
-                                    <input type="text" placeholder="Subject">
+                                    <input type="text" placeholder="Subject" Name="Subject">
                                 </div>
                             </section>
             
                             <section id="message">
                         
-                                <textarea type="text" placeholder="Message"></textarea>
+                                <textarea type="text" placeholder="Message" Name="Message"> </textarea>
                                
                             </section>
             
                             <section>
                                 <div id="send">
-                                    <button>SEND</button>
+                                    <button type="submit">SEND</button>
                                 </div>
                             </section>
                         
@@ -145,28 +145,99 @@
             </footer>
 
     <script>
-        // Initialize and add the map
+
         function initMap() {
-            // The location of Uluru
-            var uluru = {
-                lat: -25.344,
-                lng: 131.036
-            };
-            // The map, centered at Uluru
-            var map = new google.maps.Map(
-                document.getElementById('map'), {
-                    zoom: 4,
-                    center: uluru
-                });
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 39.9566,
+                lng: -75.1899},
+          zoom: 16,
+          
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        });
+      }
     </script>
-    
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaNJmS9ygTVhn6wbPPCEG-Z82_ManhnyU&callback=initMap">
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLYqm-mXNLPs1-3p86kHVsxpI2Z121jCw&callback=initMap">
     </script>
 
 
