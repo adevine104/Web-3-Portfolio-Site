@@ -118,7 +118,6 @@ footer {
                     // background-color: #000; 
 
                     @include md {
-                        display: grid;
                         gap: 20px;
                         grid-template-columns: 40% 40% auto;
                     }
@@ -135,6 +134,8 @@ footer {
 
 
                     #message {
+                        gap: 20px;
+                        display: grid;
                         width: 100%;
                         margin-bottom: 10px;
                         border-radius: 0;

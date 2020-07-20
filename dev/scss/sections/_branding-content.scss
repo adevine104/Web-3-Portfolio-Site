@@ -7,7 +7,11 @@
  --------------------------*/
 
  #section-main-header-B{
+    margin-top: 50px;
 
+    @include md{
+        margin-top: 100px;
+    }
 }
 
 #section-1-header-B{
@@ -147,6 +151,11 @@
 
 #process-slides-1{
     // border: 1px solid red;
+    margin-bottom: 50px;
+
+    @include md{
+        margin-bottom: 150px;
+    }
     >div{
         
         .my-slider{

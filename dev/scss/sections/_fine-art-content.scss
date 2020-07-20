@@ -7,7 +7,11 @@
  --------------------------*/
 
 #section-main-header{
+    margin-top: 50px;
 
+    @include md{
+        margin-top: 100px;
+    }
 }
 
 #section-1-header{
@@ -75,6 +79,11 @@
 
 
 #tired-gallery{
+    margin-bottom: 50px;
+
+    @include md{
+        margin-bottom: 150px;
+    }
         ul{
             display: grid;
             gap: 20px;
