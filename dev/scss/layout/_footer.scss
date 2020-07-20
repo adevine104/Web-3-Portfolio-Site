@@ -57,29 +57,28 @@ footer {
         }
 
         @include lg {
-            margin-top: 400px;
+            margin-top: 200px;
         }
 
         @include xl {
             margin-top: 150px;
         }
 
-        button {
-            background-color: $lightgrey;
-            color: white;
-            width: 48vw;
-            height: 4vh;
-            border-radius: 5%;
-
-            @include md {
-                transform: rotate(-90deg);
-                width: 10vw;
-            }
-        }
-
 
         #footer-title {
-            // padding-top: 30px;
+
+            @include md{
+            padding-top: 50px;
+            }
+
+            @include lg{
+                padding-top: 30px;
+                }
+
+            @include xl{
+                padding-top: 0px;
+                }
+
             // padding-bottom: 10px; 
             // display: grid;
             // grid-template-columns: repeat(1,20%);
@@ -174,6 +173,25 @@ footer {
 
                 @include md{
                     width: 100%;
+                }
+            }
+
+            button{
+                background-color: $lightgrey;
+                color: white;
+                width: 48vw;
+                height: 4vh;
+                border-radius: 5%;
+    
+                @include md {
+                    transform: rotate(-90deg);
+                    width: 10vw;
+                    margin-top: 52px;
+                    padding: 0px 90px 0px 50px;
+                    }
+
+                @include lg{
+                margin-top: 52px;
                 }
             }
 

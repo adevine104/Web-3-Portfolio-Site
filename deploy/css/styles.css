@@ -909,20 +909,19 @@ footer {
         grid-template-areas: "footer-title footer-form" "footer-social footer-social"; } }
     @media (min-width: 1025px) {
       footer #footer-content {
-        margin-top: 400px; } }
+        margin-top: 200px; } }
     @media (min-width: 1440px) {
       footer #footer-content {
         margin-top: 150px; } }
-    footer #footer-content button {
-      background-color: #6D7278;
-      color: white;
-      width: 48vw;
-      height: 4vh;
-      border-radius: 5%; }
-      @media (min-width: 768px) {
-        footer #footer-content button {
-          transform: rotate(-90deg);
-          width: 10vw; } }
+    @media (min-width: 768px) {
+      footer #footer-content #footer-title {
+        padding-top: 50px; } }
+    @media (min-width: 1025px) {
+      footer #footer-content #footer-title {
+        padding-top: 30px; } }
+    @media (min-width: 1440px) {
+      footer #footer-content #footer-title {
+        padding-top: 0px; } }
     @media (min-width: 768px) {
       footer #footer-content #footer-title {
         grid-area: footer-title;
@@ -980,6 +979,21 @@ footer {
       @media (min-width: 768px) {
         footer #footer-content textarea {
           width: 100%; } }
+    footer #footer-content button {
+      background-color: #6D7278;
+      color: white;
+      width: 48vw;
+      height: 4vh;
+      border-radius: 5%; }
+      @media (min-width: 768px) {
+        footer #footer-content button {
+          transform: rotate(-90deg);
+          width: 10vw;
+          margin-top: 52px;
+          padding: 0px 90px 0px 50px; } }
+      @media (min-width: 1025px) {
+        footer #footer-content button {
+          margin-top: 52px; } }
     footer #footer-content #footer-social {
       padding: 20px 0; }
       @media (min-width: 768px) {
