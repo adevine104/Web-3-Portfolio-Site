@@ -24,163 +24,197 @@
     <header class="grid-container Header">
         <div>
             <section id="logo-container">
-                <img src="img/header/ADlogo.svg" alt="">
+                <a href="index.html"><img src="img/header/ADlogo.svg" alt=""></a>
             </section>
     
             <section id="burger-container">
-                <i class="fas fa-bars" id="burger-icon"></i>
-            </section>
+                <!-- <i class="fas fa-bars" id="burger-icon"></i> -->
     
-            <!-- <nav id="nav-container" data-nav="main-navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="39px" height="35px" viewBox="0 0 39 35">
+                    <g id="Branding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                      <g id="burger" stroke="#000" stroke-width="4">
+                        <path id="bottom-line" d="M3.5 30.5h32"/>
+                        <path id="middle-line" d="M3.5 17.5h32"/>
+                        <path id="top-line" d="M3.5 4.5h32"/>
+                      </g>
+                    </g>
+                  </svg>
+            </section>
     
         </div>
     </header>
+    <nav id="main-nav">
+            <ul>
+                <li><button class="accordion">PORTFOLIO</button></li>
+                <div class="panel">
+                    <li><a href="branding.html">BRANDING</a></li>
+                    <li><a href="#">PUBLICATION</a></li>
+                    <li><a href="#">IMAGEMAKING</a></li>
+                    <li><a href="fine-art.html">FINE ART</a></li>
+                    <li><a href="#">TYPOGRAPHY</a></li>
+                    <li><a href="#">WEB DESIGN</a></li>
+                </div>
+                <li id="about"><a href="about.html">ABOUT</a></li>
+                <li><button></i>CONTACT</button></li>
+            </ul>
+        </nav>
+        <!-- 
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+        </script> -->
     <section class="grid-container grey-section-header" id="section-main-header-B">
-            <div>
-                <h1>BRANDING</h1>
-            </div>
-        </section>
-        
-        <section class="grid-container" id="section-1-header-B">
-            <div>
-                <section id="header-content-B">
-                    <div class="white-section-header" id="section-1-header-B">
-                        <h1>SALTOPIA</h1>
-                    </div>
-                    <img src="img/branding/salt.png" alt="header-1">
-                    <clipPath id="clipping">
-                        <polygon points="98.4999978 153.75..."/>
-                    </clipPath>
-                    
-                    <!-- <svg width="0" height="0">
-                        <defs>
-                          <clipPath id="myClip">
-                            <circle cx="100" cy="100" r="40"/>
-                            <circle cx="60" cy="60" r="40"/>
-                          </clipPath>
-                        </defs>
-                      </svg> -->
-                </section>
-                <section id="background-shapes-B">
-                    <div id="background-shape-top-B"></div>
-                </section>
-            </div>
-        </section>
-        
-        <section id="salt-logos">
-            <div>
-                <ul>
-                    <li><img src="img/branding/salt-logo-1.png" alt="logo 1"></li>
-                    <li><img src="img/branding/salt-logo-2.png" alt="logo 2"></li>
-                    <li><img src="img/branding/salt-logo-3.png" alt="logo 3"></li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="grid-container" id="part-2-container">
-            <div id="part-2-text">
-                <p>I designed three logos for a sea-salt company based in NJ as a school assignment. Although all of them are pictoral, one is a letterform, one is an image and one is the entire company name. I researched the company and went through many stages of ideas before reaching the final product. </p>
-            </div>
-        
-            <aside id="part-2-image">
-                <section>
-                    <img src="img/branding/Screen Shot 2020-03-09 at 12.13.48 AM 2.png" alt="mockup">
-                </section>
-            </aside>
-        </section>
-        
-        <section class="grey-section-subheader">
-            <div>
-                <h2>PROCESS</h2>
-            </div>
-        </section>
-        
-        <section class="grid-container" id="process-slides-1">
-            <div>
-                <section class="my-slider">
-                    <div><img src="img/branding/slide-1.png" alt="slide 1"></div>
-                    <div><img src="img/branding/slide-2.png" alt="slide 2"></div>
-                    <div><img src="img/branding/slide-3.png" alt="slide 3"></div>
-        
-                    <div><img src="img/branding/slide-4.png" alt="slide 4"></div>
-                    <div><img src="img/branding/slide-5.png" alt="slide 5"></div>
-                    <div><img src="img/branding/slide-6.png" alt="slide 6"></div>
-        
-                    <div><img src="img/branding/slide-7.png" alt="slide 7"></div>
-                    <div><img src="img/branding/slide-8.png" alt="slide 8"></div>
-                    <div><img src="img/branding/slide-9.png" alt="slide 9"></div>
-                </section>
-            </div>
-        </section>
-    <footer class="grid-container Footer">
+                <div>
+                    <h1>BRANDING</h1>
+                </div>
+            </section>
             
-                <div id="corner">
-                    <section>
-                        <div id="black-top"></div>
-                        <div id="black-bottom"></div>
+            <section class="grid-container" id="section-1-header-B">
+                <div>
+                    <section id="header-content-B">
+                        <div class="white-section-header" id="section-1-header-B">
+                            <h1>SALTOPIA</h1>
+                        </div>
+                        <img src="img/branding/salt.png" alt="header-1">
+                        <clipPath id="clipping">
+                            <polygon points="98.4999978 153.75..."/>
+                        </clipPath>
+                        
+                        <!-- <svg width="0" height="0">
+                            <defs>
+                              <clipPath id="myClip">
+                                <circle cx="100" cy="100" r="40"/>
+                                <circle cx="60" cy="60" r="40"/>
+                              </clipPath>
+                            </defs>
+                          </svg> -->
+                    </section>
+                    <section id="background-shapes-B">
+                        <div id="background-shape-top-B"></div>
                     </section>
                 </div>
+            </section>
             
-                <div id="footer-content">
-                            
-                    <section id="footer-title">
-                        <h1>CONTACT</h1>
+            <section id="salt-logos">
+                <div>
+                    <ul>
+                        <li><img src="img/branding/salt-logo-1.png" alt="logo 1"></li>
+                        <li><img src="img/branding/salt-logo-2.png" alt="logo 2"></li>
+                        <li><img src="img/branding/salt-logo-3.png" alt="logo 3"></li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="grid-container" id="part-2-container">
+                <div id="part-2-text">
+                    <p>I designed three logos for a sea-salt company based in NJ as a school assignment. Although all of them are pictoral, one is a letterform, one is an image and one is the entire company name. I researched the company and went through many stages of ideas before reaching the final product. </p>
+                </div>
+            
+                <aside id="part-2-image">
+                    <section>
+                        <img src="img/branding/Screen Shot 2020-03-09 at 12.13.48 AM 2.png" alt="mockup">
                     </section>
+                </aside>
+            </section>
             
-                    <section id="footer-form">
-                        <form action="https://formspree.io/mayplrdo" method="POST">
-                            <section id="contact">
-                                <div id= "name">
-                                    <input type="text" placeholder="Name/Company" Name="Name/Company">
-                                </div>
-                                <div id= "email">
-                                    <input type="email" placeholder="Email" Name="Email">
-                                </div>
-                                <div id= "subject">
-                                    <input type="text" placeholder="Subject" Name="Subject">
-                                </div>
-                            </section>
+            <section class="grey-section-subheader">
+                <div>
+                    <h2>PROCESS</h2>
+                </div>
+            </section>
             
-                            <section id="message">
-                        
-                                <textarea type="text" placeholder="Message" Name="Message"> </textarea>
-                               
-                            </section>
+            <section class="grid-container" id="process-slides-1">
+                <div>
+                    <section class="my-slider">
+                        <div><img src="img/branding/slide-1.png" alt="slide 1"></div>
+                        <div><img src="img/branding/slide-2.png" alt="slide 2"></div>
+                        <div><img src="img/branding/slide-3.png" alt="slide 3"></div>
             
-                            <section>
-                                <div id="send">
-                                    <button type="submit">SEND</button>
-                                </div>
-                            </section>
-                        
-                        </form>
+                        <div><img src="img/branding/slide-4.png" alt="slide 4"></div>
+                        <div><img src="img/branding/slide-5.png" alt="slide 5"></div>
+                        <div><img src="img/branding/slide-6.png" alt="slide 6"></div>
+            
+                        <div><img src="img/branding/slide-7.png" alt="slide 7"></div>
+                        <div><img src="img/branding/slide-8.png" alt="slide 8"></div>
+                        <div><img src="img/branding/slide-9.png" alt="slide 9"></div>
                     </section>
-            
-                    <section id="footer-social">
-                        <ul>
-                            <li><a href="https://www.instagram.com/addyd.art/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/addison-devine-130b61186/"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="https://github.com/adevine104"><i class="fab fa-github"></i></a></li>
-                        </ul>
-                    </section>
-            
-            </footer>
-    <!-- jQuery -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <!-- Greensock -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-                <!-- fancyBox -->
-                <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-                <!-- Tiny Slider -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+                </div>
+            </section>
+    <footer class="grid-container Footer">
                 
-                <script src="js/scripts-min.js"></script>
+                    <div id="corner">
+                        <section>
+                            <div id="black-top"></div>
+                            <div id="black-bottom"></div>
+                        </section>
+                    </div>
+                
+                    <div id="footer-content">
+                                
+                        <section id="footer-title">
+                            <h1>CONTACT</h1>
+                        </section>
+                
+                        <section id="footer-form">
+                            <form action="https://formspree.io/mayplrdo" method="POST">
+                                <section id="contact">
+                                    <div id= "name">
+                                        <input type="text" placeholder="Name/Company" Name="Name/Company">
+                                    </div>
+                                    <div id= "email">
+                                        <input type="email" placeholder="Email" Name="Email">
+                                    </div>
+                                    <div id= "subject">
+                                        <input type="text" placeholder="Subject" Name="Subject">
+                                    </div>
+                                </section>
+                
+                                <section id="message">
+                            
+                                    <textarea type="text" placeholder="Message" Name="Message"> </textarea>
+                                   
+                                </section>
+                
+                                <section>
+                                    <div id="send">
+                                        <button type="submit">SEND</button>
+                                    </div>
+                                </section>
+                            
+                            </form>
+                        </section>
+                
+                        <section id="footer-social">
+                            <ul>
+                                <li><a href="https://www.instagram.com/addyd.art/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/addison-devine-130b61186/"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://github.com/adevine104"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </section>
+                
+                </footer>
+    <!-- jQuery -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <!-- Greensock -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+                    <!-- fancyBox -->
+                    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+                    <!-- Tiny Slider -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+                    
+                    <script src="js/scripts-min.js"></script>
     
 </body>
 

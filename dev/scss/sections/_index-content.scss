@@ -6,156 +6,169 @@
     Index Home
  --------------------------*/
 
- #index-home {
+#index-home {
     text-align: center;
     margin: 0px 0 0 0;
-    
-    ul{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(6,1fr);
+    margin: -140px 0;
+    width: 100vw;
 
-        @include md{
+    ul {
+        width: 100vw;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
+        @include md {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
         }
 
-        #branding{
+        #branding {
 
-            img{
-                width: 30%;
-                object-fit: cover;
-                object-position: left;
-                margin-right: 250px;
-            }
+            // #background-1{
+            //     background-color: $earthpink;
+            //     height: 80vh;
+            //     width: 100vw;
+            
+            //     @include md{
+            //         display: none;
+            //     }
+            // }
+            // img{
+            //     width: 30%;
+            //     object-fit: cover;
+            //     object-position: left;
+            //     margin-right: 250px;
+            // }
 
-        background-color: $earthpink;
+            // background-color: $earthpink;
             // background-image: url("../img/home-page/salt.png");
             height: 20vh;
             padding: 20vh 4vw;
             background-position: 0px 370px;
             background-repeat: no-repeat;
-            margin: -30px;
             // transform: rotate(-10deg);
 
-            @include md{
-            background-image: url("../img/home-page/salt.png");
-            height: 30vh;
-            padding: 20vh 4vw;
-            background-position: 0px 370px;
-            background-repeat: no-repeat;
+            @include md {
+                background-color: $earthpink;
+                background-image: url("../img/home-page/salt.png");
+                height: 30vh;
+                padding: 20vh 4vw;
             }
 
-            @include lg{
+            @include lg {
                 height: 30vh;
             }
         }
 
-        #publication{
+        #publication {
             // background-image: url("../img/home-page/Backtalkheadermob.png");
             background-position: center;
             background-repeat: no-repeat;
             padding: 20vh 30vw;
 
-            @include md{
-            background-color: $brightblue;
-            background-image: url("../img/home-page/mulaney.png");
-            padding: 20vh 4vw;
+            @include md {
+                background-color: $brightblue;
+                background-image: url("../img/home-page/mulaney.png");
+                padding: 20vh 4vw;
             }
         }
 
-        #imagemaking{
+        #imagemaking {
             // background-image: url("../img/home-page/imagemakingheadermob.png");
             background-position: center;
             background-repeat: no-repeat;
             padding: 20vh 30vw;
 
-            @include md{
-            background-color: $earthgreen;
-            background-image: url("../img/home-page/zombie.png");
-            padding: 20vh 4vw;
+            @include md {
+                background-color: $earthgreen;
+                background-image: url("../img/home-page/zombie.png");
+                padding: 20vh 4vw;
             }
         }
 
-        #fineart{
+        #fineart {
             // background-image: url("../img/home-page/fineartheadermob.png");
             background-position: center;
             background-repeat: no-repeat;
             padding: 20vh 30vw;
 
-            @include md{
-            background-color: transparent;
-            background-image: url("../img/home-page/rainbow.png");
-            padding: 20vh 4vw;
+            @include md {
+                background-color: transparent;
+                background-image: url("../img/home-page/rainbow.png");
+                padding: 20vh 4vw;
             }
         }
 
-        #typography{
+        #typography {
             // background-image: url("../img/home-page/typeheadermob.png");
             background-position: center;
             background-repeat: no-repeat;
             padding: 20vh 30vw;
 
-            @include md{
-            background-color: $gold;
-            background-image: url("../img/home-page/stag.png");
-            padding: 20vh 4vw;
+            @include md {
+                background-color: $gold;
+                background-image: url("../img/home-page/stag.png");
+                padding: 20vh 4vw;
             }
         }
 
-        #webdesign{
+        #webdesign {
             // background-image: url("../img/home-page/webheadermob.png");
             background-position: center;
             background-repeat: no-repeat;
-             padding: 20vh 30vw;
+            padding: 20vh 30vw;
 
-            @include md{
-            background-color: $earthblue;
-            background-image: url("../img/home-page/iphonemummers.png");
-            padding: 20vh 4vw;
+            @include md {
+                background-color: $earthblue;
+                background-image: url("../img/home-page/iphonemummers.png");
+                padding: 20vh 4vw;
             }
         }
 
-        
-    h1{
-        color: white;
-        transform: rotate(-90deg);
-        text-align: right;
-        font-family: Open Sans, sans-serif;
-        font-weight: 300;
-    }
+        #text{
 
-    li{ 
-        .section-grid{
-            display: grid;
-            grid-template-columns: repeat(3.1fr);
-            grid-template-rows: repeat(2,1fr);
-        }
-        a:link,
-        a:visited {
-            color: $black;
-            font-size: rem-calc(20);
-            font-family: 'Open Sans', sans-serif;
-            font-size: rem-calc(15);
-            font-weight: 300;
-        
-        &:hover,
-        &:active {
-            color: $darkgrey;
-        }
-        
-        @include md {
-            font-size: rem-calc(25);
-        }
-        
-        @include lg {
-            font-size: rem-calc(30);
+            h1 {
+                color: white;
+                transform: rotate(-90deg);
+                text-align: right;
+                font-family: Open Sans, sans-serif;
+                font-weight: 300;
+                font-size: rem-calc(40);
+            }
         }
 
-        }
+        li {
+            .section-grid {
+                display: grid;
+                grid-template-columns: repeat(3.1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+
+            a:link,
+            a:visited {
+                color: $black;
+                font-size: rem-calc(20);
+                font-family: 'Open Sans', sans-serif;
+                font-size: rem-calc(15);
+                font-weight: 300;
+
+                &:hover,
+                &:active {
+                    color: $darkgrey;
+                }
+
+                @include md {
+                    font-size: rem-calc(25);
+                }
+
+                @include lg {
+                    font-size: rem-calc(30);
+                }
+
+            }
         }
     }
- 
- }
+
+}

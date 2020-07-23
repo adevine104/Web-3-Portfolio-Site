@@ -24,156 +24,204 @@
     <header class="grid-container Header">
         <div>
             <section id="logo-container">
-                <img src="img/header/ADlogo.svg" alt="">
+                <a href="index.html"><img src="img/header/ADlogo.svg" alt=""></a>
             </section>
     
             <section id="burger-container">
-                <i class="fas fa-bars" id="burger-icon"></i>
-            </section>
+                <!-- <i class="fas fa-bars" id="burger-icon"></i> -->
     
-            <!-- <nav id="nav-container" data-nav="main-navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="39px" height="35px" viewBox="0 0 39 35">
+                    <g id="Branding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                      <g id="burger" stroke="#000" stroke-width="4">
+                        <path id="bottom-line" d="M3.5 30.5h32"/>
+                        <path id="middle-line" d="M3.5 17.5h32"/>
+                        <path id="top-line" d="M3.5 4.5h32"/>
+                      </g>
+                    </g>
+                  </svg>
+            </section>
     
         </div>
     </header>
-    <section class="grid-container" id="index-home">
+    <nav id="main-nav">
             <ul>
-                <li class="content-padding" id="branding">
-                    <a href="#">
-                        <div class="section-grid">
-                        <h1>BRANDING</h1> 
-                        <!-- <img src="img/home-page/salt.png" alt="salt"> -->
-                        <!-- <div class="background"><div id="pink"></div></div> -->
-                        </div>
-                    </a>
-                    <!-- <img src="img/home-page/saltopiaheadermob.png" alt="saltopia"> -->
-                </li>
-                <li class="content-padding" id="publication">
-                    <a href="#">
-                        <div class="section-grid">
-                        <h1>PUBLICATION</h1>
-                        <!-- <div class="background">
-                            <div id="brightblue"></div>
-                        </div> -->
-                        </div>
-        
-                    </a>
-                    <!-- <img src="img/home-page/Backtalkheadermob.png" alt="john mulaney"> -->
-                </li>
-                <li class="content-padding" id="imagemaking">
-                    <a href="#" class="red-button">
-                        <div class="section-grid">
-                        <h1>IMAGEMAKING</h1>
-                        <!-- <div class="background">
-                            <div id="green"></div>
-                        </div> -->
-                        </div>
-                    </a>
-                    <!-- <img src="img/home-page/imagemakingheadermob.png" alt="zombie"> -->
-                </li>
-                <li class="content-padding" id="fineart">
-                    <a href="#" class="red-button">
-                        <div class="section-grid">
-                        <h1>FINE ART</h1>
-                        <!-- <div class="background">
-                            <div id="midblue"></div>
-                        </div> -->
-                        </div>
-                    </a>
-                    <!-- <img src="img/home-page/fineartheadermob.png" alt="painting"> -->
-                </li>
-                <li class="content-padding" id="typography">
-                    <a href="#" class="red-button">
-                        <div class="section-grid">
-                        <h1>TYPOGRAPHY</h1>
-                        <!-- <div class="background">
-                            <div id="gold"></div>
-                        </div> -->
-                        </div>
-                    </a>
-                    <!-- <img src="img/home-page/typeheadermob.png" alt="type"> -->
-                    </div>
-                <li class="content-padding" id="webdesign">
-                    <a href="#" class="red-button">
-                        <div class="section-grid">
-                        <h1>WEB DESIGN</h1>
-                        <!-- <div class="background">
-                            <div id="greyblue"></div>
-                        </div> -->
-                        </div>
-                    </a>
-                    <!-- <img src="img/home-page/webheadermob.png" alt="iphone"> -->
-                </li>
-            </ul>
-        </section> 
-    <footer class="grid-container Footer">
-            
-                <div id="corner">
-                    <section>
-                        <div id="black-top"></div>
-                        <div id="black-bottom"></div>
-                    </section>
+                <li><button class="accordion">PORTFOLIO</button></li>
+                <div class="panel">
+                    <li><a href="branding.html">BRANDING</a></li>
+                    <li><a href="#">PUBLICATION</a></li>
+                    <li><a href="#">IMAGEMAKING</a></li>
+                    <li><a href="fine-art.html">FINE ART</a></li>
+                    <li><a href="#">TYPOGRAPHY</a></li>
+                    <li><a href="#">WEB DESIGN</a></li>
                 </div>
-            
-                <div id="footer-content">
-                            
-                    <section id="footer-title">
-                        <h1>CONTACT</h1>
-                    </section>
-            
-                    <section id="footer-form">
-                        <form action="https://formspree.io/mayplrdo" method="POST">
-                            <section id="contact">
-                                <div id= "name">
-                                    <input type="text" placeholder="Name/Company" Name="Name/Company">
+                <li id="about"><a href="about.html">ABOUT</a></li>
+                <li><button></i>CONTACT</button></li>
+            </ul>
+        </nav>
+        <!-- 
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+        </script> -->
+    <section class="grid-container" id="index-home">
+                <ul>
+                    <li class="content-padding" id="branding">
+                        <a href="#">
+                            <div class="section-grid">
+                                <div id="text">
+                                    <h1>BRANDING</h1>
                                 </div>
-                                <div id= "email">
-                                    <input type="email" placeholder="Email" Name="Email">
+                                <!-- <img src="img/home-page/salt.png" alt="salt"> -->
+                                <div id="background-1">
+                                    <div id="pink"></div>
                                 </div>
-                                <div id= "subject">
-                                    <input type="text" placeholder="Subject" Name="Subject">
+                            </div>
+                        </a>
+                        <!-- <img src="img/home-page/saltopiaheadermob.png" alt="saltopia"> -->
+                    </li>
+                    <li class="content-padding" id="publication">
+                        <a href="#">
+                            <div class="section-grid">
+                                <div id="text">
+                                    <h1>PUBLICATION</h1>
                                 </div>
-                            </section>
+                                <!-- <div class="background">
+                                <div id="brightblue"></div>
+                            </div> -->
+                            </div>
             
-                            <section id="message">
-                        
-                                <textarea type="text" placeholder="Message" Name="Message"> </textarea>
-                               
-                            </section>
-            
-                            <section>
-                                <div id="send">
-                                    <button type="submit">SEND</button>
+                        </a>
+                        <!-- <img src="img/home-page/Backtalkheadermob.png" alt="john mulaney"> -->
+                    </li>
+                    <li class="content-padding" id="imagemaking">
+                        <a href="#" class="red-button">
+                            <div class="section-grid">
+                                <div id="text">
+                                    <h1>IMAGEMAKING</h1>
                                 </div>
-                            </section>
-                        
-                        </form>
-                    </section>
-            
-                    <section id="footer-social">
-                        <ul>
-                            <li><a href="https://www.instagram.com/addyd.art/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/addison-devine-130b61186/"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="https://github.com/adevine104"><i class="fab fa-github"></i></a></li>
-                        </ul>
-                    </section>
-            
-            </footer>
-    <!-- jQuery -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <!-- Greensock -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-                <!-- fancyBox -->
-                <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-                <!-- Tiny Slider -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+                                <!-- <div class="background">
+                                <div id="green"></div>
+                            </div> -->
+                            </div>
+                        </a>
+                        <!-- <img src="img/home-page/imagemakingheadermob.png" alt="zombie"> -->
+                    </li>
+                    <li class="content-padding" id="fineart">
+                        <a href="#" class="red-button">
+                            <div class="section-grid">
+                                <div id="text">
+                                    <h1>FINE ART</h1>
+                                </div>
+                                <!-- <div class="background">
+                                <div id="midblue"></div>
+                            </div> -->
+                            </div>
+                        </a>
+                        <!-- <img src="img/home-page/fineartheadermob.png" alt="painting"> -->
+                    </li>
+                    <li class="content-padding" id="typography">
+                        <a href="#" class="red-button">
+                            <div class="section-grid">
+                                <div id="text">
+                                    <h1>TYPOGRAPHY</h1>
+                                </div>
+                                <!-- <div class="background">
+                                <div id="gold"></div>
+                            </div> -->
+                            </div>
+                        </a>
+                        <!-- <img src="img/home-page/typeheadermob.png" alt="type"> -->
+                        </div>
+                    <li class="content-padding" id="webdesign">
+                        <a href="#" class="red-button">
+                            <div class="section-grid">
+                                <div id="text">
+                                    <h1>WEB DESIGN</h1>
+                                </div>
+                                <!-- <div class="background">
+                                <div id="greyblue"></div>
+                            </div> -->
+                            </div>
+                        </a>
+                        <!-- <img src="img/home-page/webheadermob.png" alt="iphone"> -->
+                    </li>
+                </ul>
+            </section>
+    <footer class="grid-container Footer">
                 
-                <script src="js/scripts-min.js"></script>
+                    <div id="corner">
+                        <section>
+                            <div id="black-top"></div>
+                            <div id="black-bottom"></div>
+                        </section>
+                    </div>
+                
+                    <div id="footer-content">
+                                
+                        <section id="footer-title">
+                            <h1>CONTACT</h1>
+                        </section>
+                
+                        <section id="footer-form">
+                            <form action="https://formspree.io/mayplrdo" method="POST">
+                                <section id="contact">
+                                    <div id= "name">
+                                        <input type="text" placeholder="Name/Company" Name="Name/Company">
+                                    </div>
+                                    <div id= "email">
+                                        <input type="email" placeholder="Email" Name="Email">
+                                    </div>
+                                    <div id= "subject">
+                                        <input type="text" placeholder="Subject" Name="Subject">
+                                    </div>
+                                </section>
+                
+                                <section id="message">
+                            
+                                    <textarea type="text" placeholder="Message" Name="Message"> </textarea>
+                                   
+                                </section>
+                
+                                <section>
+                                    <div id="send">
+                                        <button type="submit">SEND</button>
+                                    </div>
+                                </section>
+                            
+                            </form>
+                        </section>
+                
+                        <section id="footer-social">
+                            <ul>
+                                <li><a href="https://www.instagram.com/addyd.art/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/addison-devine-130b61186/"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://github.com/adevine104"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </section>
+                
+                </footer>
+    <!-- jQuery -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <!-- Greensock -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+                    <!-- fancyBox -->
+                    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+                    <!-- Tiny Slider -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+                    
+                    <script src="js/scripts-min.js"></script>
     
 </body>
 

@@ -3,10 +3,13 @@
 ============= */
 
 header{
-    position: sticky;
+    position: fixed;
     background-color: white;
     // height: 15vh;
-    z-index: 100;
+    // z-index: 100;
+    width: 100%;
+    top:0;
+    left:0;
 
     div{
         // background-image: url('../img/header/Rectangle1.svg');
