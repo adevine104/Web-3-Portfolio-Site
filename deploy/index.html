@@ -30,15 +30,16 @@
             <section id="burger-container">
                 <!-- <i class="fas fa-bars" id="burger-icon"></i> -->
     
-                <svg xmlns="http://www.w3.org/2000/svg" width="39px" height="35px" viewBox="0 0 39 35">
+                <svg xmlns="http://www.w3.org/2000/svg" width="39px" height="35px" viewBox="0 0 39 35" id="burger">
                     <g id="Branding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                      <g id="burger" stroke="#000" stroke-width="4">
-                        <path id="bottom-line" d="M3.5 30.5h32"/>
-                        <path id="middle-line" d="M3.5 17.5h32"/>
-                        <path id="top-line" d="M3.5 4.5h32"/>
+                      <g id="lines" stroke="#000" stroke-width="4">
+                        <path id="bottom-line" d="M3.5 30.5h32" class="lines"/>
+                        <path id="middle-line" d="M3.5 17.5h32" class="lines"/>
+                        <path id="top-line" d="M3.5 4.5h32" class="lines"/>
                       </g>
                     </g>
                   </svg>
+                  
             </section>
     
         </div>
@@ -46,16 +47,16 @@
     <nav id="main-nav">
             <ul>
                 <li><button class="accordion">PORTFOLIO</button></li>
-                <div class="panel">
+                <!-- <div class="panel">
                     <li><a href="branding.html">BRANDING</a></li>
                     <li><a href="#">PUBLICATION</a></li>
                     <li><a href="#">IMAGEMAKING</a></li>
                     <li><a href="fine-art.html">FINE ART</a></li>
                     <li><a href="#">TYPOGRAPHY</a></li>
                     <li><a href="#">WEB DESIGN</a></li>
-                </div>
+                </div> -->
                 <li id="about"><a href="about.html">ABOUT</a></li>
-                <li><button></i>CONTACT</button></li>
+                <li><button id="footer-btn">CONTACT</button></li>
             </ul>
         </nav>
         <!-- 
@@ -80,7 +81,7 @@
                     <li class="content-padding" id="branding">
                         <a href="#">
                             <div class="section-grid">
-                                <div id="text">
+                                <div class="text">
                                     <h1>BRANDING</h1>
                                 </div>
                                 <!-- <img src="img/home-page/salt.png" alt="salt"> -->
@@ -94,7 +95,7 @@
                     <li class="content-padding" id="publication">
                         <a href="#">
                             <div class="section-grid">
-                                <div id="text">
+                                <div class="text">
                                     <h1>PUBLICATION</h1>
                                 </div>
                                 <!-- <div class="background">
@@ -108,7 +109,7 @@
                     <li class="content-padding" id="imagemaking">
                         <a href="#" class="red-button">
                             <div class="section-grid">
-                                <div id="text">
+                                <div class="text">
                                     <h1>IMAGEMAKING</h1>
                                 </div>
                                 <!-- <div class="background">
@@ -121,7 +122,7 @@
                     <li class="content-padding" id="fineart">
                         <a href="#" class="red-button">
                             <div class="section-grid">
-                                <div id="text">
+                                <div class="text">
                                     <h1>FINE ART</h1>
                                 </div>
                                 <!-- <div class="background">
@@ -134,7 +135,7 @@
                     <li class="content-padding" id="typography">
                         <a href="#" class="red-button">
                             <div class="section-grid">
-                                <div id="text">
+                                <div class="text">
                                     <h1>TYPOGRAPHY</h1>
                                 </div>
                                 <!-- <div class="background">
@@ -147,7 +148,7 @@
                     <li class="content-padding" id="webdesign">
                         <a href="#" class="red-button">
                             <div class="section-grid">
-                                <div id="text">
+                                <div class="text">
                                     <h1>WEB DESIGN</h1>
                                 </div>
                                 <!-- <div class="background">
@@ -159,7 +160,7 @@
                     </li>
                 </ul>
             </section>
-    <footer class="grid-container Footer">
+    <footer class="grid-container Footer" id="footer">
                 
                     <div id="corner">
                         <section>
@@ -190,7 +191,7 @@
                 
                                 <section id="message">
                             
-                                    <textarea type="text" placeholder="Message" Name="Message"> </textarea>
+                                    <textarea placeholder="Message" Name="Message"> </textarea>
                                    
                                 </section>
                 
@@ -210,12 +211,14 @@
                                 <li><a href="https://github.com/adevine104"><i class="fab fa-github"></i></a></li>
                             </ul>
                         </section>
-                
+                </div>
                 </footer>
     <!-- jQuery -->
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <!-- Greensock Scroll To Plugin -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
                     <!-- Greensock -->
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
                     <!-- fancyBox -->
                     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
                     <!-- Tiny Slider -->

@@ -1,6 +1,7 @@
 // console.log("tiny slider is working!");
 
-tns({
+if( $(".slides").hasClass("my-slider") ){
+  tns({
     container: '.my-slider',
     items: 1,
     gutter: 10,
@@ -30,3 +31,4 @@ tns({
     // autoplayText: (),
     autoplayPosition: "bottom"
 });
+}

@@ -109,22 +109,22 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/branding/salt.png": {
+	"/deploy/img/branding/salt-tag-mockup.png": {
 		"ft": 32768,
-		"iS": 57376,
+		"iS": 172695,
 		"oA": 0,
-		"oAP": "/deploy/img/branding/salt.png",
+		"oAP": "/deploy/img/branding/salt-tag-mockup.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/branding/Screen Shot 2020-03-09 at 12.13.48 AM 2.png": {
+	"/deploy/img/branding/salt.png": {
 		"ft": 32768,
-		"iS": 172695,
+		"iS": 57376,
 		"oA": 0,
-		"oAP": "/deploy/img/branding/Screen Shot 2020-03-09 at 12.13.48 AM 2.png",
+		"oAP": "/deploy/img/branding/salt.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -687,6 +687,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/main-nav/burger-animation.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/main-nav/burger-animation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/main-nav/burger-click.js": {
 		"bF": 0,
 		"ft": 64,
@@ -716,6 +727,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/main-nav/nav-global-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/main-nav/nav-scroll.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/main-nav/nav-scroll-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2517,7 +2539,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "tns",
+	"jsCheckerReservedNamesString": "tns, gsap, ScrollToPlugin",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
