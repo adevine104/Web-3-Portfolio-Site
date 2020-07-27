@@ -6,8 +6,8 @@ gsap.set(".lines",{transformOrigin:"center"});
 
 //1: first is the reference to the timeline (burgerAnimationTimeLine ), 2: what do you want to animate? 3{ what properties to do you want animate?}
 burgerAnimationTimeLine.to("#middle-line",{duration:burgerAnimateSpeed,alpha:0},"burgerStart")
-                        .to("#top-line",{duration:burgerAnimateSpeed,rotation:45, y:10, stroke: "#000"},"burgerStart")
-                        .to("#bottom-line",{duration:burgerAnimateSpeed,rotation:-45, y:-10, stroke: "#000", onReverseComplete:resetBurgerLinecsolor},"burgerStart");
+                        .to("#top-line",{duration:burgerAnimateSpeed,rotation:45, y:12.5, stroke: "#000"},"burgerStart")
+                        .to("#bottom-line",{duration:burgerAnimateSpeed,rotation:-45, y:-12.5, stroke: "#000", onReverseComplete:resetBurgerLinecsolor},"burgerStart");
 
 
 
@@ -25,5 +25,5 @@ function animateBurger(){
 // function to change the color of hte burger lines back to red, only called on the compete timeline reverse of burgerAnimationTimeLine
 function resetBurgerLinecsolor(){
     //change the burger lines back to red over 0.25 seconds
-    gsap.to(".lines",{duration:0.25, stroke:"#F25C54"});
+    gsap.to(".lines",{duration:0.25, stroke:"#000"});
 }

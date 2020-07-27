@@ -593,7 +593,7 @@ textarea {
     #main-nav ul li button:hover {
       background-color: #000; }
       #main-nav ul li button:hover i {
-        color: #323B56; }
+        color: #6D7278; }
   #main-nav ul li a:link,
   #main-nav ul li a:visited {
     color: #6D7278;
@@ -637,7 +637,7 @@ textarea {
       #main-nav ul li a:link:hover i, #main-nav ul li a:link:active i,
       #main-nav ul li a:visited:hover i,
       #main-nav ul li a:visited:active i {
-        color: #323B56; }
+        color: #6D7278; }
 
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
   color: #fff; }
@@ -1012,15 +1012,15 @@ header {
       #footer #footer-content {
         align-items: center;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 70px;
         grid-template-columns: 10% auto;
         grid-template-areas: "footer-title footer-form" "footer-social footer-social"; } }
     @media (min-width: 1025px) {
       #footer #footer-content {
-        margin-top: 200px; } }
+        margin-top: 100px; } }
     @media (min-width: 1440px) {
       #footer #footer-content {
-        margin-top: 150px; } }
+        margin-top: 100px; } }
     @media (min-width: 768px) {
       #footer #footer-content #footer-title {
         padding-top: 50px; } }
@@ -1046,9 +1046,7 @@ header {
     @media (min-width: 768px) {
       #footer #footer-content #footer-form {
         grid-area: footer-form;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
+        display: flex; }
         #footer #footer-content #footer-form form {
           display: grid; } }
     @media (min-width: 768px) and (min-width: 768px) {
@@ -1091,15 +1089,14 @@ header {
     #footer #footer-content button {
       background-color: #6D7278;
       color: white;
-      width: 48vw;
-      height: 4vh;
+      padding: 5px 40px 5px 40px;
       border-radius: 5%; }
       @media (min-width: 768px) {
         #footer #footer-content button {
           transform: rotate(-90deg);
-          width: 10vw;
-          margin-top: 52px;
-          padding: 0px 90px 0px 50px; } }
+          margin-left: -40px;
+          margin-top: 50px;
+          padding: 5px 50px 5px 50px; } }
       @media (min-width: 1025px) {
         #footer #footer-content button {
           margin-top: 52px; } }
