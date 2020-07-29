@@ -709,6 +709,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/main-nav/burger-mouse-events.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/main-nav/burger-mouse-events-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/main-nav/main-nav-click.js": {
 		"bF": 0,
 		"ft": 64,
@@ -738,6 +749,28 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/main-nav/nav-scroll-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/main-nav/X-animation.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/main-nav/X-animation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/main-nav/X-mouse-events.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/main-nav/X-mouse-events-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

@@ -6,8 +6,11 @@ gsap.set(".lines",{transformOrigin:"center"});
 
 //1: first is the reference to the timeline (burgerAnimationTimeLine ), 2: what do you want to animate? 3{ what properties to do you want animate?}
 burgerAnimationTimeLine.to("#middle-line",{duration:burgerAnimateSpeed,alpha:0},"burgerStart")
-                        .to("#top-line",{duration:burgerAnimateSpeed,rotation:45, y:12.5, stroke: "#000"},"burgerStart")
-                        .to("#bottom-line",{duration:burgerAnimateSpeed,rotation:-45, y:-12.5, stroke: "#000", onReverseComplete:resetBurgerLinecsolor},"burgerStart");
+                        .to("#top-line",{duration:burgerAnimateSpeed,rotation:45, y:13, stroke: "#000"},"burgerStart")
+                        .to("#bottom-line",{duration:burgerAnimateSpeed,rotation:-45, y:-13, stroke: "#000", onReverseComplete:resetBurgerLinecsolor},"burgerStart")
+                        .to("#right-arrow",{duration:burgerAnimateSpeed, alpha:0, rotation:0, stroke: "#000"}, "burgerToX")
+                        .to("#left-arrow",{duration:burgerAnimateSpeed, alpha:0, rotation:0, stroke: "#000"}, "burgerToX")
+                        .to("#circle",{duration:burgerAnimateSpeed, alpha:1, rotation:0, y:-6.5, x:-5, stroke: "#000"}, "burgerToX");
 
 
 
@@ -27,3 +30,15 @@ function resetBurgerLinecsolor(){
     //change the burger lines back to red over 0.25 seconds
     gsap.to(".lines",{duration:0.25, stroke:"#000"});
 }
+
+
+// function animateX(){
+//     // check the  canYouSeeTheMenu bool valus
+//     if(burgerAnimationTimeLine === true){
+//         // turn the burger into an X
+//         XAnimationTimeLine.play();
+//     }else{
+//         // turn the X into a burger
+//         XAnimationTimeLine.reverse();
+//     }
+// }
