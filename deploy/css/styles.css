@@ -467,14 +467,13 @@ p {
 .white-section-header {
   font-weight: 300;
   color: white;
-  font-family: 'Open Sans', sans-serif;
-  transform: rotate(-90deg); }
+  font-family: 'Open Sans', sans-serif; }
 
 .grey-section-header {
   font-weight: 300;
   color: #6D7278;
   font-family: 'Open Sans', sans-serif;
-  transform: rotate(-6deg);
+  transform: rotate(-4deg);
   text-align: center;
   font-size: 1.25rem; }
   @media (min-width: 768px) {
@@ -558,7 +557,7 @@ textarea {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 100; }
+  z-index: 90; }
   #main-nav ul li button {
     background-color: transparent;
     border: none;
@@ -927,14 +926,27 @@ pre[class*="language-"] {
 ============= */
 header {
   position: fixed;
-  background-color: white;
   z-index: 100;
   width: 100%;
   top: 0;
   left: 0; }
   header div {
+    background-image: url("../img/header/headerdesktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: 768px) {
+      header div {
+        height: 15vh; } }
+    @media (min-width: 1025px) {
+      header div {
+        height: 18vh; } }
+    @media (min-width: 1440px) {
+      header div {
+        height: 23.5vh; } }
     header div #logo-container {
       padding: 0 0 10px 15px;
       display: flex;
@@ -946,15 +958,14 @@ header {
         header div #logo-container {
           padding: 0 0 10px 40px; } }
       header div #logo-container img {
-        width: 60px; }
+        width: 40px; }
         @media (min-width: 768px) {
           header div #logo-container img {
-            width: 100px; } }
+            width: 60px; } }
         @media (min-width: 1025px) {
           header div #logo-container img {
-            width: 140px; } }
+            width: 100px; } }
     header div #burger-container {
-      align-items: center;
       display: flex;
       justify-content: flex-end;
       padding: 10px 15px 0 0; }
@@ -1337,36 +1348,46 @@ header {
 /* --------------------------
     Branding Section 1
  --------------------------*/
-#section-main-header-B {
+#section-title {
   margin-top: 50px; }
   @media (min-width: 768px) {
-    #section-main-header-B {
-      margin-top: 100px; } }
-#section-1-heading-B {
+    #section-title {
+      margin-top: 120px; } }
+  @media (min-width: 1025px) {
+    #section-title {
+      margin-top: 180px; } }
+#section-header {
   margin-top: 50px; }
   @media (min-width: 768px) {
-    #section-1-heading-B {
+    #section-header {
       margin-top: 0px; } }
-  #section-1-heading-B > div #background-shapes-B {
-    margin-top: -450px; }
-    #section-1-heading-B > div #background-shapes-B #background-shape-top-B {
-      background-color: #56383A;
-      height: 40vh;
-      clip-path: polygon(0 23%, 100% 5%, 100% 95%, 0 77%); }
-      @media (min-width: 768px) {
-        #section-1-heading-B > div #background-shapes-B #background-shape-top-B {
-          height: 50vh; } }
-  #section-1-heading-B > div #header-content-B {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1); }
-    #section-1-heading-B > div #header-content-B #section-1-header-B h1 {
-      z-index: 100; }
-    #section-1-heading-B > div #header-content-B img {
-      grid-area: image;
-      height: 35vh;
-      z-index: 10;
-      margin: 0 45px 15px 0px; }
+  @media (min-width: 1025px) {
+    #section-header {
+      margin-top: 0px; } }
+  #section-header > div {
+    background-image: url("../img/branding/saltopiaHEADER.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 42vh; }
+    @media (min-width: 768px) {
+      #section-header > div {
+        margin-top: -50px; } }
+    @media (min-width: 1025px) {
+      #section-header > div {
+        height: 72vh; } }
+    #section-header > div #header-content-B #section-1-header-B {
+      display: grid;
+      text-align: right; }
+      #section-header > div #header-content-B #section-1-header-B h1 {
+        position: absolute;
+        margin-top: 100px;
+        z-index: 90;
+        text-align: right; }
+
+@media (min-width: 768px) {
+  #salt-logos > div {
+    margin-top: -80px; } }
 
 #salt-logos > div ul {
   display: grid;

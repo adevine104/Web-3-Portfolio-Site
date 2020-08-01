@@ -6,68 +6,102 @@
     Branding Section 1
  --------------------------*/
 
- #section-main-header-B{
+ #section-title{
     margin-top: 50px;
 
     @include md{
-        margin-top: 100px;
+        margin-top: 120px;
+    }
+
+    @include lg{
+        margin-top: 180px;
     }
 }
 
-#section-1-heading-B{
+#section-header{
     margin-top: 50px;
 
     @include md{
         margin-top: 0px;
     }
 
+    @include lg{
+        margin-top: 0px;
+    }
+
     >div{
 
-        #background-shapes-B{
-            margin-top: -450px;
-            // position: absolute;
+        // #background-shapes-B{
+        //     margin-top: -450px;
+        //     // position: absolute;
 
-            #background-shape-top-B{
-                background-color: $earthpink;
-                height: 40vh;
-                // width: 100vw;
-                clip-path: polygon(0 23%, 100% 5%, 100% 95%, 0 77%);
+        //     #background-shape-top-B{
+        //         background-color: $earthpink;
+        //         height: 40vh;
+        //         // width: 100vw;
+        //         clip-path: polygon(0 23%, 100% 5%, 100% 95%, 0 77%);
 
-                @include md{
-                    height: 50vh;
-                }
-            }
-            }
+        //         @include md{
+        //             height: 50vh;
+        //         }
+        //     }
+        //     }
+
+        background-image: url('../img/branding/saltopiaHEADER.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 42vh;
+
+        @include md{
+            margin-top: -50px;
+        }
+
+        @include lg{
+            height: 72vh
+        }
 
         #header-content-B{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(1);
+        //     display: grid;
+        //     grid-template-columns: repeat(2,1fr);
+        //     grid-template-rows: repeat(1);
 
             #section-1-header-B{
+                display: grid;
+
+                text-align: right;
 
                 h1{
-                    z-index:100;
+                    position: absolute;
+                    margin-top: 100px;
+                    z-index:90;
+                    text-align: right;
                 }
             }
-
-            img{
-                grid-area: image;
-                height: 35vh;
-                // position: relative;
-                z-index:10;
-                margin: 0 45px 15px 0px;
-                // float: right;
-                    // object-fit: cover;
-                    // width: 100vw;
-                
-            }
         }
+
+        //     img{
+        //         grid-area: image;
+        //         height: 35vh;
+        //         // position: relative;
+        //         z-index:10;
+        //         margin: 0 45px 15px 0px;
+        //         // float: right;
+        //             // object-fit: cover;
+        //             // width: 100vw;
+                
+        //     }
+        // }
     }
 }
 
 #salt-logos{
     >div{
+
+        @include md{
+            margin-top: -80px;
+        }
+
         ul{ 
             display: grid;
             gap: 20px;

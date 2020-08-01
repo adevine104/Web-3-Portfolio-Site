@@ -4,7 +4,7 @@
 
 header{
     position: fixed;
-    background-color: white;
+    // background-color: white;
     // height: 15vh;
     z-index: 100;
     width: 100%;
@@ -13,22 +13,23 @@ header{
 
     div{
         // background-image: url('../img/header/Rectangle1.svg');
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // height: 10vh;
+        background-image: url('../img/header/headerdesktop.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 10vh;
 
-        // @include md{
-        //     height: 20vh;
-        //     }
+        @include md{
+            height: 15vh;
+            }
 
-        // @include lg{
-        //     height: 25vh;
-        //     }
+        @include lg{
+            height: 18vh;
+            }
 
-        // @include xl{
-        //     height: 35vh;
-        //     }
+        @include xl{
+            height: 23.5vh;
+            }
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -48,23 +49,22 @@ header{
 
             img{
 
-                width: 60px;
+                width: 40px;
 
                 @include md{
-                    width: 100px;
-                    }
+                    width: 60px;
+                }
 
                 @include lg{
-                width: 140px;
+                    width: 100px;
                 }
             }
         }
 
         #burger-container{
-            align-items: center;
+            // align-items: center;
             display: flex;
             justify-content: flex-end;
-
             padding: 10px 15px 0 0;
 
             @include md{
