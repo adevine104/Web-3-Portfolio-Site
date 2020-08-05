@@ -3,6 +3,8 @@ gsap.registerPlugin(ScrollToPlugin);
 
 var scrollItems =["#footer"];
 
+console.log(scrollItems[1]);
+
 function scrollIndex(){
     //gsap.to(window, {duration: 2, scrollTo:"#index-weather"});
 

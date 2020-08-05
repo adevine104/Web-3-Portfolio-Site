@@ -461,9 +461,6 @@ p {
   margin: 0;
   padding: 0; }
 
-.section-title {
-  font-weight: 300; }
-
 .white-section-header {
   font-weight: 300;
   color: white;
@@ -475,14 +472,17 @@ p {
   font-family: 'Open Sans', sans-serif;
   transform: rotate(-4deg);
   text-align: center;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  margin-top: 80px;
+  font-style: italic; }
   @media (min-width: 768px) {
     .grey-section-header {
       font-size: 1.875rem;
-      margin: 0 0 60px 0; } }
+      margin-top: 150px; } }
   @media (min-width: 1440px) {
     .grey-section-header {
-      font-size: 2.1875rem; } }
+      font-size: 2.1875rem;
+      margin-top: 180px; } }
 .grey-section-subheader {
   font-weight: 300;
   color: #6D7278;
@@ -547,7 +547,7 @@ textarea {
     Navigation
 ============= */
 #main-nav {
-  background-color: white;
+  background-color: black;
   display: grid;
   place-items: center;
   margin-top: 50px;
@@ -557,7 +557,7 @@ textarea {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 90; }
+  z-index: 95; }
   #main-nav ul li button {
     background-color: transparent;
     border: none;
@@ -590,7 +590,7 @@ textarea {
         #main-nav ul li button i {
           font-size: 2.5rem; } }
     #main-nav ul li button:hover {
-      background-color: #000; }
+      background-color: #fff; }
       #main-nav ul li button:hover i {
         color: #6D7278; }
   #main-nav ul li a:link,
@@ -632,7 +632,7 @@ textarea {
     #main-nav ul li a:link:hover, #main-nav ul li a:link:active,
     #main-nav ul li a:visited:hover,
     #main-nav ul li a:visited:active {
-      background-color: #000; }
+      background-color: #fff; }
       #main-nav ul li a:link:hover i, #main-nav ul li a:link:active i,
       #main-nav ul li a:visited:hover i,
       #main-nav ul li a:visited:active i {
@@ -1006,32 +1006,39 @@ header {
 ============= */
 #footer {
   height: 60vh;
-  position: sticky; }
+  position: sticky;
+  background-image: url("../img/footer/Rectangle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh; }
   @media (min-width: 768px) {
     #footer {
-      height: 50vh; } }
+      height: 40vh; } }
   @media (min-width: 1025px) {
     #footer {
-      height: 60vh; } }
+      height: 60vh;
+      background-position: 0 0px; } }
   #footer #footer-content {
     width: 100%;
     position: absolute;
     text-align: center;
     align-items: center;
-    display: grid; }
+    display: grid;
+    margin-top: 110px; }
     @media (min-width: 768px) {
       #footer #footer-content {
         align-items: center;
         justify-content: center;
-        margin-top: 70px;
+        margin-top: 100px;
         grid-template-columns: 10% auto;
         grid-template-areas: "footer-title footer-form" "footer-social footer-social"; } }
     @media (min-width: 1025px) {
       #footer #footer-content {
-        margin-top: 100px; } }
+        margin-top: 160px; } }
     @media (min-width: 1440px) {
       #footer #footer-content {
-        margin-top: 100px; } }
+        margin-top: 180px; } }
     @media (min-width: 768px) {
       #footer #footer-content #footer-title {
         padding-top: 50px; } }
@@ -1251,33 +1258,46 @@ header {
   @media (min-width: 768px) {
     #section-main-header {
       margin-top: 100px; } }
-#section-1-header {
-  margin-top: 50px; }
+  @media (min-width: 1025px) {
+    #section-main-header {
+      margin-top: 160px; } }
+#header-content {
+  background-image: url("../img/branding/saltheadermob.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh; }
   @media (min-width: 768px) {
-    #section-1-header {
-      margin-top: 0px; } }
-  #section-1-header > div #background-shapes {
-    margin-top: -450px; }
-    #section-1-header > div #background-shapes #background-shape-top {
-      background-color: #273B67;
-      height: 40vh;
-      width: 100vw;
-      clip-path: polygon(0 23%, 100% 5%, 100% 95%, 0 77%); }
-      @media (min-width: 768px) {
-        #section-1-header > div #background-shapes #background-shape-top {
-          height: 50vh; } }
-  #section-1-header > div #header-content {
+    #header-content {
+      background-image: url("../img/branding/saltheadertab.svg");
+      height: 30vh; } }
+  @media (min-width: 1025px) {
+    #header-content {
+      background-image: url("../img/branding/saltopiaHEADER.svg");
+      height: 52vh; } }
+  @media (min-width: 1440px) {
+    #header-content {
+      height: 72vh; } }
+  #header-content #section-1-subheader {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1); }
-    #section-1-header > div #header-content #section-1-header h1 {
-      z-index: 100; }
-    #section-1-header > div #header-content img {
-      grid-area: image;
-      height: 35vh;
-      z-index: 10;
-      margin: 0 45px 15px 0px; }
-
+    text-align: right; }
+    #header-content #section-1-subheader h1 {
+      position: relative;
+      margin-top: 50px;
+      margin-right: 45px;
+      font-size: 1.5625rem;
+      z-index: 90;
+      text-align: right; }
+      @media (min-width: 768px) {
+        #header-content #section-1-subheader h1 {
+          font-size: 2.5rem;
+          margin-top: 100px;
+          margin-right: 100px; } }
+      @media (min-width: 1025px) {
+        #header-content #section-1-subheader h1 {
+          font-size: 3.125rem;
+          margin-top: 160px;
+          margin-right: 180px; } }
 #description-1 p {
   margin: 150px 20px 50px 20px;
   text-align: justify;
@@ -1348,44 +1368,44 @@ header {
 /* --------------------------
     Branding Section 1
  --------------------------*/
-#section-title {
-  margin-top: 50px; }
+#section-header > div {
+  background-image: url("../img/branding/saltheadermob.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh; }
   @media (min-width: 768px) {
-    #section-title {
-      margin-top: 120px; } }
+    #section-header > div {
+      background-image: url("../img/branding/saltheadertab.svg");
+      height: 30vh; } }
   @media (min-width: 1025px) {
-    #section-title {
-      margin-top: 180px; } }
-#section-header {
-  margin-top: 50px; }
-  @media (min-width: 768px) {
-    #section-header {
-      margin-top: 0px; } }
-  @media (min-width: 1025px) {
-    #section-header {
-      margin-top: 0px; } }
-  #section-header > div {
-    background-image: url("../img/branding/saltopiaHEADER.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 42vh; }
-    @media (min-width: 768px) {
-      #section-header > div {
-        margin-top: -50px; } }
-    @media (min-width: 1025px) {
-      #section-header > div {
-        height: 72vh; } }
-    #section-header > div #header-content-B #section-1-header-B {
-      display: grid;
+    #section-header > div {
+      background-image: url("../img/branding/saltopiaHEADER.svg");
+      height: 52vh; } }
+  @media (min-width: 1440px) {
+    #section-header > div {
+      height: 72vh; } }
+  #section-header > div #header-content-B #section-1-header-B {
+    display: grid;
+    text-align: right; }
+    #section-header > div #header-content-B #section-1-header-B h1 {
+      position: relative;
+      margin-top: 50px;
+      margin-right: 45px;
+      font-size: 1.5625rem;
+      z-index: 90;
       text-align: right; }
-      #section-header > div #header-content-B #section-1-header-B h1 {
-        position: absolute;
-        margin-top: 100px;
-        z-index: 90;
-        text-align: right; }
-
-@media (min-width: 768px) {
+      @media (min-width: 768px) {
+        #section-header > div #header-content-B #section-1-header-B h1 {
+          font-size: 2.5rem;
+          margin-top: 100px;
+          margin-right: 100px; } }
+      @media (min-width: 1025px) {
+        #section-header > div #header-content-B #section-1-header-B h1 {
+          font-size: 3.125rem;
+          margin-top: 160px;
+          margin-right: 180px; } }
+@media (min-width: 1025px) {
   #salt-logos > div {
     margin-top: -80px; } }
 
@@ -1470,7 +1490,9 @@ header {
  --------------------------*/
 #section-container {
   background-color: #3E4649;
-  padding-top: 250px; }
+  padding-top: 250px;
+  padding-bottom: 100px;
+  margin-bottom: -100px; }
   #section-container #section-main-header-A {
     color: white;
     font-weight: 300;
@@ -1479,14 +1501,21 @@ header {
     margin-top: 40px;
     position: absolute;
     display: flex;
-    justify-content: flex-end; }
-  #section-container #section-text-A > div #text-content p {
+    justify-content: flex-end;
+    text-align: right; }
+  #section-container #section-text-A #text-content p {
     color: white;
     text-align: justify; }
     @media (min-width: 768px) {
-      #section-container #section-text-A > div #text-content p {
+      #section-container #section-text-A #text-content p {
         margin: 50px 500px 50px 100px;
         text-align: left; } }
+  #section-container #button {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+
 /* =============
     Google Map
 ============= */

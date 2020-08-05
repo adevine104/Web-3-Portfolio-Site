@@ -12,56 +12,89 @@
     @include md{
         margin-top: 100px;
     }
+
+    @include lg{
+        margin-top: 160px;
+    }
 }
 
-#section-1-header{
-    margin-top: 50px;
+// #section-1-header{
+//     margin-top: 50px;
 
-    @include md{
-        margin-top: 0px;
-    }
+//     @include md{
+//         margin-top: 0px;
+//     }
 
-    >div{
+//     >div{
 
-        #background-shapes{
-            margin-top: -450px;
-            // position: absolute;
+//         #background-shapes{
+//             margin-top: -450px;
+//             // position: absolute;
 
-            #background-shape-top{
-                background-color: $midblue;
-                height: 40vh;
-                width: 100vw;
-                clip-path: polygon(0 23%, 100% 5%, 100% 95%, 0 77%);
+//             #background-shape-top{
+//                 background-color: $midblue;
+//                 height: 40vh;
+//                 width: 100vw;
+//                 clip-path: polygon(0 23%, 100% 5%, 100% 95%, 0 77%);
 
-                @include md{
-                    height: 50vh;
-                }
-            }
-            }
+//                 @include md{
+//                     height: 50vh;
+//                 }
+//             }
+//             }
 
         #header-content{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(1);
 
-            #section-1-header{
+            background-image: url('../img/branding/saltheadermob.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20vh;
 
+
+            @include md{
+            background-image: url('../img/branding/saltheadertab.svg');
+            height: 30vh;
+            }
+
+            @include lg{
+            background-image: url('../img/branding/saltopiaHEADER.svg');
+            height: 52vh;
+            }
+
+            @include xl{
+            height: 72vh;
+            }
+
+            #section-1-subheader{
+                display: grid;
+                text-align: right;
+                
                 h1{
-                    z-index:100;
+                position: relative;
+                    margin-top: 50px;
+                    margin-right: 45px;
+                    font-size: rem-calc(25);
+                    z-index:90;
+                    text-align: right;
+
+                    @include md{
+                        font-size: rem-calc(40);
+                        margin-top: 100px;
+                        margin-right: 100px;
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(50);
+                        margin-top: 160px;
+                        margin-right: 180px;
+                    }
+
                 }
+                
             }
 
-            img{
-                grid-area: image;
-                height: 35vh;
-                // position: relative;
-                z-index:10;
-                margin: 0 45px 15px 0px;
-                // float: right;
-            }
         }
-    }
-}
 
 
 #description-1{

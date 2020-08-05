@@ -131,6 +131,26 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/branding/saltheadermob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/saltheadermob.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/branding/saltheadertab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/saltheadertab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/branding/saltopiaHEADER.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -393,7 +413,7 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/deploy/img/header/ADlogo.svg": {
+	"/deploy/img/Header/ADlogo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
@@ -780,28 +800,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/main-nav/nav-scroll-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/main-nav/X-animation.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/main-nav/X-animation-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/main-nav/X-mouse-events.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/dev/js/main-nav/X-mouse-events-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

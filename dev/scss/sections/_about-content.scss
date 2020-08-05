@@ -9,6 +9,8 @@
  #section-container{
      background-color: $greyblue;
      padding-top: 250px;
+     padding-bottom: 100px;
+     margin-bottom: -100px;
 
      #section-main-header-A{
         //  text-align: right;
@@ -20,16 +22,14 @@
          position: absolute;
          display: flex;
          justify-content: flex-end;
+         text-align: right;
         }
      
 
      #section-text-A{
 
-        >div{
-
             #text-content{
                 // margin-top: 200px;
-            
 
                 p{
                     color: white;
@@ -41,14 +41,14 @@
                     }
                 }
             }
-
-            // #button{
-            //     align-items: center;
-            //     justify-content: center;
-            //     text-align: center;
-            // }
-        }
      }
+
+     #button{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
  }
 
  /* =============

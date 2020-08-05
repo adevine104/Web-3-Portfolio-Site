@@ -7,58 +7,31 @@
  --------------------------*/
 
  #section-title{
-    margin-top: 50px;
 
-    @include md{
-        margin-top: 120px;
-    }
-
-    @include lg{
-        margin-top: 180px;
-    }
 }
 
 #section-header{
-    margin-top: 50px;
-
-    @include md{
-        margin-top: 0px;
-    }
-
-    @include lg{
-        margin-top: 0px;
-    }
 
     >div{
-
-        // #background-shapes-B{
-        //     margin-top: -450px;
-        //     // position: absolute;
-
-        //     #background-shape-top-B{
-        //         background-color: $earthpink;
-        //         height: 40vh;
-        //         // width: 100vw;
-        //         clip-path: polygon(0 23%, 100% 5%, 100% 95%, 0 77%);
-
-        //         @include md{
-        //             height: 50vh;
-        //         }
-        //     }
-        //     }
-
-        background-image: url('../img/branding/saltopiaHEADER.svg');
+        background-image: url('../img/branding/saltheadermob.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 42vh;
+        height: 20vh;
+
 
         @include md{
-            margin-top: -50px;
+            background-image: url('../img/branding/saltheadertab.svg');
+            height: 30vh;
         }
 
         @include lg{
-            height: 72vh
+            background-image: url('../img/branding/saltopiaHEADER.svg');
+            height: 52vh;
+        }
+
+        @include xl{
+            height: 72vh;
         }
 
         #header-content-B{
@@ -68,37 +41,41 @@
 
             #section-1-header-B{
                 display: grid;
-
                 text-align: right;
+                // bottom: 0;
+                // left: 0;
+                // width: 300px;
 
                 h1{
-                    position: absolute;
-                    margin-top: 100px;
+                    position: relative;
+                    margin-top: 50px;
+                    margin-right: 45px;
+                    font-size: rem-calc(25);
                     z-index:90;
                     text-align: right;
+
+                    @include md{
+                        font-size: rem-calc(40);
+                        margin-top: 100px;
+                        margin-right: 100px;
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(50);
+                        margin-top: 160px;
+                        margin-right: 180px;
+                    }
                 }
             }
         }
 
-        //     img{
-        //         grid-area: image;
-        //         height: 35vh;
-        //         // position: relative;
-        //         z-index:10;
-        //         margin: 0 45px 15px 0px;
-        //         // float: right;
-        //             // object-fit: cover;
-        //             // width: 100vw;
-                
-        //     }
-        // }
     }
 }
 
 #salt-logos{
     >div{
 
-        @include md{
+        @include lg{
             margin-top: -80px;
         }
 

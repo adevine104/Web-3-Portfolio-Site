@@ -16,10 +16,6 @@ p{
     padding: 0;
 }
 
-.section-title{
-    font-weight: 300;
-}
-
 .white-section-header{
     font-weight: 300;
     color: white;
@@ -34,14 +30,17 @@ p{
     transform: rotate(-4deg);
     text-align: center;
     font-size: rem-calc(20);
+    margin-top: 80px;
+    font-style: italic;
 
     @include md{
         font-size: rem-calc(30);
-        margin: 0 0 60px 0;
+        margin-top: 150px;
     }
 
     @include xl{
         font-size: rem-calc(35);
+        margin-top: 180px;
     }
 }
 
