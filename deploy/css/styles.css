@@ -550,7 +550,6 @@ textarea {
   background-color: black;
   display: grid;
   place-items: center;
-  margin-top: 50px;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -558,13 +557,22 @@ textarea {
   right: 0;
   width: 100%;
   z-index: 95; }
+  @media (min-width: 768px) {
+    #main-nav {
+      padding-top: 70px; } }
+  @media (min-width: 1025px) {
+    #main-nav {
+      padding-top: 120px; } }
+  @media (min-width: 1440px) {
+    #main-nav {
+      padding-top: 130px; } }
   #main-nav ul li button {
     background-color: transparent;
     border: none;
     color: #6D7278;
     font-size: 1.25rem;
     padding: 20px 0 20px 10px;
-    text-align: left;
+    text-align: center;
     transition: 0.25s;
     width: 100%; }
     @media (min-width: 768px) {
@@ -590,7 +598,7 @@ textarea {
         #main-nav ul li button i {
           font-size: 2.5rem; } }
     #main-nav ul li button:hover {
-      background-color: #fff; }
+      color: #fff; }
       #main-nav ul li button:hover i {
         color: #6D7278; }
   #main-nav ul li a:link,
@@ -599,7 +607,8 @@ textarea {
     display: inline-block;
     font-size: 1.25rem;
     padding: 20px 0 20px 10px;
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
     @media (min-width: 768px) {
       #main-nav ul li a:link,
       #main-nav ul li a:visited {
@@ -632,7 +641,7 @@ textarea {
     #main-nav ul li a:link:hover, #main-nav ul li a:link:active,
     #main-nav ul li a:visited:hover,
     #main-nav ul li a:visited:active {
-      background-color: #fff; }
+      color: white; }
       #main-nav ul li a:link:hover i, #main-nav ul li a:link:active i,
       #main-nav ul li a:visited:hover i,
       #main-nav ul li a:visited:active i {
@@ -1254,7 +1263,7 @@ header {
     Fine Art Section 1
  --------------------------*/
 #section-main-header {
-  margin-top: 50px; }
+  margin-top: 60px; }
   @media (min-width: 768px) {
     #section-main-header {
       margin-top: 100px; } }
@@ -1262,22 +1271,20 @@ header {
     #section-main-header {
       margin-top: 160px; } }
 #header-content {
-  background-image: url("../img/branding/saltheadermob.svg");
+  background-image: url("../img/fine-art-header-1/exhaustionheadermob.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 20vh; }
+  height: 30vh;
+  margin-top: 30px; }
   @media (min-width: 768px) {
     #header-content {
-      background-image: url("../img/branding/saltheadertab.svg");
-      height: 30vh; } }
+      background-image: url("../img/fine-art-header-1/exhaustionheadertab.svg");
+      height: 60vh; } }
   @media (min-width: 1025px) {
     #header-content {
-      background-image: url("../img/branding/saltopiaHEADER.svg");
-      height: 52vh; } }
-  @media (min-width: 1440px) {
-    #header-content {
-      height: 72vh; } }
+      background-image: url("../img/fine-art-header-1/exhaustionheader.svg");
+      height: 82vh; } }
   #header-content #section-1-subheader {
     display: grid;
     text-align: right; }
@@ -1299,12 +1306,12 @@ header {
           margin-top: 160px;
           margin-right: 180px; } }
 #description-1 p {
-  margin: 150px 20px 50px 20px;
+  margin: 30px 20px 50px 20px;
   text-align: justify;
   color: #6D7278; }
   @media (min-width: 768px) {
     #description-1 p {
-      margin: 80px 120px 80px 120px; } }
+      margin: 20px 140px 80px 140px; } }
 #tired-gallery {
   margin-bottom: 50px; }
   @media (min-width: 768px) {
@@ -1373,18 +1380,18 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 20vh; }
+  height: 30vh; }
   @media (min-width: 768px) {
     #section-header > div {
       background-image: url("../img/branding/saltheadertab.svg");
-      height: 30vh; } }
+      height: 50vh; } }
   @media (min-width: 1025px) {
     #section-header > div {
       background-image: url("../img/branding/saltopiaHEADER.svg");
-      height: 52vh; } }
+      height: 72vh; } }
   @media (min-width: 1440px) {
     #section-header > div {
-      height: 72vh; } }
+      height: 62vh; } }
   #section-header > div #header-content-B #section-1-header-B {
     display: grid;
     text-align: right; }
@@ -1405,36 +1412,43 @@ header {
           font-size: 3.125rem;
           margin-top: 160px;
           margin-right: 180px; } }
-@media (min-width: 1025px) {
-  #salt-logos > div {
-    margin-top: -80px; } }
-
-#salt-logos > div ul {
-  display: grid;
-  gap: 20px;
-  grid-template-rows: 250px 200px 200px;
-  grid-template-areas: "l1" "l2" "l3"; }
+#salt-logos > div {
+  margin-top: 140px; }
   @media (min-width: 768px) {
-    #salt-logos > div ul {
-      grid-template-areas: "l1 l2 l3";
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(1, 1fr); } }
-  #salt-logos > div ul li {
-    align-items: center;
-    display: flex;
-    justify-content: center; }
-    #salt-logos > div ul li img {
-      object-fit: cover;
-      width: 80vw; }
-      @media (min-width: 768px) {
-        #salt-logos > div ul li img {
-          width: 30vw; } }
-  #salt-logos > div ul li:nth-child(1) {
-    grid-area: l1; }
-  #salt-logos > div ul li:nth-child(2) {
-    grid-area: l2; }
-  #salt-logos > div ul li:nth-child(3) {
-    grid-area: l3; }
+    #salt-logos > div {
+      margin-top: -20px; } }
+  @media (min-width: 1025px) {
+    #salt-logos > div {
+      margin-top: -70px; } }
+  @media (min-width: 1025px) {
+    #salt-logos > div {
+      margin-top: 0px; } }
+  #salt-logos > div ul {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 250px 200px 200px;
+    grid-template-areas: "l1" "l2" "l3"; }
+    @media (min-width: 768px) {
+      #salt-logos > div ul {
+        grid-template-areas: "l1 l2 l3";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr); } }
+    #salt-logos > div ul li {
+      align-items: center;
+      display: flex;
+      justify-content: center; }
+      #salt-logos > div ul li img {
+        object-fit: cover;
+        width: 80vw; }
+        @media (min-width: 768px) {
+          #salt-logos > div ul li img {
+            width: 30vw; } }
+    #salt-logos > div ul li:nth-child(1) {
+      grid-area: l1; }
+    #salt-logos > div ul li:nth-child(2) {
+      grid-area: l2; }
+    #salt-logos > div ul li:nth-child(3) {
+      grid-area: l3; }
 
 #part-2-container {
   display: grid;
@@ -1443,7 +1457,7 @@ header {
     #part-2-container {
       display: grid;
       grid-template-areas: "p image";
-      grid-template-columns: 50% auto; } }
+      grid-template-columns: 60% auto; } }
   #part-2-container #part-2-text {
     text-align: justify;
     margin: 40px 20px 50px 20px;
@@ -1455,6 +1469,12 @@ header {
         margin: 70px 20px 50px 60px;
         font-size: 1.125rem;
         line-height: 1.5; } }
+    @media (min-width: 1025px) {
+      #part-2-container #part-2-text {
+        margin: 70px 20px 50px 180px; } }
+    @media (min-width: 1440px) {
+      #part-2-container #part-2-text {
+        margin: 70px 20px 50px 200px; } }
   #part-2-container #part-2-image {
     grid-area: image;
     justify-content: center;
@@ -1490,31 +1510,58 @@ header {
  --------------------------*/
 #section-container {
   background-color: #3E4649;
-  padding-top: 250px;
+  padding-top: 150px;
   padding-bottom: 100px;
   margin-bottom: -100px; }
+  @media (min-width: 768px) {
+    #section-container {
+      padding-top: 250px; } }
   #section-container #section-main-header-A {
     color: white;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
-    transform: rotate(-90deg);
-    margin-top: 40px;
-    position: absolute;
+    margin: -40px 0 -40px 0;
     display: flex;
-    justify-content: flex-end;
-    text-align: right; }
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25rem; }
+    @media (min-width: 768px) {
+      #section-container #section-main-header-A {
+        position: absolute;
+        font-size: 1.75rem;
+        margin-top: 20px;
+        transform: rotate(-90deg);
+        justify-content: right;
+        align-items: right;
+        text-align: right; } }
+    @media (min-width: 1025px) {
+      #section-container #section-main-header-A {
+        margin-top: 40px; } }
+  #section-container #section-text-A #text-content #top-line {
+    margin-top: 100px; }
   #section-container #section-text-A #text-content p {
+    margin: 0px 30px 30px 30px;
     color: white;
     text-align: justify; }
     @media (min-width: 768px) {
       #section-container #section-text-A #text-content p {
-        margin: 50px 500px 50px 100px;
-        text-align: left; } }
+        font-size: 1.25rem;
+        margin: 0px 100px 30px 170px;
+        text-align: left;
+        line-height: 1.5; } }
+    @media (min-width: 1025px) {
+      #section-container #section-text-A #text-content p {
+        margin: 0px 350px 30px 170px; } }
+    @media (min-width: 1440px) {
+      #section-container #section-text-A #text-content p {
+        margin: 0px 450px 30px 170px; } }
   #section-container #button {
     position: relative;
     align-items: center;
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    margin-top: 30px; }
 
 /* =============
     Google Map

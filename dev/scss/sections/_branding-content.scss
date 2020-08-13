@@ -17,21 +17,21 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 20vh;
+        height: 30vh;
 
 
         @include md{
             background-image: url('../img/branding/saltheadertab.svg');
-            height: 30vh;
+            height: 50vh;
         }
 
         @include lg{
             background-image: url('../img/branding/saltopiaHEADER.svg');
-            height: 52vh;
+            height: 72vh;
         }
 
         @include xl{
-            height: 72vh;
+            height: 62vh;
         }
 
         #header-content-B{
@@ -74,9 +74,18 @@
 
 #salt-logos{
     >div{
+        margin-top: 140px;
+
+        @include md{
+            margin-top: -20px;
+        }
 
         @include lg{
-            margin-top: -80px;
+            margin-top: -70px;
+        }
+
+        @include lg{
+            margin-top: 0px;
         }
 
         ul{ 
@@ -129,7 +138,7 @@
     @include md{
         display: grid;
         grid-template-areas: "p image";
-        grid-template-columns: 50% auto;
+        grid-template-columns: 60% auto;
     }
     
     #part-2-text{
@@ -144,6 +153,14 @@
         font-size: rem-calc(18);
         line-height: 1.5;
         }
+
+        @include lg{
+            margin: 70px 20px 50px 180px;
+            }
+
+        @include xl{
+            margin: 70px 20px 50px 200px;
+            }
         
     }
 

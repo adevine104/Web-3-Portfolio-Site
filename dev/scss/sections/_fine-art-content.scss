@@ -7,7 +7,7 @@
  --------------------------*/
 
 #section-main-header{
-    margin-top: 50px;
+    margin-top: 60px;
 
     @include md{
         margin-top: 100px;
@@ -45,26 +45,27 @@
 
         #header-content{
 
-            background-image: url('../img/branding/saltheadermob.svg');
+            background-image: url('../img/fine-art-header-1/exhaustionheadermob.svg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 20vh;
+            height: 30vh;
+            margin-top: 30px;
 
 
             @include md{
-            background-image: url('../img/branding/saltheadertab.svg');
-            height: 30vh;
+            background-image: url('../img/fine-art-header-1/exhaustionheadertab.svg');
+            height: 60vh;
             }
 
             @include lg{
-            background-image: url('../img/branding/saltopiaHEADER.svg');
-            height: 52vh;
+            background-image: url('../img/fine-art-header-1/exhaustionheader.svg');
+            height: 82vh;
             }
 
-            @include xl{
-            height: 72vh;
-            }
+            // @include xl{
+            // height: 82vh;
+            // }
 
             #section-1-subheader{
                 display: grid;
@@ -100,12 +101,12 @@
 #description-1{
 
     p{
-        margin: 150px 20px 50px 20px;
+        margin: 30px 20px 50px 20px;
         text-align: justify;
         color: $lightgrey;
 
         @include md{
-            margin: 80px 120px 80px 120px;
+            margin: 20px 140px 80px 140px;
         }
     }
 }
