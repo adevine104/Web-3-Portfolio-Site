@@ -1523,35 +1523,44 @@ header {
           margin-right: 280px; } }
 #part-2-container-P {
   display: grid;
-  grid-template-areas: "image" "p"; }
+  grid-template-areas: "p" "image"; }
   @media (min-width: 768px) {
     #part-2-container-P {
-      grid-template-areas: "p" "image";
+      grid-template-areas: "image" "p";
       grid-template-columns: 50% auto; } }
   #part-2-container-P #part-2-text-P {
     text-align: justify;
+    margin: 0px 0px 0px 0px;
     color: #6D7278; }
     @media (min-width: 768px) {
       #part-2-container-P #part-2-text-P {
         grid-area: p;
         text-align: left;
+        margin: 70px 20px 50px 0px;
         font-size: 1.125rem;
         line-height: 1.5; } }
+    @media (min-width: 1025px) {
+      #part-2-container-P #part-2-text-P {
+        margin: 70px 20px 50px 0px; } }
+    @media (min-width: 1440px) {
+      #part-2-container-P #part-2-text-P {
+        margin: 70px 60px 50px 0px; } }
   #part-2-container-P #part-2-image-P {
     grid-area: image;
-    margin-left: 22px; }
+    margin-left: 80px; }
     #part-2-container-P #part-2-image-P img {
       object-fit: cover;
-      width: 30vw; }
+      width: 40vw; }
 
 #part-2-text-2-P {
   text-align: justify;
-  margin: 40px 200px 50px 200px;
+  margin: 30px 20px 10px 20px;
   color: #6D7278;
   line-height: 1.25; }
   @media (min-width: 768px) {
     #part-2-text-2-P {
       text-align: left;
+      margin: 40px 200px 50px 200px;
       font-size: 1.125rem;
       line-height: 1.5; } }
 #part-2-container-2-P #part-2-images-2-P img {

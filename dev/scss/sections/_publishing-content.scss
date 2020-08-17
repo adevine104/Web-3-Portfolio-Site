@@ -76,33 +76,33 @@
 #part-2-container-P{
 
     display: grid;
-    grid-template-areas: "image" "p";
+    grid-template-areas: "p" "image";
     // grid-template-rows: repeat(1/1fr);
 
     @include md{
-        grid-template-areas: "p" "image";
+        grid-template-areas: "image" "p";
         grid-template-columns: 50% auto;
     }
     
     #part-2-text-P{
         text-align: justify;
-        // margin: 40px 20px 50px 20px;
+        margin: 0px 0px 0px 0px;
         color: $lightgrey;
 
         @include md{
             grid-area: p;
             text-align: left;
-            // margin: 70px 20px 50px 60px;
+            margin: 70px 20px 50px 0px;
             font-size: rem-calc(18);
             line-height: 1.5;
         }
 
         @include lg{
-            // margin: 70px 20px 50px 180px;
+            margin: 70px 20px 50px 0px;
             }
 
         @include xl{
-            // margin: 70px 20px 50px 200px;
+            margin: 70px 60px 50px 0px;
             }
         
     }
@@ -111,11 +111,11 @@
 
         img{
             object-fit: cover;
-            width: 30vw;
+            width: 40vw;
         }
 
         grid-area: image;
-        margin-left: 22px;
+        margin-left: 80px;
         // height: 20vh;
     }
 
@@ -123,13 +123,13 @@
 
 #part-2-text-2-P{
     text-align: justify;
-    margin: 40px 200px 50px 200px;
+    margin: 30px 20px 10px 20px;
     color: $lightgrey;
     line-height: 1.25;
 
     @include md{
     text-align: left;
-    // margin: 70px 20px 50px 60px;
+    margin: 40px 200px 50px 200px;
     font-size: rem-calc(18);
     line-height: 1.5;
     }
