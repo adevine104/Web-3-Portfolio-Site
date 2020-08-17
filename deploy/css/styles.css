@@ -450,16 +450,13 @@ a:link, a:visited {
 /* =============
     Typography
 ============= */
-body {
-  font-family: 'Open Sans', sans-serif; }
-
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
 
 p {
-  margin: 0;
-  padding: 0; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; }
 
 .white-section-header {
   font-weight: 300;
@@ -556,7 +553,9 @@ textarea {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 95; }
+  z-index: 95;
+  font-family: 'Open Sans';
+  font-weight: 300; }
   @media (min-width: 768px) {
     #main-nav {
       padding-top: 70px; } }
@@ -574,7 +573,9 @@ textarea {
     padding: 20px 0 20px 10px;
     text-align: center;
     transition: 0.25s;
-    width: 100%; }
+    width: 100%;
+    font-family: 'Open Sans';
+    font-weight: 300; }
     @media (min-width: 768px) {
       #main-nav ul li button {
         font-size: 1.875rem; } }
@@ -995,7 +996,7 @@ header {
     header div #nav-container {
       display: none;
       font-family: 'Open Sans';
-      font-weight: 500;
+      font-weight: 400;
       grid-area: nav;
       padding: 10px 20px; }
       header div #nav-container a:link,
@@ -1020,7 +1021,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh; }
+  height: 70vh;
+  font-family: 'Open Sans';
+  font-weight: 300; }
   @media (min-width: 768px) {
     #footer {
       height: 40vh; } }
@@ -1161,12 +1164,12 @@ header {
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr); }
+    grid-template-rows: repeat(4, 1fr); }
     @media (min-width: 768px) {
       #index-home ul {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr); } }
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr); } }
     #index-home ul #branding {
       height: 20vh;
       padding: 20vh 4vw;
@@ -1190,15 +1193,6 @@ header {
           background-color: #294393;
           background-image: url("../img/home-page/mulaney.png");
           padding: 20vh 4vw; } }
-    #index-home ul #imagemaking {
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: 20vh 30vw; }
-      @media (min-width: 768px) {
-        #index-home ul #imagemaking {
-          background-color: #586361;
-          background-image: url("../img/home-page/zombie.png");
-          padding: 20vh 4vw; } }
     #index-home ul #fineart {
       background-position: center;
       background-repeat: no-repeat;
@@ -1207,15 +1201,6 @@ header {
         #index-home ul #fineart {
           background-color: transparent;
           background-image: url("../img/home-page/rainbow.png");
-          padding: 20vh 4vw; } }
-    #index-home ul #typography {
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: 20vh 30vw; }
-      @media (min-width: 768px) {
-        #index-home ul #typography {
-          background-color: #95670D;
-          background-image: url("../img/home-page/stag.png");
           padding: 20vh 4vw; } }
     #index-home ul #webdesign {
       background-position: center;
@@ -1275,8 +1260,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh;
-  margin-top: 30px; }
+  height: 30vh; }
   @media (min-width: 768px) {
     #header-content {
       background-image: url("../img/fine-art-header-1/exhaustionheadertab.svg");
@@ -1308,10 +1292,12 @@ header {
 #description-1 p {
   margin: 30px 20px 50px 20px;
   text-align: justify;
-  color: #6D7278; }
+  color: #6D7278;
+  line-height: 1.25; }
   @media (min-width: 768px) {
     #description-1 p {
-      margin: 20px 140px 80px 140px; } }
+      margin: 20px 140px 80px 140px;
+      line-height: 1.5; } }
 #tired-gallery {
   margin-bottom: 50px; }
   @media (min-width: 768px) {
@@ -1501,6 +1487,88 @@ header {
   #process-slides-1 > div .tns-controls [aria-controls] {
     color: #fff;
     background: #6D7278; }
+
+/* =============
+    Branding Content
+============= */
+/* --------------------------
+    Branding Section 1
+ --------------------------*/
+#section-header-P > div {
+  background-image: url("../img/publication/pubheadermob1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh; }
+  @media (min-width: 768px) {
+    #section-header-P > div {
+      background-image: url("../img/publication/pubheadertab1.svg");
+      height: 50vh; } }
+  @media (min-width: 1025px) {
+    #section-header-P > div {
+      background-image: url("../img/publication/pubheader1.svg");
+      height: 72vh; } }
+  @media (min-width: 1440px) {
+    #section-header-P > div {
+      height: 62vh; } }
+  #section-header-P > div #header-content-P #section-1-header-P {
+    display: grid;
+    text-align: right; }
+    #section-header-P > div #header-content-P #section-1-header-P h1 {
+      position: relative;
+      margin-top: 50px;
+      margin-right: 45px;
+      font-size: 1.5625rem;
+      z-index: 90;
+      text-align: right; }
+      @media (min-width: 768px) {
+        #section-header-P > div #header-content-P #section-1-header-P h1 {
+          font-size: 2.5rem;
+          margin-top: 100px;
+          margin-right: 100px; } }
+      @media (min-width: 1025px) {
+        #section-header-P > div #header-content-P #section-1-header-P h1 {
+          font-size: 3.125rem;
+          margin-top: 160px;
+          margin-right: 280px; } }
+#part-2-container-P {
+  display: grid;
+  grid-template-areas: "image" "p"; }
+  @media (min-width: 768px) {
+    #part-2-container-P {
+      grid-template-areas: "p" "image";
+      grid-template-columns: 50% auto; } }
+  #part-2-container-P #part-2-text-P {
+    text-align: justify;
+    color: #6D7278; }
+    @media (min-width: 768px) {
+      #part-2-container-P #part-2-text-P {
+        grid-area: p;
+        text-align: left;
+        font-size: 1.125rem;
+        line-height: 1.5; } }
+  #part-2-container-P #part-2-image-P {
+    grid-area: image;
+    justify-content: center;
+    align-items: center;
+    margin-left: 22px; }
+    #part-2-container-P #part-2-image-P img {
+      object-fit: cover;
+      width: 30vw; }
+
+#part-2-text-2-P {
+  text-align: justify;
+  margin: 40px 200px 50px 200px;
+  color: #6D7278;
+  line-height: 1.25; }
+  @media (min-width: 768px) {
+    #part-2-text-2-P {
+      text-align: left;
+      font-size: 1.125rem;
+      line-height: 1.5; } }
+#part-2-container-2-P #part-2-images-2-P {
+  width: 60vw;
+  margin: 30px 50px 30px 50px; }
 
 /* =============
     About Content

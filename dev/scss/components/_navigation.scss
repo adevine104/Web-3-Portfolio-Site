@@ -14,6 +14,8 @@
     width: 100%;
     // height: 100%;
     z-index: 95;
+    font-family: 'Open Sans';
+    font-weight: 300;
 
     @include md{
         padding-top: 70px;
@@ -39,6 +41,8 @@
                 text-align: center;
                 transition: 0.25s;
                 width: 100%;
+                font-family: 'Open Sans';
+                font-weight: 300;
                 // line-height: ;
 
                 @include md {

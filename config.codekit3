@@ -626,6 +626,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/publication/2ndspreadpic.png": {
+		"ft": 32768,
+		"iS": 1346055,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/2ndspreadpic.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/coverpic.png": {
+		"ft": 32768,
+		"iS": 1115136,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/coverpic.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/indexpic.png": {
+		"ft": 32768,
+		"iS": 207702,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/indexpic.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/openingspreadpic.png": {
+		"ft": 32768,
+		"iS": 414225,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/openingspreadpic.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/publication/pubheader1.svg": {
 		"ft": 2097152,
 		"miP": 0,

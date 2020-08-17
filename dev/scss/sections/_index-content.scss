@@ -16,12 +16,12 @@
         width: 100vw;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
 
         @include md {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
         }
 
         #branding {
@@ -75,18 +75,18 @@
             }
         }
 
-        #imagemaking {
-            // background-image: url("../img/home-page/imagemakingheadermob.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 20vh 30vw;
+        // #imagemaking {
+        //     // background-image: url("../img/home-page/imagemakingheadermob.png");
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     padding: 20vh 30vw;
 
-            @include md {
-                background-color: $earthgreen;
-                background-image: url("../img/home-page/zombie.png");
-                padding: 20vh 4vw;
-            }
-        }
+        //     @include md {
+        //         background-color: $earthgreen;
+        //         background-image: url("../img/home-page/zombie.png");
+        //         padding: 20vh 4vw;
+        //     }
+        // }
 
         #fineart {
             // background-image: url("../img/home-page/fineartheadermob.png");
@@ -101,18 +101,18 @@
             }
         }
 
-        #typography {
-            // background-image: url("../img/home-page/typeheadermob.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 20vh 30vw;
+        // #typography {
+        //     // background-image: url("../img/home-page/typeheadermob.png");
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     padding: 20vh 30vw;
 
-            @include md {
-                background-color: $gold;
-                background-image: url("../img/home-page/stag.png");
-                padding: 20vh 4vw;
-            }
-        }
+        //     @include md {
+        //         background-color: $gold;
+        //         background-image: url("../img/home-page/stag.png");
+        //         padding: 20vh 4vw;
+        //     }
+        // }
 
         #webdesign {
             // background-image: url("../img/home-page/webheadermob.png");
