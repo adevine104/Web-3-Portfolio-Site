@@ -1157,8 +1157,7 @@ header {
  --------------------------*/
 #index-home {
   text-align: center;
-  margin: 0px 0 0 0;
-  margin: -140px 0;
+  margin: 140px 0;
   width: 100vw; }
   #index-home ul {
     width: 100vw;
@@ -1171,23 +1170,15 @@ header {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr); } }
     #index-home ul #branding {
-      height: 20vh;
-      padding: 20vh 4vw;
       background-repeat: no-repeat; }
       @media (min-width: 768px) {
         #index-home ul #branding {
           background-color: #56383A;
           background-image: url("../img/home-page/salt.png");
-          height: 30vh;
-          padding: 20vh 4vw;
-          background-position: 0px 370px; } }
-      @media (min-width: 1025px) {
-        #index-home ul #branding {
-          height: 30vh; } }
+          background-position: 0px 270px; } }
     #index-home ul #publication {
       background-position: center;
-      background-repeat: no-repeat;
-      padding: 20vh 30vw; }
+      background-repeat: no-repeat; }
       @media (min-width: 768px) {
         #index-home ul #publication {
           background-color: #294393;
@@ -1199,8 +1190,8 @@ header {
       padding: 20vh 30vw; }
       @media (min-width: 768px) {
         #index-home ul #fineart {
-          background-color: transparent;
-          background-image: url("../img/home-page/rainbow.png");
+          background-color: #586361;
+          background-image: url("../img/home-page/zombie.png");
           padding: 20vh 4vw; } }
     #index-home ul #webdesign {
       background-position: center;
@@ -1208,12 +1199,11 @@ header {
       padding: 20vh 30vw; }
       @media (min-width: 768px) {
         #index-home ul #webdesign {
-          background-color: #323B56;
+          background-color: #95670D;
           background-image: url("../img/home-page/iphonemummers.png");
           padding: 20vh 4vw; } }
     #index-home ul .text h1 {
       color: white;
-      transform: rotate(-90deg);
       text-align: right;
       font-family: Open Sans, sans-serif;
       font-weight: 300;
@@ -1489,10 +1479,10 @@ header {
     background: #6D7278; }
 
 /* =============
-    Branding Content
+    Publishing Content
 ============= */
 /* --------------------------
-    Branding Section 1
+    Publishing Section 1
  --------------------------*/
 #section-header-P > div {
   background-image: url("../img/publication/pubheadermob1.svg");
@@ -1549,8 +1539,6 @@ header {
         line-height: 1.5; } }
   #part-2-container-P #part-2-image-P {
     grid-area: image;
-    justify-content: center;
-    align-items: center;
     margin-left: 22px; }
     #part-2-container-P #part-2-image-P img {
       object-fit: cover;
@@ -1566,9 +1554,10 @@ header {
       text-align: left;
       font-size: 1.125rem;
       line-height: 1.5; } }
-#part-2-container-2-P #part-2-images-2-P {
-  width: 60vw;
-  margin: 30px 50px 30px 50px; }
+#part-2-container-2-P #part-2-images-2-P img {
+  display: inline-block;
+  width: 80vw;
+  margin: 30px auto 30px auto; }
 
 /* =============
     About Content

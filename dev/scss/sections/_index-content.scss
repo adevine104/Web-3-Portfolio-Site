@@ -8,8 +8,7 @@
 
 #index-home {
     text-align: center;
-    margin: 0px 0 0 0;
-    margin: -140px 0;
+    margin: 140px 0;
     width: 100vw;
 
     ul {
@@ -26,47 +25,23 @@
 
         #branding {
 
-            // #background-1{
-            //     background-color: $earthpink;
-            //     height: 80vh;
-            //     width: 100vw;
-            
-            //     @include md{
-            //         display: none;
-            //     }
-            // }
-            // img{
-            //     width: 30%;
-            //     object-fit: cover;
-            //     object-position: left;
-            //     margin-right: 250px;
-            // }
-
-            // background-color: $earthpink;
-            // background-image: url("../img/home-page/salt.png");
-            height: 20vh;
-            padding: 20vh 4vw;
             background-repeat: no-repeat;
-            // transform: rotate(-10deg);
 
             @include md {
                 background-color: $earthpink;
                 background-image: url("../img/home-page/salt.png");
-                height: 30vh;
-                padding: 20vh 4vw;
-                background-position: 0px 370px;
+                background-position: 0px 270px;
             }
 
-            @include lg {
-                height: 30vh;
-            }
+            // @include lg {
+            //     height: 30vh;
+            // }
         }
 
         #publication {
             // background-image: url("../img/home-page/Backtalkheadermob.png");
             background-position: center;
             background-repeat: no-repeat;
-            padding: 20vh 30vw;
 
             @include md {
                 background-color: $brightblue;
@@ -75,19 +50,6 @@
             }
         }
 
-        // #imagemaking {
-        //     // background-image: url("../img/home-page/imagemakingheadermob.png");
-        //     background-position: center;
-        //     background-repeat: no-repeat;
-        //     padding: 20vh 30vw;
-
-        //     @include md {
-        //         background-color: $earthgreen;
-        //         background-image: url("../img/home-page/zombie.png");
-        //         padding: 20vh 4vw;
-        //     }
-        // }
-
         #fineart {
             // background-image: url("../img/home-page/fineartheadermob.png");
             background-position: center;
@@ -95,24 +57,11 @@
             padding: 20vh 30vw;
 
             @include md {
-                background-color: transparent;
-                background-image: url("../img/home-page/rainbow.png");
+                background-color: $earthgreen;
+                background-image: url("../img/home-page/zombie.png");
                 padding: 20vh 4vw;
             }
         }
-
-        // #typography {
-        //     // background-image: url("../img/home-page/typeheadermob.png");
-        //     background-position: center;
-        //     background-repeat: no-repeat;
-        //     padding: 20vh 30vw;
-
-        //     @include md {
-        //         background-color: $gold;
-        //         background-image: url("../img/home-page/stag.png");
-        //         padding: 20vh 4vw;
-        //     }
-        // }
 
         #webdesign {
             // background-image: url("../img/home-page/webheadermob.png");
@@ -121,7 +70,7 @@
             padding: 20vh 30vw;
 
             @include md {
-                background-color: $earthblue;
+                background-color: $gold;
                 background-image: url("../img/home-page/iphonemummers.png");
                 padding: 20vh 4vw;
             }
@@ -131,7 +80,7 @@
 
             h1 {
                 color: white;
-                transform: rotate(-90deg);
+                // transform: rotate(-90deg);
                 text-align: right;
                 font-family: Open Sans, sans-serif;
                 font-weight: 300;
