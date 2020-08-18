@@ -17,17 +17,17 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 30vh;
+        height: 20vh;
 
 
         @include md{
             background-image: url('../img/publication/pubheadertab1.svg');
-            height: 50vh;
+            height: 30vh;
         }
 
         @include lg{
             background-image: url('../img/publication/pubheader1.svg');
-            height: 72vh;
+            height: 55vh;
         }
 
         @include xl{
@@ -92,13 +92,13 @@
         @include md{
             grid-area: p;
             text-align: left;
-            margin: 70px 20px 50px 0px;
+            margin: 100px 50px 50px 30px;
             font-size: rem-calc(18);
             line-height: 1.5;
         }
 
         @include lg{
-            margin: 70px 20px 50px 0px;
+            margin: 200px 10px 50px -40px;
             }
 
         @include xl{
@@ -108,15 +108,17 @@
     }
 
     #part-2-image-P{
+        grid-area: image;
+        margin-left: 80px;
 
         img{
             object-fit: cover;
             width: 40vw;
-        }
 
-        grid-area: image;
-        margin-left: 80px;
-        // height: 20vh;
+            @include lg{
+                width: 35vw;
+            }
+        }
     }
 
 }
@@ -129,13 +131,15 @@
 
     @include md{
     text-align: left;
-    margin: 40px 200px 50px 200px;
+    margin: 40px 100px 50px 100px;
     font-size: rem-calc(18);
     line-height: 1.5;
     }
 
     @include lg{
-        // margin: 70px 20px 50px 180px;
+    margin: 40px 200px 50px 200px;
+    font-size: rem-calc(18);
+    line-height: 1.5;
         }
 
     @include xl{
