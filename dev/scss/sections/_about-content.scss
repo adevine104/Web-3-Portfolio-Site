@@ -6,80 +6,80 @@
     About Section 1
  --------------------------*/
 
- #section-container{
-     background-color: $greyblue;
-     padding-top: 150px;
-     padding-bottom: 100px;
-     margin-bottom: -100px;
+#section-container {
+    background-color: $greyblue;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin-bottom: -100px;
 
-     @include md{
+    @include md {
         padding-top: 250px;
-     }
+    }
 
-     #section-main-header-A{
+    #section-main-header-A {
         //  text-align: right;
-         color: white;
-         font-weight: 300;
-         font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
         //  transform: rotate(-90deg);
-         margin: -40px 0 -40px 0;
+        margin: -40px 0 -40px 0;
         //  position: absolute;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         text-align: center;
-         font-size: rem-calc(20);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: rem-calc(20);
 
 
-         @include md{
+        @include md {
             position: absolute;
-             font-size: rem-calc(28);
-             margin-top: 20px;
-             transform: rotate(-90deg);
-             justify-content: right;
-         align-items: right;
-         text-align: right;
-         }
+            font-size: rem-calc(28);
+            margin-top: 20px;
+            transform: rotate(-90deg);
+            justify-content: right;
+            align-items: right;
+            text-align: right;
+        }
 
-         @include lg{
+        @include lg {
             margin-top: 40px;
         }
-        }
-     
+    }
 
-     #section-text-A{
 
-            #text-content{
-                // margin-top: 200px;
+    #section-text-A {
 
-                #top-line{
-                    margin-top: 100px;
-                }
+        #text-content {
+            // margin-top: 200px;
 
-                p{
-                    margin: 0px 30px 30px 30px;
-                    color: white;
-                    text-align: justify;
+            #top-line {
+                margin-top: 100px;
+            }
 
-                    @include md{
-                        font-size: rem-calc(20);
+            p {
+                margin: 0px 30px 30px 30px;
+                color: white;
+                text-align: justify;
+
+                @include md {
+                    font-size: rem-calc(20);
                     margin: 0px 100px 30px 170px;
                     text-align: left;
                     line-height: 1.5;
-                    }
+                }
 
-                    @include lg{
+                @include lg {
                     margin: 0px 350px 30px 170px;
-                    }
+                }
 
-                    @include xl{
+                @include xl {
                     margin: 0px 450px 30px 170px;
-                    }
                 }
             }
-     }
+        }
+    }
 
-     #button{
+    #button {
         position: relative;
         align-items: center;
         justify-content: center;
@@ -87,32 +87,32 @@
         margin-top: 30px;
         font-family: 'Open Sans';
     }
- }
+}
 
- /* =============
+/* =============
     Google Map
 ============= */
 
-#contact-map{
+#contact-map {
 
-    #map{
+    #map {
         width: 100%;
         height: 400px;
         background-color: $lightgrey;
 
-        @include md{
+        @include md {
             height: 500px;
         }
 
-        @include lg{
+        @include lg {
             height: 600px;
         }
 
-        @include xl{
+        @include xl {
             height: 700px;
         }
     }
-   
+
 }
 
 // #following-content{

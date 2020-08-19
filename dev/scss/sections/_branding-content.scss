@@ -6,13 +6,11 @@
     Branding Section 1
  --------------------------*/
 
- #section-title{
+#section-title {}
 
-}
+#section-header {
 
-#section-header{
-
-    >div{
+    >div {
         background-image: url('../img/branding/saltheadermob.svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -20,47 +18,47 @@
         height: 18vh;
 
 
-        @include md{
+        @include md {
             background-image: url('../img/branding/saltheadertab.svg');
             height: 25vh;
         }
 
-        @include lg{
+        @include lg {
             background-image: url('../img/branding/saltopiaHEADER.svg');
             height: 72vh;
         }
 
-        @include xl{
+        @include xl {
             height: 62vh;
         }
 
-        #header-content-B{
-        //     display: grid;
-        //     grid-template-columns: repeat(2,1fr);
-        //     grid-template-rows: repeat(1);
+        #header-content-B {
+            //     display: grid;
+            //     grid-template-columns: repeat(2,1fr);
+            //     grid-template-rows: repeat(1);
 
-            #section-1-header-B{
+            #section-1-header-B {
                 display: grid;
                 text-align: right;
                 // bottom: 0;
                 // left: 0;
                 // width: 300px;
 
-                h1{
+                h1 {
                     position: relative;
                     margin-top: 50px;
                     margin-right: 45px;
                     font-size: rem-calc(25);
-                    z-index:90;
+                    z-index: 90;
                     text-align: right;
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(40);
                         margin-top: 100px;
                         margin-right: 100px;
                     }
 
-                    @include lg{
+                    @include lg {
                         font-size: rem-calc(50);
                         margin-top: 160px;
                         margin-right: 180px;
@@ -72,45 +70,45 @@
     }
 }
 
-#salt-logos{
-    >div{
+#salt-logos {
+    >div {
         margin-top: 20px;
 
-        @include md{
+        @include md {
             margin-top: -20px;
         }
 
-        @include lg{
+        @include lg {
             margin-top: -70px;
         }
 
-        @include lg{
+        @include lg {
             margin-top: 0px;
         }
 
-        ul{ 
+        ul {
             display: grid;
             gap: 20px;
             grid-template-rows: 250px 200px 200px;
-            grid-template-areas: "l1" "l2" "l3";
+            grid-template-areas: "l1""l2""l3";
 
-            @include md{
-            grid-template-areas: "l1 l2 l3";
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(1,1fr);
+            @include md {
+                grid-template-areas: "l1 l2 l3";
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(1, 1fr);
             }
 
             li {
                 align-items: center;
                 display: flex;
                 justify-content: center;
-            
-                img{
+
+                img {
                     object-fit: cover;
                     width: 80vw;
 
-                    @include md{
-                    width: 30vw;
+                    @include md {
+                        width: 30vw;
                     }
                 }
             }
@@ -130,42 +128,42 @@
     }
 }
 
-#part-2-container{
+#part-2-container {
 
     display: grid;
-    grid-template-areas: "image" "p" ;
+    grid-template-areas: "image""p";
 
-    @include md{
+    @include md {
         display: grid;
         grid-template-areas: "p image";
         grid-template-columns: 60% auto;
     }
-    
-    #part-2-text{
+
+    #part-2-text {
         text-align: justify;
         margin: 40px 20px 50px 0px;
         color: $lightgrey;
         line-height: 1.5;
 
-        @include md{
-        grid-area: p;
-        text-align: right;
-        margin: 70px 20px 50px 60px;
-        font-size: rem-calc(18);
-        line-height: 1.5;
+        @include md {
+            grid-area: p;
+            text-align: right;
+            margin: 70px 20px 50px 60px;
+            font-size: rem-calc(18);
+            line-height: 1.5;
         }
 
-        @include lg{
+        @include lg {
             margin: 70px 20px 50px 180px;
-            }
+        }
 
-        @include xl{
+        @include xl {
             margin: 70px 20px 50px 200px;
-            }
-        
+        }
+
     }
 
-    #part-2-image{
+    #part-2-image {
         // img{
         // object-fit: cover;
         // width: 100vw;
@@ -178,29 +176,30 @@
     }
 }
 
-#process-slides-1{
+#process-slides-1 {
     // border: 1px solid red;
     margin-bottom: 50px;
 
-    @include md{
+    @include md {
         margin-bottom: 150px;
     }
-    >div{
-        
-        .my-slider{
-            
-            div{
+
+    >div {
+
+        .my-slider {
+
+            div {
                 height: 300px;
 
-                @include lg{
+                @include lg {
                     height: 350px;
                 }
 
-                @include xl{
+                @include xl {
                     height: 400px;
                 }
-                
-                img{
+
+                img {
                     // height: 100%;
                     width: 90%;
                     object-fit: cover;

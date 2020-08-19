@@ -6,82 +6,82 @@
     Fine Art Section 1
  --------------------------*/
 
-#section-main-header{
+#section-main-header {
     margin-top: 60px;
 
-    @include md{
+    @include md {
         margin-top: 100px;
     }
 
-    @include lg{
+    @include lg {
         margin-top: 160px;
     }
 }
 
-        #header-content{
+#header-content {
 
-            background-image: url('../img/fine-art-header-1/exhaustionheadermob.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 20vh;
-            // margin-top: 30px;
+    background-image: url('../img/fine-art-header-1/exhaustionheadermob.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    // margin-top: 30px;
 
 
-            @include md{
-            background-image: url('../img/fine-art-header-1/exhaustionheadertab.svg');
-            height: 30vh;
+    @include md {
+        background-image: url('../img/fine-art-header-1/exhaustionheadertab.svg');
+        height: 30vh;
+    }
+
+    @include lg {
+        background-image: url('../img/fine-art-header-1/exhaustionheader.svg');
+        height: 82vh;
+    }
+
+    // @include xl{
+    // height: 82vh;
+    // }
+
+    #section-1-subheader {
+        display: grid;
+        text-align: right;
+
+        h1 {
+            position: relative;
+            margin-top: 50px;
+            margin-right: 85px;
+            font-size: rem-calc(25);
+            z-index: 90;
+            text-align: right;
+
+            @include md {
+                font-size: rem-calc(40);
+                margin-top: 100px;
+                margin-right: 160px;
             }
 
-            @include lg{
-            background-image: url('../img/fine-art-header-1/exhaustionheader.svg');
-            height: 82vh;
-            }
-
-            // @include xl{
-            // height: 82vh;
-            // }
-
-            #section-1-subheader{
-                display: grid;
-                text-align: right;
-                
-                h1{
-                position: relative;
-                    margin-top: 50px;
-                    margin-right: 85px;
-                    font-size: rem-calc(25);
-                    z-index:90;
-                    text-align: right;
-
-                    @include md{
-                        font-size: rem-calc(40);
-                        margin-top: 100px;
-                        margin-right: 160px;
-                    }
-
-                    @include lg{
-                        font-size: rem-calc(50);
-                        margin-top: 160px;
-                        margin-right: 180px;
-                    }
-
-                }
-                
+            @include lg {
+                font-size: rem-calc(50);
+                margin-top: 160px;
+                margin-right: 180px;
             }
 
         }
 
+    }
 
-#description-1{
+}
 
-    p{
+
+#description-1 {
+
+    p {
         margin: 40px 20px 60px 20px;
         text-align: justify;
         color: $lightgrey;
         line-height: 1.25;
 
-        @include md{
+        @include md {
             margin: 20px 140px 80px 140px;
             line-height: 1.5;
         }
@@ -89,21 +89,22 @@
 }
 
 
-#tired-gallery{
+#tired-gallery {
     margin-bottom: 50px;
 
-    @include md{
+    @include md {
         margin-bottom: 150px;
     }
-        ul{
-            display: grid;
-            gap: 20px;
-            grid-template-rows: repeat(11,290px);
 
-            @include md{
-                grid-template-rows: repeat(6,350px);
-                grid-template-columns: repeat(2,1fr);
-                grid-template-areas: 
+    ul {
+        display: grid;
+        gap: 20px;
+        grid-template-rows: repeat(11, 290px);
+
+        @include md {
+            grid-template-rows: repeat(6, 350px);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
                 "one two"
                 "three four"
                 "five four"
@@ -111,95 +112,95 @@
                 "seven eight"
                 "nine ten"
                 "nine eleven";
-            }
+        }
 
-            @include lg{
-                grid-template-rows: repeat(5,280px);
-                grid-template-columns: repeat(3,1fr);
-                grid-template-areas: 
+        @include lg {
+            grid-template-rows: repeat(5, 280px);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
                 "one two three"
                 "four four three"
                 "five six seven"
                 "eight six nine"
                 "ten eleven eleven";
+        }
+
+        li {
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+                width: 100%;
             }
 
-            li{
-                img{
-                    object-fit: cover;
-                    object-position: center;
-                    height: 100%;
-                    width: 100%;
-                }
+        }
 
+        li:nth-child(1) {
+            @include md {
+                grid-area: one;
             }
 
-            li:nth-child(1) {
-                @include md {
-                    grid-area: one;
-                }
-    
+        }
+
+        li:nth-child(2) {
+            @include md {
+                grid-area: two;
             }
-    
-            li:nth-child(2) {
-                @include md {
-                    grid-area: two;
-                }
+        }
+
+        li:nth-child(3) {
+            @include md {
+                grid-area: three;
             }
-    
-            li:nth-child(3) {
-                @include md {
-                    grid-area: three;
-                }
+        }
+
+        li:nth-child(4) {
+            @include md {
+                grid-area: four;
             }
-    
-            li:nth-child(4) {
-                @include md {
-                    grid-area: four;
-                }
+        }
+
+        li:nth-child(5) {
+            @include md {
+                grid-area: five;
             }
-    
-            li:nth-child(5) {
-                @include md {
-                    grid-area: five;
-                }
+        }
+
+        li:nth-child(6) {
+            @include md {
+                grid-area: six;
             }
-    
-            li:nth-child(6) {
-                @include md {
-                    grid-area: six;
-                }
+        }
+
+        li:nth-child(7) {
+            @include md {
+                grid-area: seven;
             }
-    
-            li:nth-child(7) {
-                @include md {
-                    grid-area: seven;
-                }
+        }
+
+        li:nth-child(8) {
+            @include md {
+                grid-area: eight;
             }
 
-            li:nth-child(8) {
-                @include md {
-                    grid-area: eight;
-                }
-    
+        }
+
+        li:nth-child(9) {
+            @include md {
+                grid-area: nine;
             }
-    
-            li:nth-child(9) {
-                @include md {
-                    grid-area: nine;
-                }
+        }
+
+        li:nth-child(10) {
+            @include md {
+                grid-area: ten;
             }
-    
-            li:nth-child(10) {
-                @include md {
-                    grid-area: ten;
-                }
-            }
-    
-            li:nth-child(11) {
-                @include md {
-                    grid-area: eleven;
-                }
+        }
+
+        li:nth-child(11) {
+            @include md {
+                grid-area: eleven;
             }
         }
     }
+}

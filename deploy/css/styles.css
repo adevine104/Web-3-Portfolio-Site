@@ -327,7 +327,8 @@ ul {
   ul li {
     list-style: none; }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   transition: 0.25s; }
 
@@ -1183,12 +1184,12 @@ header {
     margin: -80px 0 -180px 0; }
     @media (min-width: 768px) {
       #index-home ul {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 33.33%);
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "one two three" "four four four"; } }
     @media (min-width: 1025px) {
       #index-home ul {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(1, 1fr);
         margin: 0 0 0 0; } }
     #index-home ul #branding {
@@ -1200,16 +1201,16 @@ header {
       background-size: 57vw; }
       @media (min-width: 768px) {
         #index-home ul #branding {
-          background-position: -50px 340px;
-          background-size: 57vw; } }
+          background-position: -100px 400px;
+          background-size: 38vw; } }
       @media (min-width: 1025px) {
         #index-home ul #branding {
-          background-position: -120px 240px;
-          background-size: 57vw; } }
+          background-position: -120px 300px;
+          background-size: 28vw; } }
       @media (min-width: 1440px) {
         #index-home ul #branding {
           background-position: -110px 310px;
-          background-size: 57vw; } }
+          background-size: 28vw; } }
     #index-home ul #publication {
       grid-area: two;
       background-color: #294393;
@@ -1219,11 +1220,12 @@ header {
       background-size: 57vw; }
       @media (min-width: 768px) {
         #index-home ul #publication {
-          background-position: 0px 320px;
+          background-position: -55px 320px;
           background-size: 40vw; } }
       @media (min-width: 1025px) {
         #index-home ul #publication {
-          background-position: 0px 240px; } }
+          background-position: -20px 240px;
+          background-size: 28vw; } }
       @media (min-width: 1440px) {
         #index-home ul #publication {
           background-position: 0px 300px;
@@ -1237,8 +1239,8 @@ header {
       background-size: 50vw; }
       @media (min-width: 768px) {
         #index-home ul #webdesign {
-          background-position: -200px 280px;
-          background-size: 28vw; } }
+          background-position: -120px 340px;
+          background-size: 34vw; } }
       @media (min-width: 1025px) {
         #index-home ul #webdesign {
           background-position: -140px 220px; } }
@@ -1255,12 +1257,14 @@ header {
       background-size: 85vw; }
       @media (min-width: 768px) {
         #index-home ul #fineart {
-          background-position: -250px 380px;
+          background-position: -290px 180px;
+          margin-top: 100px;
           background-size: 80vw; } }
       @media (min-width: 1025px) {
         #index-home ul #fineart {
           background-position: -300px 200px;
-          background-size: 57vw; } }
+          background-size: 57vw;
+          margin-top: -100px; } }
       @media (min-width: 1440px) {
         #index-home ul #fineart {
           background-position: -350px 245px;
@@ -1274,13 +1278,16 @@ header {
       font-family: Open Sans, sans-serif;
       font-weight: 300;
       font-size: 2.5rem; }
-      @media (min-width: 1025px) {
+      @media (min-width: 768px) {
         #index-home ul .text h1 {
           transform: rotate(-90deg);
-          margin: -8% 0 0% 70%;
+          margin: 25% 0 0% 70%;
           font-size: 3.125rem;
           padding: 0px 0px 0px 0px;
           text-align: right; } }
+      @media (min-width: 1025px) {
+        #index-home ul .text h1 {
+          margin: -8% 0 0% 70%; } }
     #index-home ul .text a:link,
     #index-home ul .text a:visited {
       color: #000;

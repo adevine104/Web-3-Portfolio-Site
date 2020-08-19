@@ -19,16 +19,16 @@
         margin: -80px 0 -180px 0;
 
         @include md {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 33.33%);
             grid-template-rows: repeat(2, 1fr);
             // margin: 0 0 0 0;
             grid-template-areas: "one two three"
-            "four four four";
+                "four four four";
         }
 
 
         @include lg {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(4, 25%);
             grid-template-rows: repeat(1, 1fr);
             margin: 0 0 0 0;
         }
@@ -42,18 +42,18 @@
             background-size: 57vw;
 
             @include md {
-                background-position: -50px 340px;
-                background-size: 57vw;
+                background-position: -100px 400px;
+                background-size: 38vw;
             }
 
-            @include lg{
-                background-position: -120px 240px;
-                background-size: 57vw;
+            @include lg {
+                background-position: -120px 300px;
+                background-size: 28vw;
             }
 
-            @include xl{
+            @include xl {
                 background-position: -110px 310px;
-                background-size: 57vw;
+                background-size: 28vw;
             }
 
         }
@@ -67,16 +67,16 @@
             background-size: 57vw;
 
             @include md {
-                background-position: 0px 320px;
+                background-position: -55px 320px;
                 background-size: 40vw;
             }
 
-            @include lg{
-                background-position: 0px 240px;
-                // background-size: 57vw;
+            @include lg {
+                background-position: -20px 240px;
+                background-size: 28vw;
             }
 
-            @include xl{
+            @include xl {
                 background-position: 0px 300px;
                 background-size: 24vw;
             }
@@ -92,15 +92,15 @@
             background-size: 50vw;
 
             @include md {
-                background-position: -200px 280px;
-                background-size: 28vw;
+                background-position: -120px 340px;
+                background-size: 34vw;
             }
 
-            @include lg{
+            @include lg {
                 background-position: -140px 220px;
             }
 
-            @include xl{
+            @include xl {
                 background-position: -140px 280px;
                 background-size: 28vw;
             }
@@ -115,31 +115,32 @@
             background-size: 85vw;
 
             @include md {
-                background-position: -250px 380px;
-                // margin-top: 100px;
+                background-position: -290px 180px;
+                margin-top: 100px;
                 // padding-right: 520px;
                 background-size: 80vw;
             }
 
-            @include lg{
+            @include lg {
                 background-position: -300px 200px;
                 background-size: 57vw;
+                margin-top: -100px;
             }
 
-            @include xl{
+            @include xl {
                 background-position: -350px 245px;
                 background-size: 57vw;
             }
         }
 
-        @include md{
-        .one-line{
-            white-space: nowrap;
-            // overflow: hidden;
+        @include md {
+            .one-line {
+                white-space: nowrap;
+                // overflow: hidden;
             }
         }
 
-        .text{
+        .text {
 
             h1 {
                 color: white;
@@ -148,12 +149,16 @@
                 font-weight: 300;
                 font-size: rem-calc(40);
 
-                @include lg{
+                @include md {
                     transform: rotate(-90deg);
-                    margin: -8% 0 0% 70%;
+                    margin: 25% 0 0% 70%;
                     font-size: rem-calc(50);
                     padding: 0px 0px 0px 0px;
                     text-align: right;
+                }
+
+                @include lg{
+                    margin: -8% 0 0% 70%;
                 }
             }
 
