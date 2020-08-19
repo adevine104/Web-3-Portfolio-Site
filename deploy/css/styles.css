@@ -349,16 +349,16 @@ a:link, a:visited {
   margin: -30px 0 -20px 0; }
   @media (min-width: 768px) {
     .content-padding {
-      padding: 40vh 0;
+      padding: 30vh 0;
       margin: -100px 0 -300px 0; } }
   @media (min-width: 1025px) {
     .content-padding {
-      padding: 43vh 0;
-      margin: -100px 0 -260px 0; } }
+      padding: 50vh 0;
+      margin: -100px 0 -235px 0; } }
   @media (min-width: 1440px) {
     .content-padding {
       padding: 48vh 0;
-      margin: -100px 0 -280px 0; } }
+      margin: -100px 0 -270px 0; } }
 .background-shapes {
   margin-top: -450px; }
   .background-shapes .background-shape-top {
@@ -963,7 +963,8 @@ header {
         height: 15vh; } }
     @media (min-width: 1025px) {
       header div {
-        height: 18vh; } }
+        height: 25vh;
+        margin-top: -1%; } }
     @media (min-width: 1440px) {
       header div {
         height: 23.5vh; } }
@@ -993,6 +994,9 @@ header {
         header div #burger-container {
           padding: 25px 30px 0 0; } }
       @media (min-width: 1025px) {
+        header div #burger-container {
+          padding-top: 45px 40px 0 0; } }
+      @media (min-width: 1440px) {
         header div #burger-container {
           padding-top: 45px 40px 0 0; } }
       header div #burger-container #burger {
@@ -1177,25 +1181,32 @@ header {
     margin: -80px 0 -180px 0; }
     @media (min-width: 768px) {
       #index-home ul {
-        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 0 0 0;
+        grid-template-areas: "one two three" "four four four"; } }
+    @media (min-width: 1025px) {
+      #index-home ul {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
         margin: 0 0 0 0; } }
     #index-home ul #branding {
+      grid-area: one;
       background-color: #56383A;
-      background-image: url("../img/home-page/salt.png");
+      background-image: url("../img/branding/salt.svg");
       background-repeat: no-repeat;
       background-position: 0px 0px; }
       @media (min-width: 768px) {
         #index-home ul #branding {
-          background-position: 0px 440px; } }
+          background-position: -50px 340px; } }
       @media (min-width: 1025px) {
         #index-home ul #branding {
-          background-position: 0px 320px; } }
+          background-position: -120px 240px; } }
       @media (min-width: 1440px) {
         #index-home ul #branding {
-          background-position: 0px 540px; } }
+          background-position: -110px 310px; } }
     #index-home ul #publication {
+      grid-area: two;
       background-color: #294393;
       background-image: url("../img/home-page/mulaney.png");
       background-position: 0px -80px;
@@ -1205,11 +1216,12 @@ header {
           background-position: 0px 320px; } }
       @media (min-width: 1025px) {
         #index-home ul #publication {
-          background-position: 0px 320px; } }
+          background-position: 0px 240px; } }
       @media (min-width: 1440px) {
         #index-home ul #publication {
-          background-position: 0px 520px; } }
+          background-position: 0px 300px; } }
     #index-home ul #webdesign {
+      grid-area: three;
       background-color: #95670D;
       background-image: url("../img/home-page/iphonemummers.png");
       background-position: -100px -50px;
@@ -1219,35 +1231,40 @@ header {
           background-position: -200px 280px; } }
       @media (min-width: 1025px) {
         #index-home ul #webdesign {
-          background-position: -200px 320px; } }
+          background-position: -140px 220px; } }
       @media (min-width: 1440px) {
         #index-home ul #webdesign {
-          background-position: -100px 520px; } }
+          background-position: -140px 280px; } }
     #index-home ul #fineart {
+      grid-area: four;
       background-color: #586361;
-      background-image: url("../img/home-page/zombie.png");
-      background-position: 0px 0px;
+      background-image: url("../img/home-page/self-portrait.png");
+      background-position: -250px 0px;
       background-repeat: no-repeat; }
       @media (min-width: 768px) {
         #index-home ul #fineart {
           background-position: 0px 380px; } }
       @media (min-width: 1025px) {
         #index-home ul #fineart {
-          background-position: 0px 320px; } }
+          background-position: -300px 200px; } }
       @media (min-width: 1440px) {
         #index-home ul #fineart {
-          background-position: 0px 520px; } }
+          background-position: -350px 245px; } }
+    #index-home ul .one-line {
+      white-space: nowrap; }
     #index-home ul .text h1 {
       color: white;
-      text-align: right;
+      text-align: center;
       font-family: Open Sans, sans-serif;
       font-weight: 300;
       font-size: 2.5rem; }
-      @media (min-width: 768px) {
+      @media (min-width: 1025px) {
         #index-home ul .text h1 {
           transform: rotate(-90deg);
-          margin: -10% 0 0% 50%;
-          font-size: 3.125rem; } }
+          margin: -8% 0 0% 70%;
+          font-size: 3.125rem;
+          padding: 0px 0px 0px 0px;
+          text-align: right; } }
     #index-home ul .text a:link,
     #index-home ul .text a:visited {
       color: #000;
