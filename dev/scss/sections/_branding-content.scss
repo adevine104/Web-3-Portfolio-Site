@@ -17,12 +17,12 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 30vh;
+        height: 18vh;
 
 
         @include md{
             background-image: url('../img/branding/saltheadertab.svg');
-            height: 50vh;
+            height: 25vh;
         }
 
         @include lg{
@@ -74,7 +74,7 @@
 
 #salt-logos{
     >div{
-        margin-top: 140px;
+        margin-top: 20px;
 
         @include md{
             margin-top: -20px;
@@ -143,8 +143,9 @@
     
     #part-2-text{
         text-align: justify;
-        margin: 40px 20px 50px 20px;
+        margin: 40px 20px 50px 0px;
         color: $lightgrey;
+        line-height: 1.5;
 
         @include md{
         grid-area: p;

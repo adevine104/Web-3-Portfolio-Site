@@ -6,61 +6,61 @@
     Publishing Section 1
  --------------------------*/
 
-#section-title-P{
+#section-title-P {}
 
-}
+#section-header-P {
 
-#section-header-P{
-
-    >div{
+    >div {
         background-image: url('../img/publication/pubheadermob1.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 20vh;
+        margin-bottom: 25px;
 
 
-        @include md{
+        @include md {
             background-image: url('../img/publication/pubheadertab1.svg');
             height: 30vh;
+            margin-bottom: 50px;
         }
 
-        @include lg{
+        @include lg {
             background-image: url('../img/publication/pubheader1.svg');
             height: 55vh;
         }
 
-        @include xl{
+        @include xl {
             height: 62vh;
         }
 
-        #header-content-P{
-        //     display: grid;
-        //     grid-template-columns: repeat(2,1fr);
-        //     grid-template-rows: repeat(1);
+        #header-content-P {
+            //     display: grid;
+            //     grid-template-columns: repeat(2,1fr);
+            //     grid-template-rows: repeat(1);
 
-            #section-1-header-P{
+            #section-1-header-P {
                 display: grid;
                 text-align: right;
                 // bottom: 0;
                 // left: 0;
                 // width: 300px;
 
-                h1{
+                h1 {
                     position: relative;
                     margin-top: 50px;
                     margin-right: 45px;
                     font-size: rem-calc(25);
-                    z-index:90;
+                    z-index: 90;
                     text-align: right;
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(40);
                         margin-top: 100px;
                         margin-right: 100px;
                     }
 
-                    @include lg{
+                    @include lg {
                         font-size: rem-calc(50);
                         margin-top: 160px;
                         margin-right: 280px;
@@ -73,49 +73,57 @@
 }
 
 
-#part-2-container-P{
+#part-2-container-P {
+    // display: grid;
+    // grid-template-areas: "p" "image";
+    // grid-template-rows: repeat(2/1fr);
+    // grid-template-columns: repeat(1/1fr);
 
-    display: grid;
-    grid-template-areas: "p" "image";
-    // grid-template-rows: repeat(1/1fr);
+    display: flex;
+    flex-direction: column;
 
-    @include md{
-        grid-template-areas: "image" "p";
+    @include md {
+        display: grid;
+        grid-template-areas: "image""p";
         grid-template-columns: 50% auto;
     }
-    
-    #part-2-text-P{
+
+    #part-2-text-P {
+        grid-area: p;
         text-align: justify;
-        margin: 0px 0px 0px 0px;
+        margin: 0px 30px 50px 30px;
         color: $lightgrey;
 
-        @include md{
-            grid-area: p;
+        @include md {
             text-align: left;
             margin: 100px 50px 50px 30px;
             font-size: rem-calc(18);
             line-height: 1.5;
         }
 
-        @include lg{
+        @include lg {
             margin: 200px 10px 50px -40px;
-            }
+        }
 
-        @include xl{
-            margin: 70px 60px 50px 0px;
-            }
-        
+        @include xl {
+            margin: 240px 130px 50px -40px;
+        }
+
     }
 
-    #part-2-image-P{
+    #part-2-image-P {
         grid-area: image;
-        margin-left: 80px;
+        margin-left: 110px;
 
-        img{
+        @include md{
+            margin-left: 80px;
+        }
+
+        img {
             object-fit: cover;
             width: 40vw;
 
-            @include lg{
+            @include lg {
                 width: 35vw;
             }
         }
@@ -123,40 +131,52 @@
 
 }
 
-#part-2-text-2-P{
+#part-2-text-2-P {
     text-align: justify;
     margin: 30px 20px 10px 20px;
     color: $lightgrey;
     line-height: 1.25;
 
-    @include md{
-    text-align: left;
-    margin: 40px 100px 50px 100px;
-    font-size: rem-calc(18);
-    line-height: 1.5;
+    @include md {
+        text-align: left;
+        margin: 40px 100px 50px 100px;
+        font-size: rem-calc(18);
+        line-height: 1.5;
     }
 
-    @include lg{
-    margin: 40px 200px 50px 200px;
-    font-size: rem-calc(18);
-    line-height: 1.5;
-        }
+    @include lg {
+        margin: 40px 200px 50px 200px;
+        font-size: rem-calc(18);
+        line-height: 1.5;
+    }
 
-    @include xl{
-        // margin: 70px 20px 50px 200px;
-        }
-    
+    @include xl {
+        margin: 70px 250px 50px 220px;
+    }
+
 }
 
-#part-2-container-2-P{
+#part-2-container-2-P {
 
-    #part-2-images-2-P{
+    #part-2-images-2-P {
 
-        img{
-            display: inline-block;
+        img {
+            // display: inline-block;
             width: 80vw;
-            margin: 30px auto 30px auto;
+            margin: 30px 40px 30px 40px;
+            display: flex;
+            flex-wrap: wrap;
+
+            @include md {
+                width: 70vw;
+                margin: 30px 120px 30px 120px;
+            }
+
+            @include lg {
+                width: 70vw;
+                margin: 30px 210px 30px 210px;
+            }
         }
-        
+
     }
 }

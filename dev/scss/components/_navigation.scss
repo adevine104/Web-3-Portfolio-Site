@@ -16,9 +16,10 @@
     z-index: 95;
     font-family: 'Open Sans';
     font-weight: 300;
+    padding-top: 120px;
 
     @include md{
-        padding-top: 70px;
+        padding-top: 200px;
     }
 
     @include lg{

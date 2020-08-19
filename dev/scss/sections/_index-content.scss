@@ -21,10 +21,11 @@
         @include md {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            margin: 0 0 0 0;
+            // margin: 0 0 0 0;
             grid-template-areas: "one two three"
             "four four four";
         }
+
 
         @include lg {
             grid-template-columns: repeat(4, 1fr);
@@ -37,18 +38,22 @@
             background-color: $earthpink;
             background-image: url("../img/branding/salt.svg");
             background-repeat: no-repeat;
-            background-position: 0px 0px;
+            background-position: 250px 50px;
+            background-size: 57vw;
 
             @include md {
                 background-position: -50px 340px;
+                background-size: 57vw;
             }
 
             @include lg{
                 background-position: -120px 240px;
+                background-size: 57vw;
             }
 
             @include xl{
                 background-position: -110px 310px;
+                background-size: 57vw;
             }
 
         }
@@ -57,31 +62,38 @@
             grid-area: two;
             background-color: $brightblue;
             background-image: url("../img/home-page/mulaney.png");
-            background-position: 0px -80px;
+            background-position: 0px 0px;
             background-repeat: no-repeat;
+            background-size: 57vw;
 
             @include md {
                 background-position: 0px 320px;
+                background-size: 40vw;
             }
 
             @include lg{
                 background-position: 0px 240px;
+                // background-size: 57vw;
             }
 
             @include xl{
                 background-position: 0px 300px;
+                background-size: 24vw;
             }
+
         }
 
         #webdesign {
             grid-area: three;
             background-color: $gold;
             background-image: url("../img/home-page/iphonemummers.png");
-            background-position: -100px -50px;
+            background-position: 280px 50px;
             background-repeat: no-repeat;
+            background-size: 50vw;
 
             @include md {
                 background-position: -200px 280px;
+                background-size: 28vw;
             }
 
             @include lg{
@@ -90,6 +102,7 @@
 
             @include xl{
                 background-position: -140px 280px;
+                background-size: 28vw;
             }
         }
 
@@ -97,29 +110,33 @@
             grid-area: four;
             background-color: $earthgreen;
             background-image: url("../img/home-page/self-portrait.png");
-            background-position: -250px 0px;
+            background-position: -150px 30px;
             background-repeat: no-repeat;
-            // background-size: 40vw;
+            background-size: 85vw;
 
             @include md {
-                background-position: 0px 380px;
-                // background-size: 100vw;
+                background-position: -250px 380px;
+                // margin-top: 100px;
+                // padding-right: 520px;
+                background-size: 80vw;
             }
 
             @include lg{
                 background-position: -300px 200px;
+                background-size: 57vw;
             }
 
             @include xl{
                 background-position: -350px 245px;
+                background-size: 57vw;
             }
         }
 
-        // @include lg{
+        @include md{
         .one-line{
             white-space: nowrap;
             // overflow: hidden;
-            // }
+            }
         }
 
         .text{
@@ -165,4 +182,30 @@
         }
     }
 
+
+    // ul{
+    //     li:nth-child(1) {
+    //         @include md {
+    //             grid-area: one;
+    //         }
+    //     }
+
+    //     li:nth-child(2) {
+    //         @include md {
+    //             grid-area: two;
+    //         }
+    //     }
+
+    //     li:nth-child(3) {
+    //         @include md {
+    //             grid-area: three;
+    //         }
+    //     }
+
+    //     li:nth-child(4) {
+    //         @include md {
+    //             grid-area: four;
+    //         }
+    //     }
+    // }
 }

@@ -3,7 +3,7 @@
 ============= */
 
 #footer {
-    height: 60vh;
+    height: 65vh;
     position: sticky;
     background-image: url("../img/footer/Rectangle.svg");
     background-position: center;
@@ -28,12 +28,12 @@
         align-items: center;
         display: grid;
         //   border: solid red 1px;
-          margin-top: 110px;
+          margin-top: 90px;
 
         @include md {
             align-items: center;
             justify-content: center;
-            margin-top: 100px;
+            margin-top: 140px;
             grid-template-columns: 10% auto;
             grid-template-areas:
                 "footer-title footer-form"
@@ -98,6 +98,7 @@
 
                 form {
                     display: grid;
+                    gap: 20px;
                     
                     // background-color: #000; 
 

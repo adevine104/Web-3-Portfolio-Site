@@ -565,10 +565,11 @@ textarea {
   width: 100%;
   z-index: 95;
   font-family: 'Open Sans';
-  font-weight: 300; }
+  font-weight: 300;
+  padding-top: 120px; }
   @media (min-width: 768px) {
     #main-nav {
-      padding-top: 70px; } }
+      padding-top: 200px; } }
   @media (min-width: 1025px) {
     #main-nav {
       padding-top: 120px; } }
@@ -1029,7 +1030,7 @@ header {
     Footer
 ============= */
 #footer {
-  height: 60vh;
+  height: 65vh;
   position: sticky;
   background-image: url("../img/footer/Rectangle.svg");
   background-position: center;
@@ -1051,12 +1052,12 @@ header {
     text-align: center;
     align-items: center;
     display: grid;
-    margin-top: 110px; }
+    margin-top: 90px; }
     @media (min-width: 768px) {
       #footer #footer-content {
         align-items: center;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 140px;
         grid-template-columns: 10% auto;
         grid-template-areas: "footer-title footer-form" "footer-social footer-social"; } }
     @media (min-width: 1025px) {
@@ -1092,7 +1093,8 @@ header {
         grid-area: footer-form;
         display: flex; }
         #footer #footer-content #footer-form form {
-          display: grid; } }
+          display: grid;
+          gap: 20px; } }
     @media (min-width: 768px) and (min-width: 768px) {
       #footer #footer-content #footer-form form {
         gap: 20px;
@@ -1183,7 +1185,6 @@ header {
       #index-home ul {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        margin: 0 0 0 0;
         grid-template-areas: "one two three" "four four four"; } }
     @media (min-width: 1025px) {
       #index-home ul {
@@ -1195,63 +1196,78 @@ header {
       background-color: #56383A;
       background-image: url("../img/branding/salt.svg");
       background-repeat: no-repeat;
-      background-position: 0px 0px; }
+      background-position: 250px 50px;
+      background-size: 57vw; }
       @media (min-width: 768px) {
         #index-home ul #branding {
-          background-position: -50px 340px; } }
+          background-position: -50px 340px;
+          background-size: 57vw; } }
       @media (min-width: 1025px) {
         #index-home ul #branding {
-          background-position: -120px 240px; } }
+          background-position: -120px 240px;
+          background-size: 57vw; } }
       @media (min-width: 1440px) {
         #index-home ul #branding {
-          background-position: -110px 310px; } }
+          background-position: -110px 310px;
+          background-size: 57vw; } }
     #index-home ul #publication {
       grid-area: two;
       background-color: #294393;
       background-image: url("../img/home-page/mulaney.png");
-      background-position: 0px -80px;
-      background-repeat: no-repeat; }
+      background-position: 0px 0px;
+      background-repeat: no-repeat;
+      background-size: 57vw; }
       @media (min-width: 768px) {
         #index-home ul #publication {
-          background-position: 0px 320px; } }
+          background-position: 0px 320px;
+          background-size: 40vw; } }
       @media (min-width: 1025px) {
         #index-home ul #publication {
           background-position: 0px 240px; } }
       @media (min-width: 1440px) {
         #index-home ul #publication {
-          background-position: 0px 300px; } }
+          background-position: 0px 300px;
+          background-size: 24vw; } }
     #index-home ul #webdesign {
       grid-area: three;
       background-color: #95670D;
       background-image: url("../img/home-page/iphonemummers.png");
-      background-position: -100px -50px;
-      background-repeat: no-repeat; }
+      background-position: 280px 50px;
+      background-repeat: no-repeat;
+      background-size: 50vw; }
       @media (min-width: 768px) {
         #index-home ul #webdesign {
-          background-position: -200px 280px; } }
+          background-position: -200px 280px;
+          background-size: 28vw; } }
       @media (min-width: 1025px) {
         #index-home ul #webdesign {
           background-position: -140px 220px; } }
       @media (min-width: 1440px) {
         #index-home ul #webdesign {
-          background-position: -140px 280px; } }
+          background-position: -140px 280px;
+          background-size: 28vw; } }
     #index-home ul #fineart {
       grid-area: four;
       background-color: #586361;
       background-image: url("../img/home-page/self-portrait.png");
-      background-position: -250px 0px;
-      background-repeat: no-repeat; }
+      background-position: -150px 30px;
+      background-repeat: no-repeat;
+      background-size: 85vw; }
       @media (min-width: 768px) {
         #index-home ul #fineart {
-          background-position: 0px 380px; } }
+          background-position: -250px 380px;
+          background-size: 80vw; } }
       @media (min-width: 1025px) {
         #index-home ul #fineart {
-          background-position: -300px 200px; } }
+          background-position: -300px 200px;
+          background-size: 57vw; } }
       @media (min-width: 1440px) {
         #index-home ul #fineart {
-          background-position: -350px 245px; } }
-    #index-home ul .one-line {
-      white-space: nowrap; }
+          background-position: -350px 245px;
+          background-size: 57vw; } }
+    @media (min-width: 768px) {
+      #index-home ul .one-line {
+        white-space: nowrap; } }
     #index-home ul .text h1 {
       color: white;
       text-align: center;
@@ -1333,7 +1349,7 @@ header {
           margin-top: 160px;
           margin-right: 180px; } }
 #description-1 p {
-  margin: 30px 20px 50px 20px;
+  margin: 40px 20px 60px 20px;
   text-align: justify;
   color: #6D7278;
   line-height: 1.25; }
@@ -1409,11 +1425,11 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh; }
+  height: 18vh; }
   @media (min-width: 768px) {
     #section-header > div {
       background-image: url("../img/branding/saltheadertab.svg");
-      height: 50vh; } }
+      height: 25vh; } }
   @media (min-width: 1025px) {
     #section-header > div {
       background-image: url("../img/branding/saltopiaHEADER.svg");
@@ -1442,7 +1458,7 @@ header {
           margin-top: 160px;
           margin-right: 180px; } }
 #salt-logos > div {
-  margin-top: 140px; }
+  margin-top: 20px; }
   @media (min-width: 768px) {
     #salt-logos > div {
       margin-top: -20px; } }
@@ -1489,8 +1505,9 @@ header {
       grid-template-columns: 60% auto; } }
   #part-2-container #part-2-text {
     text-align: justify;
-    margin: 40px 20px 50px 20px;
-    color: #6D7278; }
+    margin: 40px 20px 50px 0px;
+    color: #6D7278;
+    line-height: 1.5; }
     @media (min-width: 768px) {
       #part-2-container #part-2-text {
         grid-area: p;
@@ -1542,11 +1559,13 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 20vh; }
+  height: 20vh;
+  margin-bottom: 25px; }
   @media (min-width: 768px) {
     #section-header-P > div {
       background-image: url("../img/publication/pubheadertab1.svg");
-      height: 30vh; } }
+      height: 30vh;
+      margin-bottom: 50px; } }
   @media (min-width: 1025px) {
     #section-header-P > div {
       background-image: url("../img/publication/pubheader1.svg");
@@ -1575,19 +1594,20 @@ header {
           margin-top: 160px;
           margin-right: 280px; } }
 #part-2-container-P {
-  display: grid;
-  grid-template-areas: "p" "image"; }
+  display: flex;
+  flex-direction: column; }
   @media (min-width: 768px) {
     #part-2-container-P {
+      display: grid;
       grid-template-areas: "image" "p";
       grid-template-columns: 50% auto; } }
   #part-2-container-P #part-2-text-P {
+    grid-area: p;
     text-align: justify;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 30px 50px 30px;
     color: #6D7278; }
     @media (min-width: 768px) {
       #part-2-container-P #part-2-text-P {
-        grid-area: p;
         text-align: left;
         margin: 100px 50px 50px 30px;
         font-size: 1.125rem;
@@ -1597,10 +1617,13 @@ header {
         margin: 200px 10px 50px -40px; } }
     @media (min-width: 1440px) {
       #part-2-container-P #part-2-text-P {
-        margin: 70px 60px 50px 0px; } }
+        margin: 240px 130px 50px -40px; } }
   #part-2-container-P #part-2-image-P {
     grid-area: image;
-    margin-left: 80px; }
+    margin-left: 110px; }
+    @media (min-width: 768px) {
+      #part-2-container-P #part-2-image-P {
+        margin-left: 80px; } }
     #part-2-container-P #part-2-image-P img {
       object-fit: cover;
       width: 40vw; }
@@ -1623,11 +1646,22 @@ header {
       margin: 40px 200px 50px 200px;
       font-size: 1.125rem;
       line-height: 1.5; } }
+  @media (min-width: 1440px) {
+    #part-2-text-2-P {
+      margin: 70px 250px 50px 220px; } }
 #part-2-container-2-P #part-2-images-2-P img {
-  display: inline-block;
   width: 80vw;
-  margin: 30px auto 30px auto; }
-
+  margin: 30px 40px 30px 40px;
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    #part-2-container-2-P #part-2-images-2-P img {
+      width: 70vw;
+      margin: 30px 120px 30px 120px; } }
+  @media (min-width: 1025px) {
+    #part-2-container-2-P #part-2-images-2-P img {
+      width: 70vw;
+      margin: 30px 210px 30px 210px; } }
 /* =============
     About Content
 ============= */
