@@ -1721,7 +1721,8 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 30px; }
+    margin-top: 30px;
+    font-family: 'Open Sans'; }
 
 /* =============
     Google Map
