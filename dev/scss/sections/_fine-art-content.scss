@@ -35,12 +35,12 @@
 
     @include lg {
         background-image: url('../img/fine-art-header-1/exhaustionheader.svg');
-        height: 82vh;
+        height: 55vh;
     }
 
-    // @include xl{
-    // height: 82vh;
-    // }
+    @include xl{
+    height: 65vh;
+    }
 
     #section-1-subheader {
         display: grid;

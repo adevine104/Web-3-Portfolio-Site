@@ -1,5 +1,5 @@
 // var burgerAnimationTimeLine = gsap.timeline({paused:true});
-// var burgerAnimateSpeed = 0.25;
+var burgerAnimateSpeed = 0.25;
 
 // //reset the transformOrigin point for each line
 // gsap.set(".lines",{transformOrigin:"center"});
@@ -52,16 +52,16 @@ burgerAnimationTimeLine.addLabel("burgerToDownArrow")
                         .to("#burger",{duration:burgerAnimateSpeed, rotation:-90}, "animateBurger")
                         .to("#bottom-line",{duration:burgerAnimateSpeed, y:-13}, "animateBurger")
                         .to("#top-line",{duration:burgerAnimateSpeed, y:13}, "animateBurger")
-                        .to("#down-left-arrow",{duration:burgerAnimateSpeed, rotation:55}, "createArrow")
-                        .to("#down-right-arrow",{duration:burgerAnimateSpeed, rotation:-55}, "createArrow")
+                        .to("#down-left-arrow",{duration:burgerAnimateSpeed, rotation:55, y:-13, transform-origin: center}, "createArrow")
+                        .to("#down-right-arrow",{duration:burgerAnimateSpeed, rotation:-55, y:-13,  transform-origin: center}, "createArrow")
                         .addLabel("burgerToDownArrowReverse")
                         .addPause()
                         .addLabel("downArrowToX")
                         .to("#top-line",{duration: burgerAnimateSpeed, rotation:45},"burgerToX")
                         .to("#bottom-line",{duration: burgerAnimateSpeed, rotation:-45},"burgerToX")
                         .to("#middle-line",{duration: burgerAnimateSpeed, alpha:0},"burgerToX")
-                        .to("#down-left-arrow",{duration: burgerAnimateSpeed, rotation:0, alpha:0},"burgerToX")
-                        .to("#down-right-arrow",{duration: burgerAnimateSpeed, rotation:0, alpha:0},"burgerToX")
+                        .to("#down-left-arrow",{duration: burgerAnimateSpeed, rotation:0, alpha:0, y: 13},"burgerToX")
+                        .to("#down-right-arrow",{duration: burgerAnimateSpeed, rotation:0, alpha:0, y: 13},"burgerToX")
                         .to("#up-left-arrow",{duration: burgerAnimateSpeed, alpha:0},"burgerToX")
                         .to("#up-right-arrow",{duration: burgerAnimateSpeed, alpha:0},"burgerToX")
                         .addLabel("downArrowToXReverse")

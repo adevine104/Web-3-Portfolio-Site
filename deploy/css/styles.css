@@ -347,15 +347,15 @@ a:visited {
 
 .content-padding {
   padding: 10vh;
-  margin: -30px 0 -20px 0; }
+  margin: -30px 0 -30px 0; }
   @media (min-width: 768px) {
     .content-padding {
       padding: 30vh 0;
-      margin: -100px 0 -300px 0; } }
+      margin: -60px 0 -20px 0; } }
   @media (min-width: 1025px) {
     .content-padding {
       padding: 50vh 0;
-      margin: -100px 0 -235px 0; } }
+      margin: -80px 0 -235px 0; } }
   @media (min-width: 1440px) {
     .content-padding {
       padding: 48vh 0;
@@ -1176,137 +1176,136 @@ header {
   text-align: center;
   margin: 140px 0;
   width: 100vw; }
-  #index-home ul {
+  #index-home > div {
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
     margin: -80px 0 -180px 0; }
     @media (min-width: 768px) {
-      #index-home ul {
+      #index-home > div {
         grid-template-columns: repeat(3, 33.33%);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 1fr 225px;
         grid-template-areas: "one two three" "four four four"; } }
     @media (min-width: 1025px) {
-      #index-home ul {
+      #index-home > div {
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(1, 1fr);
-        margin: 0 0 0 0; } }
-    #index-home ul #branding {
-      grid-area: one;
+        margin: 0 0 0 0;
+        grid-template-areas: "one two three four";
+        overflow: visible; } }
+    #index-home > div #branding {
       background-color: #56383A;
       background-image: url("../img/branding/salt.svg");
       background-repeat: no-repeat;
-      background-position: 250px 50px;
+      background-position: 250px 60px;
       background-size: 57vw; }
       @media (min-width: 768px) {
-        #index-home ul #branding {
+        #index-home > div #branding {
           background-position: -100px 400px;
           background-size: 38vw; } }
       @media (min-width: 1025px) {
-        #index-home ul #branding {
-          background-position: -120px 300px;
+        #index-home > div #branding {
+          background-position: -120px 380px;
           background-size: 28vw; } }
       @media (min-width: 1440px) {
-        #index-home ul #branding {
+        #index-home > div #branding {
           background-position: -110px 310px;
           background-size: 28vw; } }
-    #index-home ul #publication {
-      grid-area: two;
+    #index-home > div #publication {
       background-color: #294393;
       background-image: url("../img/home-page/mulaney.png");
       background-position: 0px 0px;
       background-repeat: no-repeat;
       background-size: 57vw; }
       @media (min-width: 768px) {
-        #index-home ul #publication {
+        #index-home > div #publication {
           background-position: -55px 320px;
           background-size: 40vw; } }
       @media (min-width: 1025px) {
-        #index-home ul #publication {
-          background-position: -20px 240px;
+        #index-home > div #publication {
+          background-position: -20px 360px;
           background-size: 28vw; } }
       @media (min-width: 1440px) {
-        #index-home ul #publication {
+        #index-home > div #publication {
           background-position: 0px 300px;
           background-size: 24vw; } }
-    #index-home ul #webdesign {
-      grid-area: three;
+    #index-home > div #webdesign {
       background-color: #95670D;
       background-image: url("../img/home-page/iphonemummers.png");
       background-position: 280px 50px;
       background-repeat: no-repeat;
       background-size: 50vw; }
       @media (min-width: 768px) {
-        #index-home ul #webdesign {
-          background-position: -120px 340px;
+        #index-home > div #webdesign {
+          background-position: -100px 340px;
           background-size: 34vw; } }
       @media (min-width: 1025px) {
-        #index-home ul #webdesign {
-          background-position: -140px 220px; } }
+        #index-home > div #webdesign {
+          background-position: -140px 320px; } }
       @media (min-width: 1440px) {
-        #index-home ul #webdesign {
+        #index-home > div #webdesign {
           background-position: -140px 280px;
           background-size: 28vw; } }
-    #index-home ul #fineart {
-      grid-area: four;
+    #index-home > div #fineart {
       background-color: #586361;
       background-image: url("../img/home-page/self-portrait.png");
       background-position: -150px 30px;
       background-repeat: no-repeat;
       background-size: 85vw; }
       @media (min-width: 768px) {
-        #index-home ul #fineart {
-          background-position: -290px 180px;
-          margin-top: 100px;
-          background-size: 80vw; } }
+        #index-home > div #fineart {
+          background-position: -180px 40px;
+          background-size: 74vw; } }
       @media (min-width: 1025px) {
-        #index-home ul #fineart {
-          background-position: -300px 200px;
-          background-size: 57vw;
-          margin-top: -100px; } }
+        #index-home > div #fineart {
+          background-position: -280px 300px;
+          background-size: 57vw; } }
       @media (min-width: 1440px) {
-        #index-home ul #fineart {
+        #index-home > div #fineart {
           background-position: -350px 245px;
           background-size: 57vw; } }
     @media (min-width: 768px) {
-      #index-home ul .one-line {
+      #index-home > div .one-line {
         white-space: nowrap; } }
-    #index-home ul .text h1 {
+    @media (min-width: 768px) {
+      #index-home > div #fineart-text {
+        transform: rotate(90deg);
+        margin-top: -600px;
+        margin-left: 150px; } }
+    @media (min-width: 1025px) {
+      #index-home > div #fineart-text {
+        transform: rotate(0deg);
+        margin-top: 0px;
+        margin-left: 0px; } }
+    #index-home > div .text h1 {
       color: white;
       text-align: center;
       font-family: Open Sans, sans-serif;
       font-weight: 300;
       font-size: 2.5rem; }
       @media (min-width: 768px) {
-        #index-home ul .text h1 {
+        #index-home > div .text h1 {
           transform: rotate(-90deg);
           margin: 25% 0 0% 70%;
           font-size: 3.125rem;
           padding: 0px 0px 0px 0px;
           text-align: right; } }
       @media (min-width: 1025px) {
-        #index-home ul .text h1 {
+        #index-home > div .text h1 {
           margin: -8% 0 0% 70%; } }
-    #index-home ul .text a:link,
-    #index-home ul .text a:visited {
-      color: #000;
-      font-size: 1.25rem;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 0.9375rem;
-      font-weight: 300; }
-      #index-home ul .text a:link:hover, #index-home ul .text a:link:active,
-      #index-home ul .text a:visited:hover,
-      #index-home ul .text a:visited:active {
-        color: #454545; }
-      @media (min-width: 768px) {
-        #index-home ul .text a:link,
-        #index-home ul .text a:visited {
-          font-size: 1.5625rem; } }
-      @media (min-width: 1025px) {
-        #index-home ul .text a:link,
-        #index-home ul .text a:visited {
-          font-size: 1.875rem; } }
+  @media (min-width: 768px) {
+    #index-home #branding-container {
+      grid-area: one; } }
+  @media (min-width: 768px) {
+    #index-home #publishing-container {
+      grid-area: two; } }
+  @media (min-width: 768px) {
+    #index-home #web-container {
+      grid-area: three; } }
+  @media (min-width: 768px) {
+    #index-home #fineart-container {
+      grid-area: four; } }
 /* =============
     Fine Art Content
 ============= */
@@ -1334,7 +1333,10 @@ header {
   @media (min-width: 1025px) {
     #header-content {
       background-image: url("../img/fine-art-header-1/exhaustionheader.svg");
-      height: 82vh; } }
+      height: 55vh; } }
+  @media (min-width: 1440px) {
+    #header-content {
+      height: 65vh; } }
   #header-content #section-1-subheader {
     display: grid;
     text-align: right; }
@@ -1440,10 +1442,10 @@ header {
   @media (min-width: 1025px) {
     #section-header > div {
       background-image: url("../img/branding/saltopiaHEADER.svg");
-      height: 72vh; } }
+      height: 55vh; } }
   @media (min-width: 1440px) {
     #section-header > div {
-      height: 62vh; } }
+      height: 66vh; } }
   #section-header > div #header-content-B #section-1-header-B {
     display: grid;
     text-align: right; }
@@ -1579,7 +1581,7 @@ header {
       height: 55vh; } }
   @media (min-width: 1440px) {
     #section-header-P > div {
-      height: 62vh; } }
+      height: 66vh; } }
   #section-header-P > div #header-content-P #section-1-header-P {
     display: grid;
     text-align: right; }

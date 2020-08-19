@@ -41,16 +41,16 @@ a:visited {
 
 .content-padding {
   padding: 10vh;
-  margin: -30px 0 -20px 0;
+  margin: -30px 0 -30px 0;
 
   @include md {
     padding: 30vh 0;
-    margin: -100px 0 -300px 0;
+    margin: -60px 0 -20px 0;
   }
 
   @include lg {
     padding: 50vh 0;
-    margin: -100px 0 -235px 0;
+    margin: -80px 0 -235px 0;
   }
 
   @include xl {

@@ -11,7 +11,7 @@
     margin: 140px 0;
     width: 100vw;
 
-    ul {
+    >div {
         width: 100vw;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -20,25 +20,26 @@
 
         @include md {
             grid-template-columns: repeat(3, 33.33%);
-            grid-template-rows: repeat(2, 1fr);
-            // margin: 0 0 0 0;
+            grid-template-rows: 1fr 225px;
             grid-template-areas: "one two three"
                 "four four four";
+            // overflow: hidden;
         }
-
 
         @include lg {
             grid-template-columns: repeat(4, 25%);
             grid-template-rows: repeat(1, 1fr);
             margin: 0 0 0 0;
+            grid-template-areas: "one two three four";
+            overflow: visible;
         }
 
         #branding {
-            grid-area: one;
+            
             background-color: $earthpink;
             background-image: url("../img/branding/salt.svg");
             background-repeat: no-repeat;
-            background-position: 250px 50px;
+            background-position: 250px 60px;
             background-size: 57vw;
 
             @include md {
@@ -47,7 +48,7 @@
             }
 
             @include lg {
-                background-position: -120px 300px;
+                background-position: -120px 380px;
                 background-size: 28vw;
             }
 
@@ -59,7 +60,7 @@
         }
 
         #publication {
-            grid-area: two;
+           
             background-color: $brightblue;
             background-image: url("../img/home-page/mulaney.png");
             background-position: 0px 0px;
@@ -72,7 +73,7 @@
             }
 
             @include lg {
-                background-position: -20px 240px;
+                background-position: -20px 360px;
                 background-size: 28vw;
             }
 
@@ -84,7 +85,7 @@
         }
 
         #webdesign {
-            grid-area: three;
+            
             background-color: $gold;
             background-image: url("../img/home-page/iphonemummers.png");
             background-position: 280px 50px;
@@ -92,12 +93,12 @@
             background-size: 50vw;
 
             @include md {
-                background-position: -120px 340px;
+                background-position: -100px 340px;
                 background-size: 34vw;
             }
 
             @include lg {
-                background-position: -140px 220px;
+                background-position: -140px 320px;
             }
 
             @include xl {
@@ -107,7 +108,7 @@
         }
 
         #fineart {
-            grid-area: four;
+            
             background-color: $earthgreen;
             background-image: url("../img/home-page/self-portrait.png");
             background-position: -150px 30px;
@@ -115,16 +116,13 @@
             background-size: 85vw;
 
             @include md {
-                background-position: -290px 180px;
-                margin-top: 100px;
-                // padding-right: 520px;
-                background-size: 80vw;
+                background-position: -180px 40px;
+                background-size: 74vw;
             }
 
             @include lg {
-                background-position: -300px 200px;
+                background-position: -280px 300px;
                 background-size: 57vw;
-                margin-top: -100px;
             }
 
             @include xl {
@@ -137,6 +135,21 @@
             .one-line {
                 white-space: nowrap;
                 // overflow: hidden;
+            }
+        }
+
+
+        #fineart-text{
+            @include md{
+            transform: rotate(90deg);
+            margin-top: -600px;
+            margin-left: 150px;
+            }
+
+            @include lg{
+            transform: rotate(0deg);
+            margin-top: 0px;
+            margin-left: 0px;
             }
         }
 
@@ -161,56 +174,57 @@
                     margin: -8% 0 0% 70%;
                 }
             }
+            
 
-            a:link,
-            a:visited {
-                color: $black;
-                font-size: rem-calc(20);
-                font-family: 'Open Sans', sans-serif;
-                font-size: rem-calc(15);
-                font-weight: 300;
+            // a:link,
+            // a:visited {
+            //     color: $black;
+            //     font-size: rem-calc(20);
+            //     font-family: 'Open Sans', sans-serif;
+            //     font-size: rem-calc(15);
+            //     font-weight: 300;
 
-                &:hover,
-                &:active {
-                    color: $darkgrey;
-                }
+            //     &:hover,
+            //     &:active {
+            //         color: $darkgrey;
+            //     }
 
-                @include md {
-                    font-size: rem-calc(25);
-                }
+            //     @include md {
+            //         font-size: rem-calc(25);
+            //     }
 
-                @include lg {
-                    font-size: rem-calc(30);
-                }
+            //     @include lg {
+            //         font-size: rem-calc(30);
+            //     }
 
-            }
+            // }
         }
     }
 
 
-    // ul{
-    //     li:nth-child(1) {
-    //         @include md {
-    //             grid-area: one;
-    //         }
-    //     }
+    #branding-container{
+        @include md{
+            grid-area: one;
+        }
+    }
 
-    //     li:nth-child(2) {
-    //         @include md {
-    //             grid-area: two;
-    //         }
-    //     }
+    #publishing-container{
+        @include md{
+            grid-area: two;
+        }
+    }
 
-    //     li:nth-child(3) {
-    //         @include md {
-    //             grid-area: three;
-    //         }
-    //     }
+    #web-container{
+        @include md{
+            grid-area: three;
+        }
+    }
 
-    //     li:nth-child(4) {
-    //         @include md {
-    //             grid-area: four;
-    //         }
-    //     }
-    // }
+    #fineart-container{
+        @include md{
+            grid-area: four;
+            // padding: 0;
+            // height: 10vh;
+        }
+    }
 }
