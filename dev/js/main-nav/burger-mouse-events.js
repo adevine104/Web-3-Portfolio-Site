@@ -59,6 +59,7 @@ $("#burger").on("mouseenter", function(){
     //console.log("mouse enter");
     //console.log(canYouSeeTheMenu + " menu visible");
     if(canYouSeeTheMenu === false){
+        console.log("burger to arrow");
         burgerAnimationTimeLine.play("burgerToDownArrow");
     }else{
         burgerAnimationTimeLine.play("XtoUpArrow");
@@ -68,6 +69,7 @@ $("#burger").on("mouseenter", function(){
 
 $("#burger").on("mouseleave", function(){
     if(canYouSeeTheMenu === false){
+        console.log("arrow to burger");
         burgerAnimationTimeLine.reverse("burgerToDownArrowReverse");
         
     }else{
