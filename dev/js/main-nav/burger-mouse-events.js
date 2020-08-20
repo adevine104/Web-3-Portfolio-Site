@@ -62,7 +62,7 @@ $("#burger").on("mouseenter", function(){
         console.log("burger to arrow");
         burgerAnimationTimeLine.play("burgerToDownArrow");
     }else{
-        burgerAnimationTimeLine.play("XtoUpArrow");
+        burgerAnimationTimeLine.play("downArrowToX");
     }
 })
 

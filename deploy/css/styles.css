@@ -347,7 +347,7 @@ a:visited {
 
 .content-padding {
   padding: 10vh;
-  margin: -30px 0 -30px 0; }
+  margin: -30px 0 -20px 0; }
   @media (min-width: 768px) {
     .content-padding {
       padding: 30vh 0;
@@ -957,7 +957,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 10vh;
+    height: 15vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
     @media (min-width: 768px) {
@@ -965,26 +965,26 @@ header {
         height: 15vh; } }
     @media (min-width: 1025px) {
       header div {
-        height: 25vh;
+        height: 27vh;
         margin-top: -1%; } }
     @media (min-width: 1440px) {
       header div {
-        height: 23.5vh; } }
+        height: 25vh; } }
     header div #logo-container {
-      padding: 0 0 10px 15px;
+      padding: 0 0 20px 15px;
       display: flex;
       align-items: center; }
       @media (min-width: 768px) {
         header div #logo-container {
-          padding: 0 0 10px 25px; } }
+          padding: 0 0 20px 25px; } }
       @media (min-width: 1025px) {
         header div #logo-container {
           padding: 0 0 10px 40px; } }
       header div #logo-container img {
-        width: 40px; }
+        width: 50px; }
         @media (min-width: 768px) {
           header div #logo-container img {
-            width: 60px; } }
+            width: 70px; } }
         @media (min-width: 1025px) {
           header div #logo-container img {
             width: 100px; } }
@@ -1276,7 +1276,7 @@ header {
     @media (min-width: 1025px) {
       #index-home > div #fineart-text {
         transform: rotate(0deg);
-        margin-top: 0px;
+        margin-top: 40px;
         margin-left: 0px; } }
     #index-home > div .text h1 {
       color: white;
