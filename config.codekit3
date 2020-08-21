@@ -887,6 +887,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/homepage-hover-effects.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/homepage-hover-effects-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/main-nav/burger-animation.js": {
 		"bF": 0,
 		"ft": 64,
@@ -961,6 +972,17 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/scroll-trigger.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/scroll-trigger-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
