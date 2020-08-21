@@ -10,8 +10,18 @@
     text-align: center;
     margin: 140px 0;
     width: 100vw;
+    // background-color: black;
 
+    // #background-color{
+    //     background-color: black;
+    //     height: 100vh;
+    //     // margin-top: -100px;
+    //     position: absolute;
+    //     z-index: 10;
+    // }
+    
     >div {
+        // z-index: 90;
         width: 100vw;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
