@@ -7,9 +7,7 @@ var animateSpeed = 0.25;
 
 $("#branding-container").on("mouseenter", function(){
     //console.log("mouse enter");
-    //console.log(canYouSeeTheMenu + " menu visible");
     if(brandingSectionTimeLine){
-        //console.log("burger to arrow");
         brandingSectionTimeLine.play();
     }else(
         brandingSectionTimeLine.reverse()
@@ -18,9 +16,7 @@ $("#branding-container").on("mouseenter", function(){
 
 $("#branding-container").on("mouseleave", function(){
     if(brandingSectionTimeLine){
-        //console.log("arrow to burger");
         brandingSectionTimeLine.reverse();
-        
     }
 })
 
@@ -31,7 +27,7 @@ var brandingSectionTimeLine = gsap.timeline({
 });
 
 brandingSectionTimeLine.addLabel("section1Opacity")
-                        .to("#publishing-container, #web-container, #fineart-container",{duration:animateSpeed, Opacity: 0.3, color: "#000000"}, "animateOpacity1")
+                        .to("#publishing-container, #web-container, #fineart-container",{duration:animateSpeed, Opacity: 0.3}, "animateOpacity1")
                         // .addPause()
 
 
@@ -42,9 +38,7 @@ brandingSectionTimeLine.addLabel("section1Opacity")
 
 $("#publishing-container").on("mouseenter", function(){
     //console.log("mouse enter");
-    //console.log(canYouSeeTheMenu + " menu visible");
     if(publishingSectionTimeLine){
-        //console.log("burger to arrow");
         publishingSectionTimeLine.play();
     }else(
         publishingSectionTimeLine.reverse()
@@ -53,9 +47,7 @@ $("#publishing-container").on("mouseenter", function(){
 
 $("#publishing-container").on("mouseleave", function(){
     if(publishingSectionTimeLine){
-        //console.log("arrow to burger");
         publishingSectionTimeLine.reverse();
-        
     }
 })
 
@@ -66,7 +58,7 @@ var publishingSectionTimeLine = gsap.timeline({
 });
 
 publishingSectionTimeLine.addLabel("section2Opacity")
-                        .to("#branding-container, #web-container, #fineart-container",{duration:animateSpeed, Opacity: 0.3, color: "#000000"}, "animateOpacity2")
+                        .to("#branding-container, #web-container, #fineart-container",{duration:animateSpeed, Opacity: 0.3}, "animateOpacity2")
                         // .addPause()
 
 
@@ -77,9 +69,7 @@ publishingSectionTimeLine.addLabel("section2Opacity")
 
 $("#web-container").on("mouseenter", function(){
     //console.log("mouse enter");
-    //console.log(canYouSeeTheMenu + " menu visible");
     if(webSectionTimeLine){
-        //console.log("burger to arrow");
         webSectionTimeLine.play();
     }else(
         webSectionTimeLine.reverse()
@@ -88,9 +78,7 @@ $("#web-container").on("mouseenter", function(){
 
 $("#web-container").on("mouseleave", function(){
     if(webSectionTimeLine){
-        //console.log("arrow to burger");
         webSectionTimeLine.reverse();
-        
     }
 })
 
@@ -101,7 +89,7 @@ var webSectionTimeLine = gsap.timeline({
 });
 
 webSectionTimeLine.addLabel("section3Opacity")
-                        .to("#branding-container, #publishing-container, #fineart-container",{duration:animateSpeed, Opacity: 0.3, color: "#000000"}, "animateOpacity3")
+                        .to("#branding-container, #publishing-container, #fineart-container",{duration:animateSpeed, Opacity: 0.3}, "animateOpacity3")
                         // .addPause()
 
 
@@ -112,9 +100,7 @@ webSectionTimeLine.addLabel("section3Opacity")
 
 $("#fineart-container").on("mouseenter", function(){
     //console.log("mouse enter");
-    //console.log(canYouSeeTheMenu + " menu visible");
     if(fineartSectionTimeLine){
-        //console.log("burger to arrow");
         fineartSectionTimeLine.play();
     }else(
         fineartSectionTimeLine.reverse()
@@ -123,7 +109,6 @@ $("#fineart-container").on("mouseenter", function(){
 
 $("#fineart-container").on("mouseleave", function(){
     if(fineartSectionTimeLine){
-        //console.log("arrow to burger");
         fineartSectionTimeLine.reverse();
         
     }
@@ -136,5 +121,5 @@ var fineartSectionTimeLine = gsap.timeline({
 });
 
 fineartSectionTimeLine.addLabel("section4Opacity")
-                        .to("#branding-container, #publishing-container, #web-container",{duration:animateSpeed, Opacity: 0.3, color: "#000000"}, "animateOpacity4")
+                        .to("#branding-container, #publishing-container, #web-container",{duration:animateSpeed, Opacity: 0.3}, "animateOpacity4")
                         // .addPause()
