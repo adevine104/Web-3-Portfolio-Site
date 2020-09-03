@@ -471,6 +471,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/header/desktopheadernew.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/header/desktopheadernew.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/header/headerdesktop.png": {
 		"ft": 32768,
 		"iS": 16805,
@@ -487,6 +497,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/deploy/img/header/headerdesktop.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/header/headerdesktopnew.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/header/headerdesktopnew.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,

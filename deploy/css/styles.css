@@ -953,23 +953,23 @@ header {
   top: 0;
   left: 0; }
   header div {
-    background-image: url("../img/header/headerdesktop.svg");
+    background-image: url("../img/header/desktopheadernew.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 15vh;
+    height: 10vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
     @media (min-width: 768px) {
       header div {
-        height: 15vh; } }
+        height: 10vh; } }
     @media (min-width: 1025px) {
       header div {
-        height: 27vh;
+        height: 20vh;
         margin-top: -1%; } }
     @media (min-width: 1440px) {
       header div {
-        height: 25vh; } }
+        height: 18vh; } }
     header div #logo-container {
       padding: 0 0 20px 15px;
       display: flex;
@@ -981,29 +981,38 @@ header {
         header div #logo-container {
           padding: 0 0 10px 40px; } }
       header div #logo-container img {
-        width: 50px; }
+        width: 40px; }
         @media (min-width: 768px) {
           header div #logo-container img {
-            width: 70px; } }
+            width: 50px; } }
         @media (min-width: 1025px) {
           header div #logo-container img {
-            width: 100px; } }
+            width: 80px; } }
     header div #burger-container {
       display: flex;
       justify-content: flex-end;
-      padding: 10px 15px 0 0; }
+      padding: 10px 15px 0 0;
+      margin-top: -4%; }
       @media (min-width: 768px) {
         header div #burger-container {
           padding: 25px 30px 0 0; } }
       @media (min-width: 1025px) {
         header div #burger-container {
-          padding-top: 45px 40px 0 0; } }
+          padding-top: 45px 40px 0 0;
+          margin-top: 0%; } }
       @media (min-width: 1440px) {
         header div #burger-container {
           padding-top: 45px 40px 0 0; } }
       header div #burger-container #burger {
         cursor: pointer;
-        transition: 0.25s; }
+        transition: 0.25s;
+        width: 3vh; }
+        @media (min-width: 768px) {
+          header div #burger-container #burger {
+            width: 10vh; } }
+        @media (min-width: 1025px) {
+          header div #burger-container #burger {
+            width: 15vh; } }
         header div #burger-container #burger #lines {
           transition: 0.25s;
           stroke: black !important; }
