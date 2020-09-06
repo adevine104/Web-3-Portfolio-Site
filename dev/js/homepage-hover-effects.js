@@ -3,40 +3,57 @@
 
 //var $navList = $(".container-nav");
 
-console.log($(".container-nav").get(1));
+// console.log($(".container-nav").get(1));
 
-var navArray = ["#branding-container","#publishing-container","#web-container","fineart-container"];
+// var navArray = ["#branding-container","#publishing-container","#web-container","fineart-container"];
 
-$(".container-nav").on("mouseenter", function(){
-    //console.log($(this).index());
 
-    var tempIndex = $(this).index();
 
-    for( var i = 0; i < $(".container-nav").length; i++ ){
-        //console.log(i);
-        if(i === $(this).index()){
+$("#index-home div .container-nav").on("mouseenter", function(){
+    // add the overlay to all of the buttons
+    $("#index-home div .container-nav").addClass("overlay");
+    // remove the overlay to the put that you are hovering on
+    $('#index-home div .container-nav').eq($(this).index()).removeClass('overlay');
 
-            //console.log($(this).index() + " is the index valuye inside of loop");
+});
 
-            //console.log("add class for " + i);
+$("#index-home div .container-nav").on("mouseleave", function(){
+    // remove the overlay
+    $("#index-home div .container-nav").removeClass("overlay");
 
-            //console.log($(".container-nav").index(this) + " is the index value");
-            //$(navArray)[$(".container-nav").index(this)].addClass("box-shadow");
-            //$(".container-nav").index(this).addClass("box-shadow");
+});
+
+
+// $(".container-nav").on("mouseenter", function(){
+//     //console.log($(this).index());
+
+//     var tempIndex = $(this).index();
+
+//     for( var i = 0; i < $(".container-nav").length; i++ ){
+//         //console.log(i);
+//         if(i === $(this).index()){
+
+//             //console.log($(this).index() + " is the index valuye inside of loop");
+
+//             //console.log("add class for " + i);
+
+//             //console.log($(".container-nav").index(this) + " is the index value");
+//             //$(navArray)[$(".container-nav").index(this)].addClass("box-shadow");
+//             //$(".container-nav").index(this).addClass("box-shadow");
 
             
-        }
-    }
+//         }
+//     }
     
-});
+// });
 
-$(".container-nav").on("mouseleave", function(){
-    //console.log($(this).index());
+// $(".container-nav").on("mouseleave", function(){
+//     //console.log($(this).index());
 
-    //$(".container-nav").removeClass("box-shadow");
+//     //$(".container-nav").removeClass("box-shadow");
 
     
-});
+// });
 
 
 
