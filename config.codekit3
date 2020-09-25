@@ -686,6 +686,61 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/publication/backtalkmockup.jpg": {
+		"ft": 16384,
+		"iS": 5234119,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/backtalkmockup.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/publication/BT-contents.png": {
+		"ft": 32768,
+		"iS": 2117207,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/BT-contents.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/BT-cover.png": {
+		"ft": 32768,
+		"iS": 1902369,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/BT-cover.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/BT-opening.png": {
+		"ft": 32768,
+		"iS": 2995615,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/BT-opening.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/BT-secondary.png": {
+		"ft": 32768,
+		"iS": 4301267,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/BT-secondary.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/publication/coverpic.png": {
 		"ft": 32768,
 		"iS": 1115136,
