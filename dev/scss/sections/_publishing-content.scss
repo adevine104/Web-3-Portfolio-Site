@@ -9,6 +9,8 @@
 #section-title-P {}
 
 #section-header-P {
+    position: relative;
+    z-index: 10;
 
     >div {
         background-image: url('../img/publication/pubheadermob1.svg');
@@ -69,6 +71,18 @@
             }
         }
 
+    }
+}
+
+#backtalk-mockup{
+    position: relative;
+
+    img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        margin: -12% 0 8% 0;
     }
 }
 

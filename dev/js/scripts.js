@@ -3,6 +3,7 @@
 // @codekit-prepend "gsap-register.js";
 // @codekit-prepend "scroll-trigger-B.js";
 // @codekit-prepend "homepage-hover-effects.js";
+// @codekit-prepend "pinning.js";
 
 
 // @codekit-prepend "main-nav/burger-animation.js";

@@ -27,6 +27,10 @@ if( $(".slides").hasClass("my-slider") ){
     
     //slideBy: 'page',
     autoplay: true,
+    "autoplayText": [
+      "▶",
+      "❚❚"
+    ],
     // autoplayButton: true,
     // autoplayText: (),
     autoplayPosition: "bottom"

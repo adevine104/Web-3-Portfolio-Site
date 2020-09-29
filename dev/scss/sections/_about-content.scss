@@ -93,27 +93,27 @@
     Google Map
 ============= */
 
-#contact-map {
+// #contact-map {
 
-    #map {
-        width: 100%;
-        height: 400px;
-        background-color: $lightgrey;
+//     #map {
+//         width: 100%;
+//         height: 400px;
+//         background-color: $lightgrey;
 
-        @include md {
-            height: 500px;
-        }
+//         @include md {
+//             height: 500px;
+//         }
 
-        @include lg {
-            height: 600px;
-        }
+//         @include lg {
+//             height: 600px;
+//         }
 
-        @include xl {
-            height: 700px;
-        }
-    }
+//         @include xl {
+//             height: 700px;
+//         }
+//     }
 
-}
+// }
 
 // #following-content{
 //     padding-bottom: 80px;
