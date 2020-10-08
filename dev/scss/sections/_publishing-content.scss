@@ -19,7 +19,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 20vh;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
 
 
         @include md {
@@ -241,7 +241,7 @@
     z-index: 10;
 
     >div {
-        background-image: url('../img/publication/pubheadermob1.svg');
+        background-image: url('../img/publication/GRAYheadermob.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -250,7 +250,7 @@
 
 
         @include md {
-            background-image: url('../img/publication/pubheadertab1.svg');
+            background-image: url('../img/publication/GRAYheadertab.svg');
             height: 30vh;
             margin-bottom: 50px;
         }
@@ -273,7 +273,7 @@
                 h1 {
                     position: relative;
                     margin-top: 50px;
-                    margin-right: 45px;
+                    margin-left: 45px;
                     font-size: rem-calc(25);
                     z-index: 90;
                     text-align: left;

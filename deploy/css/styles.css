@@ -1531,7 +1531,7 @@ header {
   @media (min-width: 768px) {
     #section-header > div {
       background-image: url("../img/branding/saltheadertab.svg");
-      height: 25vh; } }
+      height: 27vh; } }
   @media (min-width: 1025px) {
     #section-header > div {
       background-image: url("../img/branding/saltopiaHEADER.svg");
@@ -1662,15 +1662,15 @@ header {
          STARTECH
 ======================== */
 #section-header-B-2 {
-  background-image: url("../img/branding/saltheadermob.svg");
+  background-image: url("../img/branding/startechHEADERmob.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 18vh; }
   @media (min-width: 768px) {
     #section-header-B-2 {
-      background-image: url("../img/branding/saltheadertab.svg");
-      height: 25vh; } }
+      background-image: url("../img/branding/startechHEADERtab.svg");
+      height: 27vh; } }
   @media (min-width: 1025px) {
     #section-header-B-2 {
       background-image: url("../img/branding/startechHEADER.svg");
@@ -1746,7 +1746,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
-    margin-bottom: 25px; }
+    margin-bottom: 20px; }
     @media (min-width: 768px) {
       #section-header-P > div {
         background-image: url("../img/publication/pubheadertab1.svg");
@@ -1887,7 +1887,7 @@ header {
   position: relative;
   z-index: 10; }
   #section-header-P-2 > div {
-    background-image: url("../img/publication/pubheadermob1.svg");
+    background-image: url("../img/publication/GRAYheadermob.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1895,7 +1895,7 @@ header {
     margin-bottom: 25px; }
     @media (min-width: 768px) {
       #section-header-P-2 > div {
-        background-image: url("../img/publication/pubheadertab1.svg");
+        background-image: url("../img/publication/GRAYheadertab.svg");
         height: 30vh;
         margin-bottom: 50px; } }
     @media (min-width: 1025px) {
@@ -1911,7 +1911,7 @@ header {
       #section-header-P-2 > div #header-content-P-2 #section-1-header-P-2 h1 {
         position: relative;
         margin-top: 50px;
-        margin-right: 45px;
+        margin-left: 45px;
         font-size: 1.5625rem;
         z-index: 90;
         text-align: left; }

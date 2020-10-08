@@ -395,6 +395,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/branding/startechHEADERmob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/startechHEADERmob.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/branding/startechHEADERtab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/startechHEADERtab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/branding/startechlogo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -884,6 +904,26 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/deploy/img/publication/GRAYheader.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/publication/GRAYheadermob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/publication/GRAYheadermob.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/publication/GRAYheadertab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/publication/GRAYheadertab.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,

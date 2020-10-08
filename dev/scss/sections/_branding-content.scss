@@ -21,7 +21,7 @@
 
         @include md {
             background-image: url('../img/branding/saltheadertab.svg');
-            height: 25vh;
+            height: 27vh;
         }
 
         @include lg {
@@ -236,7 +236,7 @@
 
 #section-header-B-2 {
 
-        background-image: url('../img/branding/saltheadermob.svg');
+        background-image: url('../img/branding/startechHEADERmob.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -245,8 +245,8 @@
 
 
         @include md {
-            background-image: url('../img/branding/saltheadertab.svg');
-            height: 25vh;
+            background-image: url('../img/branding/startechHEADERtab.svg');
+            height: 27vh;
         }
 
         @include lg {
