@@ -3,7 +3,7 @@
 if( $(".slides").hasClass("my-slider") ){
   tns({
     container: '.my-slider',
-    items: 1,
+    items: 2,
     gutter: 10,
     // edgePadding: 50,
     controls: false,

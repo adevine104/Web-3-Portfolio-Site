@@ -169,6 +169,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/branding/saltmockup2.png": {
+		"ft": 32768,
+		"iS": 451974,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/saltmockup2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/branding/saltopiaHEADER.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -178,6 +189,28 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/deploy/img/branding/saltopiamockup1.png": {
+		"ft": 32768,
+		"iS": 508914,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/saltopiamockup1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/branding/saltopiamockupblack.png": {
+		"ft": 32768,
+		"iS": 486222,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/saltopiamockupblack.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/deploy/img/branding/slide-1.png": {
 		"ft": 32768,
@@ -288,6 +321,56 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/deploy/img/branding/star-slide-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/star-slide-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/branding/star-slide-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/star-slide-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/branding/star-slide-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/star-slide-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/branding/startechHEADER.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/startechHEADER.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/branding/startechlogo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/startechlogo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/deploy/img/fine-art-gallery-1/bed.jpg": {
 		"ft": 16384,
@@ -686,6 +769,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/publication/amyschumercover.png": {
+		"ft": 32768,
+		"iS": 356145,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/amyschumercover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/publication/backtalkmockup.jpg": {
 		"ft": 16384,
 		"iS": 5234119,
@@ -752,6 +846,38 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/publication/GRAYheader.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/publication/GRAYheader.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/publication/GRAYmockup.png": {
+		"ft": 32768,
+		"iS": 7375027,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/GRAYmockup.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/GRAYmockup2.png": {
+		"ft": 32768,
+		"iS": 7710342,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/GRAYmockup2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/publication/indexpic.png": {
 		"ft": 32768,
 		"iS": 207702,
@@ -760,6 +886,17 @@
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/officecover.png": {
+		"ft": 32768,
+		"iS": 269753,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/officecover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -803,6 +940,28 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/deploy/img/publication/stephcurrycover.png": {
+		"ft": 32768,
+		"iS": 802626,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/stephcurrycover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/thumbfacecover.png": {
+		"ft": 32768,
+		"iS": 504741,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/thumbfacecover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/deploy/index.html": {
 		"cB": 0,

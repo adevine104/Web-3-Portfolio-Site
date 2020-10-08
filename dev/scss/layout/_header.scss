@@ -25,7 +25,8 @@ header{
 
         @include lg{
             height: 20vh;
-            margin-top: -1%;
+            margin-top: -1.75%;
+            padding-bottom: 20px;
             }
 
         @include xl{
@@ -46,6 +47,7 @@ header{
 
             @include lg{
                 padding: 0 0 10px 40px;
+                margin-top: 3.5%;
             }
 
             img{
@@ -78,7 +80,7 @@ header{
                 // font-size: rem-calc(40);
                 // height: 5vh;
                 padding-top: 45px 40px 0 0;
-                margin-top: 0%;
+                margin-top: 1%;
             }
 
             @include xl{

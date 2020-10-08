@@ -486,11 +486,10 @@ p {
   @media (min-width: 768px) {
     .grey-section-header {
       font-size: 1.875rem;
-      margin-top: 150px; } }
+      margin-top: 100px; } }
   @media (min-width: 1440px) {
     .grey-section-header {
-      font-size: 2.1875rem;
-      margin-top: 180px; } }
+      font-size: 2.1875rem; } }
 .grey-section-subheader {
   font-weight: 300;
   color: #6D7278;
@@ -503,11 +502,13 @@ p {
       font-size: 1.25rem; } }
   @media (min-width: 1440px) {
     .grey-section-subheader {
-      font-size: 1.5625rem; } }
+      font-size: 1.5625rem;
+      margin: 100px 0 10px 0; } }
 .grey-description p {
   margin: 150px 20px 50px 20px;
   text-align: justify;
-  color: #6D7278; }
+  color: #6D7278;
+  line-height: 1.5; }
   @media (min-width: 768px) {
     .grey-description p {
       margin: 80px 120px 80px 120px; } }
@@ -966,7 +967,8 @@ header {
     @media (min-width: 1025px) {
       header div {
         height: 20vh;
-        margin-top: -1%; } }
+        margin-top: -1.75%;
+        padding-bottom: 20px; } }
     @media (min-width: 1440px) {
       header div {
         height: 18vh; } }
@@ -979,7 +981,8 @@ header {
           padding: 0 0 20px 25px; } }
       @media (min-width: 1025px) {
         header div #logo-container {
-          padding: 0 0 10px 40px; } }
+          padding: 0 0 10px 40px;
+          margin-top: 3.5%; } }
       header div #logo-container img {
         width: 40px; }
         @media (min-width: 768px) {
@@ -999,7 +1002,7 @@ header {
       @media (min-width: 1025px) {
         header div #burger-container {
           padding-top: 45px 40px 0 0;
-          margin-top: 0%; } }
+          margin-top: 1%; } }
       @media (min-width: 1440px) {
         header div #burger-container {
           padding-top: 45px 40px 0 0; } }
@@ -1460,7 +1463,8 @@ header {
   @media (min-width: 1025px) {
     #section-header > div {
       background-image: url("../img/branding/saltopiaHEADER.svg");
-      height: 66vh; } }
+      height: 66vh;
+      margin-top: -30px; } }
   @media (min-width: 1440px) {
     #section-header > div {
       height: 66vh; } }
@@ -1483,44 +1487,51 @@ header {
         #section-header > div #header-content-B #section-1-header-B h1 {
           font-size: 3.125rem;
           margin-top: 160px;
-          margin-right: 180px; } }
-#salt-logos > div {
-  margin-top: 20px; }
+          margin-right: 220px; } }
+#saltopia-mockup img {
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: -3%; }
+
+@media (min-width: 768px) {
+  #salt-logos > div {
+    margin-top: -20px; } }
+
+@media (min-width: 1025px) {
+  #salt-logos > div {
+    margin-top: -70px; } }
+
+@media (min-width: 1025px) {
+  #salt-logos > div {
+    margin-top: 0px; } }
+
+#salt-logos > div ul {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 250px 200px 200px;
+  grid-template-areas: "l1" "l2" "l3"; }
   @media (min-width: 768px) {
-    #salt-logos > div {
-      margin-top: -20px; } }
-  @media (min-width: 1025px) {
-    #salt-logos > div {
-      margin-top: -70px; } }
-  @media (min-width: 1025px) {
-    #salt-logos > div {
-      margin-top: 0px; } }
-  #salt-logos > div ul {
-    display: grid;
-    gap: 20px;
-    grid-template-rows: 250px 200px 200px;
-    grid-template-areas: "l1" "l2" "l3"; }
-    @media (min-width: 768px) {
-      #salt-logos > div ul {
-        grid-template-areas: "l1 l2 l3";
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr); } }
-    #salt-logos > div ul li {
-      align-items: center;
-      display: flex;
-      justify-content: center; }
-      #salt-logos > div ul li img {
-        object-fit: cover;
-        width: 80vw; }
-        @media (min-width: 768px) {
-          #salt-logos > div ul li img {
-            width: 30vw; } }
-    #salt-logos > div ul li:nth-child(1) {
-      grid-area: l1; }
-    #salt-logos > div ul li:nth-child(2) {
-      grid-area: l2; }
-    #salt-logos > div ul li:nth-child(3) {
-      grid-area: l3; }
+    #salt-logos > div ul {
+      grid-template-areas: "l1 l2 l3";
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr); } }
+  #salt-logos > div ul li {
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    #salt-logos > div ul li img {
+      object-fit: cover;
+      width: 80vw; }
+      @media (min-width: 768px) {
+        #salt-logos > div ul li img {
+          width: 30vw; } }
+  #salt-logos > div ul li:nth-child(1) {
+    grid-area: l1; }
+  #salt-logos > div ul li:nth-child(2) {
+    grid-area: l2; }
+  #salt-logos > div ul li:nth-child(3) {
+    grid-area: l3; }
 
 #part-2-container {
   display: grid;
@@ -1572,6 +1583,78 @@ header {
       object-fit: cover;
       object-position: center; }
   #process-slides-1 > div .tns-controls [aria-controls] {
+    color: #fff;
+    background: #6D7278; }
+
+/* ========================
+         STARTECH
+======================== */
+#section-header-B-2 {
+  background-image: url("../img/branding/saltheadermob.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18vh; }
+  @media (min-width: 768px) {
+    #section-header-B-2 {
+      background-image: url("../img/branding/saltheadertab.svg");
+      height: 25vh; } }
+  @media (min-width: 1025px) {
+    #section-header-B-2 {
+      background-image: url("../img/branding/startechHEADER.svg");
+      height: 66vh;
+      margin-top: -30px; } }
+  @media (min-width: 1440px) {
+    #section-header-B-2 {
+      height: 66vh; } }
+  #section-header-B-2 #header-content-B-2 {
+    display: grid;
+    text-align: left; }
+    #section-header-B-2 #header-content-B-2 h1 {
+      position: relative;
+      margin-top: 50px;
+      margin-left: 45px;
+      font-size: 1.5625rem;
+      z-index: 90;
+      text-align: left; }
+      @media (min-width: 768px) {
+        #section-header-B-2 #header-content-B-2 h1 {
+          font-size: 2.5rem;
+          margin-top: 100px;
+          margin-left: 100px; } }
+      @media (min-width: 1025px) {
+        #section-header-B-2 #header-content-B-2 h1 {
+          font-size: 3.125rem;
+          margin-top: 160px;
+          margin-left: 220px; } }
+#star-logo > div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #star-logo > div img {
+    object-position: center;
+    width: 30%;
+    height: 100%;
+    margin: 3% 0px 5% 0px; }
+
+#process-slides-2 {
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    #process-slides-2 {
+      margin-bottom: 150px; } }
+  #process-slides-2 > div .my-slider div {
+    height: 300px; }
+    @media (min-width: 1025px) {
+      #process-slides-2 > div .my-slider div {
+        height: 350px; } }
+    @media (min-width: 1440px) {
+      #process-slides-2 > div .my-slider div {
+        height: 400px; } }
+    #process-slides-2 > div .my-slider div img {
+      width: 90%;
+      object-fit: cover;
+      object-position: center; }
+  #process-slides-2 > div .tns-controls [aria-controls] {
     color: #fff;
     background: #6D7278; }
 
@@ -1701,6 +1784,60 @@ header {
     #part-2-container-2-P #part-2-images-2-P img {
       width: 70vw;
       margin: 30px 210px 30px 210px; } }
+/* --------------------------
+    Publishing Section 2
+ --------------------------*/
+#section-header-P-2 {
+  position: relative;
+  z-index: 10; }
+  #section-header-P-2 > div {
+    background-image: url("../img/publication/pubheadermob1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    margin-bottom: 25px; }
+    @media (min-width: 768px) {
+      #section-header-P-2 > div {
+        background-image: url("../img/publication/pubheadertab1.svg");
+        height: 30vh;
+        margin-bottom: 50px; } }
+    @media (min-width: 1025px) {
+      #section-header-P-2 > div {
+        background-image: url("../img/publication/GRAYheader.svg");
+        height: 66vh; } }
+    @media (min-width: 1440px) {
+      #section-header-P-2 > div {
+        height: 66vh; } }
+    #section-header-P-2 > div #header-content-P-2 #section-1-header-P-2 {
+      display: grid;
+      text-align: left; }
+      #section-header-P-2 > div #header-content-P-2 #section-1-header-P-2 h1 {
+        position: relative;
+        margin-top: 50px;
+        margin-right: 45px;
+        font-size: 1.5625rem;
+        z-index: 90;
+        text-align: left; }
+        @media (min-width: 768px) {
+          #section-header-P-2 > div #header-content-P-2 #section-1-header-P-2 h1 {
+            font-size: 2.5rem;
+            margin-top: 100px;
+            margin-left: 100px; } }
+        @media (min-width: 1025px) {
+          #section-header-P-2 > div #header-content-P-2 #section-1-header-P-2 h1 {
+            font-size: 3.125rem;
+            margin-top: 160px;
+            margin-left: 220px; } }
+#gray-mockup {
+  position: relative; }
+  #gray-mockup img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    margin: -12% 0 8% 0; }
+
 /* =============
     About Content
 ============= */

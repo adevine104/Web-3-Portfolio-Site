@@ -16,6 +16,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 18vh;
+        
 
 
         @include md {
@@ -26,6 +27,7 @@
         @include lg {
             background-image: url('../img/branding/saltopiaHEADER.svg');
             height: 66vh;
+            margin-top: -30px;
         }
 
         @include xl {
@@ -61,7 +63,7 @@
                     @include lg {
                         font-size: rem-calc(50);
                         margin-top: 160px;
-                        margin-right: 180px;
+                        margin-right: 220px;
                     }
                 }
             }
@@ -70,9 +72,19 @@
     }
 }
 
+#saltopia-mockup{
+    img{
+        object-position: center;
+            // object-fit: 50%;
+            width: 100%;
+            height: 100%;
+            margin-bottom: -3%;
+    }
+}
+
 #salt-logos {
     >div {
-        margin-top: 20px;
+        // margin-top: 20px;
 
         @include md {
             margin-top: -20px;
@@ -177,6 +189,121 @@
 }
 
 #process-slides-1 {
+    // border: 1px solid red;
+    margin-bottom: 50px;
+
+    @include md {
+        margin-bottom: 150px;
+    }
+
+    >div {
+
+        .my-slider {
+
+            div {
+                height: 300px;
+
+                @include lg {
+                    height: 350px;
+                }
+
+                @include xl {
+                    height: 400px;
+                }
+
+                img {
+                    // height: 100%;
+                    width: 90%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $white;
+            background: $lightgrey;
+        }
+    }
+}
+
+
+
+/* ========================
+         STARTECH
+======================== */
+
+
+#section-header-B-2 {
+
+        background-image: url('../img/branding/saltheadermob.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 18vh;
+        
+
+
+        @include md {
+            background-image: url('../img/branding/saltheadertab.svg');
+            height: 25vh;
+        }
+
+        @include lg {
+            background-image: url('../img/branding/startechHEADER.svg');
+            height: 66vh;
+            margin-top: -30px;
+        }
+
+        @include xl {
+            height: 66vh;
+        }
+
+        #header-content-B-2 {
+
+                display: grid;
+                text-align: left;
+
+                h1 {
+                    position: relative;
+                    margin-top: 50px;
+                    margin-left: 45px;
+                    font-size: rem-calc(25);
+                    z-index: 90;
+                    text-align: left;
+
+                    @include md {
+                        font-size: rem-calc(40);
+                        margin-top: 100px;
+                        margin-left: 100px;
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(50);
+                        margin-top: 160px;
+                        margin-left: 220px;
+                    }
+                }
+            }
+        }
+
+#star-logo{
+    >div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            object-position: center;
+            // object-fit: 50%;
+            width: 30%;
+            height: 100%;
+            margin: 3% 0px 5% 0px;
+        }
+    }
+}
+
+#process-slides-2 {
     // border: 1px solid red;
     margin-bottom: 50px;
 

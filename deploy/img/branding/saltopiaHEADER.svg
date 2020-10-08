@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1026px" height="350px" viewBox="0 0 1026 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1025px" height="350px" viewBox="0 0 1025 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Group 5</title>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="0.0102636673%" id="linearGradient-1">
             <stop stop-color="#FFF1F2" offset="0%"></stop>
             <stop stop-color="#56383A" offset="100%"></stop>
         </linearGradient>
-        <polygon id="path-2" points="1026 0 478 35.2395807 478 313.167354 1025 349.989923"></polygon>
+        <polygon id="path-2" points="1024 0 476 35.2395807 476 313.167354 1023 349.989923"></polygon>
         <polygon id="path-4" points="0.323544526 0.055 137.528584 0.055 137.528584 114.9656 0.323544526 114.9656"></polygon>
     </defs>
     <g id="Branding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop" transform="translate(1.000000, -191.000000)">
-            <g id="Group-5" transform="translate(-1.000000, 191.000000)">
-                <polygon id="Path" fill="url(#linearGradient-1)" points="0 281 1025 349.989923 1026 2.84217094e-14 -3.41726647e-12 66.8982373"></polygon>
+        <g id="Desktop" transform="translate(0.000000, -484.000000)">
+            <g id="Group-5" transform="translate(0.000000, 484.000000)">
+                <polygon id="Path" fill="url(#linearGradient-1)" points="0 300.720978 1024.08668 350 1024 0 -5.70654635e-14 49.953779"></polygon>
                 <mask id="mask-3" fill="white">
                     <use xlink:href="#path-2"></use>
                 </mask>
                 <use id="Mask" xlink:href="#path-2"></use>
                 <g id="Group-29" mask="url(#mask-3)">
-                    <g transform="translate(807.000000, 57.000000)">
+                    <g transform="translate(805.000000, 57.000000)">
                         <g id="Group-21" stroke-width="1" fill="none" transform="translate(0.000000, 2.000000)">
                             <polygon id="Fill-1" fill="#9E7678" points="218.99337 167.813963 218.32331 241.203022 206.836861 244.135214 198.740893 219.600302 200.230695 196.66039"></polygon>
                             <polygon id="Fill-3" fill="#9E7678" points="218.258615 250.365746 218.129023 282.553648 216.618124 282.553648 201.460913 264.853161 206.319096 253.232733"></polygon>

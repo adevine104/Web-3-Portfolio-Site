@@ -8,13 +8,13 @@
 
 const logoTimeline = gsap.timeline();
 
-gsap.set(".logos",{alpha:0, yPercent: 30});
+gsap.set(".logos",{alpha:0, yPercent: 20});
 
 logoTimeline.to(".logos",{duration:0.75, alpha:1, yPercent: 0, stagger:0.25});
 
 ScrollTrigger.create({
     animation: logoTimeline,
-    toggleActions: "restart none none none",
+    toggleActions: "play none none none",
     trigger: "#salt-logos",
     start: "top 60%",
     end: "bottom 60%"
@@ -29,13 +29,13 @@ ScrollTrigger.create({
 
 var part2TextTimeline = gsap.timeline({});
 
-part2TextTimeline.from("#part-2-text",{duration:2, alpha:0, xPercent: -100}, "start");
+part2TextTimeline.from("#part-2-text",{duration:1, alpha:0, xPercent: -15}, "start");
 
 ScrollTrigger.create({
     animation: part2TextTimeline,
     // markers: true,
     trigger: "#part-2-container",
-    toggleActions: "restart none none none",
+    toggleActions: "play none none none",
     //id: "logos",
     start: "top 70%",
     end: "bottom 70%"
@@ -60,7 +60,7 @@ ScrollTrigger.create({
     animation: part2PTextTimeline,
     // markers: true,
     trigger: "#part-2-container-P",
-    toggleActions: "restart none none none",
+    toggleActions: "play none none none",
     //id: "logos",
     start: "top 70%",
     end: "bottom 70%"
@@ -81,7 +81,7 @@ ScrollTrigger.create({
     animation: part2PImagesTimeline2,
     // markers: true,
     trigger: "#part-2-container-P-2",
-    toggleActions: "restart none none none",
+    toggleActions: "play none none none",
     //id: "logos",
     start: "top 70%",
     end: "bottom 70%"
@@ -135,7 +135,7 @@ ScrollTrigger.create({
     animation: artTextTimeline,
     // markers: true,
     trigger: "#description-1",
-    toggleActions: "restart none none none",
+    toggleActions: "play none none none",
     //id: "logos",
     start: "top 70%",
     end: "bottom 70%",
@@ -162,7 +162,7 @@ ScrollTrigger.create({
     animation: aboutTextTimeline,
     // markers: true,
     trigger: "#section-container",
-    toggleActions: "restart none none none",
+    toggleActions: "play none none none",
     //id: "logos",
     start: "top 70%",
     end: "bottom 70%"
@@ -200,7 +200,7 @@ ScrollTrigger.create({
     animation: aboutTextTimeline2,
     // markers: true,
     trigger: "#top-line",
-    toggleActions: "restart none none none",
+    toggleActions: "play none none none",
     //id: "logos",
     start: "top 70%",
     end: "bottom 70%"

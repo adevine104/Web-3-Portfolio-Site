@@ -189,3 +189,81 @@
 
     }
 }
+
+/* --------------------------
+    Publishing Section 2
+ --------------------------*/
+
+ #section-header-P-2 {
+    position: relative;
+    z-index: 10;
+
+    >div {
+        background-image: url('../img/publication/pubheadermob1.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vh;
+        margin-bottom: 25px;
+
+
+        @include md {
+            background-image: url('../img/publication/pubheadertab1.svg');
+            height: 30vh;
+            margin-bottom: 50px;
+        }
+
+        @include lg {
+            background-image: url('../img/publication/GRAYheader.svg');
+            height: 66vh;
+        }
+
+        @include xl {
+            height: 66vh;
+        }
+
+        #header-content-P-2 {
+
+            #section-1-header-P-2 {
+                display: grid;
+                text-align: left;
+
+                h1 {
+                    position: relative;
+                    margin-top: 50px;
+                    margin-right: 45px;
+                    font-size: rem-calc(25);
+                    z-index: 90;
+                    text-align: left;
+
+                    @include md {
+                        font-size: rem-calc(40);
+                        margin-top: 100px;
+                        margin-left: 100px;
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(50);
+                        margin-top: 160px;
+                        margin-left: 220px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+#gray-mockup{
+    position: relative;
+
+    img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        margin: -12% 0 8% 0;
+    }
+}

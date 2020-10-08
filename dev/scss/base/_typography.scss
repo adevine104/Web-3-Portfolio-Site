@@ -45,12 +45,12 @@ p{
 
     @include md{
         font-size: rem-calc(30);
-        margin-top: 150px;
+        margin-top: 100px;
     }
 
     @include xl{
         font-size: rem-calc(35);
-        margin-top: 180px;
+        // margin-top: 180px;
     }
 }
 
@@ -68,6 +68,7 @@ p{
 
     @include xl{
         font-size: rem-calc(25);
+        margin: 100px 0 10px 0;
     }
 }
 
@@ -77,6 +78,7 @@ p{
         margin: 150px 20px 50px 20px;
         text-align: justify;
         color: $lightgrey;
+        line-height: 1.5;
 
         @include md{
             margin: 80px 120px 80px 120px;
