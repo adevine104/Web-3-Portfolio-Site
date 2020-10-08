@@ -11,6 +11,7 @@
 #section-header-P {
     position: relative;
     z-index: 10;
+    margin-top: -3.5%;
 
     >div {
         background-image: url('../img/publication/pubheadermob1.svg');
@@ -190,6 +191,47 @@
     }
 }
 
+#process-slides-3 {
+    // border: 1px solid red;
+    margin-bottom: 50px;
+
+    @include md {
+        margin-bottom: 150px;
+    }
+
+    >div {
+
+        .my-slider {
+
+            div {
+                height: 300px;
+
+                @include lg {
+                    height: 350px;
+                }
+
+                @include xl {
+                    height: 400px;
+                }
+
+                img {
+                    height: 100%;
+                    width: 65%;
+                    margin-left: 17.5%;
+                    object-fit: center;
+                    object-position: center;
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $white;
+            background: $lightgrey;
+        }
+    }
+}
+
+
 /* --------------------------
     Publishing Section 2
  --------------------------*/
@@ -263,7 +305,8 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-        width: 100%;
-        margin: -12% 0 8% 0;
+        width: 120%;
+        margin: -12% 0 8% -10%;
     }
 }
+

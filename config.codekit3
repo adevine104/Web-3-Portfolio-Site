@@ -35,12 +35,12 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/downloadable_files/DevineA_Resume2020.pdf": {
+	"/deploy/downloadable_files/ADevine-ResumeFall2020.pdf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/deploy/downloadable_files/DevineA_Resume2020.pdf",
+		"oAP": "/deploy/downloadable_files/ADevine-ResumeFall2020.pdf",
 		"oF": 0
 		},
 	"/deploy/fine-art.html": {
@@ -322,6 +322,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/branding/star-slide-1.png": {
+		"ft": 32768,
+		"iS": 19956,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/star-slide-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/branding/star-slide-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -332,6 +343,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/branding/star-slide-2.png": {
+		"ft": 32768,
+		"iS": 15714,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/star-slide-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/branding/star-slide-2.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -341,6 +363,17 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/deploy/img/branding/star-slide-3.png": {
+		"ft": 32768,
+		"iS": 13226,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/star-slide-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/deploy/img/branding/star-slide-3.svg": {
 		"ft": 2097152,
@@ -1242,6 +1275,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/slick.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/slick-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/tinySlider.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1361,6 +1405,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/components/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/dev/scss/components/_slick.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_slick.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
