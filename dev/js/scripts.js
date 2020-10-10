@@ -5,6 +5,7 @@
 // @codekit-prepend "homepage-hover-effects.js";
 // @codekit-prepend "pinning.js";
 // @codekit-prepend "slick.js";
+// @codekit-prepend "accordion.js";
 
 
 // @codekit-prepend "main-nav/burger-animation.js";

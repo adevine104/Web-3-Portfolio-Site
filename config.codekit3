@@ -1183,6 +1183,17 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
+	"/dev/js/accordion.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/accordion-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/fancyBox.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1380,6 +1391,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/base/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/dev/scss/components/_accordion.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_accordion.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
