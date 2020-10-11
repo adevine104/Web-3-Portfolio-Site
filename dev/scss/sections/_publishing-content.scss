@@ -29,25 +29,19 @@
         }
 
         @include lg {
-            background-image: url('../img/publication/pubheader1.svg');
-            height: 66vh;
+            background-image: url('../img/publication/BacktalkHEADER.svg');
+            height: 40vh;
         }
 
         @include xl {
-            height: 66vh;
+            height: 45vh;
         }
 
         #header-content-P {
-            //     display: grid;
-            //     grid-template-columns: repeat(2,1fr);
-            //     grid-template-rows: repeat(1);
 
             #section-1-header-P {
                 display: grid;
                 text-align: right;
-                // bottom: 0;
-                // left: 0;
-                // width: 300px;
 
                 h1 {
                     position: relative;
@@ -79,6 +73,7 @@
     position: relative;
 
     img{
+        z-index: 10;
         height: 100%;
         object-fit: cover;
         object-position: center;
@@ -257,11 +252,11 @@
 
         @include lg {
             background-image: url('../img/publication/GRAYheader.svg');
-            height: 66vh;
+            height: 40vh;
         }
 
         @include xl {
-            height: 66vh;
+            height: 45vh;
         }
 
         #header-content-P-2 {
@@ -305,8 +300,8 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-        width: 120%;
-        margin: -12% 0 8% -10%;
+        width: 100%;
+        margin: -12% 0 0% 0%;
     }
 }
 

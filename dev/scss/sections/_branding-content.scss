@@ -6,6 +6,23 @@
     overflow: hidden;
 }
 
+.arrow-left{
+    position: absolute;
+    margin: -13.5% 0 0% 15%;
+    color: white;
+    font-size: rem-calc(25);
+}
+
+.arrow-right{
+    position: absolute;
+    margin: -13.5% 15% 0% 0;
+    display: flex;
+    align-items: right;
+    // justify-content: center;
+    color: white;
+    font-size: rem-calc(25);
+}
+
 /* --------------------------
     Branding Section 1
  --------------------------*/
@@ -29,13 +46,13 @@
         }
 
         @include lg {
-            background-image: url('../img/branding/saltopiaHEADER.svg');
-            height: 66vh;
+            background-image: url('../img/branding/saltopiaHEADER1.svg');
+            height: 40vh;
             margin-top: -30px;
         }
 
         @include xl {
-            height: 66vh;
+            height: 45vh;
         }
 
         #header-content-B {
@@ -72,7 +89,6 @@
                 }
             }
         }
-
     }
 }
 
@@ -194,7 +210,7 @@
 
 #process-slides-1 {
     // border: 1px solid red;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 
     @include md {
         margin-bottom: 150px;
@@ -231,6 +247,11 @@
     }
 }
 
+#blank-fill{
+    #blank-fill-2{
+        height: 50px;
+    }
+}
 
 
 /* ========================
@@ -254,13 +275,13 @@
         }
 
         @include lg {
-            background-image: url('../img/branding/startechHEADER.svg');
-            height: 66vh;
-            margin-top: -30px;
+            background-image: url('../img/branding/startechHEADER1.svg');
+            height: 40vh;
+            margin-top: -5%;
         }
 
         @include xl {
-            height: 66vh;
+            height: 45vh;
         }
 
         #header-content-B-2 {
@@ -307,6 +328,13 @@
     }
 }
 
+#section-2-container-2{
+
+    #section-2-text-2{
+        margin: -3% 7% -3% 7%;
+    }
+}
+
 #process-slides-2 {
     // border: 1px solid red;
     margin-bottom: 50px;
@@ -317,7 +345,7 @@
 
     >div {
 
-        .my-slider {
+        .my-slider2 {
 
             div {
                 height: 300px;
@@ -331,9 +359,10 @@
                 }
 
                 img {
-                    // height: 100%;
-                    width: 90%;
-                    object-fit: cover;
+                    height: 100%;
+                    width: 70%;
+                    margin-left: 14.5%;
+                    object-fit: center;
                     object-position: center;
                 }
             }

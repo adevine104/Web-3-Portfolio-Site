@@ -190,6 +190,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/branding/saltopiaHEADER1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/saltopiaHEADER1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/branding/saltopiamockup1.png": {
 		"ft": 32768,
 		"iS": 508914,
@@ -390,6 +400,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/deploy/img/branding/startechHEADER.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/branding/startechHEADER1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/startechHEADER1.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -833,6 +853,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/publication/BacktalkHEADER.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/publication/BacktalkHEADER.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/publication/backtalkmockup.jpg": {
 		"ft": 16384,
 		"iS": 5234119,
@@ -893,6 +923,28 @@
 		"iS": 1115136,
 		"oA": 0,
 		"oAP": "/deploy/img/publication/coverpic.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/gray-slide-1.png": {
+		"ft": 32768,
+		"iS": 37694,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/gray-slide-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/publication/gray-slide-2.png": {
+		"ft": 32768,
+		"iS": 40992,
+		"oA": 0,
+		"oAP": "/deploy/img/publication/gray-slide-2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
