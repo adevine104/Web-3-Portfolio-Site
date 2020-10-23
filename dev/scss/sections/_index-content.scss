@@ -1,13 +1,13 @@
-.box-shadow{
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
-    height: 100%;
-    width: 100%;
-    border: 1px solid red;
-}
+// .box-shadow{
+//     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
+//     height: 100%;
+//     width: 100%;
+//     border: 1px solid red;
+// }
 
-.overlay {
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .6);
-}
+// .overlay {
+//     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .6);
+// }
 
 /* =============
     Index Content
@@ -62,7 +62,7 @@
             background-repeat: no-repeat;
             background-position: 250px 60px;
             background-size: 57vw;
-            // box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
+            opacity: .85;
 
             @include md {
                 background-position: -100px 400px;
@@ -79,6 +79,20 @@
                 background-size: 28vw;
             }
 
+            &:hover {
+                background-size: 67vw;
+                transition-duration: .5s;
+                opacity: 1;
+
+                @include md{
+                    background-size: 48vw;
+                }
+
+                @include lg{
+                    background-size: 38vw;
+                }
+            }
+
         }
 
         #publication {
@@ -88,7 +102,7 @@
             background-position: 0px 0px;
             background-repeat: no-repeat;
             background-size: 57vw;
-            // box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
+            opacity: .85;
 
             @include md {
                 background-position: -55px 320px;
@@ -105,6 +119,23 @@
                 background-size: 24vw;
             }
 
+            &:hover {
+                background-size: 67vw;
+                transition-duration: .5s;
+                opacity: 1;
+
+                @include md{
+                    background-size: 50vw;
+                }
+
+                @include lg{
+                    background-size: 38vw;
+                }
+
+                @include lg{
+                    background-size: 34vw;
+                }
+            }
         }
 
         #webdesign {
@@ -114,6 +145,7 @@
             background-position: 280px 50px;
             background-repeat: no-repeat;
             background-size: 50vw;
+            opacity: .85;
 
             @include md {
                 background-position: -100px 340px;
@@ -128,6 +160,20 @@
                 background-position: -140px 280px;
                 background-size: 28vw;
             }
+
+            &:hover {
+                background-size: 60vw;
+                transition-duration: .5s;
+                opacity: 1;
+
+                @include md{
+                    background-size: 44vw;
+                }
+
+                @include xl{
+                    background-size: 38vw;
+                }
+            }
         }
 
         #fineart {
@@ -137,7 +183,7 @@
             background-position: -150px 30px;
             background-repeat: no-repeat;
             background-size: 85vw;
-            // box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
+            opacity: .85;
 
             @include md {
                 background-position: -180px 40px;
@@ -153,12 +199,19 @@
                 background-position: -350px 245px;
                 background-size: 57vw;
             }
-        }
 
-        @include md {
-            .one-line {
-                white-space: nowrap;
-                // overflow: hidden;
+            &:hover {
+                background-size: 95vw;
+                transition-duration: .5s;
+                opacity: 1;
+
+                @include md{
+                    background-size: 84vw;
+                }
+
+                @include lg{
+                    background-size: 67vw;
+                }
             }
         }
 
@@ -185,6 +238,11 @@
                 font-family: Open Sans, sans-serif;
                 font-weight: 300;
                 font-size: rem-calc(40);
+
+                // &:hover,
+                //     &:active {
+                //         color: white;
+                //     }
 
                 @include md {
                     transform: rotate(-90deg);

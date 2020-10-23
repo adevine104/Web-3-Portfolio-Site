@@ -7,14 +7,15 @@
  --------------------------*/
 
 #section-main-header {
-    margin-top: 60px;
+    margin-top: 30px;
 
     @include md {
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
     @include lg {
-        margin-top: 160px;
+        margin-top: 100px;
+        margin-bottom: -20px;
     }
 }
 
@@ -35,11 +36,11 @@
 
     @include lg {
         background-image: url('../img/fine-art-header-1/exhaustionheader.svg');
-        height: 66vh;
+        height: 40vh;
     }
 
     @include xl{
-    height: 66vh;
+    height: 45vh;
     }
 
     #section-1-subheader {
@@ -203,4 +204,83 @@
             }
         }
     }
+}
+
+/* --------------------------
+    Fine Art Section 2
+ --------------------------*/
+
+#section-header-PP {
+    position: relative;
+    z-index: 10;
+    margin-top: -3.5%;
+
+    >div {
+        background-image: url('../img/publication/pubheadermob1.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vh;
+        margin-bottom: 20px;
+
+
+        @include md {
+            background-image: url('../img/publication/pubheadertab1.svg');
+            height: 30vh;
+            margin-bottom: 50px;
+        }
+
+        @include lg {
+            background-image: url('../img/fine-art-header-1/zombieHEADER.svg');
+            height: 40vh;
+        }
+
+        @include xl {
+            height: 45vh;
+        }
+
+        #header-content-PP {
+
+            #section-1-header-PP {
+                display: grid;
+                text-align: right;
+
+                h1 {
+                    position: relative;
+                    margin-top: 50px;
+                    margin-right: 45px;
+                    font-size: rem-calc(25);
+                    z-index: 90;
+                    text-align: right;
+
+                    @include md {
+                        font-size: rem-calc(40);
+                        margin-top: 100px;
+                        margin-right: 100px;
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(50);
+                        margin-top: 160px;
+                        margin-right: 280px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+#self-portrait-pic{
+
+    img{
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-bottom: 3%;
+    }
+
 }

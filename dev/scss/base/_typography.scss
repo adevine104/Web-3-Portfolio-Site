@@ -85,3 +85,11 @@ p{
         }
     }
 }
+
+
+@include md {
+    .one-line {
+        white-space: nowrap;
+        // overflow: hidden;
+    }
+}

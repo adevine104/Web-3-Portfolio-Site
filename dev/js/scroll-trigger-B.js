@@ -71,22 +71,22 @@ ScrollTrigger.create({
     images Animation
 ======================== */
 
-var part2PImagesTimeline2 = gsap.timeline({});
+// var part2PImagesTimeline2 = gsap.timeline({});
 
-part2PImagesTimeline2.from(".left-image-P",{duration:2, alpha:0, xPercent: -150, stagger:3}, "start")
-                     .from("#right-image-P",{duration:2, alpha:0, xPercent: 150, delay:1.5}, "start")
-                //    .from("#left-image-P-2",{duration:2, alpha:0, xPercent: -100}, "start");
+// part2PImagesTimeline2.from(".left-image-P",{duration:2, alpha:0, xPercent: -150, stagger:3}, "start")
+//                      .from("#right-image-P",{duration:2, alpha:0, xPercent: 150, delay:1.5}, "start")
+//                 //    .from("#left-image-P-2",{duration:2, alpha:0, xPercent: -100}, "start");
 
-ScrollTrigger.create({
-    animation: part2PImagesTimeline2,
-    // markers: true,
-    trigger: "#part-2-container-P-2",
-    toggleActions: "play none none none",
-    //id: "logos",
-    start: "top 70%",
-    end: "bottom 70%"
-    // scrub:5
-})
+// ScrollTrigger.create({
+//     animation: part2PImagesTimeline2,
+//     // markers: true,
+//     trigger: "#part-2-container-P-2",
+//     toggleActions: "play none none none",
+//     //id: "logos",
+//     start: "top 70%",
+//     end: "bottom 70%"
+//     // scrub:5
+// })
 
 // var part2PImagesTimeline22 = gsap.timeline({});
 
@@ -138,9 +138,9 @@ ScrollTrigger.create({
     toggleActions: "play none none none",
     //id: "logos",
     start: "top 70%",
-    end: "bottom 70%",
+    end: "bottom 70%"
     // scrub: true,
-    scrub: 1
+    // scrub: 1
 })
 
 

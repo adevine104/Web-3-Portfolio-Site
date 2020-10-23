@@ -23,6 +23,17 @@
     font-size: rem-calc(25);
 }
 
+// .header-background{
+
+//     &:hover {
+//         background-color: #D8D8D8;
+
+//         svg {
+//             fill: #000000;
+//         }
+//     }
+// }
+
 /* --------------------------
     Branding Section 1
  --------------------------*/
@@ -32,6 +43,18 @@
 #section-header {
 
     >div {
+
+        // #saltopiaHEADER{
+        //     height: 10%;
+
+        //     #background{
+
+        //         &:hover {
+        //         fill: #3E2829;
+        //         transition-delay: .25s;
+        //         }
+        //     }
+        // }
         background-image: url('../img/branding/saltheadermob.svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -261,6 +284,18 @@
 
 #section-header-B-2 {
 
+    >div{
+    // #startechHEADER{
+    //     height: 10%;
+
+    //     #background-2{
+
+    //         &:hover {
+    //         fill: #3E2829;
+    //         transition-delay: .25s;
+    //         }
+    //     }
+    // }
         background-image: url('../img/branding/startechHEADERmob.svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -277,7 +312,7 @@
         @include lg {
             background-image: url('../img/branding/startechHEADER1.svg');
             height: 40vh;
-            margin-top: -5%;
+            // margin-top: -22.55%;
         }
 
         @include xl {
@@ -310,6 +345,7 @@
                     }
                 }
             }
+        }
         }
 
 #star-logo{

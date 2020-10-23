@@ -1,0 +1,86 @@
+/* =============
+    Publishing Content
+============= */
+
+/* --------------------------
+    Publishing Section 1
+ --------------------------*/
+
+ #section-title-W {
+
+    margin-bottom: 20px;
+}
+
+#section-header-W {
+    position: relative;
+    z-index: 10;
+    margin-top: -3.5%;
+
+    >div {
+        background-image: url('../img/publication/pubheadermob1.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vh;
+        margin-bottom: 20px;
+
+
+        @include md {
+            background-image: url('../img/publication/pubheadertab1.svg');
+            height: 30vh;
+            margin-bottom: 50px;
+        }
+
+        @include lg {
+            background-image: url('../img/web/mummersHEADER.svg');
+            height: 40vh;
+        }
+
+        @include xl {
+            height: 45vh;
+        }
+
+        #header-content-W {
+
+            #section-1-header-W {
+                display: grid;
+                text-align: right;
+
+                h1 {
+                    position: relative;
+                    margin-top: 50px;
+                    margin-right: 45px;
+                    font-size: rem-calc(25);
+                    z-index: 90;
+                    text-align: right;
+
+                    @include md {
+                        font-size: rem-calc(40);
+                        margin-top: 100px;
+                        margin-right: 100px;
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(50);
+                        margin-top: 160px;
+                        margin-right: 280px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+#mummers-mockup{
+    position: relative;
+
+    img{
+        z-index: 10;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        margin: -12% 0 8% 0;
+    }
+}

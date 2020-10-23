@@ -445,6 +445,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/branding/startechmockup.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/startechmockup.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/fine-art-gallery-1/bed.jpg": {
 		"ft": 16384,
 		"iS": 539702,
@@ -566,6 +577,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/fine-art-header-1/ zombieselfportrait.jpg": {
+		"ft": 16384,
+		"iS": 382076,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/fine-art-header-1/ zombieselfportrait.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/fine-art-header-1/03072137_AD_Concentration_1006.png": {
 		"ft": 32768,
 		"iS": 641939,
@@ -602,6 +624,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/deploy/img/fine-art-header-1/exhaustionheadertab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/fine-art-header-1/zombieHEADER.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/fine-art-header-1/zombieHEADER.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -1088,6 +1120,60 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/web/mumersmockup.jpg": {
+		"ft": 16384,
+		"iS": 3559821,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/web/mumersmockup.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/web/mummersHEADER.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/web/mummersHEADER.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/web/mummersmockup copy.jpg": {
+		"ft": 16384,
+		"iS": 2097152,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/web/mummersmockup copy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/web/mummersmockup.jpg": {
+		"ft": 16384,
+		"iS": 1703936,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/web/mummersmockup.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/web/mummersmockup.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/web/mummersmockup.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1121,6 +1207,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/template.html",
+		"oF": 0
+		},
+	"/deploy/web.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/web.html",
 		"oF": 0
 		},
 	"/dev/about.kit": {
@@ -1177,6 +1271,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/publishing-content.html",
+		"oF": 0
+		},
+	"/dev/content/web-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/web-content.html",
 		"oF": 0
 		},
 	"/dev/fine-art.kit": {
@@ -1242,6 +1344,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/accordion-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/BTT-button.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/BTT-button-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1383,7 +1496,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/js/slick-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -1456,6 +1569,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/components/_accordion.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/dev/scss/components/_BTT-button.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_BTT-button.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
@@ -1668,6 +1794,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/dev/scss/sections/_web-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_web-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1687,6 +1826,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/template.html",
+		"oF": 2
+		},
+	"/dev/web.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/web.html",
 		"oF": 2
 		},
 	"/node_modules": {

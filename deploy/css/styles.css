@@ -512,6 +512,10 @@ p {
   @media (min-width: 768px) {
     .grey-description p {
       margin: 80px 120px 80px 120px; } }
+@media (min-width: 768px) {
+  .one-line {
+    white-space: nowrap; } }
+
 /* =============
     Buttons
 ============= */
@@ -957,11 +961,76 @@ pre[class*="language-"] {
 #accordion .bottom {
   overflow: hidden; }
 
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3em 3em 0;
+  border-radius: 50%;
+  padding: .25em;
+  width: 40px;
+  height: 40px;
+  background-color: #EDEDED; }
+  @media (min-width: 768px) {
+    .top-link {
+      width: 80px;
+      height: 80px; } }
+  .top-link.show {
+    visibility: visible;
+    opacity: 1; }
+  .top-link.hide {
+    visibility: hidden;
+    opacity: 0; }
+  .top-link svg {
+    fill: #000;
+    width: 16px;
+    height: 8px; }
+    @media (min-width: 768px) {
+      .top-link svg {
+        width: 24px;
+        height: 12px; } }
+  .top-link:hover {
+    background-color: #D8D8D8; }
+    .top-link:hover svg {
+      fill: #000000; }
+
+.screen-reader-text {
+  position: absolute;
+  clip-path: inset(50%);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  clip: rect(1px, 1px, 1px, 1px); }
+  .screen-reader-text:focus {
+    display: block;
+    top: 5px;
+    left: 5px;
+    z-index: 100000;
+    clip-path: none;
+    background-color: #eee;
+    padding: 15px 23px 14px;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    line-height: normal;
+    color: #444;
+    font-size: 1em;
+    clip: auto !important; }
+
 /* =============
     Header
 ============= */
 header {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   width: 100%;
   top: 0;
@@ -1191,15 +1260,6 @@ header {
       #footer #footer-content #footer-social a:active {
         color: #6D7278; }
 
-.box-shadow {
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
-  height: 100%;
-  width: 100%;
-  border: 1px solid red; }
-
-.overlay {
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); }
-
 /* =============
     Index Content
 ============= */
@@ -1233,7 +1293,8 @@ header {
       background-image: url("../img/branding/salt.svg");
       background-repeat: no-repeat;
       background-position: 250px 60px;
-      background-size: 57vw; }
+      background-size: 57vw;
+      opacity: .85; }
       @media (min-width: 768px) {
         #index-home > div #branding {
           background-position: -100px 400px;
@@ -1246,12 +1307,23 @@ header {
         #index-home > div #branding {
           background-position: -110px 310px;
           background-size: 28vw; } }
+      #index-home > div #branding:hover {
+        background-size: 67vw;
+        transition-duration: .5s;
+        opacity: 1; }
+        @media (min-width: 768px) {
+          #index-home > div #branding:hover {
+            background-size: 48vw; } }
+        @media (min-width: 1025px) {
+          #index-home > div #branding:hover {
+            background-size: 38vw; } }
     #index-home > div #publication {
       background-color: #294393;
       background-image: url("../img/home-page/mulaney.png");
       background-position: 0px 0px;
       background-repeat: no-repeat;
-      background-size: 57vw; }
+      background-size: 57vw;
+      opacity: .85; }
       @media (min-width: 768px) {
         #index-home > div #publication {
           background-position: -55px 320px;
@@ -1264,12 +1336,26 @@ header {
         #index-home > div #publication {
           background-position: 0px 300px;
           background-size: 24vw; } }
+      #index-home > div #publication:hover {
+        background-size: 67vw;
+        transition-duration: .5s;
+        opacity: 1; }
+        @media (min-width: 768px) {
+          #index-home > div #publication:hover {
+            background-size: 50vw; } }
+        @media (min-width: 1025px) {
+          #index-home > div #publication:hover {
+            background-size: 38vw; } }
+        @media (min-width: 1025px) {
+          #index-home > div #publication:hover {
+            background-size: 34vw; } }
     #index-home > div #webdesign {
       background-color: #95670D;
       background-image: url("../img/home-page/iphonemummers.png");
       background-position: 280px 50px;
       background-repeat: no-repeat;
-      background-size: 50vw; }
+      background-size: 50vw;
+      opacity: .85; }
       @media (min-width: 768px) {
         #index-home > div #webdesign {
           background-position: -100px 340px;
@@ -1281,12 +1367,23 @@ header {
         #index-home > div #webdesign {
           background-position: -140px 280px;
           background-size: 28vw; } }
+      #index-home > div #webdesign:hover {
+        background-size: 60vw;
+        transition-duration: .5s;
+        opacity: 1; }
+        @media (min-width: 768px) {
+          #index-home > div #webdesign:hover {
+            background-size: 44vw; } }
+        @media (min-width: 1440px) {
+          #index-home > div #webdesign:hover {
+            background-size: 38vw; } }
     #index-home > div #fineart {
       background-color: #586361;
       background-image: url("../img/home-page/self-portrait.png");
       background-position: -150px 30px;
       background-repeat: no-repeat;
-      background-size: 85vw; }
+      background-size: 85vw;
+      opacity: .85; }
       @media (min-width: 768px) {
         #index-home > div #fineart {
           background-position: -180px 40px;
@@ -1299,9 +1396,16 @@ header {
         #index-home > div #fineart {
           background-position: -350px 245px;
           background-size: 57vw; } }
-    @media (min-width: 768px) {
-      #index-home > div .one-line {
-        white-space: nowrap; } }
+      #index-home > div #fineart:hover {
+        background-size: 95vw;
+        transition-duration: .5s;
+        opacity: 1; }
+        @media (min-width: 768px) {
+          #index-home > div #fineart:hover {
+            background-size: 84vw; } }
+        @media (min-width: 1025px) {
+          #index-home > div #fineart:hover {
+            background-size: 67vw; } }
     @media (min-width: 768px) {
       #index-home > div #fineart-text {
         transform: rotate(90deg);
@@ -1347,13 +1451,14 @@ header {
     Fine Art Section 1
  --------------------------*/
 #section-main-header {
-  margin-top: 60px; }
+  margin-top: 30px; }
   @media (min-width: 768px) {
     #section-main-header {
-      margin-top: 100px; } }
+      margin-top: 60px; } }
   @media (min-width: 1025px) {
     #section-main-header {
-      margin-top: 160px; } }
+      margin-top: 100px;
+      margin-bottom: -20px; } }
 #header-content {
   background-image: url("../img/fine-art-header-1/exhaustionheadermob.svg");
   background-position: center;
@@ -1367,10 +1472,10 @@ header {
   @media (min-width: 1025px) {
     #header-content {
       background-image: url("../img/fine-art-header-1/exhaustionheader.svg");
-      height: 66vh; } }
+      height: 40vh; } }
   @media (min-width: 1440px) {
     #header-content {
-      height: 66vh; } }
+      height: 45vh; } }
   #header-content #section-1-subheader {
     display: grid;
     text-align: right; }
@@ -1457,6 +1562,59 @@ header {
     @media (min-width: 768px) {
       #tired-gallery ul li:nth-child(11) {
         grid-area: eleven; } }
+/* --------------------------
+    Fine Art Section 2
+ --------------------------*/
+#section-header-PP {
+  position: relative;
+  z-index: 10;
+  margin-top: -3.5%; }
+  #section-header-PP > div {
+    background-image: url("../img/publication/pubheadermob1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      #section-header-PP > div {
+        background-image: url("../img/publication/pubheadertab1.svg");
+        height: 30vh;
+        margin-bottom: 50px; } }
+    @media (min-width: 1025px) {
+      #section-header-PP > div {
+        background-image: url("../img/fine-art-header-1/zombieHEADER.svg");
+        height: 40vh; } }
+    @media (min-width: 1440px) {
+      #section-header-PP > div {
+        height: 45vh; } }
+    #section-header-PP > div #header-content-PP #section-1-header-PP {
+      display: grid;
+      text-align: right; }
+      #section-header-PP > div #header-content-PP #section-1-header-PP h1 {
+        position: relative;
+        margin-top: 50px;
+        margin-right: 45px;
+        font-size: 1.5625rem;
+        z-index: 90;
+        text-align: right; }
+        @media (min-width: 768px) {
+          #section-header-PP > div #header-content-PP #section-1-header-PP h1 {
+            font-size: 2.5rem;
+            margin-top: 100px;
+            margin-right: 100px; } }
+        @media (min-width: 1025px) {
+          #section-header-PP > div #header-content-PP #section-1-header-PP h1 {
+            font-size: 3.125rem;
+            margin-top: 160px;
+            margin-right: 280px; } }
+#self-portrait-pic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 3%; }
+
 /* =============
     Branding Content
 ============= */
@@ -1622,28 +1780,27 @@ header {
 /* ========================
          STARTECH
 ======================== */
-#section-header-B-2 {
+#section-header-B-2 > div {
   background-image: url("../img/branding/startechHEADERmob.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 18vh; }
   @media (min-width: 768px) {
-    #section-header-B-2 {
+    #section-header-B-2 > div {
       background-image: url("../img/branding/startechHEADERtab.svg");
       height: 27vh; } }
   @media (min-width: 1025px) {
-    #section-header-B-2 {
+    #section-header-B-2 > div {
       background-image: url("../img/branding/startechHEADER1.svg");
-      height: 40vh;
-      margin-top: -5%; } }
+      height: 40vh; } }
   @media (min-width: 1440px) {
-    #section-header-B-2 {
+    #section-header-B-2 > div {
       height: 45vh; } }
-  #section-header-B-2 #header-content-B-2 {
+  #section-header-B-2 > div #header-content-B-2 {
     display: grid;
     text-align: left; }
-    #section-header-B-2 #header-content-B-2 h1 {
+    #section-header-B-2 > div #header-content-B-2 h1 {
       position: relative;
       margin-top: 50px;
       margin-left: 45px;
@@ -1651,12 +1808,12 @@ header {
       z-index: 90;
       text-align: left; }
       @media (min-width: 768px) {
-        #section-header-B-2 #header-content-B-2 h1 {
+        #section-header-B-2 > div #header-content-B-2 h1 {
           font-size: 2.5rem;
           margin-top: 100px;
           margin-left: 100px; } }
       @media (min-width: 1025px) {
-        #section-header-B-2 #header-content-B-2 h1 {
+        #section-header-B-2 > div #header-content-B-2 h1 {
           font-size: 3.125rem;
           margin-top: 160px;
           margin-left: 220px; } }
@@ -1702,6 +1859,9 @@ header {
 /* --------------------------
     Publishing Section 1
  --------------------------*/
+#section-title-P {
+  margin-bottom: 20px; }
+
 #section-header-P {
   position: relative;
   z-index: 10;
@@ -1900,6 +2060,68 @@ header {
     object-position: center;
     width: 100%;
     margin: -12% 0 0% 0%; }
+
+/* =============
+    Publishing Content
+============= */
+/* --------------------------
+    Publishing Section 1
+ --------------------------*/
+#section-title-W {
+  margin-bottom: 20px; }
+
+#section-header-W {
+  position: relative;
+  z-index: 10;
+  margin-top: -3.5%; }
+  #section-header-W > div {
+    background-image: url("../img/publication/pubheadermob1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      #section-header-W > div {
+        background-image: url("../img/publication/pubheadertab1.svg");
+        height: 30vh;
+        margin-bottom: 50px; } }
+    @media (min-width: 1025px) {
+      #section-header-W > div {
+        background-image: url("../img/web/mummersHEADER.svg");
+        height: 40vh; } }
+    @media (min-width: 1440px) {
+      #section-header-W > div {
+        height: 45vh; } }
+    #section-header-W > div #header-content-W #section-1-header-W {
+      display: grid;
+      text-align: right; }
+      #section-header-W > div #header-content-W #section-1-header-W h1 {
+        position: relative;
+        margin-top: 50px;
+        margin-right: 45px;
+        font-size: 1.5625rem;
+        z-index: 90;
+        text-align: right; }
+        @media (min-width: 768px) {
+          #section-header-W > div #header-content-W #section-1-header-W h1 {
+            font-size: 2.5rem;
+            margin-top: 100px;
+            margin-right: 100px; } }
+        @media (min-width: 1025px) {
+          #section-header-W > div #header-content-W #section-1-header-W h1 {
+            font-size: 3.125rem;
+            margin-top: 160px;
+            margin-right: 280px; } }
+#mummers-mockup {
+  position: relative; }
+  #mummers-mockup img {
+    z-index: 10;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    margin: -12% 0 8% 0; }
 
 /* =============
     About Content
