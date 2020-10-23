@@ -414,49 +414,28 @@ a:visited {
     transform: skewY(0deg);
     transform-origin: 0% 0; }
 
-.accordion {
-  background-color: transparent;
-  color: #6D7278;
-  cursor: pointer;
-  padding: 20px 0 20px 10px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  display: inline-block;
-  font-size: 1.25rem; }
-  @media (min-width: 768px) {
-    .accordion {
-      font-size: 1.875rem; } }
-  @media (min-width: 1025px) {
-    .accordion {
-      font-size: 2.5rem; } }
-  @media (min-width: 1440px) {
-    .accordion {
-      font-size: 3.125rem; } }
-  .accordion i {
-    color: #fff;
-    font-size: 0.9375rem;
-    margin-right: 10px; }
-    @media (min-width: 768px) {
-      .accordion i {
-        font-size: 1.25rem; } }
-    @media (min-width: 1025px) {
-      .accordion i {
-        font-size: 1.875rem; } }
-    @media (min-width: 1440px) {
-      .accordion i {
-        font-size: 2.5rem; } }
-  .accordion:hover, .accordion:active {
-    background-color: #000; }
-    .accordion:hover i, .accordion:active i {
-      color: #323B56; }
-
 .panel {
   padding: 0 18px;
   background-color: white;
   overflow: hidden;
   transition: max-height 0.2s ease-out; }
+
+.button {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Open Sans'; }
+
+.button-2 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Open Sans';
+  color: grey; }
 
 /* =============
     Typography
@@ -1676,11 +1655,13 @@ header {
           font-size: 3.125rem;
           margin-top: 160px;
           margin-right: 220px; } }
-#saltopia-mockup img {
-  object-position: center;
-  width: 100%;
-  height: 100%;
-  margin-bottom: -3%; }
+#saltopia-mockup {
+  position: relative; }
+  #saltopia-mockup img {
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -3%; }
 
 @media (min-width: 768px) {
   #salt-logos > div {
@@ -1780,43 +1761,55 @@ header {
 /* ========================
          STARTECH
 ======================== */
-#section-header-B-2 > div {
-  background-image: url("../img/branding/startechHEADERmob.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 18vh; }
-  @media (min-width: 768px) {
-    #section-header-B-2 > div {
-      background-image: url("../img/branding/startechHEADERtab.svg");
-      height: 27vh; } }
-  @media (min-width: 1025px) {
-    #section-header-B-2 > div {
-      background-image: url("../img/branding/startechHEADER1.svg");
-      height: 40vh; } }
-  @media (min-width: 1440px) {
-    #section-header-B-2 > div {
-      height: 45vh; } }
-  #section-header-B-2 > div #header-content-B-2 {
-    display: grid;
-    text-align: left; }
-    #section-header-B-2 > div #header-content-B-2 h1 {
-      position: relative;
-      margin-top: 50px;
-      margin-left: 45px;
-      font-size: 1.5625rem;
-      z-index: 90;
+#section-header-B-2 {
+  position: relative;
+  z-index: 10; }
+  #section-header-B-2 > div {
+    background-image: url("../img/branding/startechHEADERmob.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18vh; }
+    @media (min-width: 768px) {
+      #section-header-B-2 > div {
+        background-image: url("../img/branding/startechHEADERtab.svg");
+        height: 27vh; } }
+    @media (min-width: 1025px) {
+      #section-header-B-2 > div {
+        background-image: url("../img/branding/startechHEADER1.svg");
+        height: 40vh; } }
+    @media (min-width: 1440px) {
+      #section-header-B-2 > div {
+        height: 45vh; } }
+    #section-header-B-2 > div #header-content-B-2 {
+      display: grid;
       text-align: left; }
-      @media (min-width: 768px) {
-        #section-header-B-2 > div #header-content-B-2 h1 {
-          font-size: 2.5rem;
-          margin-top: 100px;
-          margin-left: 100px; } }
-      @media (min-width: 1025px) {
-        #section-header-B-2 > div #header-content-B-2 h1 {
-          font-size: 3.125rem;
-          margin-top: 160px;
-          margin-left: 220px; } }
+      #section-header-B-2 > div #header-content-B-2 h1 {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 45px;
+        font-size: 1.5625rem;
+        z-index: 90;
+        text-align: left; }
+        @media (min-width: 768px) {
+          #section-header-B-2 > div #header-content-B-2 h1 {
+            font-size: 2.5rem;
+            margin-top: 100px;
+            margin-left: 100px; } }
+        @media (min-width: 1025px) {
+          #section-header-B-2 > div #header-content-B-2 h1 {
+            font-size: 3.125rem;
+            margin-top: 160px;
+            margin-left: 220px; } }
+#startech-mockup {
+  position: relative; }
+  #startech-mockup img {
+    z-index: 9;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%; }
+
 #star-logo > div {
   display: flex;
   align-items: center;
@@ -1825,7 +1818,7 @@ header {
     object-position: center;
     width: 30%;
     height: 100%;
-    margin: 3% 0px 5% 0px; }
+    margin: 3% 0px 0% 0px; }
 
 #section-2-container-2 #section-2-text-2 {
   margin: -3% 7% -3% 7%; }
@@ -2122,6 +2115,13 @@ header {
     object-position: center;
     width: 100%;
     margin: -12% 0 8% 0; }
+
+#mummers-webpage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 3%; }
 
 /* =============
     About Content

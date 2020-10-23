@@ -445,6 +445,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/branding/startechmockup copy.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/branding/startechmockup copy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/deploy/img/branding/startechmockup.jpg": {
 		"ft": 16384,
 		"iS": 0,
@@ -1171,6 +1182,28 @@
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/web/mummerspage1.png": {
+		"ft": 32768,
+		"iS": 1494242,
+		"oA": 0,
+		"oAP": "/deploy/img/web/mummerspage1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/web/mummerspage1shadow.png": {
+		"ft": 32768,
+		"iS": 1911619,
+		"oA": 0,
+		"oAP": "/deploy/img/web/mummerspage1shadow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
