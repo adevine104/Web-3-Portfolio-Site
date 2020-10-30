@@ -39,25 +39,6 @@ a:visited {
   padding: 70px 0 50px 0;
 }
 
-// .background-padding {
-//   padding: 10vh;
-//   margin: -30px 0 -20px 0;
-
-//   @include md {
-//     padding: 30vh 0;
-//     margin: -60px 0 -20px 0;
-//   }
-
-//   @include lg {
-//     padding: 50vh 0;
-//     margin: -80px 0 -245px 0;
-//   }
-
-//   @include xl {
-//     padding: 15vh 0;
-//     margin: -100px 0 -870px 0;
-//   }
-// }
 
 .content-padding {
   padding: 10vh;
@@ -94,120 +75,6 @@ a:visited {
   }
 }
 
-.Header {
-  position: fixed;
-  z-index: 1000;
-  filter: drop-shadow(-5px 10px 5px rgba(0, 0, 0, 0.3));
-
-  &:before,
-  &:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 160%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    margin-top: -70px;
-  }
-
-  &:before {
-    top: 0;
-    transform: skewY(0deg);
-    transform-origin: 0% 0;
-  }
-
-  &:after {
-    bottom: 0;
-    transform: skewY(-5deg);
-    transform-origin: 100%;
-  }
-}
-
-.Footer {
-  position: relative;
-  z-index: 1;
-  background-color: black;
-
-  &:before,
-  &:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-  }
-
-  &:before {
-    bottom: 0;
-    transform: skewY(8deg);
-    transform-origin: 100%;
-  }
-
-  &:after {
-    top: 0;
-    transform: skewY(0deg);
-    transform-origin: 0% 0;
-  }
-}
-
-// .accordion {
-//   background-color: transparent;
-//   color: $lightgrey;
-//   cursor: pointer;
-//   padding: 20px 0 20px 10px;
-//   width: 100%;
-//   text-align: left;
-//   border: none;
-//   outline: none;
-//   display: inline-block;
-
-//   font-size: rem-calc(20);
-
-//   @include md {
-//     font-size: rem-calc(30);
-//   }
-
-//   @include lg {
-//     font-size: rem-calc(40);
-//   }
-
-//   @include xl {
-//     font-size: rem-calc(50);
-//   }
-
-//   i {
-//     color: $white;
-//     font-size: rem-calc(15);
-//     margin-right: 10px;
-
-//     @include md {
-//       font-size: rem-calc(20);
-//     }
-
-//     @include lg {
-//       font-size: rem-calc(30);
-//     }
-
-//     @include xl {
-//       font-size: rem-calc(40);
-//     }
-//   }
-
-
-//   &:hover,
-//   &:active {
-//     background-color: $black;
-
-//     i {
-//       color: $earthblue;
-//     }
-//   }
-// }
 
 
 .panel {
@@ -236,3 +103,12 @@ a:visited {
   font-family: 'Open Sans';
   color: grey;
 }
+
+@include lg{
+  .blank-fill{
+      .blank-fill-2{
+          height: 5%;
+      }
+  }
+  }
+  

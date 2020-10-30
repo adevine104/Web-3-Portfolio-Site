@@ -9,8 +9,9 @@
 .arrow-left{
     position: absolute;
     margin: -13.5% 0 0% 15%;
+    // padding-left: 5%;
     color: white;
-    font-size: rem-calc(25);
+    font-size: rem-calc(35);
 }
 
 .arrow-right{
@@ -20,7 +21,7 @@
     align-items: right;
     // justify-content: center;
     color: white;
-    font-size: rem-calc(25);
+    font-size: rem-calc(35);
 }
 
 // .header-background{
@@ -37,6 +38,10 @@
 /* --------------------------
     Branding Section 1
  --------------------------*/
+
+ /* ========================
+         SALTOPIA
+======================== */
 
 #section-title {}
 
@@ -55,13 +60,12 @@
         //         }
         //     }
         // }
+
         background-image: url('../img/branding/saltheadermob.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 18vh;
-        
-
 
         @include md {
             background-image: url('../img/branding/saltheadertab.svg');
@@ -70,48 +74,14 @@
 
         @include lg {
             background-image: url('../img/branding/saltopiaHEADER1.svg');
-            height: 40vh;
+            height: 50vh;
             margin-top: -30px;
         }
 
         @include xl {
-            height: 45vh;
+            height: 51vh;
         }
 
-        #header-content-B {
-            //     display: grid;
-            //     grid-template-columns: repeat(2,1fr);
-            //     grid-template-rows: repeat(1);
-
-            #section-1-header-B {
-                display: grid;
-                text-align: right;
-                // bottom: 0;
-                // left: 0;
-                // width: 300px;
-
-                h1 {
-                    position: relative;
-                    margin-top: 50px;
-                    margin-right: 45px;
-                    font-size: rem-calc(25);
-                    z-index: 90;
-                    text-align: right;
-
-                    @include md {
-                        font-size: rem-calc(40);
-                        margin-top: 100px;
-                        margin-right: 100px;
-                    }
-
-                    @include lg {
-                        font-size: rem-calc(50);
-                        margin-top: 160px;
-                        margin-right: 220px;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -234,7 +204,7 @@
 
 #process-slides-1 {
     // border: 1px solid red;
-    margin-bottom: 5%;
+    // margin-bottom: 5%;
 
     @include md {
         margin-bottom: 150px;
@@ -271,11 +241,213 @@
     }
 }
 
-#blank-fill{
-    #blank-fill-2{
-        height: 50px;
+/* ========================
+         Republic Bank
+======================== */
+
+#section-header-B-3 {
+
+    >div {
+
+        // #saltopiaHEADER{
+        //     height: 10%;
+
+        //     #background{
+
+        //         &:hover {
+        //         fill: #3E2829;
+        //         transition-delay: .25s;
+        //         }
+        //     }
+        // }
+        background-image: url('../img/branding/saltheadermob.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 18vh;
+        
+
+
+        @include md {
+            background-image: url('../img/branding/saltheadertab.svg');
+            height: 27vh;
+        }
+
+        @include lg {
+            background-image: url('../img/branding/RBHEADER.svg');
+            height: 50vh;
+            margin-top: -30px;
+        }
+
+        @include xl {
+            height: 51vh;
+        }
+
     }
 }
+
+#RB-mockup{
+    position: relative;
+    
+    img{
+        z-index: 9;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        // margin: -12% 0 8% 0;
+    }
+}
+
+
+
+#RB-logos {
+    >div {
+        margin-bottom: 8%;
+
+        @include md {
+            margin-top: 0;
+        }
+
+        @include lg {
+            margin-top: 0px;
+        }
+
+        @include lg {
+            margin-top: 5%;
+        }
+
+        ul {
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 250px 200px 200px;
+            grid-template-areas: "l1""l2""l3";
+
+            @include md {
+                grid-template-areas: "l1 l2 l3";
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+            }
+
+            li {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    object-fit: cover;
+                    width: 70vw;
+
+                    @include md {
+                        width: 22vw;
+                    }
+                }
+            }
+
+            li:nth-child(1) {
+                grid-area: l1;
+            }
+
+            li:nth-child(2) {
+                grid-area: l2;
+            }
+
+            li:nth-child(3) {
+                grid-area: l3;
+            }
+        }
+    }
+}
+
+#part-3-container {
+
+    display: grid;
+    grid-template-areas: "image""p";
+
+    @include md {
+        display: grid;
+        grid-template-areas: "image p";
+        grid-template-columns: 60% auto;
+    }
+
+    #part-3-text {
+        text-align: justify;
+        margin: 40px 20px 50px 0px;
+        color: $lightgrey;
+        line-height: 1.5;
+
+        @include md {
+            grid-area: p;
+            text-align: left;
+            margin: 70px 20px 50px 60px;
+            font-size: rem-calc(18);
+            line-height: 1.5;
+        }
+
+        @include lg {
+            margin: 70px 20px 50px 180px;
+        }
+
+        @include xl {
+            margin: 11% 35% 5% -15%;
+        }
+
+    }
+
+    #part-3-image {
+
+        img{
+            object-fit: cover;
+            width: 60%;
+            margin-left: 20%;
+        }
+
+        grid-area: image;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#process-slides-6 {
+    // border: 1px solid red;
+    margin-bottom: 50px;
+
+    @include md {
+        margin-bottom: 150px;
+    }
+
+    >div {
+
+        .my-slider3 {
+
+            div {
+                height: auto;
+
+                @include lg {
+                    height: auto;
+                }
+
+                @include xl {
+                    height: auto;
+                }
+
+                img {
+                    height: 100%;
+                    width: 60%;
+                    margin-left: 14.5%;
+                    object-fit: center;
+                    object-position: center;
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $white;
+            background: $lightgrey;
+        }
+    }
+}
+
 
 
 /* ========================
@@ -285,8 +457,8 @@
 
 #section-header-B-2 {
 
-    position: relative;
-    z-index: 10;
+    // position: relative;
+    // z-index: 10;
 
     >div{
     // #startechHEADER{
@@ -306,8 +478,6 @@
         background-size: cover;
         height: 18vh;
         // margin-bottom: -5%;
-        
-
 
         @include md {
             background-image: url('../img/branding/startechHEADERtab.svg');
@@ -315,41 +485,15 @@
         }
 
         @include lg {
-            background-image: url('../img/branding/startechHEADER1.svg');
-            height: 40vh;
+            background-image: url('../img/branding/startechHEADER.svg');
+            height: 50vh;
             // margin-bottom: -8%;
         }
 
         @include xl {
-            height: 45vh;
+            height: 50.5vh;
         }
 
-        #header-content-B-2 {
-
-                display: grid;
-                text-align: left;
-
-                h1 {
-                    position: relative;
-                    margin-top: 50px;
-                    margin-left: 45px;
-                    font-size: rem-calc(25);
-                    z-index: 90;
-                    text-align: left;
-
-                    @include md {
-                        font-size: rem-calc(40);
-                        margin-top: 100px;
-                        margin-left: 100px;
-                    }
-
-                    @include lg {
-                        font-size: rem-calc(50);
-                        margin-top: 160px;
-                        margin-left: 220px;
-                    }
-                }
-            }
         }
         }
 

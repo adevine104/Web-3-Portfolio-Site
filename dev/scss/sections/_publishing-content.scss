@@ -33,40 +33,11 @@
 
         @include lg {
             background-image: url('../img/publication/BacktalkHEADER.svg');
-            height: 40vh;
+            height: 50vh;
         }
 
         @include xl {
-            height: 45vh;
-        }
-
-        #header-content-P {
-
-            #section-1-header-P {
-                display: grid;
-                text-align: right;
-
-                h1 {
-                    position: relative;
-                    margin-top: 50px;
-                    margin-right: 45px;
-                    font-size: rem-calc(25);
-                    z-index: 90;
-                    text-align: right;
-
-                    @include md {
-                        font-size: rem-calc(40);
-                        margin-top: 100px;
-                        margin-right: 100px;
-                    }
-
-                    @include lg {
-                        font-size: rem-calc(50);
-                        margin-top: 160px;
-                        margin-right: 280px;
-                    }
-                }
-            }
+            height: 51vh;
         }
 
     }
@@ -81,7 +52,7 @@
         object-fit: cover;
         object-position: center;
         width: 100%;
-        margin: -12% 0 8% 0;
+        margin: -5% 0 3% 0;
     }
 }
 
@@ -231,12 +202,12 @@
 
 
 /* --------------------------
-    Publishing Section 2
+            GRAY
  --------------------------*/
 
  #section-header-P-2 {
-    position: relative;
-    z-index: 10;
+    // position: relative;
+    // z-index: 10;
 
     >div {
         background-image: url('../img/publication/GRAYheadermob.svg');
@@ -255,40 +226,11 @@
 
         @include lg {
             background-image: url('../img/publication/GRAYheader.svg');
-            height: 40vh;
+            height: 50vh;
         }
 
         @include xl {
-            height: 45vh;
-        }
-
-        #header-content-P-2 {
-
-            #section-1-header-P-2 {
-                display: grid;
-                text-align: left;
-
-                h1 {
-                    position: relative;
-                    margin-top: 50px;
-                    margin-left: 45px;
-                    font-size: rem-calc(25);
-                    z-index: 90;
-                    text-align: left;
-
-                    @include md {
-                        font-size: rem-calc(40);
-                        margin-top: 100px;
-                        margin-left: 100px;
-                    }
-
-                    @include lg {
-                        font-size: rem-calc(50);
-                        margin-top: 160px;
-                        margin-left: 220px;
-                    }
-                }
-            }
+            height: 51vh;
         }
 
     }
@@ -303,8 +245,192 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-        width: 100%;
-        margin: -12% 0 0% 0%;
+        width: 90%;
+        margin: -5% 0 -5% 0%;
     }
 }
 
+
+#process-slides-4 {
+
+    >div {
+
+        .my-slider2 {
+
+            margin-top: 3%;
+
+            div {
+                height: auto;
+
+                @include lg {
+                    height: auto;
+                }
+
+                @include xl {
+                    height: auto;
+                }
+
+                img {
+                    height: 100%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 70%;
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $white;
+            background: $lightgrey;
+        }
+    }
+}
+
+
+/* --------------------------
+       WATER POLLUTION
+ --------------------------*/
+
+ #section-header-P-3 {
+    // position: relative;
+    // z-index: 10;
+
+    >div {
+        background-image: url('../img/publication/GRAYheadermob.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vh;
+        margin-bottom: 25px;
+
+
+        @include md {
+            background-image: url('../img/publication/GRAYheadertab.svg');
+            height: 30vh;
+            margin-bottom: 50px;
+        }
+
+        @include lg {
+            background-image: url('../img/publication/WPheader.svg');
+            height: 50vh;
+        }
+
+        @include xl {
+            height: 51vh;
+        }
+
+    }
+}
+
+
+
+#WP-mockup{
+    position: relative;
+
+    img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        margin: -5% 0 -5% 0%;
+    }
+}
+
+
+#process-slides-5 {
+    // border: 1px solid red;
+    margin-bottom: 50px;
+
+    @include md {
+        margin-bottom: 150px;
+    }
+
+    >div {
+
+        .my-slider3 {
+
+            margin-top: 0%;
+
+            div {
+                height: auto;
+
+                @include lg {
+                    height: auto;
+                }
+
+                @include xl {
+                    height: auto;
+                }
+
+                img {
+                    height: 100%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 70%;
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $white;
+            background: $lightgrey;
+        }
+    }
+}
+
+
+#WP-aside-container {
+
+    display: grid;
+    grid-template-areas: "image""p";
+
+    @include md {
+        display: grid;
+        grid-template-areas: "image p";
+        grid-template-columns: 60% auto;
+    }
+
+    #WP-aside-text {
+        text-align: justify;
+        margin: 0px 20px 50px 0px;
+        color: $lightgrey;
+        line-height: 1.5;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include md {
+            grid-area: p;
+            text-align: left;
+            margin: 0px 20px 50px 60px;
+            font-size: rem-calc(18);
+            line-height: 1.5;
+        }
+
+        @include lg {
+            margin: 0px 20px 50px 180px;
+        }
+
+        @include xl {
+            margin: 0% 35% 5% -15%;
+        }
+
+    }
+
+    #WP-aside-image {
+
+        img{
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            margin-left: 5%;
+        }
+
+        grid-area: image;
+        justify-content: center;
+        align-items: center;
+    }
+}

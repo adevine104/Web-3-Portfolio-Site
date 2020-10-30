@@ -26,11 +26,70 @@ p{
     font-weight: 400;
 }
 
-.white-section-header{
+.white-section-header-right{
     font-weight: 300;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    // transform: rotate(-90deg);
+    
+    display: grid;
+    text-align: right;
+    // bottom: 0;
+    // left: 0;
+    // width: 300px;
+
+    h1 {
+        position: relative;
+        margin-top: 50px;
+        margin-right: 45px;
+        font-size: rem-calc(25);
+        z-index: 90;
+        text-align: right;
+
+        @include md {
+            font-size: rem-calc(40);
+            margin-top: 100px;
+            margin-right: 100px;
+        }
+
+        @include lg {
+            font-size: rem-calc(50);
+            margin-top: 160px;
+            margin-right: 220px;
+        }
+    }
+}
+
+.white-section-header-left{
+    font-weight: 300;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+    display: grid;
+    text-align: left;
+    // bottom: 0;
+    // left: 0;
+    // width: 300px;
+
+    h1 {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 45px;
+        font-size: rem-calc(25);
+        z-index: 90;
+        text-align: left;
+
+        @include md {
+            font-size: rem-calc(40);
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        @include lg {
+            font-size: rem-calc(50);
+            margin-top: 160px;
+            margin-left: 220px;
+        }
+    }
 }
 
 .grey-section-header{
@@ -72,6 +131,21 @@ p{
     }
 }
 
+.grey-description-header{
+
+    h3{
+        margin: 150px 20px 50px 20px;
+        text-align: left;
+        color: $lightgrey;
+        line-height: 1.5;
+        font-size: rem-calc(20);
+
+        @include md{
+            margin: 80px 120px 80px 120px;
+        }
+    }
+}
+
 .grey-description{
 
     p{
@@ -86,6 +160,30 @@ p{
     }
 }
 
+
+.grey-larger-description{
+    text-align: justify;
+    margin: 30px 20px 10px 20px;
+    color: $lightgrey;
+    line-height: 1.25;
+
+    @include md {
+        text-align: left;
+        margin: 40px 100px 50px 100px;
+        font-size: rem-calc(18);
+        line-height: 1.5;
+    }
+
+    @include lg {
+        margin: 40px 200px 50px 200px;
+        font-size: rem-calc(18);
+        line-height: 1.5;
+    }
+
+    @include xl {
+        margin: 70px 250px 50px 220px;
+    }
+}
 
 @include md {
     .one-line {
