@@ -75,33 +75,12 @@ a:visited {
   }
 }
 
-
-
 .panel {
   padding: 0 18px;
   background-color: white;
   // display: block;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-}
-
-.button {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 30px;
-  font-family: 'Open Sans';
-}
-
-.button-2 {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 30px;
-  font-family: 'Open Sans';
-  color: grey;
 }
 
 @include lg{

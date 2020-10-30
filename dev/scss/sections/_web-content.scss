@@ -33,40 +33,11 @@
 
         @include lg {
             background-image: url('../img/web/mummersHEADER.svg');
-            height: 40vh;
+            height: 50vh;
         }
 
         @include xl {
-            height: 45vh;
-        }
-
-        #header-content-W {
-
-            #section-1-header-W {
-                display: grid;
-                text-align: right;
-
-                h1 {
-                    position: relative;
-                    margin-top: 50px;
-                    margin-right: 45px;
-                    font-size: rem-calc(25);
-                    z-index: 90;
-                    text-align: right;
-
-                    @include md {
-                        font-size: rem-calc(40);
-                        margin-top: 100px;
-                        margin-right: 100px;
-                    }
-
-                    @include lg {
-                        font-size: rem-calc(50);
-                        margin-top: 160px;
-                        margin-right: 280px;
-                    }
-                }
-            }
+            height: 55vh;
         }
 
     }
@@ -78,22 +49,66 @@
     img{
         z-index: 10;
         height: 100%;
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
-        margin: -12% 0 8% 0;
-    }
-}
-
-#mummers-webpage{
-
-    img{
-        
+        // object-fit: cover;
+        // object-position: center;
+        width: 80%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
-        margin-bottom: 3%;
+        margin-top: -10%;
+        margin-bottom: -5%;
+    }
+}
+
+// #mummers-webpage{
+
+//     img{
+        
+//         display: block;
+//         margin-left: auto;
+//         margin-right: auto;
+//         width: 80%;
+//         margin-bottom: 3%;
+//     }
+
+// }
+
+#process-slides-7 {
+    // border: 1px solid red;
+    // margin-bottom: 5%;
+
+    @include md {
+        margin-bottom: 5%;
+        // margin-top: 5%;
     }
 
+    >div {
+
+        .my-slider {
+
+            div {
+                height: auto;
+
+                @include lg {
+                    height: auto;
+                }
+
+                @include xl {
+                    height: auto;
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $white;
+            background: $lightgrey;
+        }
+    }
 }

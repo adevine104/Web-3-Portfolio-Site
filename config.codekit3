@@ -178,14 +178,6 @@
 		"q": 100,
 		"rq": 75
 		},
-	"/deploy/img/branding/RBslide-11.png.tmp$$": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/branding/RBslide-11.png.tmp$$",
-		"oF": 0
-		},
 	"/deploy/img/branding/RBslide-12.png": {
 		"ft": 32768,
 		"iS": 121887,
@@ -1624,6 +1616,45 @@
 		"q": 100,
 		"rq": 75
 		},
+	"/deploy/img/web/Mummers-UI-kit-1.png": {
+		"ft": 32768,
+		"iS": 179704,
+		"oA": 0,
+		"oAP": "/deploy/img/web/Mummers-UI-kit-1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/deploy/img/web/Mummers-UI-kit-2.png": {
+		"ft": 32768,
+		"iS": 261437,
+		"oA": 0,
+		"oAP": "/deploy/img/web/Mummers-UI-kit-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/deploy/img/web/Mummers-UI-kit-3.png": {
+		"ft": 32768,
+		"iS": 146355,
+		"oA": 0,
+		"oAP": "/deploy/img/web/Mummers-UI-kit-3.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
 	"/deploy/img/web/mummersHEADER.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1634,22 +1665,22 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/deploy/img/web/mummersmockup copy.jpg": {
-		"ft": 16384,
-		"iS": 2097152,
-		"jF": 0,
+	"/deploy/img/web/mummersmockup copy.png": {
+		"ft": 32768,
+		"iS": 9542396,
 		"oA": 0,
-		"oAP": "/deploy/img/web/mummersmockup copy.jpg",
+		"oAP": "/deploy/img/web/mummersmockup copy.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
 		},
 	"/deploy/img/web/mummersmockup.jpg": {
 		"ft": 16384,
-		"iS": 1703936,
+		"iS": 2097152,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/web/mummersmockup.jpg",
@@ -1662,9 +1693,22 @@
 		},
 	"/deploy/img/web/mummersmockup.png": {
 		"ft": 32768,
-		"iS": 2528359,
+		"iS": 9080344,
 		"oA": 0,
 		"oAP": "/deploy/img/web/mummersmockup.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/deploy/img/web/mummersmockup2.png": {
+		"ft": 32768,
+		"iS": 13870840,
+		"oA": 0,
+		"oAP": "/deploy/img/web/mummersmockup2.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,

@@ -36,39 +36,11 @@
 
     @include lg {
         background-image: url('../img/fine-art-header-1/exhaustionheader.svg');
-        height: 40vh;
+        height: 50vh;
     }
 
     @include xl{
-    height: 45vh;
-    }
-
-    #section-1-subheader {
-        display: grid;
-        text-align: right;
-
-        h1 {
-            position: relative;
-            margin-top: 50px;
-            margin-right: 85px;
-            font-size: rem-calc(25);
-            z-index: 90;
-            text-align: right;
-
-            @include md {
-                font-size: rem-calc(40);
-                margin-top: 100px;
-                margin-right: 160px;
-            }
-
-            @include lg {
-                font-size: rem-calc(50);
-                margin-top: 160px;
-                margin-right: 180px;
-            }
-
-        }
-
+    height: 55vh;
     }
 
 }
@@ -77,13 +49,13 @@
 #description-1 {
 
     p {
-        margin: 40px 20px 60px 20px;
+        margin: 60px 20px 0px 20px;
         text-align: justify;
         color: $lightgrey;
         line-height: 1.25;
 
         @include md {
-            margin: 20px 140px 80px 140px;
+            margin: 40px 140px 0px 140px;
             line-height: 1.5;
         }
     }
@@ -213,7 +185,7 @@
 #section-header-PP {
     position: relative;
     z-index: 10;
-    margin-top: -3.5%;
+    // margin-top: -3.5%;
 
     >div {
         background-image: url('../img/publication/pubheadermob1.svg');
@@ -232,11 +204,11 @@
 
         @include lg {
             background-image: url('../img/fine-art-header-1/zombieHEADER.svg');
-            height: 40vh;
+            height: 50vh;
         }
 
         @include xl {
-            height: 45vh;
+            height: 55vh;
         }
 
         #header-content-PP {
@@ -279,7 +251,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 70%;
         margin-bottom: 3%;
     }
 

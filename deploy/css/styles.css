@@ -375,23 +375,6 @@ a:visited {
   overflow: hidden;
   transition: max-height 0.2s ease-out; }
 
-.button {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 30px;
-  font-family: 'Open Sans'; }
-
-.button-2 {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 30px;
-  font-family: 'Open Sans';
-  color: grey; }
-
 @media (min-width: 1025px) {
   .blank-fill .blank-fill-2 {
     height: 5%; } }
@@ -457,7 +440,7 @@ p {
   font-weight: 300;
   color: #6D7278;
   font-family: 'Open Sans', sans-serif;
-  transform: rotate(-4deg);
+  transform: rotate(-3deg);
   text-align: center;
   font-size: 1.25rem;
   margin-top: 80px;
@@ -547,6 +530,34 @@ button {
       padding: 16px 40px; } }
   .white-button:hover {
     background-color: #6D7278; }
+
+.grey-button {
+  background-color: #6D7278;
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 13px 20px;
+  display: inline-block; }
+  @media (min-width: 768px) {
+    .grey-button {
+      font-size: 1.25rem;
+      padding: 14px 35px; } }
+  @media (min-width: 768px) {
+    .grey-button {
+      font-size: 1.5rem;
+      padding: 16px 40px; } }
+  .grey-button:hover {
+    background-color: #454545;
+    color: #6D7278; }
+
+.button {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Open Sans'; }
 
 /* =============
     Forms
@@ -1048,7 +1059,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 10vh;
+    height: 11vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
     @media (min-width: 768px) {
@@ -1061,7 +1072,7 @@ header {
         padding-bottom: 20px; } }
     @media (min-width: 1440px) {
       header div {
-        height: 18vh; } }
+        height: 22vh; } }
     header div #logo-container {
       padding: 0 0 20px 15px;
       display: flex;
@@ -1480,38 +1491,18 @@ header {
   @media (min-width: 1025px) {
     #header-content {
       background-image: url("../img/fine-art-header-1/exhaustionheader.svg");
-      height: 40vh; } }
+      height: 50vh; } }
   @media (min-width: 1440px) {
     #header-content {
-      height: 45vh; } }
-  #header-content #section-1-subheader {
-    display: grid;
-    text-align: right; }
-    #header-content #section-1-subheader h1 {
-      position: relative;
-      margin-top: 50px;
-      margin-right: 85px;
-      font-size: 1.5625rem;
-      z-index: 90;
-      text-align: right; }
-      @media (min-width: 768px) {
-        #header-content #section-1-subheader h1 {
-          font-size: 2.5rem;
-          margin-top: 100px;
-          margin-right: 160px; } }
-      @media (min-width: 1025px) {
-        #header-content #section-1-subheader h1 {
-          font-size: 3.125rem;
-          margin-top: 160px;
-          margin-right: 180px; } }
+      height: 55vh; } }
 #description-1 p {
-  margin: 40px 20px 60px 20px;
+  margin: 60px 20px 0px 20px;
   text-align: justify;
   color: #6D7278;
   line-height: 1.25; }
   @media (min-width: 768px) {
     #description-1 p {
-      margin: 20px 140px 80px 140px;
+      margin: 40px 140px 0px 140px;
       line-height: 1.5; } }
 #tired-gallery {
   margin-bottom: 50px; }
@@ -1575,8 +1566,7 @@ header {
  --------------------------*/
 #section-header-PP {
   position: relative;
-  z-index: 10;
-  margin-top: -3.5%; }
+  z-index: 10; }
   #section-header-PP > div {
     background-image: url("../img/publication/pubheadermob1.svg");
     background-position: center;
@@ -1592,10 +1582,10 @@ header {
     @media (min-width: 1025px) {
       #section-header-PP > div {
         background-image: url("../img/fine-art-header-1/zombieHEADER.svg");
-        height: 40vh; } }
+        height: 50vh; } }
     @media (min-width: 1440px) {
       #section-header-PP > div {
-        height: 45vh; } }
+        height: 55vh; } }
     #section-header-PP > div #header-content-PP #section-1-header-PP {
       display: grid;
       text-align: right; }
@@ -1620,7 +1610,7 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 70%;
   margin-bottom: 3%; }
 
 /* =============
@@ -1666,7 +1656,7 @@ header {
       margin-top: -30px; } }
   @media (min-width: 1440px) {
     #section-header > div {
-      height: 51vh; } }
+      height: 55vh; } }
 #saltopia-mockup {
   position: relative; }
   #saltopia-mockup img {
@@ -1787,7 +1777,7 @@ header {
       margin-top: -30px; } }
   @media (min-width: 1440px) {
     #section-header-B-3 > div {
-      height: 51vh; } }
+      height: 55vh; } }
 #RB-mockup {
   position: relative; }
   #RB-mockup img {
@@ -1845,22 +1835,25 @@ header {
       grid-template-columns: 60% auto; } }
   #part-3-container #part-3-text {
     text-align: justify;
-    margin: 40px 20px 50px 0px;
+    margin: 0px 20px 50px 0px;
     color: #6D7278;
-    line-height: 1.5; }
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     @media (min-width: 768px) {
       #part-3-container #part-3-text {
         grid-area: p;
         text-align: left;
-        margin: 70px 20px 50px 60px;
-        font-size: 1.125rem;
+        margin: 0px 20px 50px 60px;
+        font-size: 1rem;
         line-height: 1.5; } }
     @media (min-width: 1025px) {
       #part-3-container #part-3-text {
-        margin: 70px 20px 50px 180px; } }
+        margin: 0px 20px 50px 180px; } }
     @media (min-width: 1440px) {
       #part-3-container #part-3-text {
-        margin: 11% 35% 5% -15%; } }
+        margin: 0% 35% 5% -15%; } }
   #part-3-container #part-3-image {
     grid-area: image;
     justify-content: center;
@@ -1912,7 +1905,7 @@ header {
       height: 50vh; } }
   @media (min-width: 1440px) {
     #section-header-B-2 > div {
-      height: 50.5vh; } }
+      height: 55vh; } }
 #startech-mockup {
   position: relative; }
   #startech-mockup img {
@@ -1930,7 +1923,7 @@ header {
     object-position: center;
     width: 30%;
     height: 100%;
-    margin: 3% 0px 0% 0px; }
+    margin: 3% 0px 5% 0px; }
 
 #section-2-container-2 #section-2-text-2 {
   margin: -3% 7% -3% 7%; }
@@ -1989,7 +1982,7 @@ header {
         height: 50vh; } }
     @media (min-width: 1440px) {
       #section-header-P > div {
-        height: 51vh; } }
+        height: 55vh; } }
 #backtalk-mockup {
   position: relative; }
   #backtalk-mockup img {
@@ -2113,7 +2106,7 @@ header {
       height: 50vh; } }
   @media (min-width: 1440px) {
     #section-header-P-2 > div {
-      height: 51vh; } }
+      height: 55vh; } }
 #gray-mockup {
   position: relative; }
   #gray-mockup img {
@@ -2165,7 +2158,7 @@ header {
       height: 50vh; } }
   @media (min-width: 1440px) {
     #section-header-P-3 > div {
-      height: 51vh; } }
+      height: 55vh; } }
 #WP-mockup {
   position: relative; }
   #WP-mockup img {
@@ -2268,46 +2261,43 @@ header {
     @media (min-width: 1025px) {
       #section-header-W > div {
         background-image: url("../img/web/mummersHEADER.svg");
-        height: 40vh; } }
+        height: 50vh; } }
     @media (min-width: 1440px) {
       #section-header-W > div {
-        height: 45vh; } }
-    #section-header-W > div #header-content-W #section-1-header-W {
-      display: grid;
-      text-align: right; }
-      #section-header-W > div #header-content-W #section-1-header-W h1 {
-        position: relative;
-        margin-top: 50px;
-        margin-right: 45px;
-        font-size: 1.5625rem;
-        z-index: 90;
-        text-align: right; }
-        @media (min-width: 768px) {
-          #section-header-W > div #header-content-W #section-1-header-W h1 {
-            font-size: 2.5rem;
-            margin-top: 100px;
-            margin-right: 100px; } }
-        @media (min-width: 1025px) {
-          #section-header-W > div #header-content-W #section-1-header-W h1 {
-            font-size: 3.125rem;
-            margin-top: 160px;
-            margin-right: 280px; } }
+        height: 55vh; } }
 #mummers-mockup {
   position: relative; }
   #mummers-mockup img {
     z-index: 10;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    margin: -12% 0 8% 0; }
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10%;
+    margin-bottom: -5%; }
 
-#mummers-webpage img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  margin-bottom: 3%; }
+@media (min-width: 768px) {
+  #process-slides-7 {
+    margin-bottom: 5%; } }
+
+#process-slides-7 > div .my-slider div {
+  height: auto; }
+  @media (min-width: 1025px) {
+    #process-slides-7 > div .my-slider div {
+      height: auto; } }
+  @media (min-width: 1440px) {
+    #process-slides-7 > div .my-slider div {
+      height: auto; } }
+  #process-slides-7 > div .my-slider div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; }
+
+#process-slides-7 > div .tns-controls [aria-controls] {
+  color: #fff;
+  background: #6D7278; }
 
 /* =============
     About Content

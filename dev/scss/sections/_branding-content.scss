@@ -79,7 +79,7 @@
         }
 
         @include xl {
-            height: 51vh;
+            height: 55vh;
         }
 
     }
@@ -280,7 +280,7 @@
         }
 
         @include xl {
-            height: 51vh;
+            height: 55vh;
         }
 
     }
@@ -372,24 +372,27 @@
 
     #part-3-text {
         text-align: justify;
-        margin: 40px 20px 50px 0px;
+        margin: 0px 20px 50px 0px;
         color: $lightgrey;
         line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @include md {
             grid-area: p;
             text-align: left;
-            margin: 70px 20px 50px 60px;
-            font-size: rem-calc(18);
+            margin: 0px 20px 50px 60px;
+            font-size: rem-calc(16);
             line-height: 1.5;
         }
 
         @include lg {
-            margin: 70px 20px 50px 180px;
+            margin: 0px 20px 50px 180px;
         }
 
         @include xl {
-            margin: 11% 35% 5% -15%;
+            margin: 0% 35% 5% -15%;
         }
 
     }
@@ -491,7 +494,7 @@
         }
 
         @include xl {
-            height: 50.5vh;
+            height: 55vh;
         }
 
         }
@@ -521,7 +524,7 @@
             // object-fit: 50%;
             width: 30%;
             height: 100%;
-            margin: 3% 0px 0% 0px;
+            margin: 3% 0px 5% 0px;
         }
     }
 }

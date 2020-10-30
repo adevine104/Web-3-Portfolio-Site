@@ -34,3 +34,37 @@ button{
         background-color: $lightgrey;
     }
 }
+
+.grey-button{
+    background-color: $lightgrey;
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: rem-calc(18);
+    padding: 13px 20px;
+    display: inline-block;
+
+    @include md{
+        font-size: rem-calc(20);
+        padding: 14px 35px;
+    }
+
+    @include md{
+        font-size: rem-calc(24);
+        padding: 16px 40px;
+    }
+
+    &:hover{
+        background-color: $darkgrey;
+        color: $lightgrey;
+    }
+}
+
+.button {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Open Sans';
+  }

@@ -18,7 +18,7 @@ header{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 10vh;
+        height: 11vh;
 
         @include md{
             height: 10vh;
@@ -31,7 +31,7 @@ header{
             }
 
         @include xl{
-            height: 18vh;
+            height: 22vh;
             }
 
         display: grid;
