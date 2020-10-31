@@ -17,17 +17,17 @@
     margin-top: -3.5%;
 
     >div {
-        background-image: url('../img/publication/pubheadermob1.svg');
+        background-image: url('../img/web/mummersHEADERmob.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 20vh;
+        height: 13vh;
         margin-bottom: 20px;
 
 
         @include md {
-            background-image: url('../img/publication/pubheadertab1.svg');
-            height: 30vh;
+            background-image: url('../img/web/mummersHEADERtab.svg');
+            height: 18.5vh;
             margin-bottom: 50px;
         }
 
@@ -202,17 +202,17 @@
     margin-top: -5.5%;
 
     >div {
-        background-image: url('../img/publication/pubheadermob1.svg');
+        background-image: url('../img/web/campHEADERmob.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 20vh;
+        height: 13vh;
         margin-bottom: 20px;
 
 
         @include md {
-            background-image: url('../img/publication/pubheadertab1.svg');
-            height: 30vh;
+            background-image: url('../img/web/campHEADERtab.svg');
+            height: 18.5vh;
             margin-bottom: 50px;
         }
 

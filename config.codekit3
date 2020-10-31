@@ -100,6 +100,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/branding/RBheadermob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/RBheadermob.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/branding/RBheadertab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/branding/RBheadertab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/branding/RBmain.png": {
 		"ft": 32768,
 		"iS": 14794,
@@ -881,6 +901,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/fine-art-header-1/zombieheadermob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/fine-art-header-1/zombieheadermob.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/fine-art-header-1/zombieheadertab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/fine-art-header-1/zombieheadertab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/footer/Rectangle.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1208,6 +1248,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/publication/backtalkheadermob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/publication/backtalkheadermob.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/publication/backtalkheadertab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/publication/backtalkheadertab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/publication/backtalkmockup.jpg": {
 		"ft": 16384,
 		"iS": 5080877,
@@ -1525,6 +1585,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/publication/WPheadermob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/publication/WPheadermob.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/publication/WPheadertab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/publication/WPheadertab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/publication/WPmockup.jpg": {
 		"ft": 16384,
 		"iS": 586553,
@@ -1613,6 +1693,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/web/campHEADERmob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/web/campHEADERmob.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/web/campHEADERtab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/web/campHEADERtab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/web/campmockup.png": {
 		"ft": 32768,
 		"iS": 1807278,
@@ -1683,6 +1783,26 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/deploy/img/web/mummersHEADER.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/web/mummersHEADERmob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/web/mummersHEADERmob.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/web/mummersHEADERtab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/web/mummersHEADERtab.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,

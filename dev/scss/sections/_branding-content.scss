@@ -47,11 +47,11 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 18vh;
+        height: 13vh;
 
         @include md {
             background-image: url('../img/branding/saltheadertab.svg');
-            height: 27vh;
+            height: 18.5vh;
         }
 
         @include lg {
@@ -244,17 +244,17 @@
         //         }
         //     }
         // }
-        background-image: url('../img/branding/saltheadermob.svg');
+        background-image: url('../img/branding/RBheadermob.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 18vh;
+        height: 13vh;
         
 
 
         @include md {
-            background-image: url('../img/branding/saltheadertab.svg');
-            height: 27vh;
+            background-image: url('../img/branding/RBheadertab.svg');
+            height: 18.5vh;
         }
 
         @include lg {
@@ -463,12 +463,12 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 18vh;
+        height: 13vh;
         // margin-bottom: -5%;
 
         @include md {
             background-image: url('../img/branding/startechHEADERtab.svg');
-            height: 27vh;
+            height: 18.5vh;
         }
 
         @include lg {

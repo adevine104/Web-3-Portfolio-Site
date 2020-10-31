@@ -18,17 +18,17 @@
     margin-bottom: -2%;
 
     >div {
-        background-image: url('../img/publication/pubheadermob1.svg');
+        background-image: url('../img/publication/backtalkheadermob.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 20vh;
+        height: 13vh;
         // margin-bottom: 20px;
 
 
         @include md {
-            background-image: url('../img/publication/pubheadertab1.svg');
-            height: 30vh;
+            background-image: url('../img/publication/backtalkheadertab.svg');
+            height: 18.5vh;
             // margin-bottom: 50px;
         }
 
@@ -216,13 +216,13 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 20vh;
+        height: 13vh;
         margin-bottom: 25px;
 
 
         @include md {
             background-image: url('../img/publication/GRAYheadertab.svg');
-            height: 30vh;
+            height: 18.5vh;
             margin-bottom: 50px;
         }
 
@@ -300,17 +300,17 @@
     margin-bottom: -5.5%;
 
     >div {
-        background-image: url('../img/publication/GRAYheadermob.svg');
+        background-image: url('../img/publication/WPheadermob.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 20vh;
+        height: 13vh;
         margin-bottom: 25px;
 
 
         @include md {
-            background-image: url('../img/publication/GRAYheadertab.svg');
-            height: 30vh;
+            background-image: url('../img/publication/WPheadertab.svg');
+            height: 18.5vh;
             margin-bottom: 50px;
         }
 

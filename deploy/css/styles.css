@@ -979,20 +979,32 @@ pre[class*="language-"] {
 
 .arrow-left {
   position: absolute;
-  margin: -18% 0 0% 5%;
+  margin: -15% 0 0% 5%;
   color: white;
-  font-size: 2.1875rem; }
-
+  font-size: 1.5625rem; }
+  @media (min-width: 768px) {
+    .arrow-left {
+      margin: -14% 0 0% 5%;
+      font-size: 2.1875rem; } }
+  @media (min-width: 1025px) {
+    .arrow-left {
+      margin: -18% 0 0% 5%; } }
 .arrow-right {
   border: 1px solid red;
   position: absolute;
-  margin: -18% 0% 0% 0%;
   display: block;
   align-items: right;
   justify-content: right;
+  margin: -15% 0 0% 5%;
   color: white;
-  font-size: 2.1875rem; }
-
+  font-size: 1.5625rem; }
+  @media (min-width: 768px) {
+    .arrow-right {
+      margin: -14% 0 0% 5%;
+      font-size: 2.1875rem; } }
+  @media (min-width: 1025px) {
+    .arrow-right {
+      margin: -18% 0 0% 5%; } }
 .top-link {
   z-index: 100;
   transition: all .25s ease-in-out;
@@ -1326,8 +1338,7 @@ header {
       background-image: url("../img/branding/salt.svg");
       background-repeat: no-repeat;
       background-position: 250px 60px;
-      background-size: 57vw;
-      opacity: .85; }
+      background-size: 57vw; }
       @media (min-width: 768px) {
         #index-home > div #branding {
           background-position: -100px 400px;
@@ -1335,28 +1346,28 @@ header {
       @media (min-width: 1025px) {
         #index-home > div #branding {
           background-position: -120px 380px;
-          background-size: 28vw; } }
+          background-size: 28vw;
+          opacity: .85; }
+          #index-home > div #branding:hover {
+            background-size: 67vw;
+            transition-duration: .5s;
+            opacity: 1; } }
+    @media (min-width: 1025px) and (min-width: 768px) {
+      #index-home > div #branding:hover {
+        background-size: 48vw; } }
+    @media (min-width: 1025px) and (min-width: 1025px) {
+      #index-home > div #branding:hover {
+        background-size: 38vw; } }
       @media (min-width: 1440px) {
         #index-home > div #branding {
           background-position: -110px 310px;
           background-size: 28vw; } }
-      #index-home > div #branding:hover {
-        background-size: 67vw;
-        transition-duration: .5s;
-        opacity: 1; }
-        @media (min-width: 768px) {
-          #index-home > div #branding:hover {
-            background-size: 48vw; } }
-        @media (min-width: 1025px) {
-          #index-home > div #branding:hover {
-            background-size: 38vw; } }
     #index-home > div #publication {
       background-color: #294393;
       background-image: url("../img/home-page/mulaney.png");
       background-position: 0px 0px;
       background-repeat: no-repeat;
-      background-size: 57vw;
-      opacity: .85; }
+      background-size: 57vw; }
       @media (min-width: 768px) {
         #index-home > div #publication {
           background-position: -55px 320px;
@@ -1364,59 +1375,59 @@ header {
       @media (min-width: 1025px) {
         #index-home > div #publication {
           background-position: -20px 360px;
-          background-size: 28vw; } }
+          background-size: 28vw;
+          opacity: .85; }
+          #index-home > div #publication:hover {
+            background-size: 67vw;
+            transition-duration: .5s;
+            opacity: 1; } }
+    @media (min-width: 1025px) and (min-width: 768px) {
+      #index-home > div #publication:hover {
+        background-size: 50vw; } }
+    @media (min-width: 1025px) and (min-width: 1025px) {
+      #index-home > div #publication:hover {
+        background-size: 38vw; } }
+    @media (min-width: 1025px) and (min-width: 1025px) {
+      #index-home > div #publication:hover {
+        background-size: 34vw; } }
       @media (min-width: 1440px) {
         #index-home > div #publication {
           background-position: 0px 300px;
           background-size: 24vw; } }
-      #index-home > div #publication:hover {
-        background-size: 67vw;
-        transition-duration: .5s;
-        opacity: 1; }
-        @media (min-width: 768px) {
-          #index-home > div #publication:hover {
-            background-size: 50vw; } }
-        @media (min-width: 1025px) {
-          #index-home > div #publication:hover {
-            background-size: 38vw; } }
-        @media (min-width: 1025px) {
-          #index-home > div #publication:hover {
-            background-size: 34vw; } }
     #index-home > div #webdesign {
       background-color: #95670D;
       background-image: url("../img/home-page/iphonemummers.png");
       background-position: 280px 50px;
       background-repeat: no-repeat;
-      background-size: 50vw;
-      opacity: .85; }
+      background-size: 50vw; }
       @media (min-width: 768px) {
         #index-home > div #webdesign {
           background-position: -100px 340px;
           background-size: 34vw; } }
       @media (min-width: 1025px) {
         #index-home > div #webdesign {
-          background-position: -140px 320px; } }
+          background-position: -140px 320px;
+          opacity: .85; }
+          #index-home > div #webdesign:hover {
+            background-size: 60vw;
+            transition-duration: .5s;
+            opacity: 1; } }
+    @media (min-width: 1025px) and (min-width: 768px) {
+      #index-home > div #webdesign:hover {
+        background-size: 44vw; } }
+    @media (min-width: 1025px) and (min-width: 1440px) {
+      #index-home > div #webdesign:hover {
+        background-size: 38vw; } }
       @media (min-width: 1440px) {
         #index-home > div #webdesign {
           background-position: -140px 280px;
           background-size: 28vw; } }
-      #index-home > div #webdesign:hover {
-        background-size: 60vw;
-        transition-duration: .5s;
-        opacity: 1; }
-        @media (min-width: 768px) {
-          #index-home > div #webdesign:hover {
-            background-size: 44vw; } }
-        @media (min-width: 1440px) {
-          #index-home > div #webdesign:hover {
-            background-size: 38vw; } }
     #index-home > div #fineart {
       background-color: #586361;
       background-image: url("../img/home-page/self-portrait.png");
       background-position: -150px 30px;
       background-repeat: no-repeat;
-      background-size: 85vw;
-      opacity: .85; }
+      background-size: 85vw; }
       @media (min-width: 768px) {
         #index-home > div #fineart {
           background-position: -180px 40px;
@@ -1424,21 +1435,22 @@ header {
       @media (min-width: 1025px) {
         #index-home > div #fineart {
           background-position: -280px 300px;
-          background-size: 57vw; } }
+          background-size: 57vw;
+          opacity: .85; }
+          #index-home > div #fineart:hover {
+            background-size: 95vw;
+            transition-duration: .5s;
+            opacity: 1; } }
+    @media (min-width: 1025px) and (min-width: 768px) {
+      #index-home > div #fineart:hover {
+        background-size: 84vw; } }
+    @media (min-width: 1025px) and (min-width: 1025px) {
+      #index-home > div #fineart:hover {
+        background-size: 67vw; } }
       @media (min-width: 1440px) {
         #index-home > div #fineart {
           background-position: -350px 245px;
           background-size: 57vw; } }
-      #index-home > div #fineart:hover {
-        background-size: 95vw;
-        transition-duration: .5s;
-        opacity: 1; }
-        @media (min-width: 768px) {
-          #index-home > div #fineart:hover {
-            background-size: 84vw; } }
-        @media (min-width: 1025px) {
-          #index-home > div #fineart:hover {
-            background-size: 67vw; } }
     @media (min-width: 768px) {
       #index-home > div #fineart-text {
         transform: rotate(90deg);
@@ -1484,10 +1496,10 @@ header {
     Fine Art Section 1
  --------------------------*/
 #section-main-header {
-  margin-top: 30px; }
+  margin-top: 70px; }
   @media (min-width: 768px) {
     #section-main-header {
-      margin-top: 60px; } }
+      margin-top: 90px; } }
   @media (min-width: 1025px) {
     #section-main-header {
       margin-top: 100px;
@@ -1497,11 +1509,11 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 20vh; }
+  height: 13vh; }
   @media (min-width: 768px) {
     #header-content {
       background-image: url("../img/fine-art-header-1/exhaustionheadertab.svg");
-      height: 30vh; } }
+      height: 18.5vh; } }
   @media (min-width: 1025px) {
     #header-content {
       background-image: url("../img/fine-art-header-1/exhaustionheader.svg");
@@ -1581,16 +1593,16 @@ header {
 #section-header-PP {
   margin-top: -2.5%; }
   #section-header-PP > div {
-    background-image: url("../img/publication/pubheadermob1.svg");
+    background-image: url("../img/fine-art-header-1/zombieheadermob.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    height: 13vh;
     margin-bottom: 20px; }
     @media (min-width: 768px) {
       #section-header-PP > div {
-        background-image: url("../img/publication/pubheadertab1.svg");
-        height: 30vh;
+        background-image: url("../img/fine-art-header-1/zombieheadertab.svg");
+        height: 18.5vh;
         margin-bottom: 50px; } }
     @media (min-width: 1025px) {
       #section-header-PP > div {
@@ -1643,11 +1655,11 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 18vh; }
+  height: 13vh; }
   @media (min-width: 768px) {
     #section-header > div {
       background-image: url("../img/branding/saltheadertab.svg");
-      height: 27vh; } }
+      height: 18.5vh; } }
   @media (min-width: 1025px) {
     #section-header > div {
       background-image: url("../img/branding/saltopiaHEADER1.svg");
@@ -1762,15 +1774,15 @@ header {
 #section-header-B-3 {
   margin-bottom: -1.5%; }
   #section-header-B-3 > div {
-    background-image: url("../img/branding/saltheadermob.svg");
+    background-image: url("../img/branding/RBheadermob.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 18vh; }
+    height: 13vh; }
     @media (min-width: 768px) {
       #section-header-B-3 > div {
-        background-image: url("../img/branding/saltheadertab.svg");
-        height: 27vh; } }
+        background-image: url("../img/branding/RBheadertab.svg");
+        height: 18.5vh; } }
     @media (min-width: 1025px) {
       #section-header-B-3 > div {
         background-image: url("../img/branding/RBHEADER.svg");
@@ -1897,11 +1909,11 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 18vh; }
+    height: 13vh; }
     @media (min-width: 768px) {
       #section-header-B-2 > div {
         background-image: url("../img/branding/startechHEADERtab.svg");
-        height: 27vh; } }
+        height: 18.5vh; } }
     @media (min-width: 1025px) {
       #section-header-B-2 > div {
         background-image: url("../img/branding/startechHEADER.svg");
@@ -1967,15 +1979,15 @@ header {
   margin-top: -4.5%;
   margin-bottom: -2%; }
   #section-header-P > div {
-    background-image: url("../img/publication/pubheadermob1.svg");
+    background-image: url("../img/publication/backtalkheadermob.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh; }
+    height: 13vh; }
     @media (min-width: 768px) {
       #section-header-P > div {
-        background-image: url("../img/publication/pubheadertab1.svg");
-        height: 30vh; } }
+        background-image: url("../img/publication/backtalkheadertab.svg");
+        height: 18.5vh; } }
     @media (min-width: 1025px) {
       #section-header-P > div {
         background-image: url("../img/publication/BacktalkHEADER.svg");
@@ -2095,12 +2107,12 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    height: 13vh;
     margin-bottom: 25px; }
     @media (min-width: 768px) {
       #section-header-P-2 > div {
         background-image: url("../img/publication/GRAYheadertab.svg");
-        height: 30vh;
+        height: 18.5vh;
         margin-bottom: 50px; } }
     @media (min-width: 1025px) {
       #section-header-P-2 > div {
@@ -2145,16 +2157,16 @@ header {
 #section-header-P-3 {
   margin-bottom: -5.5%; }
   #section-header-P-3 > div {
-    background-image: url("../img/publication/GRAYheadermob.svg");
+    background-image: url("../img/publication/WPheadermob.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    height: 13vh;
     margin-bottom: 25px; }
     @media (min-width: 768px) {
       #section-header-P-3 > div {
-        background-image: url("../img/publication/GRAYheadertab.svg");
-        height: 30vh;
+        background-image: url("../img/publication/WPheadertab.svg");
+        height: 18.5vh;
         margin-bottom: 50px; } }
     @media (min-width: 1025px) {
       #section-header-P-3 > div {
@@ -2249,16 +2261,16 @@ header {
 #section-header-W {
   margin-top: -3.5%; }
   #section-header-W > div {
-    background-image: url("../img/publication/pubheadermob1.svg");
+    background-image: url("../img/web/mummersHEADERmob.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    height: 13vh;
     margin-bottom: 20px; }
     @media (min-width: 768px) {
       #section-header-W > div {
-        background-image: url("../img/publication/pubheadertab1.svg");
-        height: 30vh;
+        background-image: url("../img/web/mummersHEADERtab.svg");
+        height: 18.5vh;
         margin-bottom: 50px; } }
     @media (min-width: 1025px) {
       #section-header-W > div {
@@ -2362,16 +2374,16 @@ header {
 #section-header-W-2 {
   margin-top: -5.5%; }
   #section-header-W-2 > div {
-    background-image: url("../img/publication/pubheadermob1.svg");
+    background-image: url("../img/web/campHEADERmob.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    height: 13vh;
     margin-bottom: 20px; }
     @media (min-width: 768px) {
       #section-header-W-2 > div {
-        background-image: url("../img/publication/pubheadertab1.svg");
-        height: 30vh;
+        background-image: url("../img/web/campHEADERtab.svg");
+        height: 18.5vh;
         margin-bottom: 50px; } }
     @media (min-width: 1025px) {
       #section-header-W-2 > div {

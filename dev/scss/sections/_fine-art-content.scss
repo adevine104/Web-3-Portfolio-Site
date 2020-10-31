@@ -7,10 +7,10 @@
  --------------------------*/
 
 #section-main-header {
-    margin-top: 30px;
+    margin-top: 70px;
 
     @include md {
-        margin-top: 60px;
+        margin-top: 90px;
     }
 
     @include lg {
@@ -25,13 +25,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    height: 13vh;
     // margin-top: 30px;
 
 
     @include md {
         background-image: url('../img/fine-art-header-1/exhaustionheadertab.svg');
-        height: 30vh;
+        height: 18.5vh;
     }
 
     @include lg {
@@ -188,17 +188,17 @@
     margin-top: -2.5%;
 
     >div {
-        background-image: url('../img/publication/pubheadermob1.svg');
+        background-image: url('../img/fine-art-header-1/zombieheadermob.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 20vh;
+        height: 13vh;
         margin-bottom: 20px;
 
 
         @include md {
-            background-image: url('../img/publication/pubheadertab1.svg');
-            height: 30vh;
+            background-image: url('../img/fine-art-header-1/zombieheadertab.svg');
+            height: 18.5vh;
             margin-bottom: 50px;
         }
 
