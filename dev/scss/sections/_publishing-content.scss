@@ -12,9 +12,10 @@
 }
 
 #section-header-P {
-    position: relative;
-    z-index: 10;
-    margin-top: -3.5%;
+    // position: relative;
+    // z-index: 10;
+    margin-top: -4.5%;
+    margin-bottom: -2%;
 
     >div {
         background-image: url('../img/publication/pubheadermob1.svg');
@@ -22,13 +23,13 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 20vh;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
 
 
         @include md {
             background-image: url('../img/publication/pubheadertab1.svg');
             height: 30vh;
-            margin-bottom: 50px;
+            // margin-bottom: 50px;
         }
 
         @include lg {
@@ -37,7 +38,7 @@
         }
 
         @include xl {
-            height: 55vh;
+            height: 51vh;
         }
 
     }
@@ -208,6 +209,7 @@
  #section-header-P-2 {
     // position: relative;
     // z-index: 10;
+    margin-bottom: -5.5%;
 
     >div {
         background-image: url('../img/publication/GRAYheadermob.svg');
@@ -230,7 +232,7 @@
         }
 
         @include xl {
-            height: 55vh;
+            height: 51vh;
         }
 
     }
@@ -295,6 +297,7 @@
  #section-header-P-3 {
     // position: relative;
     // z-index: 10;
+    margin-bottom: -5.5%;
 
     >div {
         background-image: url('../img/publication/GRAYheadermob.svg');
@@ -317,7 +320,7 @@
         }
 
         @include xl {
-            height: 55vh;
+            height: 51vh;
         }
 
     }

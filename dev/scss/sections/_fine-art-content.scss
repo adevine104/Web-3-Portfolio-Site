@@ -15,7 +15,7 @@
 
     @include lg {
         margin-top: 100px;
-        margin-bottom: -20px;
+        margin-bottom: -30px;
     }
 }
 
@@ -40,7 +40,7 @@
     }
 
     @include xl{
-    height: 55vh;
+    height: 51vh;
     }
 
 }
@@ -183,9 +183,9 @@
  --------------------------*/
 
 #section-header-PP {
-    position: relative;
-    z-index: 10;
-    // margin-top: -3.5%;
+    // position: relative;
+    // z-index: 10;
+    margin-top: -2.5%;
 
     >div {
         background-image: url('../img/publication/pubheadermob1.svg');
@@ -208,7 +208,7 @@
         }
 
         @include xl {
-            height: 55vh;
+            height: 51vh;
         }
 
         #header-content-PP {

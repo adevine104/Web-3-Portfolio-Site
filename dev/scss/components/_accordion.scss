@@ -11,9 +11,9 @@
             // padding: 20px;
             transition: .25s;
 
-            i {
-                margin-left: auto;
-            }
+            // i {
+            //     margin-left: auto;
+            // }
         }
 
         // #top-content-1:hover {
@@ -51,4 +51,24 @@
             //     padding: 80px;
             // }
         }
+    }
+
+
+    .arrow-left{
+        position: absolute;
+        margin: -18% 0 0% 5%;
+        // padding-left: 5%;
+        color: white;
+        font-size: rem-calc(35);
+    }
+    
+    .arrow-right{
+        border: 1px solid red;
+        position: absolute;
+        margin: -18% 0% 0% 0%;
+        display: block;
+        align-items: right;
+        justify-content: right;
+        color: white;
+        font-size: rem-calc(35);
     }

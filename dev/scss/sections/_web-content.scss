@@ -12,8 +12,8 @@
 }
 
 #section-header-W {
-    position: relative;
-    z-index: 10;
+    // position: relative;
+    // z-index: 10;
     margin-top: -3.5%;
 
     >div {
@@ -37,7 +37,7 @@
         }
 
         @include xl {
-            height: 55vh;
+            height: 51vh;
         }
 
     }
@@ -56,22 +56,60 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: -10%;
-        margin-bottom: -5%;
+        margin-bottom: 0%;
     }
 }
 
-// #mummers-webpage{
 
-//     img{
-        
-//         display: block;
-//         margin-left: auto;
-//         margin-right: auto;
-//         width: 80%;
-//         margin-bottom: 3%;
-//     }
+#mummers-aside-container {
 
-// }
+    display: grid;
+    grid-template-areas: "p-1""p-2";
+
+    @include md {
+        display: grid;
+        grid-template-areas: "p-1 p-2";
+        grid-template-columns: 70% auto;
+    }
+
+    #mummers-aside-text {
+        text-align: justify;
+        margin: 2% 0% 5% 10%;
+        color: $lightgrey;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include md {
+            grid-area: p-1;
+            text-align: left;
+            // margin: 0px 20px 50px 60px;
+            font-size: rem-calc(16);
+            line-height: 1.5;
+        }
+
+        @include lg {
+            // margin: 0px 20px 50px 180px;
+        }
+
+        @include xl {
+            // margin: 0% 5% 5% 5%;
+        }
+
+    }
+
+    #mummers-aside-text-2 {
+        text-align: justify;
+        margin: -10% 5% 5% -5%;
+        color: $lightgrey;
+        line-height: 1.5;
+        display: flex;
+        grid-area: p-2;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 #process-slides-7 {
     // border: 1px solid red;
@@ -110,5 +148,151 @@
             color: $white;
             background: $lightgrey;
         }
+    }
+}
+
+#process-slides-9 {
+    // border: 1px solid red;
+    // margin-bottom: 5%;
+
+    @include md {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    >div {
+
+        .my-slider4 {
+
+            div {
+                height: auto;
+
+                @include lg {
+                    height: auto;
+                }
+
+                @include xl {
+                    height: auto;
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        .tns-controls [aria-controls] {
+            color: $white;
+            background: $lightgrey;
+        }
+    }
+}
+
+/* --------------------------
+    Publishing Section 1
+ --------------------------*/
+
+
+#section-header-W-2 {
+    // position: relative;
+    // z-index: 10;
+    margin-top: -5.5%;
+
+    >div {
+        background-image: url('../img/publication/pubheadermob1.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vh;
+        margin-bottom: 20px;
+
+
+        @include md {
+            background-image: url('../img/publication/pubheadertab1.svg');
+            height: 30vh;
+            margin-bottom: 50px;
+        }
+
+        @include lg {
+            background-image: url('../img/web/campHEADER.svg');
+            height: 50vh;
+        }
+
+        @include xl {
+            height: 51vh;
+        }
+
+    }
+}
+
+#camp-mockup{
+    position: relative;
+
+    img{
+        z-index: 10;
+        height: 100%;
+        // object-fit: cover;
+        // object-position: center;
+        width: 85%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -12%;
+        margin-bottom: 0%;
+    }
+}
+
+#camp-aside-container {
+
+    display: grid;
+    grid-template-areas: "p-1""p-2";
+
+    margin-top: -5%;
+
+    @include md {
+        display: grid;
+        grid-template-areas: "p-1 p-2";
+        grid-template-columns: 70% auto;
+    }
+
+    #camp-aside-text {
+        text-align: justify;
+        margin: 2% 0% 5% 10%;
+        color: $lightgrey;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include md {
+            grid-area: p-1;
+            text-align: left;
+            // margin: 0px 20px 50px 60px;
+            font-size: rem-calc(16);
+            line-height: 1.5;
+        }
+
+        @include lg {
+            // margin: 0px 20px 50px 180px;
+        }
+
+        @include xl {
+            // margin: 0% 5% 5% 5%;
+        }
+
+    }
+
+    #camp-aside-text-2 {
+        text-align: justify;
+        margin: -10% 5% 5% -5%;
+        color: $lightgrey;
+        line-height: 1.5;
+        display: flex;
+        grid-area: p-2;
+        justify-content: center;
+        align-items: center;
     }
 }
