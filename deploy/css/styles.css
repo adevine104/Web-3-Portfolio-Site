@@ -1841,7 +1841,7 @@ header {
 #part-3-container {
   display: grid;
   grid-template-areas: "image" "p"; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     #part-3-container {
       display: grid;
       grid-template-areas: "image p";
@@ -1856,13 +1856,14 @@ header {
     justify-content: center; }
     @media (min-width: 768px) {
       #part-3-container #part-3-text {
-        grid-area: p;
         text-align: left;
-        margin: 0px 20px 50px 60px;
+        margin: 0px 40px 50px 40px;
         font-size: 1rem;
         line-height: 1.5; } }
     @media (min-width: 1025px) {
       #part-3-container #part-3-text {
+        grid-area: p;
+        text-align: left;
         margin: 0px 20px 50px 180px; } }
     @media (min-width: 1440px) {
       #part-3-container #part-3-text {
@@ -1872,10 +1873,19 @@ header {
     justify-content: center;
     align-items: center; }
     #part-3-container #part-3-image img {
-      object-fit: cover;
-      width: 60%;
-      margin-left: 20%; }
-
+      margin-top: 400%;
+      margin-left: 400%;
+      width: 2000%;
+      height: 100%; }
+      @media (min-width: 768px) {
+        #part-3-container #part-3-image img {
+          margin-left: 1300%;
+          width: 3000%; } }
+      @media (min-width: 1025px) {
+        #part-3-container #part-3-image img {
+          object-fit: cover;
+          width: 60%;
+          margin-left: 20%; } }
 #process-slides-6 {
   margin-bottom: 50px; }
   @media (min-width: 768px) {
@@ -1921,25 +1931,23 @@ header {
     @media (min-width: 1440px) {
       #section-header-B-2 > div {
         height: 51vh; } }
-#startech-mockup {
-  position: relative; }
-  #startech-mockup img {
-    z-index: 9;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    width: 100%; }
-
 #star-logo > div {
   display: flex;
   align-items: center;
   justify-content: center; }
   #star-logo > div img {
     object-position: center;
-    width: 30%;
+    width: 50%;
     height: 100%;
-    margin: 3% 0px 5% 0px; }
-
+    margin: 10% 0px -15% 0px; }
+    @media (min-width: 768px) {
+      #star-logo > div img {
+        width: 50%;
+        margin: 10% 0px 5% 0px; } }
+    @media (min-width: 1025px) {
+      #star-logo > div img {
+        width: 30%;
+        margin: 3% 0px 5% 0px; } }
 #section-2-container-2 #section-2-text-2 {
   margin: -3% 7% -3% 7%; }
 
@@ -2080,13 +2088,13 @@ header {
     #process-slides-3 {
       margin-bottom: 150px; } }
   #process-slides-3 > div .my-slider div {
-    height: 300px; }
+    height: auto; }
     @media (min-width: 1025px) {
       #process-slides-3 > div .my-slider div {
-        height: 350px; } }
+        height: auto; } }
     @media (min-width: 1440px) {
       #process-slides-3 > div .my-slider div {
-        height: 400px; } }
+        height: auto; } }
     #process-slides-3 > div .my-slider div img {
       height: 100%;
       width: 65%;
@@ -2130,6 +2138,11 @@ header {
     width: 90%;
     margin: -5% 0 -5% 0%; }
 
+#Gray-heading {
+  margin-bottom: -25%; }
+  @media (min-width: 768px) {
+    #Gray-heading {
+      margin-bottom: 0%; } }
 #process-slides-4 > div .my-slider2 {
   margin-top: 3%; }
   #process-slides-4 > div .my-slider2 div {
@@ -2186,7 +2199,7 @@ header {
 
 #process-slides-5 {
   margin-bottom: 50px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     #process-slides-5 {
       margin-bottom: 150px; } }
   #process-slides-5 > div .my-slider3 {
@@ -2212,7 +2225,7 @@ header {
 #WP-aside-container {
   display: grid;
   grid-template-areas: "image" "p"; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     #WP-aside-container {
       display: grid;
       grid-template-areas: "image p";
@@ -2228,13 +2241,13 @@ header {
     justify-content: center; }
     @media (min-width: 768px) {
       #WP-aside-container #WP-aside-text {
-        grid-area: p;
         text-align: left;
-        margin: 0px 20px 50px 60px;
+        margin: 0px 50px 50px 40px;
         font-size: 1.125rem;
         line-height: 1.5; } }
     @media (min-width: 1025px) {
       #WP-aside-container #WP-aside-text {
+        grid-area: p;
         margin: 0px 20px 50px 180px; } }
     @media (min-width: 1440px) {
       #WP-aside-container #WP-aside-text {
@@ -2246,9 +2259,16 @@ header {
     #WP-aside-container #WP-aside-image img {
       height: 100%;
       object-fit: cover;
-      width: 100%;
-      margin-left: 5%; }
-
+      width: 3000%;
+      margin-left: -150%; }
+      @media (min-width: 768px) {
+        #WP-aside-container #WP-aside-image img {
+          margin-left: -250%;
+          width: 6000%; } }
+      @media (min-width: 1025px) {
+        #WP-aside-container #WP-aside-image img {
+          width: 100%;
+          margin-left: 5%; } }
 /* =============
     Publishing Content
 ============= */
@@ -2284,13 +2304,15 @@ header {
   #mummers-mockup img {
     z-index: 10;
     height: 100%;
-    width: 80%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: -10%;
     margin-bottom: 0%; }
-
+    @media (min-width: 1025px) {
+      #mummers-mockup img {
+        width: 80%; } }
 #mummers-aside-container {
   display: grid;
   grid-template-areas: "p-1" "p-2"; }
@@ -2301,7 +2323,7 @@ header {
       grid-template-columns: 70% auto; } }
   #mummers-aside-container #mummers-aside-text {
     text-align: justify;
-    margin: 2% 0% 5% 10%;
+    margin: 2% 10% 5% 2%;
     color: #6D7278;
     line-height: 1.5;
     display: flex;
@@ -2309,20 +2331,24 @@ header {
     justify-content: center; }
     @media (min-width: 768px) {
       #mummers-aside-container #mummers-aside-text {
+        margin: 2% 0% 5% 10%;
         grid-area: p-1;
         text-align: left;
         font-size: 1rem;
         line-height: 1.5; } }
   #mummers-aside-container #mummers-aside-text-2 {
-    text-align: justify;
-    margin: -10% 5% 5% -5%;
-    color: #6D7278;
-    line-height: 1.5;
-    display: flex;
-    grid-area: p-2;
-    justify-content: center;
-    align-items: center; }
-
+    display: none; }
+    @media (min-width: 768px) {
+      #mummers-aside-container #mummers-aside-text-2 {
+        display: block;
+        text-align: left;
+        color: #6D7278;
+        line-height: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -10% 5% 5% -5%;
+        grid-area: p-2; } }
 @media (min-width: 768px) {
   #process-slides-7 {
     margin-bottom: 5%; } }
@@ -2397,13 +2423,15 @@ header {
   #camp-mockup img {
     z-index: 10;
     height: 100%;
-    width: 85%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: -12%;
     margin-bottom: 0%; }
-
+    @media (min-width: 1025px) {
+      #camp-mockup img {
+        width: 85%; } }
 #camp-aside-container {
   display: grid;
   grid-template-areas: "p-1" "p-2";
@@ -2415,7 +2443,7 @@ header {
       grid-template-columns: 70% auto; } }
   #camp-aside-container #camp-aside-text {
     text-align: justify;
-    margin: 2% 0% 5% 10%;
+    margin: 2% 12% 5% 5%;
     color: #6D7278;
     line-height: 1.5;
     display: flex;
@@ -2423,20 +2451,30 @@ header {
     justify-content: center; }
     @media (min-width: 768px) {
       #camp-aside-container #camp-aside-text {
+        margin: 2% 3% 5% 10%;
         grid-area: p-1;
         text-align: left;
         font-size: 1rem;
         line-height: 1.5; } }
+    @media (min-width: 1025px) {
+      #camp-aside-container #camp-aside-text {
+        margin: 2% 0% 5% 10%; } }
   #camp-aside-container #camp-aside-text-2 {
-    text-align: justify;
-    margin: -10% 5% 5% -5%;
-    color: #6D7278;
-    line-height: 1.5;
-    display: flex;
-    grid-area: p-2;
-    justify-content: center;
-    align-items: center; }
-
+    display: none; }
+    @media (min-width: 768px) {
+      #camp-aside-container #camp-aside-text-2 {
+        display: block;
+        text-align: justify;
+        margin: -10% 15% 5% 5%;
+        color: #6D7278;
+        line-height: 1.5;
+        display: flex;
+        grid-area: p-2;
+        justify-content: center;
+        align-items: center; } }
+    @media (min-width: 1025px) {
+      #camp-aside-container #camp-aside-text-2 {
+        margin: -10% 5% 5% -5%; } }
 /* =============
     About Content
 ============= */

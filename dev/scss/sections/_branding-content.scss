@@ -348,7 +348,7 @@
     display: grid;
     grid-template-areas: "image""p";
 
-    @include md {
+    @include lg {
         display: grid;
         grid-template-areas: "image p";
         grid-template-columns: 60% auto;
@@ -364,14 +364,16 @@
         justify-content: center;
 
         @include md {
-            grid-area: p;
+            // grid-area: p;
             text-align: left;
-            margin: 0px 20px 50px 60px;
+            margin: 0px 40px 50px 40px;
             font-size: rem-calc(16);
             line-height: 1.5;
         }
 
         @include lg {
+            grid-area: p;
+            text-align: left;
             margin: 0px 20px 50px 180px;
         }
 
@@ -384,9 +386,21 @@
     #part-3-image {
 
         img{
-            object-fit: cover;
-            width: 60%;
-            margin-left: 20%;
+            margin-top: 400%;
+            margin-left: 400%;
+            width: 2000%;
+            height: 100%;
+
+            @include md{
+                margin-left: 1300%;
+                width: 3000%;
+            }
+
+            @include lg{
+                object-fit: cover;
+                width: 60%;
+                margin-left: 20%;
+            }
         }
 
         grid-area: image;
@@ -484,18 +498,18 @@
         }
         }
 
-#startech-mockup{
-    position: relative;
+// #startech-mockup{
+//     position: relative;
     
-    img{
-        z-index: 9;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
-        // margin: -12% 0 8% 0;
-    }
-}
+//     img{
+//         z-index: 9;
+//         height: 100%;
+//         object-fit: cover;
+//         object-position: center;
+//         width: 100%;
+//         // margin: -12% 0 8% 0;
+//     }
+// }
 
 #star-logo{
     >div{
@@ -506,9 +520,19 @@
         img{
             object-position: center;
             // object-fit: 50%;
-            width: 30%;
+            width: 50%;
             height: 100%;
-            margin: 3% 0px 5% 0px;
+            margin: 10% 0px -15% 0px;
+
+            @include md{
+                width: 50%;
+                margin: 10% 0px 5% 0px;
+            }
+
+            @include lg{
+                width: 30%;
+                margin: 3% 0px 5% 0px;
+            }
         }
     }
 }

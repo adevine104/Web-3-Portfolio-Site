@@ -51,12 +51,16 @@
         height: 100%;
         // object-fit: cover;
         // object-position: center;
-        width: 80%;
+        width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: -10%;
         margin-bottom: 0%;
+
+        @include lg{
+            width: 80%;
+        }
     }
 }
 
@@ -74,14 +78,16 @@
 
     #mummers-aside-text {
         text-align: justify;
-        margin: 2% 0% 5% 10%;
+        margin: 2% 10% 5% 2%;
         color: $lightgrey;
         line-height: 1.5;
         display: flex;
         align-items: center;
         justify-content: center;
+        
 
         @include md {
+            margin: 2% 0% 5% 10%;
             grid-area: p-1;
             text-align: left;
             // margin: 0px 20px 50px 60px;
@@ -100,14 +106,27 @@
     }
 
     #mummers-aside-text-2 {
-        text-align: justify;
-        margin: -10% 5% 5% -5%;
+        display: none;
+        // text-align: left;
+        // margin: 0% 0% 0% 1000%;
+        // color: $lightgrey;
+        // line-height: 1.5;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+
+        @include md{
+            display: block;
+            text-align: left;
+        // margin: 0% 0% 0% 1000%;
         color: $lightgrey;
         line-height: 1.5;
         display: flex;
-        grid-area: p-2;
         justify-content: center;
         align-items: center;
+            margin: -10% 5% 5% -5%;
+            grid-area: p-2;
+        }
     }
 }
 
@@ -236,12 +255,16 @@
         height: 100%;
         // object-fit: cover;
         // object-position: center;
-        width: 85%;
+        width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: -12%;
         margin-bottom: 0%;
+
+        @include lg{
+            width: 85%;
+        }
     }
 }
 
@@ -260,7 +283,7 @@
 
     #camp-aside-text {
         text-align: justify;
-        margin: 2% 0% 5% 10%;
+        margin: 2% 12% 5% 5%;
         color: $lightgrey;
         line-height: 1.5;
         display: flex;
@@ -268,6 +291,7 @@
         justify-content: center;
 
         @include md {
+            margin: 2% 3% 5% 10%;
             grid-area: p-1;
             text-align: left;
             // margin: 0px 20px 50px 60px;
@@ -276,6 +300,7 @@
         }
 
         @include lg {
+            margin: 2% 0% 5% 10%;
             // margin: 0px 20px 50px 180px;
         }
 
@@ -286,13 +311,30 @@
     }
 
     #camp-aside-text-2 {
-        text-align: justify;
-        margin: -10% 5% 5% -5%;
-        color: $lightgrey;
-        line-height: 1.5;
-        display: flex;
-        grid-area: p-2;
-        justify-content: center;
-        align-items: center;
+        display: none;
+        // text-align: justify;
+        // margin: -10% 5% 5% -5%;
+        // color: $lightgrey;
+        // line-height: 1.5;
+        // display: flex;
+        // grid-area: p-2;
+        // justify-content: center;
+        // align-items: center;
+
+        @include md{
+            display: block;
+            text-align: justify;
+            margin: -10% 15% 5% 5%;
+            color: $lightgrey;
+            line-height: 1.5;
+            display: flex;
+            grid-area: p-2;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include lg{
+            margin: -10% 5% 5% -5%;
+        }
     }
 }

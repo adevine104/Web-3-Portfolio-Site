@@ -174,14 +174,14 @@
         .my-slider {
 
             div {
-                height: 300px;
+                height: auto;
 
                 @include lg {
-                    height: 350px;
+                    height: auto;
                 }
 
                 @include xl {
-                    height: 400px;
+                    height: auto;
                 }
 
                 img {
@@ -249,6 +249,14 @@
         object-position: center;
         width: 90%;
         margin: -5% 0 -5% 0%;
+    }
+}
+
+#Gray-heading{
+    margin-bottom: -25%;
+
+    @include md{
+        margin-bottom: 0%;
     }
 }
 
@@ -345,7 +353,7 @@
     // border: 1px solid red;
     margin-bottom: 50px;
 
-    @include md {
+    @include lg {
         margin-bottom: 150px;
     }
 
@@ -389,7 +397,7 @@
     display: grid;
     grid-template-areas: "image""p";
 
-    @include md {
+    @include lg {
         display: grid;
         grid-template-areas: "image p";
         grid-template-columns: 60% auto;
@@ -406,14 +414,15 @@
         justify-content: center;
 
         @include md {
-            grid-area: p;
+            
             text-align: left;
-            margin: 0px 20px 50px 60px;
+            margin: 0px 50px 50px 40px;
             font-size: rem-calc(18);
             line-height: 1.5;
         }
 
         @include lg {
+            grid-area: p;
             margin: 0px 20px 50px 180px;
         }
 
@@ -428,8 +437,18 @@
         img{
             height: 100%;
             object-fit: cover;
-            width: 100%;
-            margin-left: 5%;
+            width: 3000%;
+            margin-left: -150%;
+
+            @include md{
+                margin-left: -250%;
+                width: 6000%;
+            }
+
+            @include lg{
+                width: 100%;
+                margin-left: 5%;
+            }
         }
 
         grid-area: image;
