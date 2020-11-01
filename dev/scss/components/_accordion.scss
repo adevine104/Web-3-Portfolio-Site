@@ -10,6 +10,7 @@
             // display: flex;
             // padding: 20px;
             transition: .25s;
+            position: relative;
 
             // i {
             //     margin-left: auto;
@@ -54,38 +55,51 @@
     }
 
 
-    .arrow-left{
-        position: absolute;
-        margin: -15% 0 0% 5%;
-        color: white;
-        font-size: rem-calc(25);
+        .arrow-container-right{
+            // border: 1px solid red;
+            position: absolute;
+            top:0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
 
-        @include md{
-            margin: -14% 0 0% 5%;
-            font-size: rem-calc(35);
+
+            .demo-arrow-right{
+
+                color: white;
+                font-size: rem-calc(25);
+                margin-right: 5%;
+
+                @include md{
+                    font-size: rem-calc(35);
+                }
+            }
         }
 
-        @include lg{
-            margin: -18% 0 0% 5%;
-        }
-    }
-    
-    .arrow-right{
-        border: 1px solid red;
-        position: absolute;
-        display: block;
-        align-items: right;
-        justify-content: right;
-        margin: -15% 0 0% 5%;
-        color: white;
-        font-size: rem-calc(25);
+        .arrow-container-left{
+            // border: 1px solid red;
+            position: absolute;
+            top:0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            display: flex;
+            justify-content: left;
+            align-items: center;
 
-        @include md{
-            margin: -14% 0 0% 5%;
-            font-size: rem-calc(35);
-        }
+            .demo-arrow-left{
 
-        @include lg{
-            margin: -18% 0 0% 5%;
+                color: white;
+                font-size: rem-calc(25);
+                margin-left: 5%;
+
+                @include md{
+                    font-size: rem-calc(35);
+                }
+            }
         }
-    }

@@ -397,6 +397,8 @@
             }
 
             @include lg{
+                margin-top: 0%;
+            margin-left: 0%;
                 object-fit: cover;
                 width: 60%;
                 margin-left: 20%;

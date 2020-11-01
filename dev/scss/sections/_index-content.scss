@@ -53,11 +53,11 @@
             @include lg {
                 background-position: -120px 380px;
                 background-size: 28vw;
-                opacity: .85;
+                opacity: 0.85;
+                transition: 0.5s;
 
                 &:hover {
                     background-size: 67vw;
-                    transition-duration: .5s;
                     opacity: 1;
     
                     @include md{
@@ -94,11 +94,11 @@
             @include lg {
                 background-position: -20px 360px;
                 background-size: 28vw;
-                opacity: .85;
+                opacity: 0.85;
+                transition: 0.5s;
 
                 &:hover {
                     background-size: 67vw;
-                    transition-duration: .5s;
                     opacity: 1;
 
                     @include md{
@@ -138,11 +138,11 @@
 
             @include lg {
                 background-position: -140px 320px;
-                opacity: .85;
+                opacity: 0.85;
+                transition: 0.5s;
 
                 &:hover {
                     background-size: 60vw;
-                    transition-duration: .5s;
                     opacity: 1;
     
                     @include md{
@@ -179,11 +179,11 @@
             @include lg {
                 background-position: -280px 300px;
                 background-size: 57vw;
-                opacity: .85;
+                opacity: 0.85;
+                transition: 0.5s;
 
                 &:hover {
                     background-size: 95vw;
-                    transition-duration: .5s;
                     opacity: 1;
     
                     @include md{

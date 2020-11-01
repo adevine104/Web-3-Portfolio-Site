@@ -972,39 +972,46 @@ pre[class*="language-"] {
 #accordion .option .top {
   align-items: center;
   cursor: pointer;
-  transition: .25s; }
+  transition: .25s;
+  position: relative; }
 
 #accordion .bottom {
   overflow: hidden; }
 
-.arrow-left {
+.arrow-container-right {
   position: absolute;
-  margin: -15% 0 0% 5%;
-  color: white;
-  font-size: 1.5625rem; }
-  @media (min-width: 768px) {
-    .arrow-left {
-      margin: -14% 0 0% 5%;
-      font-size: 2.1875rem; } }
-  @media (min-width: 1025px) {
-    .arrow-left {
-      margin: -18% 0 0% 5%; } }
-.arrow-right {
-  border: 1px solid red;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .arrow-container-right .demo-arrow-right {
+    color: white;
+    font-size: 1.5625rem;
+    margin-right: 5%; }
+    @media (min-width: 768px) {
+      .arrow-container-right .demo-arrow-right {
+        font-size: 2.1875rem; } }
+.arrow-container-left {
   position: absolute;
-  display: block;
-  align-items: right;
-  justify-content: right;
-  margin: -15% 0 0% 5%;
-  color: white;
-  font-size: 1.5625rem; }
-  @media (min-width: 768px) {
-    .arrow-right {
-      margin: -14% 0 0% 5%;
-      font-size: 2.1875rem; } }
-  @media (min-width: 1025px) {
-    .arrow-right {
-      margin: -18% 0 0% 5%; } }
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+  .arrow-container-left .demo-arrow-left {
+    color: white;
+    font-size: 1.5625rem;
+    margin-left: 5%; }
+    @media (min-width: 768px) {
+      .arrow-container-left .demo-arrow-left {
+        font-size: 2.1875rem; } }
 .top-link {
   z-index: 100;
   transition: all .25s ease-in-out;
@@ -1347,10 +1354,10 @@ header {
         #index-home > div #branding {
           background-position: -120px 380px;
           background-size: 28vw;
-          opacity: .85; }
+          opacity: 0.85;
+          transition: 0.5s; }
           #index-home > div #branding:hover {
             background-size: 67vw;
-            transition-duration: .5s;
             opacity: 1; } }
     @media (min-width: 1025px) and (min-width: 768px) {
       #index-home > div #branding:hover {
@@ -1376,10 +1383,10 @@ header {
         #index-home > div #publication {
           background-position: -20px 360px;
           background-size: 28vw;
-          opacity: .85; }
+          opacity: 0.85;
+          transition: 0.5s; }
           #index-home > div #publication:hover {
             background-size: 67vw;
-            transition-duration: .5s;
             opacity: 1; } }
     @media (min-width: 1025px) and (min-width: 768px) {
       #index-home > div #publication:hover {
@@ -1407,10 +1414,10 @@ header {
       @media (min-width: 1025px) {
         #index-home > div #webdesign {
           background-position: -140px 320px;
-          opacity: .85; }
+          opacity: 0.85;
+          transition: 0.5s; }
           #index-home > div #webdesign:hover {
             background-size: 60vw;
-            transition-duration: .5s;
             opacity: 1; } }
     @media (min-width: 1025px) and (min-width: 768px) {
       #index-home > div #webdesign:hover {
@@ -1436,10 +1443,10 @@ header {
         #index-home > div #fineart {
           background-position: -280px 300px;
           background-size: 57vw;
-          opacity: .85; }
+          opacity: 0.85;
+          transition: 0.5s; }
           #index-home > div #fineart:hover {
             background-size: 95vw;
-            transition-duration: .5s;
             opacity: 1; } }
     @media (min-width: 1025px) and (min-width: 768px) {
       #index-home > div #fineart:hover {
@@ -1522,13 +1529,13 @@ header {
     #header-content {
       height: 51vh; } }
 #description-1 p {
-  margin: 60px 20px 0px 20px;
-  text-align: justify;
+  margin: 60px 20px 20px 20px;
+  text-align: left;
   color: #6D7278;
   line-height: 1.25; }
   @media (min-width: 768px) {
     #description-1 p {
-      margin: 40px 140px 0px 140px;
+      margin: 40px 140px 40px 140px;
       line-height: 1.5; } }
 #tired-gallery {
   margin-bottom: 50px; }
@@ -1883,6 +1890,8 @@ header {
           width: 3000%; } }
       @media (min-width: 1025px) {
         #part-3-container #part-3-image img {
+          margin-top: 0%;
+          margin-left: 0%;
           object-fit: cover;
           width: 60%;
           margin-left: 20%; } }
@@ -2475,6 +2484,28 @@ header {
     @media (min-width: 1025px) {
       #camp-aside-container #camp-aside-text-2 {
         margin: -10% 5% 5% -5%; } }
+/* ========================
+      PORTFOLIO SITE
+======================== */
+#section-header-W-3 {
+  margin-bottom: -1.5%; }
+  #section-header-W-3 > div {
+    background-image: url("../img/branding/startechHEADERmob.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 13vh; }
+    @media (min-width: 768px) {
+      #section-header-W-3 > div {
+        background-image: url("../img/branding/startechHEADERtab.svg");
+        height: 18.5vh; } }
+    @media (min-width: 1025px) {
+      #section-header-W-3 > div {
+        background-image: url("../img/web/portHEADER.svg");
+        height: 50vh; } }
+    @media (min-width: 1440px) {
+      #section-header-W-3 > div {
+        height: 51vh; } }
 /* =============
     About Content
 ============= */
