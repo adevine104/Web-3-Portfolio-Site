@@ -256,3 +256,169 @@
     }
 
 }
+
+
+/* --------------------------
+    Fine Art Section 3
+ --------------------------*/
+
+#header-content-phto {
+
+    margin-top: -5.5%;
+
+    background-image: url('../img/fine-art-header-1/phtoHEADERmob.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 13vh;
+    // margin-top: 30px;
+
+
+    @include md {
+        background-image: url('../img/fine-art-header-1/phtoHEADERtab.svg');
+        height: 18.5vh;
+    }
+
+    @include lg {
+        background-image: url('../img/fine-art-header-1/phtoHEADER.svg');
+        height: 50vh;
+    }
+
+    @include xl{
+    height: 51vh;
+    }
+
+}
+
+
+#description-3 {
+
+    p {
+        margin: 60px 20px 20px 20px;
+        text-align: left;
+        color: $lightgrey;
+        line-height: 1.25;
+
+        @include md {
+            margin: 40px 140px 40px 140px;
+            line-height: 1.5;
+        }
+    }
+}
+
+
+#spooky-gallery {
+    // margin-bottom: 50px;
+
+    @include md {
+        // margin-bottom: 150px;
+    }
+
+    ul {
+        display: grid;
+        gap: 20px;
+        grid-template-rows: repeat(11, 290px);
+
+        @include md {
+            grid-template-rows: repeat(5, 350px);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "one two"
+                "three four"
+                "five four"
+                "six six"
+                "seven eight"
+                "nine ten"
+                "nine eleven";
+        }
+
+        @include lg {
+            grid-template-rows: repeat(4, 280px);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                "one two three"
+                "four four three"
+                "five six seven"
+                "eight six nine"
+                "ten eleven eleven";
+        }
+
+        li {
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+
+        li:nth-child(1) {
+            @include md {
+                grid-area: one;
+            }
+
+        }
+
+        li:nth-child(2) {
+            @include md {
+                grid-area: two;
+            }
+        }
+
+        li:nth-child(3) {
+            @include md {
+                grid-area: three;
+            }
+        }
+
+        li:nth-child(4) {
+            @include md {
+                grid-area: four;
+            }
+        }
+
+        li:nth-child(5) {
+            @include md {
+                grid-area: five;
+            }
+        }
+
+        li:nth-child(6) {
+            @include md {
+                grid-area: six;
+            }
+        }
+
+        li:nth-child(7) {
+            @include md {
+                grid-area: seven;
+            }
+        }
+
+        li:nth-child(8) {
+            @include md {
+                grid-area: eight;
+            }
+
+        }
+
+        li:nth-child(9) {
+            @include md {
+                grid-area: nine;
+            }
+        }
+
+        li:nth-child(10) {
+            @include md {
+                grid-area: ten;
+            }
+        }
+
+        li:nth-child(11) {
+            @include md {
+                grid-area: eleven;
+            }
+        }
+    }
+}

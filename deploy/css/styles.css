@@ -1644,6 +1644,88 @@ header {
   width: 70%;
   margin-bottom: 3%; }
 
+/* --------------------------
+    Fine Art Section 3
+ --------------------------*/
+#header-content-phto {
+  margin-top: -5.5%;
+  background-image: url("../img/fine-art-header-1/phtoHEADERmob.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 13vh; }
+  @media (min-width: 768px) {
+    #header-content-phto {
+      background-image: url("../img/fine-art-header-1/phtoHEADERtab.svg");
+      height: 18.5vh; } }
+  @media (min-width: 1025px) {
+    #header-content-phto {
+      background-image: url("../img/fine-art-header-1/phtoHEADER.svg");
+      height: 50vh; } }
+  @media (min-width: 1440px) {
+    #header-content-phto {
+      height: 51vh; } }
+#description-3 p {
+  margin: 60px 20px 20px 20px;
+  text-align: left;
+  color: #6D7278;
+  line-height: 1.25; }
+  @media (min-width: 768px) {
+    #description-3 p {
+      margin: 40px 140px 40px 140px;
+      line-height: 1.5; } }
+#spooky-gallery ul {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(11, 290px); }
+  @media (min-width: 768px) {
+    #spooky-gallery ul {
+      grid-template-rows: repeat(5, 350px);
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "one two" "three four" "five four" "six six" "seven eight" "nine ten" "nine eleven"; } }
+  @media (min-width: 1025px) {
+    #spooky-gallery ul {
+      grid-template-rows: repeat(4, 280px);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "one two three" "four four three" "five six seven" "eight six nine" "ten eleven eleven"; } }
+  #spooky-gallery ul li img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%; }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(1) {
+      grid-area: one; } }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(2) {
+      grid-area: two; } }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(3) {
+      grid-area: three; } }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(4) {
+      grid-area: four; } }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(5) {
+      grid-area: five; } }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(6) {
+      grid-area: six; } }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(7) {
+      grid-area: seven; } }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(8) {
+      grid-area: eight; } }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(9) {
+      grid-area: nine; } }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(10) {
+      grid-area: ten; } }
+  @media (min-width: 768px) {
+    #spooky-gallery ul li:nth-child(11) {
+      grid-area: eleven; } }
 /* =============
     Branding Content
 ============= */
