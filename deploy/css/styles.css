@@ -2503,14 +2503,14 @@ header {
   margin-bottom: -1.5%;
   margin-top: -5.5%; }
   #section-header-W-3 > div {
-    background-image: url("../img/branding/startechHEADERmob.svg");
+    background-image: url("../img/web/portHEADERmob.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 13vh; }
     @media (min-width: 768px) {
       #section-header-W-3 > div {
-        background-image: url("../img/branding/startechHEADERtab.svg");
+        background-image: url("../img/web/portHEADERtab.svg");
         height: 18.5vh; } }
     @media (min-width: 1025px) {
       #section-header-W-3 > div {

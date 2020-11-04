@@ -1935,6 +1935,26 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/web/portHEADERmob.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/web/portHEADERmob.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/web/portHEADERtab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/web/portHEADERtab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/web/portUIkit.png": {
 		"ft": 32768,
 		"iS": 112441,
