@@ -1736,22 +1736,25 @@ header {
     line-height: 1.5; }
     @media (min-width: 768px) {
       #part-2-container #part-2-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         grid-area: p;
-        text-align: right;
-        margin: 70px 20px 50px 60px;
+        text-align: left;
+        margin: 0px 20px 50px 60px;
         font-size: 1.125rem;
         line-height: 1.5; } }
     @media (min-width: 1025px) {
       #part-2-container #part-2-text {
-        margin: 70px 20px 50px 180px; } }
+        margin: 0px 20px 50px 180px; } }
     @media (min-width: 1440px) {
       #part-2-container #part-2-text {
-        margin: 70px 20px 50px 200px; } }
+        margin: 0px 20px 50px 200px; } }
   #part-2-container #part-2-image {
     grid-area: image;
     justify-content: center;
     align-items: center;
-    margin-left: 22px; }
+    margin-left: 45px; }
 
 @media (min-width: 768px) {
   #process-slides-1 {
@@ -1939,6 +1942,20 @@ header {
     @media (min-width: 1440px) {
       #section-header-B-2 > div {
         height: 51vh; } }
+#startech-mockup {
+  position: relative; }
+  #startech-mockup img {
+    z-index: 9;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 5%; }
+
 #star-logo > div {
   display: flex;
   align-items: center;

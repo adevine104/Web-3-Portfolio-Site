@@ -154,19 +154,22 @@
         line-height: 1.5;
 
         @include md {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             grid-area: p;
-            text-align: right;
-            margin: 70px 20px 50px 60px;
+            text-align: left;
+            margin: 0px 20px 50px 60px;
             font-size: rem-calc(18);
             line-height: 1.5;
         }
 
         @include lg {
-            margin: 70px 20px 50px 180px;
+            margin: 0px 20px 50px 180px;
         }
 
         @include xl {
-            margin: 70px 20px 50px 200px;
+            margin: 0px 20px 50px 200px;
         }
 
     }
@@ -179,7 +182,7 @@
         grid-area: image;
         justify-content: center;
         align-items: center;
-        margin-left: 22px;
+        margin-left: 45px;
         // height: 20vh;
     }
 }
@@ -500,18 +503,22 @@
         }
         }
 
-// #startech-mockup{
-//     position: relative;
+#startech-mockup{
+    position: relative;
     
-//     img{
-//         z-index: 9;
-//         height: 100%;
-//         object-fit: cover;
-//         object-position: center;
-//         width: 100%;
-//         // margin: -12% 0 8% 0;
-//     }
-// }
+    img{
+        z-index: 9;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+}
 
 #star-logo{
     >div{
