@@ -532,7 +532,7 @@ button {
     background-color: #6D7278; }
 
 .grey-button {
-  background-color: #6D7278;
+  background-color: #3E4649;
   color: white;
   border-radius: 8px;
   font-weight: 700;
@@ -548,8 +548,7 @@ button {
       font-size: 1.5rem;
       padding: 16px 40px; } }
   .grey-button:hover {
-    background-color: #454545;
-    color: #6D7278; }
+    background-color: #6D7278; }
 
 .button {
   position: relative;
@@ -1871,7 +1870,7 @@ header {
       #part-3-container #part-3-text {
         grid-area: p;
         text-align: left;
-        margin: 0px 20px 50px 180px; } }
+        margin: 0px 150px 50px -15%; } }
     @media (min-width: 1440px) {
       #part-3-container #part-3-text {
         margin: 0% 35% 5% -15%; } }
@@ -2467,7 +2466,7 @@ header {
         line-height: 1.5; } }
     @media (min-width: 1025px) {
       #camp-aside-container #camp-aside-text {
-        margin: 2% 0% 5% 10%; } }
+        margin: 2% 8% 5% 10%; } }
   #camp-aside-container #camp-aside-text-2 {
     display: none; }
     @media (min-width: 768px) {
@@ -2483,12 +2482,26 @@ header {
         align-items: center; } }
     @media (min-width: 1025px) {
       #camp-aside-container #camp-aside-text-2 {
-        margin: -10% 5% 5% -5%; } }
+        margin: -10% 5% 5% -15%; } }
+#camp-UI-kit {
+  position: relative; }
+  #camp-UI-kit img {
+    z-index: 10;
+    height: 100%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%; }
+    @media (min-width: 1025px) {
+      #camp-UI-kit img {
+        width: 80%; } }
 /* ========================
       PORTFOLIO SITE
 ======================== */
 #section-header-W-3 {
-  margin-bottom: -1.5%; }
+  margin-bottom: -1.5%;
+  margin-top: -5.5%; }
   #section-header-W-3 > div {
     background-image: url("../img/branding/startechHEADERmob.svg");
     background-position: center;
@@ -2506,6 +2519,69 @@ header {
     @media (min-width: 1440px) {
       #section-header-W-3 > div {
         height: 51vh; } }
+#port-mockup {
+  position: relative; }
+  #port-mockup img {
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+    margin-bottom: 0%; }
+    @media (min-width: 1025px) {
+      #port-mockup img {
+        width: 65%; } }
+#port-aside-container {
+  display: grid;
+  grid-template-areas: "p-1" "p-2"; }
+  @media (min-width: 768px) {
+    #port-aside-container {
+      display: grid;
+      grid-template-areas: "p-1 p-2";
+      grid-template-columns: 70% auto; } }
+  #port-aside-container #port-aside-text {
+    text-align: justify;
+    margin: 2% 10% 5% 2%;
+    color: #6D7278;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      #port-aside-container #port-aside-text {
+        margin: 2% 0% 5% 10%;
+        grid-area: p-1;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.5; } }
+  #port-aside-container #port-aside-text-2 {
+    display: none; }
+    @media (min-width: 768px) {
+      #port-aside-container #port-aside-text-2 {
+        display: block;
+        text-align: left;
+        color: #6D7278;
+        line-height: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -10% 5% 5% -5%;
+        grid-area: p-2; } }
+#port-UI-kit {
+  position: relative; }
+  #port-UI-kit img {
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%; }
+    @media (min-width: 1025px) {
+      #port-UI-kit img {
+        width: 65%; } }
 /* =============
     About Content
 ============= */

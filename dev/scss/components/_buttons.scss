@@ -36,7 +36,7 @@ button{
 }
 
 .grey-button{
-    background-color: $lightgrey;
+    background-color: $greyblue;
     color: white;
     border-radius: 8px;
     font-weight: 700;
@@ -55,8 +55,8 @@ button{
     }
 
     &:hover{
-        background-color: $darkgrey;
-        color: $lightgrey;
+        background-color: $lightgrey;
+        // color: $lightgrey;
     }
 }
 
