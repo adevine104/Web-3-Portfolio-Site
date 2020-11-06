@@ -1834,11 +1834,19 @@ header {
       #part-2-container #part-2-text {
         margin: 0px 20px 50px 200px; } }
   #part-2-container #part-2-image {
-    grid-area: image;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 45px; }
-
+    margin-left: 1350%; }
+    @media (min-width: 768px) {
+      #part-2-container #part-2-image {
+        grid-area: image;
+        margin-left: -5%;
+        width: 100%; } }
+    @media (min-width: 1025px) {
+      #part-2-container #part-2-image {
+        margin-top: -15%;
+        object-fit: cover; } }
 @media (min-width: 768px) {
   #process-slides-1 {
     margin-bottom: 150px; } }
@@ -2241,11 +2249,13 @@ header {
   position: relative; }
   #gray-mockup img {
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-    width: 90%;
-    margin: -5% 0 -5% 0%; }
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+    @media (min-width: 768px) {
+      #gray-mockup img {
+        width: 85%; } }
 #Gray-heading {
   margin-bottom: -25%; }
   @media (min-width: 768px) {
@@ -2588,7 +2598,7 @@ header {
   #camp-UI-kit img {
     z-index: 10;
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;

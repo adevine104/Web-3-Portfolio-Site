@@ -175,16 +175,26 @@
     }
 
     #part-2-image {
-        // img{
-        // object-fit: cover;
-        // width: 100vw;
-        // }
-        grid-area: image;
+
+        display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 45px;
+        margin-left: 1350%;
         // height: 20vh;
+
+        @include md{
+            grid-area: image;
+            margin-left: -5%;
+            width: 100%;
+        }
+
+        @include lg{
+            margin-top: -15%;
+            object-fit: cover;
+            // margin-left: -5%;
+        }
     }
+    
 }
 
 #process-slides-1 {
