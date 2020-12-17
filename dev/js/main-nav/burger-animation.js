@@ -24,7 +24,7 @@ var burgerAnimateSpeed = 0.25;
 //         burgerAnimationTimeLine.reverse();
 //     }
 // }
-
+ 
 // // function to change the color of hte burger lines back to red, only called on the compete timeline reverse of burgerAnimationTimeLine
 // function resetBurgerLinecsolor(){
 //     //change the burger lines back to red over 0.25 seconds
